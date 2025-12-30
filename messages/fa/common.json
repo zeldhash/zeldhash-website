@@ -46,7 +46,8 @@
     "searchLabel": "جستجو در کاوشگر ZeldHash",
     "searchPlaceholder": "آدرس، شماره بلوک یا هش تراکنش را وارد کنید",
     "searchButton": "جستجو",
-    "searchHelp": "جستجو به زودی می‌آید. برای شروع آدرس، ارتفاع بلوک یا هش تراکنش را وارد کنید.",
+    "searchHelp": "آدرس بیت‌کوین، ارتفاع بلوک یا هش تراکنش را وارد کنید.",
+    "searchError": "ورودی نامعتبر. لطفاً آدرس، ارتفاع بلوک یا هش تراکنش معتبر وارد کنید.",
     "latestRewards": "آخرین پاداش‌ها",
     "noRewards": "هنوز پاداشی موجود نیست. به زودی برگردید.",
     "loadError": "امکان بارگذاری داده‌ها نیست. لطفاً کمی بعد دوباره امتحان کنید.",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "کل ZELD ضرب‌شده",
     "globalMaxZeros": "رکورد صفر",
     "totalNewUtxos": "کل UTXOهای جدید",
-    "totalUtxosSpent": "کل UTXOهای مصرف‌شده"
+    "totalUtxosSpent": "کل UTXOهای مصرف‌شده",
+    "transaction": "تراکنش",
+    "transactionMetaTitle": "تراکنش {txid} - کاوشگر ZELD",
+    "transactionMetaDescription": "موجودی ZELD و اطلاعات پاداش تراکنش بیت‌کوین {txid} را ببینید",
+    "rewardEligible": "{count} صفر پیشرو - واجد شرایط پاداش!",
+    "rewardTransaction": "تراکنش پاداش",
+    "rewardsReceived": "پاداش‌های دریافتی",
+    "leadingZerosCount": "صفرهای پیشرو",
+    "totalUtxoBalance": "موجودی کل UTXO",
+    "transactionOutputs": "خروجی‌های تراکنش",
+    "viewOnMempool": "مشاهده در mempool.space",
+    "noUtxosInTx": "هیچ UTXO برای این تراکنش یافت نشد.",
+    "txLoadError": "امکان بارگذاری داده‌های تراکنش نیست. لطفاً دوباره امتحان کنید.",
+    "voutShort": "#",
+    "output": "خروجی"
   }
 }

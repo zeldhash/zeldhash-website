@@ -46,7 +46,8 @@
     "searchLabel": "Αναζήτηση στον εξερευνητή ZeldHash",
     "searchPlaceholder": "Εισάγετε διεύθυνση, δείκτη μπλοκ ή hash συναλλαγής",
     "searchButton": "Αναζήτηση",
-    "searchHelp": "Η αναζήτηση έρχεται σύντομα. Εισάγετε διεύθυνση, ύψος μπλοκ ή hash συναλλαγής για να ξεκινήσετε.",
+    "searchHelp": "Εισάγετε διεύθυνση Bitcoin, ύψος μπλοκ ή hash συναλλαγής.",
+    "searchError": "Μη έγκυρη είσοδος. Εισάγετε μια έγκυρη διεύθυνση, ύψος μπλοκ ή hash συναλλαγής.",
     "latestRewards": "Τελευταίες ανταμοιβές",
     "noRewards": "Δεν υπάρχουν ακόμα διαθέσιμες ανταμοιβές. Επιστρέψτε σύντομα.",
     "loadError": "Δεν είναι δυνατή η φόρτωση των δεδομένων. Δοκιμάστε ξανά αργότερα.",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "Συνολικά ZELD που κόπηκαν",
     "globalMaxZeros": "Ρεκόρ μηδενικών",
     "totalNewUtxos": "Συνολικά νέα UTXOs",
-    "totalUtxosSpent": "Συνολικά δαπανημένα UTXOs"
+    "totalUtxosSpent": "Συνολικά δαπανημένα UTXOs",
+    "transaction": "Συναλλαγή",
+    "transactionMetaTitle": "Συναλλαγή {txid} - Εξερευνητής ZELD",
+    "transactionMetaDescription": "Δείτε υπόλοιπο ZELD και πληροφορίες ανταμοιβής για τη συναλλαγή Bitcoin {txid}",
+    "rewardEligible": "{count} αρχικά μηδενικά - Δικαιούται ανταμοιβή!",
+    "rewardTransaction": "Συναλλαγή ανταμοιβής",
+    "rewardsReceived": "Ανταμοιβές που ελήφθησαν",
+    "leadingZerosCount": "Αρχικά μηδενικά",
+    "totalUtxoBalance": "Συνολικό υπόλοιπο UTXO",
+    "transactionOutputs": "Έξοδοι συναλλαγής",
+    "viewOnMempool": "Προβολή στο mempool.space",
+    "noUtxosInTx": "Δεν βρέθηκαν UTXO για αυτή τη συναλλαγή.",
+    "txLoadError": "Αδυναμία φόρτωσης δεδομένων συναλλαγής. Δοκιμάστε ξανά.",
+    "voutShort": "#",
+    "output": "Έξοδος"
   }
 }

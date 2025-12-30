@@ -46,7 +46,8 @@
     "searchLabel": "Zoek in de ZeldHash-verkenner",
     "searchPlaceholder": "Voer een adres, blokindex of transactie-hash in",
     "searchButton": "Zoeken",
-    "searchHelp": "Zoeken komt binnenkort. Voer een adres, blokhoogte of transactie-hash in om te beginnen.",
+    "searchHelp": "Voer een Bitcoin-adres, blokhoogte of transactie-hash in.",
+    "searchError": "Ongeldige invoer. Voer een geldig adres, blokhoogte of transactie-hash in.",
     "latestRewards": "Nieuwste beloningen",
     "noRewards": "Nog geen beloningen beschikbaar. Kom snel terug.",
     "loadError": "Kan de gegevens niet laden. Probeer het later opnieuw.",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "Totaal ZELD gemint",
     "globalMaxZeros": "Recordnullen",
     "totalNewUtxos": "Totaal nieuwe UTXOs",
-    "totalUtxosSpent": "Totaal uitgegeven UTXOs"
+    "totalUtxosSpent": "Totaal uitgegeven UTXOs",
+    "transaction": "Transactie",
+    "transactionMetaTitle": "Transactie {txid} - ZELD Verkenner",
+    "transactionMetaDescription": "Bekijk ZELD-saldo en beloningsinformatie voor Bitcoin-transactie {txid}",
+    "rewardEligible": "{count} leidende nullen - In aanmerking voor beloning!",
+    "rewardTransaction": "Beloningtransactie",
+    "rewardsReceived": "Ontvangen beloningen",
+    "leadingZerosCount": "Leidende nullen",
+    "totalUtxoBalance": "Totaal UTXO-saldo",
+    "transactionOutputs": "Transactie-outputs",
+    "viewOnMempool": "Bekijk op mempool.space",
+    "noUtxosInTx": "Geen UTXO's gevonden voor deze transactie.",
+    "txLoadError": "Kan transactiegegevens niet laden. Probeer opnieuw.",
+    "voutShort": "#",
+    "output": "Output"
   }
 }

@@ -46,7 +46,8 @@
     "searchLabel": "Maghanap sa ZeldHash explorer",
     "searchPlaceholder": "Maglagay ng address, block index o transaction hash",
     "searchButton": "Hanapin",
-    "searchHelp": "Ang paghahanap ay darating na. Maglagay ng address, block height o transaction hash para magsimula.",
+    "searchHelp": "Maglagay ng Bitcoin address, block height o transaction hash.",
+    "searchError": "Hindi wastong input. Maglagay ng wastong address, block height o transaction hash.",
     "latestRewards": "Pinakabagong rewards",
     "noRewards": "Wala pang available na rewards. Bumalik mamaya.",
     "loadError": "Hindi ma-load ang data. Subukan ulit mamaya.",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "Kabuuang ZELD na Na-mint",
     "globalMaxZeros": "Record na Zero",
     "totalNewUtxos": "Kabuuang Bagong UTXOs",
-    "totalUtxosSpent": "Kabuuang Nagamit na UTXOs"
+    "totalUtxosSpent": "Kabuuang Nagamit na UTXOs",
+    "transaction": "Transaksyon",
+    "transactionMetaTitle": "Transaksyon {txid} - ZELD Explorer",
+    "transactionMetaDescription": "Tingnan ang ZELD balance at impormasyon ng reward para sa Bitcoin transaksyon {txid}",
+    "rewardEligible": "{count} nangunguna na zero - Karapat-dapat sa reward!",
+    "rewardTransaction": "Reward na Transaksyon",
+    "rewardsReceived": "Mga Natanggap na Reward",
+    "leadingZerosCount": "Nangunguna na Zero",
+    "totalUtxoBalance": "Kabuuang UTXO Balance",
+    "transactionOutputs": "Mga Output ng Transaksyon",
+    "viewOnMempool": "Tingnan sa mempool.space",
+    "noUtxosInTx": "Walang nahanap na UTXO para sa transaksyon na ito.",
+    "txLoadError": "Hindi ma-load ang data ng transaksyon. Subukan ulit.",
+    "voutShort": "#",
+    "output": "Output"
   }
 }

@@ -46,7 +46,8 @@
     "searchLabel": "البحث في مستكشف ZeldHash",
     "searchPlaceholder": "أدخل عنواناً أو رقم كتلة أو هاش معاملة",
     "searchButton": "بحث",
-    "searchHelp": "البحث قادم قريباً. أدخل عنواناً أو ارتفاع كتلة أو هاش معاملة للبدء.",
+    "searchHelp": "أدخل عنوان بيتكوين أو ارتفاع كتلة أو هاش معاملة.",
+    "searchError": "إدخال غير صالح. يرجى إدخال عنوان صالح أو ارتفاع كتلة أو هاش معاملة.",
     "latestRewards": "أحدث المكافآت",
     "noRewards": "لا توجد مكافآت متاحة بعد. عد قريباً.",
     "loadError": "تعذر تحميل البيانات. يرجى المحاولة مرة أخرى لاحقاً.",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "إجمالي ZELD المُسكوك",
     "globalMaxZeros": "رقم قياسي للأصفار",
     "totalNewUtxos": "إجمالي UTXOs الجديدة",
-    "totalUtxosSpent": "إجمالي UTXOs المُنفقة"
+    "totalUtxosSpent": "إجمالي UTXOs المُنفقة",
+    "transaction": "المعاملة",
+    "transactionMetaTitle": "المعاملة {txid} - مستكشف ZELD",
+    "transactionMetaDescription": "عرض رصيد ZELD ومعلومات المكافأة لمعاملة البيتكوين {txid}",
+    "rewardEligible": "{count} أصفار في البداية - مؤهلة للمكافأة!",
+    "rewardTransaction": "معاملة مكافأة",
+    "rewardsReceived": "المكافآت المستلمة",
+    "leadingZerosCount": "الأصفار في البداية",
+    "totalUtxoBalance": "إجمالي رصيد UTXO",
+    "transactionOutputs": "مخرجات المعاملة",
+    "viewOnMempool": "عرض على mempool.space",
+    "noUtxosInTx": "لم يتم العثور على UTXOs لهذه المعاملة.",
+    "txLoadError": "تعذر تحميل بيانات المعاملة. يرجى المحاولة مرة أخرى.",
+    "voutShort": "#",
+    "output": "المخرج"
   }
 }

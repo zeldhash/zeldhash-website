@@ -46,7 +46,8 @@
     "searchLabel": "Hledat v průzkumníku ZeldHash",
     "searchPlaceholder": "Zadejte adresu, index bloku nebo hash transakce",
     "searchButton": "Hledat",
-    "searchHelp": "Vyhledávání bude brzy k dispozici. Zadejte adresu, výšku bloku nebo hash transakce.",
+    "searchHelp": "Zadejte Bitcoin adresu, výšku bloku nebo hash transakce.",
+    "searchError": "Neplatný vstup. Zadejte platnou adresu, výšku bloku nebo hash transakce.",
     "latestRewards": "Nejnovější odměny",
     "noRewards": "Zatím žádné odměny. Vraťte se brzy.",
     "loadError": "Nelze načíst data. Zkuste to prosím za chvíli.",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "Celkem ZELD vytěženo",
     "globalMaxZeros": "Rekord nul",
     "totalNewUtxos": "Celkem nových UTXOs",
-    "totalUtxosSpent": "Celkem utracených UTXOs"
+    "totalUtxosSpent": "Celkem utracených UTXOs",
+    "transaction": "Transakce",
+    "transactionMetaTitle": "Transakce {txid} - ZELD Průzkumník",
+    "transactionMetaDescription": "Zobrazit zůstatek ZELD a informace o odměně pro bitcoinovou transakci {txid}",
+    "rewardEligible": "{count} úvodních nul - Nárok na odměnu!",
+    "rewardTransaction": "Odměněná transakce",
+    "rewardsReceived": "Přijaté odměny",
+    "leadingZerosCount": "Úvodní nuly",
+    "totalUtxoBalance": "Celkový zůstatek UTXO",
+    "transactionOutputs": "Výstupy transakce",
+    "viewOnMempool": "Zobrazit na mempool.space",
+    "noUtxosInTx": "Pro tuto transakci nebyly nalezeny žádné UTXO.",
+    "txLoadError": "Nelze načíst data transakce. Zkuste to prosím znovu.",
+    "voutShort": "#",
+    "output": "Výstup"
   }
 }

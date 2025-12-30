@@ -46,7 +46,8 @@
     "searchLabel": "ZeldHash 탐색기 검색",
     "searchPlaceholder": "주소, 블록 번호 또는 트랜잭션 해시 입력",
     "searchButton": "검색",
-    "searchHelp": "검색 기능이 곧 출시됩니다. 주소, 블록 높이 또는 트랜잭션 해시를 입력하세요.",
+    "searchHelp": "비트코인 주소, 블록 높이 또는 트랜잭션 해시를 입력하세요.",
+    "searchError": "잘못된 입력입니다. 유효한 주소, 블록 높이 또는 트랜잭션 해시를 입력하세요.",
     "latestRewards": "최신 보상",
     "noRewards": "아직 보상이 없습니다. 나중에 다시 확인하세요.",
     "loadError": "데이터를 불러올 수 없습니다. 잠시 후 다시 시도하세요.",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "총 ZELD 발행량",
     "globalMaxZeros": "제로 기록",
     "totalNewUtxos": "새로운 UTXOs 총계",
-    "totalUtxosSpent": "사용된 UTXOs 총계"
+    "totalUtxosSpent": "사용된 UTXOs 총계",
+    "transaction": "트랜잭션",
+    "transactionMetaTitle": "트랜잭션 {txid} - ZELD 탐색기",
+    "transactionMetaDescription": "비트코인 트랜잭션 {txid}의 ZELD 잔액 및 보상 정보 보기",
+    "rewardEligible": "{count}개의 선행 제로 - 보상 대상!",
+    "rewardTransaction": "보상 트랜잭션",
+    "rewardsReceived": "받은 보상",
+    "leadingZerosCount": "선행 제로 수",
+    "totalUtxoBalance": "총 UTXO 잔액",
+    "transactionOutputs": "트랜잭션 출력",
+    "viewOnMempool": "mempool.space에서 보기",
+    "noUtxosInTx": "이 트랜잭션에 대한 UTXO가 없습니다.",
+    "txLoadError": "트랜잭션 데이터를 불러올 수 없습니다. 다시 시도하세요.",
+    "voutShort": "#",
+    "output": "출력"
   }
 }

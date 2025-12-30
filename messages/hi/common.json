@@ -46,7 +46,8 @@
     "searchLabel": "ZeldHash एक्सप्लोरर खोजें",
     "searchPlaceholder": "एक पता, ब्लॉक इंडेक्स या लेनदेन हैश दर्ज करें",
     "searchButton": "खोजें",
-    "searchHelp": "खोज जल्द आ रही है। शुरू करने के लिए एक पता, ब्लॉक ऊंचाई या लेनदेन हैश दर्ज करें।",
+    "searchHelp": "एक बिटकॉइन पता, ब्लॉक ऊंचाई या लेनदेन हैश दर्ज करें।",
+    "searchError": "अमान्य इनपुट। कृपया एक वैध पता, ब्लॉक ऊंचाई या लेनदेन हैश दर्ज करें।",
     "latestRewards": "नवीनतम पुरस्कार",
     "noRewards": "अभी तक कोई पुरस्कार उपलब्ध नहीं। जल्द ही वापस आएं।",
     "loadError": "डेटा लोड करने में असमर्थ। कृपया कुछ देर बाद पुनः प्रयास करें।",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "कुल ZELD मिंटेड",
     "globalMaxZeros": "शून्य रिकॉर्ड",
     "totalNewUtxos": "कुल नए UTXOs",
-    "totalUtxosSpent": "कुल खर्च किए गए UTXOs"
+    "totalUtxosSpent": "कुल खर्च किए गए UTXOs",
+    "transaction": "लेनदेन",
+    "transactionMetaTitle": "लेनदेन {txid} - ZELD एक्सप्लोरर",
+    "transactionMetaDescription": "बिटकॉइन लेनदेन {txid} के लिए ZELD बैलेंस और इनाम जानकारी देखें",
+    "rewardEligible": "{count} अग्रणी शून्य - इनाम के योग्य!",
+    "rewardTransaction": "इनाम लेनदेन",
+    "rewardsReceived": "प्राप्त इनाम",
+    "leadingZerosCount": "अग्रणी शून्य",
+    "totalUtxoBalance": "कुल UTXO बैलेंस",
+    "transactionOutputs": "लेनदेन आउटपुट",
+    "viewOnMempool": "mempool.space पर देखें",
+    "noUtxosInTx": "इस लेनदेन के लिए कोई UTXO नहीं मिला।",
+    "txLoadError": "लेनदेन डेटा लोड करने में असमर्थ। कृपया पुनः प्रयास करें।",
+    "voutShort": "#",
+    "output": "आउटपुट"
   }
 }

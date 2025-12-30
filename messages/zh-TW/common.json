@@ -46,7 +46,8 @@
     "searchLabel": "搜尋 ZeldHash 瀏覽器",
     "searchPlaceholder": "輸入地址、區塊索引或交易雜湊",
     "searchButton": "搜尋",
-    "searchHelp": "搜尋功能即將推出。輸入地址、區塊高度或交易雜湊開始。",
+    "searchHelp": "輸入比特幣地址、區塊高度或交易雜湊。",
+    "searchError": "無效輸入。請輸入有效的地址、區塊高度或交易雜湊。",
     "latestRewards": "最新獎勵",
     "noRewards": "暫無獎勵。請稍後再查看。",
     "loadError": "無法載入資料。請稍後再試。",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "ZELD 鑄造總量",
     "globalMaxZeros": "零數紀錄",
     "totalNewUtxos": "新 UTXOs 總數",
-    "totalUtxosSpent": "已花費 UTXOs 總數"
+    "totalUtxosSpent": "已花費 UTXOs 總數",
+    "transaction": "交易",
+    "transactionMetaTitle": "交易 {txid} - ZELD 瀏覽器",
+    "transactionMetaDescription": "查看比特幣交易 {txid} 的 ZELD 餘額和獎勵資訊",
+    "rewardEligible": "{count} 個前導零 - 符合獎勵條件！",
+    "rewardTransaction": "獎勵交易",
+    "rewardsReceived": "收到的獎勵",
+    "leadingZerosCount": "前導零數",
+    "totalUtxoBalance": "UTXO 總餘額",
+    "transactionOutputs": "交易輸出",
+    "viewOnMempool": "在 mempool.space 查看",
+    "noUtxosInTx": "未找到此交易的 UTXO。",
+    "txLoadError": "無法載入交易資料。請重試。",
+    "voutShort": "#",
+    "output": "輸出"
   }
 }

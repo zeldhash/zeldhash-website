@@ -46,7 +46,8 @@
     "searchLabel": "Tìm kiếm trong trình khám phá ZeldHash",
     "searchPlaceholder": "Nhập địa chỉ, chỉ số khối hoặc mã hash giao dịch",
     "searchButton": "Tìm kiếm",
-    "searchHelp": "Tìm kiếm sắp ra mắt. Nhập địa chỉ, chiều cao khối hoặc mã hash giao dịch để bắt đầu.",
+    "searchHelp": "Nhập địa chỉ Bitcoin, chiều cao khối hoặc mã hash giao dịch.",
+    "searchError": "Đầu vào không hợp lệ. Vui lòng nhập địa chỉ hợp lệ, chiều cao khối hoặc mã hash giao dịch.",
     "latestRewards": "Phần thưởng mới nhất",
     "noRewards": "Chưa có phần thưởng. Hãy quay lại sau.",
     "loadError": "Không thể tải dữ liệu. Vui lòng thử lại sau.",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "Tổng ZELD đã đúc",
     "globalMaxZeros": "Kỷ lục số 0",
     "totalNewUtxos": "Tổng UTXOs mới",
-    "totalUtxosSpent": "Tổng UTXOs đã chi"
+    "totalUtxosSpent": "Tổng UTXOs đã chi",
+    "transaction": "Giao dịch",
+    "transactionMetaTitle": "Giao dịch {txid} - Khám phá ZELD",
+    "transactionMetaDescription": "Xem số dư ZELD và thông tin phần thưởng cho giao dịch Bitcoin {txid}",
+    "rewardEligible": "{count} số 0 đầu - Đủ điều kiện nhận thưởng!",
+    "rewardTransaction": "Giao dịch phần thưởng",
+    "rewardsReceived": "Phần thưởng đã nhận",
+    "leadingZerosCount": "Số 0 đầu",
+    "totalUtxoBalance": "Tổng số dư UTXO",
+    "transactionOutputs": "Đầu ra giao dịch",
+    "viewOnMempool": "Xem trên mempool.space",
+    "noUtxosInTx": "Không tìm thấy UTXO cho giao dịch này.",
+    "txLoadError": "Không thể tải dữ liệu giao dịch. Vui lòng thử lại.",
+    "voutShort": "#",
+    "output": "Đầu ra"
   }
 }

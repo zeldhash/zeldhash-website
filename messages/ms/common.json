@@ -46,7 +46,8 @@
     "searchLabel": "Cari dalam penjelajah ZeldHash",
     "searchPlaceholder": "Masukkan alamat, indeks blok atau hash transaksi",
     "searchButton": "Cari",
-    "searchHelp": "Carian akan datang. Masukkan alamat, ketinggian blok atau hash transaksi untuk bermula.",
+    "searchHelp": "Masukkan alamat Bitcoin, ketinggian blok atau hash transaksi.",
+    "searchError": "Input tidak sah. Sila masukkan alamat, ketinggian blok atau hash transaksi yang sah.",
     "latestRewards": "Ganjaran terkini",
     "noRewards": "Tiada ganjaran tersedia lagi. Kembali semula nanti.",
     "loadError": "Tidak dapat memuatkan data. Sila cuba lagi sebentar.",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "Jumlah ZELD Dicetak",
     "globalMaxZeros": "Rekod Sifar",
     "totalNewUtxos": "Jumlah UTXOs Baharu",
-    "totalUtxosSpent": "Jumlah UTXOs Dibelanjakan"
+    "totalUtxosSpent": "Jumlah UTXOs Dibelanjakan",
+    "transaction": "Transaksi",
+    "transactionMetaTitle": "Transaksi {txid} - Penjelajah ZELD",
+    "transactionMetaDescription": "Lihat baki ZELD dan maklumat ganjaran untuk transaksi Bitcoin {txid}",
+    "rewardEligible": "{count} sifar utama - Layak untuk ganjaran!",
+    "rewardTransaction": "Transaksi Ganjaran",
+    "rewardsReceived": "Ganjaran Diterima",
+    "leadingZerosCount": "Sifar Utama",
+    "totalUtxoBalance": "Jumlah Baki UTXO",
+    "transactionOutputs": "Output Transaksi",
+    "viewOnMempool": "Lihat di mempool.space",
+    "noUtxosInTx": "Tiada UTXO ditemui untuk transaksi ini.",
+    "txLoadError": "Tidak dapat memuatkan data transaksi. Sila cuba lagi.",
+    "voutShort": "#",
+    "output": "Output"
   }
 }

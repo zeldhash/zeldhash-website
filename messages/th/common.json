@@ -46,7 +46,8 @@
     "searchLabel": "ค้นหาใน ZeldHash Explorer",
     "searchPlaceholder": "ป้อนที่อยู่ ดัชนีบล็อก หรือแฮชธุรกรรม",
     "searchButton": "ค้นหา",
-    "searchHelp": "การค้นหาจะมาเร็วๆ นี้ ป้อนที่อยู่ ความสูงบล็อก หรือแฮชธุรกรรมเพื่อเริ่มต้น",
+    "searchHelp": "ป้อนที่อยู่ Bitcoin ความสูงบล็อก หรือแฮชธุรกรรม",
+    "searchError": "ข้อมูลไม่ถูกต้อง กรุณาป้อนที่อยู่ ความสูงบล็อก หรือแฮชธุรกรรมที่ถูกต้อง",
     "latestRewards": "รางวัลล่าสุด",
     "noRewards": "ยังไม่มีรางวัล กลับมาตรวจสอบในภายหลัง",
     "loadError": "ไม่สามารถโหลดข้อมูลได้ โปรดลองอีกครั้งในภายหลัง",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "ZELD ที่ผลิตทั้งหมด",
     "globalMaxZeros": "สถิติศูนย์",
     "totalNewUtxos": "UTXOs ใหม่ทั้งหมด",
-    "totalUtxosSpent": "UTXOs ที่ใช้แล้วทั้งหมด"
+    "totalUtxosSpent": "UTXOs ที่ใช้แล้วทั้งหมด",
+    "transaction": "ธุรกรรม",
+    "transactionMetaTitle": "ธุรกรรม {txid} - สำรวจ ZELD",
+    "transactionMetaDescription": "ดูยอดคงเหลือ ZELD และข้อมูลรางวัลสำหรับธุรกรรม Bitcoin {txid}",
+    "rewardEligible": "{count} ศูนย์นำหน้า - มีสิทธิ์ได้รับรางวัล!",
+    "rewardTransaction": "ธุรกรรมรางวัล",
+    "rewardsReceived": "รางวัลที่ได้รับ",
+    "leadingZerosCount": "ศูนย์นำหน้า",
+    "totalUtxoBalance": "ยอดคงเหลือ UTXO รวม",
+    "transactionOutputs": "เอาต์พุตธุรกรรม",
+    "viewOnMempool": "ดูบน mempool.space",
+    "noUtxosInTx": "ไม่พบ UTXO สำหรับธุรกรรมนี้",
+    "txLoadError": "ไม่สามารถโหลดข้อมูลธุรกรรมได้ โปรดลองอีกครั้ง",
+    "voutShort": "#",
+    "output": "เอาต์พุต"
   }
 }

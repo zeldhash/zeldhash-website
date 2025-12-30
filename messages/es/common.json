@@ -46,7 +46,8 @@
     "searchLabel": "Buscar en el explorador ZeldHash",
     "searchPlaceholder": "Introduce una dirección, un índice de bloque o un hash de transacción",
     "searchButton": "Buscar",
-    "searchHelp": "La búsqueda estará disponible pronto. Introduce una dirección, altura de bloque o hash de transacción para comenzar.",
+    "searchHelp": "Introduce una dirección Bitcoin, altura de bloque o hash de transacción.",
+    "searchError": "Entrada inválida. Por favor introduce una dirección válida, altura de bloque o hash de transacción.",
     "latestRewards": "Últimas recompensas",
     "noRewards": "No hay recompensas disponibles todavía. Vuelve pronto.",
     "loadError": "No se pueden cargar los datos. Inténtalo de nuevo en un momento.",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "Total ZELD minteado",
     "globalMaxZeros": "Récord de ceros",
     "totalNewUtxos": "Total nuevos UTXOs",
-    "totalUtxosSpent": "Total UTXOs gastados"
+    "totalUtxosSpent": "Total UTXOs gastados",
+    "transaction": "Transacción",
+    "transactionMetaTitle": "Transacción {txid} - Explorador ZELD",
+    "transactionMetaDescription": "Ver saldo ZELD e información de recompensa para la transacción Bitcoin {txid}",
+    "rewardEligible": "{count} ceros iniciales - ¡Elegible para recompensa!",
+    "rewardTransaction": "Transacción de recompensa",
+    "rewardsReceived": "Recompensas recibidas",
+    "leadingZerosCount": "Ceros iniciales",
+    "totalUtxoBalance": "Saldo total UTXO",
+    "transactionOutputs": "Salidas de transacción",
+    "viewOnMempool": "Ver en mempool.space",
+    "noUtxosInTx": "No se encontraron UTXOs para esta transacción.",
+    "txLoadError": "No se pueden cargar los datos de la transacción. Inténtalo de nuevo.",
+    "voutShort": "#",
+    "output": "Salida"
   }
 }

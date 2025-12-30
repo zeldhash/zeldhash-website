@@ -46,7 +46,8 @@
     "searchLabel": "חפש בסייר ZeldHash",
     "searchPlaceholder": "הזן כתובת, אינדקס בלוק או hash עסקה",
     "searchButton": "חפש",
-    "searchHelp": "החיפוש בקרוב. הזן כתובת, גובה בלוק או hash עסקה כדי להתחיל.",
+    "searchHelp": "הזן כתובת ביטקוין, גובה בלוק או hash עסקה.",
+    "searchError": "קלט לא חוקי. הזן כתובת תקינה, גובה בלוק או hash עסקה.",
     "latestRewards": "תגמולים אחרונים",
     "noRewards": "אין עדיין תגמולים זמינים. חזור בקרוב.",
     "loadError": "לא ניתן לטעון את הנתונים. נסה שוב מאוחר יותר.",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "סה\"כ ZELD שהוטבעו",
     "globalMaxZeros": "שיא אפסים",
     "totalNewUtxos": "סה\"כ UTXOs חדשים",
-    "totalUtxosSpent": "סה\"כ UTXOs שנוצלו"
+    "totalUtxosSpent": "סה\"כ UTXOs שנוצלו",
+    "transaction": "עסקה",
+    "transactionMetaTitle": "עסקה {txid} - סייר ZELD",
+    "transactionMetaDescription": "צפה ביתרת ZELD ומידע על תגמול עבור עסקת ביטקוין {txid}",
+    "rewardEligible": "{count} אפסים מובילים - זכאי לתגמול!",
+    "rewardTransaction": "עסקת תגמול",
+    "rewardsReceived": "תגמולים שהתקבלו",
+    "leadingZerosCount": "אפסים מובילים",
+    "totalUtxoBalance": "יתרת UTXO כוללת",
+    "transactionOutputs": "פלטי עסקה",
+    "viewOnMempool": "צפה ב-mempool.space",
+    "noUtxosInTx": "לא נמצאו UTXO עבור עסקה זו.",
+    "txLoadError": "לא ניתן לטעון נתוני עסקה. נסה שוב.",
+    "voutShort": "#",
+    "output": "פלט"
   }
 }

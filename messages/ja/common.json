@@ -46,7 +46,8 @@
     "searchLabel": "ZeldHashエクスプローラーを検索",
     "searchPlaceholder": "アドレス、ブロック番号、またはトランザクションハッシュを入力",
     "searchButton": "検索",
-    "searchHelp": "検索機能は近日公開予定です。アドレス、ブロック高、またはトランザクションハッシュを入力して開始。",
+    "searchHelp": "ビットコインアドレス、ブロック高、またはトランザクションハッシュを入力してください。",
+    "searchError": "無効な入力です。有効なアドレス、ブロック高、またはトランザクションハッシュを入力してください。",
     "latestRewards": "最新の報酬",
     "noRewards": "まだ報酬はありません。後でもう一度確認してください。",
     "loadError": "データを読み込めませんでした。しばらくしてからもう一度お試しください。",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "ZELD 発行総量",
     "globalMaxZeros": "ゼロ記録",
     "totalNewUtxos": "新規 UTXOs 合計",
-    "totalUtxosSpent": "使用済み UTXOs 合計"
+    "totalUtxosSpent": "使用済み UTXOs 合計",
+    "transaction": "トランザクション",
+    "transactionMetaTitle": "トランザクション {txid} - ZELD エクスプローラー",
+    "transactionMetaDescription": "ビットコイントランザクション {txid} のZELD残高と報酬情報を表示",
+    "rewardEligible": "{count} 個の先頭ゼロ - 報酬対象！",
+    "rewardTransaction": "報酬トランザクション",
+    "rewardsReceived": "受け取った報酬",
+    "leadingZerosCount": "先頭ゼロ数",
+    "totalUtxoBalance": "UTXO合計残高",
+    "transactionOutputs": "トランザクション出力",
+    "viewOnMempool": "mempool.spaceで表示",
+    "noUtxosInTx": "このトランザクションのUTXOは見つかりませんでした。",
+    "txLoadError": "トランザクションデータを読み込めませんでした。もう一度お試しください。",
+    "voutShort": "#",
+    "output": "出力"
   }
 }

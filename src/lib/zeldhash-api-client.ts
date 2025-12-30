@@ -176,3 +176,97 @@ export async function fetchLatestRewards(limit = 5, offset = 0): Promise<RewardE
   return data.filter(isRewardEntry);
 }
 
+export type UtxoBalance = {
+  balance: number;
+  txid: string;
+  vout: number;
+};
+
+function isUtxoBalance(entry: unknown): entry is UtxoBalance {
+  if (!entry || typeof entry !== "object") return false;
+  const candidate = entry as Record<string, unknown>;
+
+  return (
+    typeof candidate.balance === "number" &&
+    typeof candidate.txid === "string" &&
+    typeof candidate.vout === "number"
+  );
+}
+
+/**
+ * Fetches rewards for a specific transaction ID.
+ * Returns null if no rewards are found (404).
+ */
+export async function fetchRewardsByTxid(txid: string): Promise<RewardEntry[] | null> {
+  const baseUrl = getApiBaseUrl();
+  const url = new URL(`rewards/${encodeURIComponent(txid)}`, baseUrl);
+
+  const response = await fetch(url.toString(), {
+    next: {revalidate: 300},
+    headers: {
+      Accept: "application/json",
+    },
+  });
+
+  if (response.status === 404) {
+    return null;
+  }
+
+  if (response.status === 400) {
+    throw new Error("Malformed txid");
+  }
+
+  if (!response.ok) {
+    throw new Error(`ZeldHash API returned ${response.status} for ${url.pathname}`);
+  }
+
+  const data = await response.json();
+  if (!Array.isArray(data)) {
+    throw new Error("Unexpected ZeldHash rewards payload");
+  }
+
+  return data.filter(isRewardEntry);
+}
+
+/**
+ * Fetches balances for a batch of UTXOs.
+ * @param outpoints Array of outpoints in format "txid:vout"
+ */
+export async function fetchBatchUtxos(outpoints: string[]): Promise<UtxoBalance[]> {
+  if (outpoints.length === 0) {
+    return [];
+  }
+
+  if (outpoints.length > 100) {
+    throw new Error("Maximum 100 outpoints per batch request");
+  }
+
+  const baseUrl = getApiBaseUrl();
+  const url = new URL("utxos", baseUrl);
+
+  const response = await fetch(url.toString(), {
+    method: "POST",
+    next: {revalidate: 60},
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({utxos: outpoints}),
+  });
+
+  if (response.status === 400) {
+    throw new Error("Malformed outpoints in request");
+  }
+
+  if (!response.ok) {
+    throw new Error(`ZeldHash API returned ${response.status} for ${url.pathname}`);
+  }
+
+  const data = await response.json();
+  if (!Array.isArray(data)) {
+    throw new Error("Unexpected ZeldHash batch UTXOs payload");
+  }
+
+  return data.filter(isUtxoBalance);
+}
+

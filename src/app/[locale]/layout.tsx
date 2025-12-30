@@ -5,6 +5,7 @@ import type {ReactNode} from 'react';
 import {Footer, Header, Background} from '@/components/layout';
 import {locales, type Locale} from '@/lib/i18n/routing';
 import {getLanguageInfo} from '@/lib/i18n/languages';
+import {fontVariables} from '../layout';
 
 type Props = {
   children: ReactNode;
@@ -45,16 +46,18 @@ export default async function LocaleLayout({children, params}: Props) {
   const langInfo = getLanguageInfo(locale);
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
-      <div lang={locale} dir={langInfo.dir} className="min-h-screen overflow-x-hidden font-sans">
-        <Background />
-        <div className="relative z-10">
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </div>
-      </div>
-    </NextIntlClientProvider>
+    <html lang={locale} dir={langInfo.dir} className={fontVariables}>
+      <body className="min-h-screen overflow-x-hidden font-sans">
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <Background />
+          <div className="relative z-10">
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </div>
+        </NextIntlClientProvider>
+      </body>
+    </html>
   );
 }
 

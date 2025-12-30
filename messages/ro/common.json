@@ -46,7 +46,8 @@
     "searchLabel": "Caută în exploratorul ZeldHash",
     "searchPlaceholder": "Introdu o adresă, un index de bloc sau un hash de tranzacție",
     "searchButton": "Caută",
-    "searchHelp": "Căutarea vine în curând. Introdu o adresă, înălțimea blocului sau hash-ul tranzacției pentru a începe.",
+    "searchHelp": "Introdu o adresă Bitcoin, înălțimea blocului sau hash-ul tranzacției.",
+    "searchError": "Intrare invalidă. Te rugăm să introduci o adresă validă, înălțimea blocului sau hash-ul tranzacției.",
     "latestRewards": "Ultimele recompense",
     "noRewards": "Nicio recompensă disponibilă încă. Revino în curând.",
     "loadError": "Nu se pot încărca datele. Te rugăm să încerci din nou.",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "Total ZELD emis",
     "globalMaxZeros": "Record de zerouri",
     "totalNewUtxos": "Total UTXOs noi",
-    "totalUtxosSpent": "Total UTXOs cheltuite"
+    "totalUtxosSpent": "Total UTXOs cheltuite",
+    "transaction": "Tranzacție",
+    "transactionMetaTitle": "Tranzacția {txid} - Explorer ZELD",
+    "transactionMetaDescription": "Vezi soldul ZELD și informații despre recompensă pentru tranzacția Bitcoin {txid}",
+    "rewardEligible": "{count} zerouri inițiale - Eligibil pentru recompensă!",
+    "rewardTransaction": "Tranzacție de recompensă",
+    "rewardsReceived": "Recompense primite",
+    "leadingZerosCount": "Zerouri inițiale",
+    "totalUtxoBalance": "Sold total UTXO",
+    "transactionOutputs": "Ieșiri tranzacție",
+    "viewOnMempool": "Vezi pe mempool.space",
+    "noUtxosInTx": "Nu s-au găsit UTXO-uri pentru această tranzacție.",
+    "txLoadError": "Nu se pot încărca datele tranzacției. Încearcă din nou.",
+    "voutShort": "#",
+    "output": "Ieșire"
   }
 }

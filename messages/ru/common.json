@@ -46,7 +46,8 @@
     "searchLabel": "Поиск в обозревателе ZeldHash",
     "searchPlaceholder": "Введите адрес, номер блока или хэш транзакции",
     "searchButton": "Поиск",
-    "searchHelp": "Поиск скоро будет доступен. Введите адрес, высоту блока или хэш транзакции.",
+    "searchHelp": "Введите Bitcoin-адрес, высоту блока или хэш транзакции.",
+    "searchError": "Неверный ввод. Пожалуйста, введите действительный адрес, высоту блока или хэш транзакции.",
     "latestRewards": "Последние награды",
     "noRewards": "Пока нет доступных наград. Проверьте позже.",
     "loadError": "Не удалось загрузить данные. Пожалуйста, попробуйте позже.",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "Всего ZELD отчеканено",
     "globalMaxZeros": "Рекорд нулей",
     "totalNewUtxos": "Всего новых UTXO",
-    "totalUtxosSpent": "Всего потраченных UTXO"
+    "totalUtxosSpent": "Всего потраченных UTXO",
+    "transaction": "Транзакция",
+    "transactionMetaTitle": "Транзакция {txid} - Обозреватель ZELD",
+    "transactionMetaDescription": "Просмотр баланса ZELD и информации о награде для Bitcoin-транзакции {txid}",
+    "rewardEligible": "{count} ведущих нулей - Право на награду!",
+    "rewardTransaction": "Транзакция награды",
+    "rewardsReceived": "Полученные награды",
+    "leadingZerosCount": "Ведущие нули",
+    "totalUtxoBalance": "Общий баланс UTXO",
+    "transactionOutputs": "Выходы транзакции",
+    "viewOnMempool": "Смотреть на mempool.space",
+    "noUtxosInTx": "UTXO для этой транзакции не найдены.",
+    "txLoadError": "Не удалось загрузить данные транзакции. Попробуйте снова.",
+    "voutShort": "#",
+    "output": "Выход"
   }
 }

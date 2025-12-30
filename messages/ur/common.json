@@ -46,7 +46,8 @@
     "searchLabel": "ZeldHash ایکسپلورر میں تلاش کریں",
     "searchPlaceholder": "ایڈریس، بلاک انڈیکس یا ٹرانزیکشن ہیش درج کریں",
     "searchButton": "تلاش",
-    "searchHelp": "تلاش جلد آ رہی ہے۔ شروع کرنے کے لیے ایڈریس، بلاک ہائٹ یا ٹرانزیکشن ہیش درج کریں۔",
+    "searchHelp": "بٹ کوائن ایڈریس، بلاک ہائٹ یا ٹرانزیکشن ہیش درج کریں۔",
+    "searchError": "غلط ان پٹ۔ براہ کرم درست ایڈریس، بلاک ہائٹ یا ٹرانزیکشن ہیش درج کریں۔",
     "latestRewards": "تازہ ترین انعامات",
     "noRewards": "ابھی کوئی انعام دستیاب نہیں۔ جلد واپس آئیں۔",
     "loadError": "ڈیٹا لوڈ نہیں ہو سکا۔ براہ کرم تھوڑی دیر بعد دوبارہ کوشش کریں۔",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "کل ZELD منٹ",
     "globalMaxZeros": "صفر ریکارڈ",
     "totalNewUtxos": "کل نئے UTXOs",
-    "totalUtxosSpent": "کل خرچ شدہ UTXOs"
+    "totalUtxosSpent": "کل خرچ شدہ UTXOs",
+    "transaction": "ٹرانزیکشن",
+    "transactionMetaTitle": "ٹرانزیکشن {txid} - ZELD ایکسپلورر",
+    "transactionMetaDescription": "بٹ کوائن ٹرانزیکشن {txid} کا ZELD بیلنس اور انعام کی معلومات دیکھیں",
+    "rewardEligible": "{count} ابتدائی صفر - انعام کے اہل!",
+    "rewardTransaction": "انعامی ٹرانزیکشن",
+    "rewardsReceived": "موصولہ انعامات",
+    "leadingZerosCount": "ابتدائی صفر",
+    "totalUtxoBalance": "کل UTXO بیلنس",
+    "transactionOutputs": "ٹرانزیکشن آؤٹ پٹس",
+    "viewOnMempool": "mempool.space پر دیکھیں",
+    "noUtxosInTx": "اس ٹرانزیکشن کے لیے کوئی UTXO نہیں ملا۔",
+    "txLoadError": "ٹرانزیکشن ڈیٹا لوڈ نہیں ہو سکا۔ دوبارہ کوشش کریں۔",
+    "voutShort": "#",
+    "output": "آؤٹ پٹ"
   }
 }

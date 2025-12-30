@@ -32,10 +32,7 @@ const cormorant = Cormorant({
 
 export const fontVariables = `${crimsonPro.variable} ${dmSans.variable} ${jetbrainsMono.variable} ${cormorant.variable}`;
 
+// Root layout only renders children - the locale layout handles <html> and <body>
 export default function RootLayout({ children }: { children: ReactNode }) {
-  return (
-    <html lang="en" className={fontVariables}>
-      <body className="min-h-screen overflow-x-hidden font-sans">{children}</body>
-    </html>
-  );
+  return children;
 }

@@ -46,7 +46,8 @@
     "searchLabel": "Tafuta kwenye kichunguzi cha ZeldHash",
     "searchPlaceholder": "Ingiza anwani, fahirisi ya block au hash ya muamala",
     "searchButton": "Tafuta",
-    "searchHelp": "Utafutaji unakuja hivi karibuni. Ingiza anwani, urefu wa block au hash ya muamala kuanza.",
+    "searchHelp": "Ingiza anwani ya Bitcoin, urefu wa block au hash ya muamala.",
+    "searchError": "Ingizo batili. Tafadhali ingiza anwani halali, urefu wa block au hash ya muamala.",
     "latestRewards": "Zawadi za hivi karibuni",
     "noRewards": "Hakuna zawadi zinazopatikana bado. Rudi baadaye.",
     "loadError": "Imeshindwa kupakia data. Tafadhali jaribu tena baadaye.",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "Jumla ya ZELD Iliyochapishwa",
     "globalMaxZeros": "Rekodi ya Sifuri",
     "totalNewUtxos": "Jumla ya UTXOs Mpya",
-    "totalUtxosSpent": "Jumla ya UTXOs Zilizotumika"
+    "totalUtxosSpent": "Jumla ya UTXOs Zilizotumika",
+    "transaction": "Muamala",
+    "transactionMetaTitle": "Muamala {txid} - Kichunguzi cha ZELD",
+    "transactionMetaDescription": "Tazama salio la ZELD na maelezo ya tuzo kwa muamala wa Bitcoin {txid}",
+    "rewardEligible": "sifuri {count} zinazoongoza - Anastahili tuzo!",
+    "rewardTransaction": "Muamala wa Tuzo",
+    "rewardsReceived": "Tuzo Zilizopokelewa",
+    "leadingZerosCount": "Sifuri Zinazoongoza",
+    "totalUtxoBalance": "Jumla ya Salio la UTXO",
+    "transactionOutputs": "Matokeo ya Muamala",
+    "viewOnMempool": "Angalia kwenye mempool.space",
+    "noUtxosInTx": "Hakuna UTXO zilizopatikana kwa muamala huu.",
+    "txLoadError": "Imeshindwa kupakia data ya muamala. Tafadhali jaribu tena.",
+    "voutShort": "#",
+    "output": "Tokeo"
   }
 }

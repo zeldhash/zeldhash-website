@@ -46,7 +46,8 @@
     "searchLabel": "ZeldHash gezgininde ara",
     "searchPlaceholder": "Bir adres, blok indeksi veya işlem hash'i girin",
     "searchButton": "Ara",
-    "searchHelp": "Arama yakında geliyor. Başlamak için bir adres, blok yüksekliği veya işlem hash'i girin.",
+    "searchHelp": "Bir Bitcoin adresi, blok yüksekliği veya işlem hash'i girin.",
+    "searchError": "Geçersiz giriş. Lütfen geçerli bir adres, blok yüksekliği veya işlem hash'i girin.",
     "latestRewards": "En son ödüller",
     "noRewards": "Henüz ödül yok. Yakında tekrar kontrol edin.",
     "loadError": "Veriler yüklenemiyor. Lütfen biraz sonra tekrar deneyin.",
@@ -83,6 +84,20 @@
     "totalRewardAmount": "Toplam ZELD Basıldı",
     "globalMaxZeros": "Sıfır Rekoru",
     "totalNewUtxos": "Toplam Yeni UTXOs",
-    "totalUtxosSpent": "Toplam Harcanan UTXOs"
+    "totalUtxosSpent": "Toplam Harcanan UTXOs",
+    "transaction": "İşlem",
+    "transactionMetaTitle": "İşlem {txid} - ZELD Gezgini",
+    "transactionMetaDescription": "Bitcoin işlemi {txid} için ZELD bakiyesi ve ödül bilgilerini görüntüle",
+    "rewardEligible": "{count} öncü sıfır - Ödül hakkı var!",
+    "rewardTransaction": "Ödül İşlemi",
+    "rewardsReceived": "Alınan Ödüller",
+    "leadingZerosCount": "Öncü Sıfırlar",
+    "totalUtxoBalance": "Toplam UTXO Bakiyesi",
+    "transactionOutputs": "İşlem Çıktıları",
+    "viewOnMempool": "mempool.space'te görüntüle",
+    "noUtxosInTx": "Bu işlem için UTXO bulunamadı.",
+    "txLoadError": "İşlem verileri yüklenemiyor. Lütfen tekrar deneyin.",
+    "voutShort": "#",
+    "output": "Çıktı"
   }
 }
