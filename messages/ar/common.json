@@ -1,13 +1,13 @@
 {
   "siteTitle": "ZeldHash",
   "siteDescription": "ابحث عن أندر معاملات البيتكوين. اعثر على معرّفات المعاملات التي تبدأ بـ 000000... واربح رموز ZELD. لامركزي بالكامل، بدون توزيع مسبق، بدون رأس مال مخاطر.",
-  "tagline": "بدأ الصيد",
+  "tagline": "انطلق الصيد",
   "logoAlt": "شعار ZeldHash",
   "nav": {
     "hunt": "الصيد",
-    "wallet": "المحفظة",
+    "wallet": "Hunt Wallet",
     "explorer": "المستكشف",
-    "faq": "الأسئلة الشائعة",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "الورقة البيضاء",
     "toggleMenu": "تبديل قائمة التنقل",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "البروتوكول",
     "balances": "الأرصدة",
-    "faq": "الأسئلة الشائعة",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "لامركزي بالكامل. بدون توزيع مسبق. بدون رأس مال مخاطر. فقط الرياضيات."
@@ -34,10 +34,15 @@
   },
   "wallet": {
     "description": "محفظة بيتكوين آمنة في متصفحك. أنشئ وأدر ووقّع المعاملات مباشرة من ZeldHash.",
-    "subtitle": "اصطد وأرسل واستقبل Zeld مباشرة من متصفحك.",
+    "subtitle": "اصطد وأرسل واستقبل ZELD مباشرة من متصفحك.",
     "securityNote": "تشفير AES-256-GCM • معايير BIP32/39/84/86 • مخزنة محلياً في متصفحك",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "هل تحتاج مساعدة؟",
+      "subtitle": "اسأل ZeldAI أي شيء عن المحفظة أو ZeldHash",
+      "askButton": "اسأل ZeldAI"
+    }
   },
   "explorer": {
     "title": "مستكشف ZELD",
@@ -62,7 +67,7 @@
     "totalBalance": "الرصيد الإجمالي",
     "utxo": "UTXO",
     "utxos": "UTXOs",
-    "utxoCount": "{count} UTXO",
+    "utxoCount": "{count, plural, zero {# UTXO} one {# UTXO} two {# UTXO} few {# UTXO} many {# UTXO} other {# UTXO}}",
     "noUtxos": "لم يتم العثور على UTXOs لهذا العنوان.",
     "leadingZeros": "{count}z",
     "tokenLabel": "ZELD",

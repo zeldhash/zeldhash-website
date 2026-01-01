@@ -5,9 +5,9 @@
   "logoAlt": "โลโก้ ZeldHash",
   "nav": {
     "hunt": "ล่า",
-    "wallet": "กระเป๋าเงิน",
+    "wallet": "Hunt Wallet",
     "explorer": "สำรวจ",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "สมุดปกขาว",
     "toggleMenu": "สลับเมนูนำทาง",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "โปรโตคอล",
     "balances": "ยอดคงเหลือ",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "กระจายศูนย์ 100% ไม่มีการขุดล่วงหน้า ไม่มี VC มีแต่คณิตศาสตร์"
@@ -34,14 +34,19 @@
   },
   "wallet": {
     "description": "กระเป๋าเงิน Bitcoin ที่ปลอดภัยในเบราว์เซอร์ของคุณ สร้าง จัดการ และลงนามธุรกรรมโดยตรงจาก ZeldHash",
-    "subtitle": "ล่า ส่ง และรับ Zeld โดยตรงจากเบราว์เซอร์ของคุณ",
+    "subtitle": "ล่า ส่ง และรับ ZELD โดยตรงจากเบราว์เซอร์ของคุณ",
     "securityNote": "การเข้ารหัส AES-256-GCM • มาตรฐาน BIP32/39/84/86 • จัดเก็บในเครื่องในเบราว์เซอร์ของคุณ",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "ต้องการความช่วยเหลือ?",
+      "subtitle": "ถาม ZeldAI เกี่ยวกับกระเป๋าเงินหรือ ZeldHash ได้ทุกเรื่อง",
+      "askButton": "ถาม ZeldAI"
+    }
   },
   "explorer": {
-    "title": "สำรวจ ZELD",
-    "metaTitle": "สำรวจ ZELD - ZeldHash",
+    "title": "ZELD Explorer",
+    "metaTitle": "ZELD Explorer - ZeldHash",
     "metaDescription": "สำรวจรางวัล ZeldHash ล่าสุดและค้นหาที่อยู่ บล็อก หรือธุรกรรม",
     "searchLabel": "ค้นหาใน ZeldHash Explorer",
     "searchPlaceholder": "ป้อนที่อยู่ ดัชนีบล็อก หรือแฮชธุรกรรม",
@@ -57,7 +62,7 @@
     "page": "หน้า",
     "previous": "ก่อนหน้า",
     "next": "ถัดไป",
-    "addressMetaTitle": "ที่อยู่ {address} - สำรวจ ZELD",
+    "addressMetaTitle": "ที่อยู่ {address} - ZELD Explorer",
     "addressMetaDescription": "ดูยอดคงเหลือ ZELD และ UTXOs สำหรับที่อยู่ Bitcoin {address}",
     "totalBalance": "ยอดคงเหลือรวม",
     "utxo": "UTXO",
@@ -86,7 +91,7 @@
     "totalNewUtxos": "UTXOs ใหม่ทั้งหมด",
     "totalUtxosSpent": "UTXOs ที่ใช้แล้วทั้งหมด",
     "transaction": "ธุรกรรม",
-    "transactionMetaTitle": "ธุรกรรม {txid} - สำรวจ ZELD",
+    "transactionMetaTitle": "ธุรกรรม {txid} - ZELD Explorer",
     "transactionMetaDescription": "ดูยอดคงเหลือ ZELD และข้อมูลรางวัลสำหรับธุรกรรม Bitcoin {txid}",
     "rewardEligible": "{count} ศูนย์นำหน้า - มีสิทธิ์ได้รับรางวัล!",
     "rewardTransaction": "ธุรกรรมรางวัล",

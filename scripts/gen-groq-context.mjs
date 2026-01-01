@@ -1,0 +1,212 @@
+import { readFile, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+
+const root = process.cwd();
+const whitepaperPath = path.join(root, 'docs', 'zeldhash-whitepaper-en.typ');
+const faqPath = path.join(root, 'messages', 'en', 'faq.json');
+const outputPath = path.join(root, 'src', 'lib', 'faq-context.ts');
+
+/**
+ * Parse Typst whitepaper and extract clean text content
+ */
+function parseWhitepaper(content) {
+  const lines = content.split('\n');
+  const output = [];
+  let skipUntilClosingBracket = 0;
+  
+  for (let i = 0; i < lines.length; i++) {
+    let line = lines[i];
+    
+    // Skip #set and #show blocks (can be multi-line)
+    if (/^#set\s+(document|page|par|heading)\(/.test(line)) {
+      skipUntilClosingBracket += (line.match(/\(/g) || []).length;
+      skipUntilClosingBracket -= (line.match(/\)/g) || []).length;
+      continue;
+    }
+    if (/^#show\s+heading:/.test(line)) {
+      skipUntilClosingBracket += (line.match(/\[/g) || []).length;
+      skipUntilClosingBracket -= (line.match(/\]/g) || []).length;
+      continue;
+    }
+    
+    // Handle continuation of skipped blocks
+    if (skipUntilClosingBracket > 0) {
+      skipUntilClosingBracket += (line.match(/[\(\[]/g) || []).length;
+      skipUntilClosingBracket -= (line.match(/[\)\]]/g) || []).length;
+      continue;
+    }
+    
+    // Skip #v() vertical spacing
+    if (/^#v\([^)]+\)\s*$/.test(line)) continue;
+    
+    // Handle #align(center) with #text - extract content
+    const alignTextMatch = line.match(/#align\(center\)\[\s*#text\([^)]+\)\[([^\]]+)\]\s*\]/);
+    if (alignTextMatch) {
+      output.push(alignTextMatch[1].replace(/^\*|\*$/g, ''));
+      continue;
+    }
+    
+    // Skip standalone #align lines
+    if (/^#align\(center\)\[/.test(line)) continue;
+    
+    // Skip closing brackets on their own line
+    if (/^\s*\]\s*$/.test(line)) continue;
+    
+    // Extract content from #text() directives
+    line = line.replace(/#text\([^)]+\)\[([^\]]+)\]/g, '$1');
+    
+    // Clean #strong[]
+    line = line.replace(/#strong\[([^\]]+)\]/g, '$1');
+    
+    // Convert Typst headings to markdown
+    line = line.replace(/^====\s+(.+)$/, '#### $1');
+    line = line.replace(/^===\s+(.+)$/, '#### $1');
+    line = line.replace(/^==\s+(.+)$/, '### $1');
+    line = line.replace(/^=\s+(.+)$/, '## $1');
+    
+    // Clean up code block markers
+    line = line.replace(/^```$/, '');
+    
+    // Clean trailing ] from lines
+    line = line.replace(/\]\s*$/, '');
+    
+    // Clean Typst bold markers
+    line = line.replace(/^\*([^*]+)\*$/, '$1');
+    
+    output.push(line);
+  }
+  
+  // Join and clean up
+  let text = output.join('\n');
+  
+  // Remove leading spaces from lines (indentation artifacts)
+  text = text.replace(/^  +/gm, '');
+  
+  // Clean up code blocks - remove ``` markers and keep content
+  text = text.replace(/```\s*\n([^`]+)\n\s*```/g, '$1');
+  
+  // Remove multiple consecutive newlines
+  text = text.replace(/\n{3,}/g, '\n\n');
+  text = text.trim();
+  
+  return text;
+}
+
+/**
+ * Extract FAQ Q&A pairs from the JSON structure
+ */
+function extractFaqPairs(faq) {
+  const pairs = [];
+  
+  // Protocol questions (flat structure)
+  if (faq.protocol) {
+    for (const [key, item] of Object.entries(faq.protocol)) {
+      if (item.q && (item.a || item.a1)) {
+        const answer = item.a || [item.a1, item.a2, item.a3, item.a4, item.a5, item.a6]
+          .filter(Boolean)
+          .join(' ');
+        // Clean answer from HTML-like tags
+        const cleanAnswer = answer.replace(/<[^>]+>([^<]+)<\/[^>]+>/g, '$1');
+        pairs.push({ q: item.q, a: cleanAnswer });
+      }
+    }
+  }
+  
+  // Wallet questions (nested structure)
+  if (faq.wallet) {
+    for (const [section, items] of Object.entries(faq.wallet)) {
+      if (typeof items === 'object' && items !== null) {
+        for (const [key, item] of Object.entries(items)) {
+          if (key === 'title') continue;
+          if (item && item.q && (item.a || item.a1)) {
+            const answer = item.a || [item.a1, item.a2, item.a3, item.a4, item.a5, item.a6]
+              .filter(Boolean)
+              .join(' ');
+            const cleanAnswer = answer.replace(/<[^>]+>([^<]+)<\/[^>]+>/g, '$1');
+            pairs.push({ q: item.q, a: cleanAnswer });
+          }
+        }
+      }
+    }
+  }
+  
+  return pairs;
+}
+
+/**
+ * Escape special characters for template literals
+ */
+function escapeForTemplateLiteral(text) {
+  return text
+    .replace(/\\/g, '\\\\')  // Escape backslashes first
+    .replace(/`/g, '\\`')    // Escape backticks
+    .replace(/\$/g, '\\$');  // Escape dollar signs (template expressions)
+}
+
+/**
+ * Generate the TypeScript context file
+ */
+function generateContext(whitepaper, faqPairs) {
+  const faqText = faqPairs
+    .map(({ q, a }) => `Q: ${q}\nA: ${a}`)
+    .join('\n\n');
+
+  // Escape content for safe insertion in template literal
+  const safeWhitepaper = escapeForTemplateLiteral(whitepaper);
+  const safeFaqText = escapeForTemplateLiteral(faqText);
+
+  return `// Auto-generated by scripts/gen-groq-context.mjs
+// Do not edit manually. Run "npm run gen-groq-context" to regenerate.
+
+export const FAQ_CONTEXT = \`
+You are the helpful assistant for ZeldHash, a protocol that rewards Bitcoin users who discover or create transactions with rare hash patterns.
+
+## INSTRUCTIONS
+- ALWAYS respond in the same language as the user's question
+- Use the WHITEPAPER and FAQ below as your primary sources for questions about ZeldHash
+- For general blockchain/crypto questions (UTXO, mining, wallets, hashes, etc.), use your knowledge
+- Be concise but complete
+- If you don't know something specific about ZeldHash, say so honestly
+- Keep responses focused and under 200 words when possible
+- Use a friendly, knowledgeable tone
+
+## WHITEPAPER
+
+${safeWhitepaper}
+
+## FAQ
+
+${safeFaqText}
+
+## END OF KNOWLEDGE BASE
+\`;
+`;
+}
+
+async function main() {
+  console.log('Generating Groq context...');
+  
+  // Read whitepaper
+  const whitepaperRaw = await readFile(whitepaperPath, 'utf8');
+  const whitepaper = parseWhitepaper(whitepaperRaw);
+  console.log(`  ✓ Read whitepaper (${whitepaper.length} chars)`);
+  
+  // Read FAQ
+  const faqRaw = await readFile(faqPath, 'utf8');
+  const faq = JSON.parse(faqRaw);
+  const faqPairs = extractFaqPairs(faq);
+  console.log(`  ✓ Extracted ${faqPairs.length} FAQ pairs`);
+  
+  // Generate output
+  const output = generateContext(whitepaper, faqPairs);
+  await writeFile(outputPath, output, 'utf8');
+  console.log(`  ✓ Written to ${path.relative(root, outputPath)}`);
+  
+  console.log('Done!');
+}
+
+main().catch((err) => {
+  console.error('Error generating Groq context:', err);
+  process.exit(1);
+});
+

@@ -1,62 +1,178 @@
 {
   "meta": {
-    "title": "ZeldHash FAQ",
-    "description": "Odpovědi na otázky o lovu bitcoinových transakcí se vzácnými vzory hashů."
+    "title": "Často kladené otázky ZeldHash",
+    "description": "Odpovědi o lovu bitcoinových transakcí se vzácnými vzory hashů."
   },
   "badge": "FAQ",
-  "heading": "ZeldHash FAQ",
+  "heading": "Často kladené otázky",
   "intro": "Vše, co potřebujete vědět o lovu bitcoinových transakcí se vzácnými vzory hashů.",
-  "huntIsOn": "Lov začíná.",
-  "items": {
+  "huntIsOn": "Lov začal.",
+  "categories": {
+    "protocol": "Protokol",
+    "wallet": "Peněženka"
+  },
+  "protocol": {
+    "howToGetZeld": {
+      "q": "Jak získat ZELD?",
+      "a": "Nejjednodušší způsob je použít ZeldWallet přímo na <site>zeldhash.com</site> — je to peněženka v prohlížeči, která vám umožní lovit vzácné transakce bez jakéhokoliv nastavení. Stačí vytvořit nebo připojit peněženku a začít těžit. Pro vývojáře, kteří chtějí vytvořit vlastní řešení pro ražbu, poskytujeme open-source SDK v Rust, TypeScript a Python na <github>GitHub</github>."
+    },
     "whatIsZeldHash": {
       "q": "Co je ZeldHash?",
-      "a": "ZeldHash je protokol, který odměňuje uživatele Bitcoinu, kteří objeví nebo vytvoří transakce se vzácnými vzory hashů — konkrétně hashe, které začínají více nulami. Představte si to jako hledání pokladu na bitcoinovém blockchainu."
+      "a": "ZeldHash je protokol, který odměňuje uživatele Bitcoinu, kteří objeví nebo vytvoří transakce se vzácnými vzory hashů — konkrétně hashe začínající několika nulami. Představte si to jako hon za pokladem na blockchainu Bitcoinu."
     },
     "whyName": {
       "q": "Proč název \"ZeldHash\"?",
-      "a1": "\"Zeld\" pochází z nizozemského slova zeldzaam, což znamená \"vzácný\". Je to vhodné jméno pro protokol zaměřený na lov nejvzácnějších transakcí na bitcoinovém blockchainu. Část \"hash\" odkazuje na kryptografický otisk, který činí každou transakci jedinečnou.",
-      "a2": "Takže ZeldHash doslova znamená \"Vzácný Hash\" — přesně to, co lovíme."
+      "a1": "\"Zeld\" pochází z nizozemského slova zeldzaam, které znamená \"vzácný\". Je to vhodný název pro protokol věnovaný lovu nejvzácnějších transakcí na blockchainu Bitcoinu. Část \"hash\" odkazuje na kryptografický otisk, který činí každou transakci jedinečnou.",
+      "a2": "ZeldHash tedy doslova znamená \"Vzácný hash\" — přesně to, co lovíme."
     },
     "whatIsHash": {
       "q": "Co je hash?",
-      "a1": "Hash je jako digitální otisk. Je to jedinečný identifikátor generovaný z jakýchkoli dat — ať už jde o obrázek, dokument nebo bitcoinovou transakci. Každý hash je řetězec 64 hexadecimálních znaků.",
+      "a1": "Hash je jako digitální otisk prstu. Je to jedinečný identifikátor generovaný z jakýchkoli dat — ať už jde o obrázek, dokument nebo bitcoinovou transakci. Každý hash je řetězec 64 hexadecimálních znaků.",
       "a2": "Příklady hashů můžete vidět na <mempool>mempool.space</mempool>."
     },
     "bitcoinRelation": {
       "q": "Jak to souvisí s Bitcoinem?",
-      "a": "Každý bitcoinový blok má hash a každá transakce v bloku má svůj vlastní hash nazývaný ID transakce (txid). Pokud jste se dívali na hashe bloků, možná jste si všimli, že začínají mnoha nulami. To je výsledek těžby: těžaři opakovaně počítají hashe, dokud nenajdou takový s dostatečným počtem úvodních nul."
+      "a": "Každý bitcoinový blok má hash a každá transakce uvnitř bloku má svůj vlastní hash nazývaný ID transakce (txid). Pokud jste se dívali na hashe bloků, možná jste si všimli, že začínají mnoha nulami. To je výsledek těžby: těžaři opakovaně počítají hashe, dokud nenajdou jeden s dostatkem úvodních nul."
     },
     "rareTxHash": {
-      "q": "Co dělá hash transakce \"vzácným\"?",
-      "a": "Na rozdíl od hashů bloků jsou hashe transakcí v podstatě náhodné — mohou začínat jakýmkoli znakem. Hash transakce začínající více nulami je statisticky vzácný, jako najít čtyřlístek. Čím více úvodních nul, tím vzácnější transakce."
+      "q": "Co činí hash transakce \"vzácným\"?",
+      "a": "Na rozdíl od hashů bloků jsou hashe transakcí v podstatě náhodné — mohou začínat jakýmkoli znakem. Hash transakce začínající několika nulami je statisticky vzácný, jako najít čtyřlístek. Čím více úvodních nul, tím vzácnější transakce."
     },
     "huntHow": {
       "q": "Jak lovím vzácné transakce?",
-      "a": "Stejně jako těžaři. Přidáte náhodná data do své transakce a počítáte hashe, dokud nenajdete takový, který začíná nulami. Může to trvat mnoho pokusů, ale když uspějete, objevili jste něco vzácného."
+      "a": "Stejně jako těžaři. Přidáte náhodná data do své transakce a počítáte hashe, dokud nenajdete jeden začínající nulami. Může to trvat mnoho pokusů, ale když uspějete, objevili jste něco vzácného."
     },
     "whatIsZeld": {
       "q": "Co je ZELD?",
-      "a": "ZELD je token, který získáte, když najdete nebo vytvoříte bitcoinovou transakci s hashem začínajícím alespoň 6 nulami. Čím vzácnější nález (více nul), tím více ZELD získáte."
+      "a": "ZELD je token, který získáte, když najdete nebo vytvoříte bitcoinovou transakci s hashem začínajícím alespoň 6 nulami. Čím vzácnější váš nález (více nul), tím více ZELD získáte."
     },
     "inCirculation": {
-      "q": "Existují už tokeny ZELD v oběhu?",
-      "a": "Ano. Od spuštění Bitcoinu v roce 2009 mnoho transakcí náhodně skončilo s hashy začínajícími 6+ nulami. Tyto náhodné poklady již lze nárokovat. Někteří lovci je také záměrně vytvářejí."
+      "q": "Jsou již ZELD tokeny v oběhu?",
+      "a": "Ano. Od spuštění Bitcoinu v roce 2009 mnoho transakcí náhodně skončilo s hashi začínajícími 6+ nulami. Tyto náhodné poklady již lze nárokovat. Někteří lovci je také vytvářejí záměrně."
     },
     "ownWithoutKnowing": {
       "q": "Vlastní někteří lidé ZELD, aniž by o tom věděli?",
-      "a": "Rozhodně. Tisíce uživatelů Bitcoinu nevědomky vlastní vzácné transakce. Jejich ZELD čeká na vyzvednutí."
+      "a": "Rozhodně. Tisíce uživatelů Bitcoinu nevědomky vlastní vzácné transakce. Jejich ZELD čeká na nárokování."
     },
     "centralized": {
       "q": "Je ZeldHash centralizovaný? Kdo ho ovládá?",
-      "a": "Nikdo. ZeldHash je plně decentralizovaný, stejně jako Bitcoin. Tokeny ZELD lze převádět jako jakékoli bitcoinové aktivum. Neexistuje žádná centrální autorita."
+      "a": "Nikdo. ZeldHash je plně decentralizovaný, stejně jako Bitcoin. ZELD tokeny lze převádět jako jakékoli bitcoinové aktivum. Neexistuje žádná centrální autorita."
     },
     "rewards": {
       "q": "Jak funguje systém odměn?",
-      "a": "Protokol odměňuje vzácnost. Transakce se 6 úvodními nulami získává ZELD a více nul znamená větší odměny. Jak se přidává více lovců, konkurence roste — ale pro ty, kdo vytrvají, vždy něco k nalezení je."
+      "a": "Protokol odměňuje vzácnost. Transakce se 6 úvodními nulami získá ZELD a více nul znamená větší odměny. Jak se přidává více lovců, konkurence roste — ale vždy je co najít pro ty, kdo hledají dál."
     },
     "startHunting": {
       "q": "Jak začnu lovit?",
-      "a": "Navštivte <site>zeldhash.com</site> a začněte svou výpravu. Každá transakce je šancí objevit něco vzácného."
+      "a": "Navštivte <site>zeldhash.com</site> a začněte své hledání. Každá transakce je šance odhalit něco vzácného."
     }
+  },
+  "wallet": {
+    "general": {
+      "title": "Obecné",
+      "security": {
+        "q": "Jsou mé kryptoměny v této peněžence skutečně bezpečné? Kde jsou uloženy mé soukromé klíče?",
+        "a": "Ano, vaše prostředky jsou tak bezpečné jako bezpečnost vašeho prohlížeče. ZeldWallet ukládá vaše soukromé klíče lokálně v IndexedDB prohlížeče, šifrované pomocí AES-256-GCM. Pokud nastavíte heslo, vaše klíče jsou chráněny pomocí odvození klíče PBKDF2, což je činí extrémně obtížnými k prolomení. Vaše soukromé klíče nikdy neopustí vaše zařízení a nikdy nejsou odeslány na žádný server. Vždy si však vytvořte zálohu své mnemotechnické fráze — pokud ztratíte přístup k prohlížeči nebo zařízení bez zálohy, vaše prostředky budou navždy ztraceny."
+      },
+      "addressDifference": {
+        "q": "Jaký je rozdíl mezi \"Platební\" adresou a \"Ordinals\" adresou?",
+        "a": "Platební adresa se používá pro běžné bitcoinové transakce — odesílání a přijímání BTC. Ordinals adresa (Taproot adresa) je místo, kam přijímáte ZELD tokeny při úspěšném ulovení vzácné transakce. ZELD tokeny jsou připojeny k prvnímu výstupu transakce, který je vždy odeslán na vaši Ordinals adresu."
+      },
+      "twoAddresses": {
+        "q": "Proč mám dvě různé bitcoinové adresy?",
+        "a": "To odpovídá osvědčeným postupům Bitcoinu pro oddělení různých typů aktiv. Platební adresa zpracovává vaše BTC pro platbu transakčních poplatků, zatímco Ordinals adresa přijímá a drží vaše ZELD tokeny. Toto oddělení brání náhodnému utracení UTXO obsahujících ZELD při provádění běžných BTC plateb."
+      },
+      "mobile": {
+        "q": "Mohu používat ZeldWallet na telefonu?",
+        "a": "Ano, ZeldWallet funguje v jakémkoli moderním mobilním prohlížeči. Výkon těžby na mobilních zařízeních je však výrazně nižší než na stolních počítačích kvůli omezenému výkonu CPU a absenci akcelerace GPU. Pro seriózní lov se doporučuje stolní nebo přenosný počítač."
+      }
+    },
+    "hunting": {
+      "title": "Ražba / Lov",
+      "gpuVsCpu": {
+        "q": "Jaký je rozdíl mezi těžbou s GPU nebo bez něj? Poškodí to můj počítač?",
+        "a": "Těžba GPU využívá technologii WebGPU k využití vaší grafické karty pro mnohem rychlejší výpočty hashů — obvykle 10-100x rychlejší než těžba pouze CPU. Těžba CPU používá Web Workers a je pomalejší, ale funguje na všech zařízeních. Ani jedna nepoškodí váš počítač. Moderní hardware je navržen pro trvalé zatížení. Váš prohlížeč zodpovědně spravuje zdroje a těžbu můžete kdykoli zastavit."
+      },
+      "miningTime": {
+        "q": "Jak dlouho trvá vytěžit ZELD?",
+        "a": "Záleží na vašem hardware a štěstí. Nalezení hash transakce se 6 úvodními nulami má přibližně šanci 1 ku 16 milionům na pokus. S moderním GPU dosahujícím milionů hashů za sekundu to může trvat minuty až hodiny. Pouze s CPU to může trvat hodiny až dny. Je zde také náhodnost — můžete mít štěstí rychle nebo to může trvat déle než průměr."
+      },
+      "keepRunning": {
+        "q": "Musím nechat počítač běžet během těžby?",
+        "a": "Ano. Těžba probíhá ve vašem prohlížeči, takže karta musí zůstat otevřená a aktivní. Pokud zavřete prohlížeč nebo přejdete jinam, těžba se zastaví. Váš pokrok (zpracované hashe) se neukládá — při obnovení začnete znovu. Pokud však zastavíte uprostřed těžby, žádné prostředky nejsou v ohrožení; transakce je odeslána pouze po nalezení platného hashe a podepsání."
+      }
+    },
+    "transactions": {
+      "title": "Transakce a poplatky",
+      "feeSelection": {
+        "q": "Jak vybrat transakční poplatky? Jaký je rozdíl mezi \"Pomalý\", \"Střední\" a \"Rychlý\"?",
+        "a1": "ZeldWallet získává doporučení poplatků v reálném čase z mempool.space:",
+        "a2": "Pomalý: Nižší poplatek, potvrzení může trvat 1+ hodiny. Střední: Vyvážený poplatek, obvykle potvrzeno do 30-60 minut. Rychlý: Vyšší poplatek, obvykle potvrzeno v dalších 1-2 blocích (~10-20 minut).",
+        "a3": "Můžete také nastavit vlastní sazbu poplatku v sats/vB. Vyšší poplatky znamenají rychlejší potvrzení, ale stojí více BTC."
+      },
+      "minimumBtc": {
+        "q": "Proč musím mít minimální množství BTC pro zahájení těžby?",
+        "a1": "Každá bitcoinová transakce vyžaduje poplatek a každý výstup potřebuje minimální hodnotu (nazývanou \"prachový limit\"). ZeldWallet vyžaduje přibližně 2 000+ satů k pokrytí:",
+        "a2": "330 satů pro prachovou částku pro ZELD výstup na vaši Ordinals adresu a ~1 500+ satů pro transakční poplatek v závislosti na aktuálních síťových podmínkách.",
+        "a3": "Bez dostatečného množství BTC nemůžete vytvořit platnou transakci."
+      },
+      "sendZeld": {
+        "q": "Jak pošlu ZELD někomu jinému?",
+        "a": "V ZeldWallet přejděte do sekce Lov a zaškrtněte \"Odeslat ZELD\". Zadejte bitcoinovou adresu příjemce a množství ZELD, které chcete odeslat. Převod bude zahrnut do vaší další lovecké transakce — váš ZELD bude odeslán, když bude nalezen vzácný hash a transakce bude odeslána."
+      },
+      "balanceIncreased": {
+        "q": "Právě jsem poslal ZELD, ale můj zůstatek se zvýšil!?",
+        "a": "To je normální — a skvělá zpráva! Když posíláte ZELD přes ZeldWallet, neděláte jen převod, ale také lovíte vzácný hash transakce. Pokud transakce, kterou odešlete, má 6 nebo více úvodních nul, získáte odměnu ZELD (až 4 096 ZELD za nejvzácnější nálezy). Takže pokud jste poslali 100 ZELD, ale obdrželi 256 ZELD odměnu, váš čistý zůstatek ve skutečnosti vzrostl o 156 ZELD. Každá transakce je příležitost vydělat!"
+      },
+      "closeBrowser": {
+        "q": "Co se stane, když zavřu prohlížeč během transakce?",
+        "a1": "Pokud zavřete během těžby: Nic se neztratí. Těžba se jen zastaví a můžete později pokračovat.",
+        "a2": "Pokud zavřete během podepisování/odesílání: Pokud byla transakce již podepsána a odeslána do sítě, potvrdí se normálně. Pokud ještě nebyla odeslána, nic nebylo odesláno a budete muset těžit znovu."
+      }
+    },
+    "security": {
+      "title": "Bezpečnost a zálohování",
+      "backupImportance": {
+        "q": "Co je záloha a proč je tak důležité ji vytvořit?",
+        "a": "Záloha je vaše 12- nebo 24slovná mnemotechnická fráze (seed fráze). Tato fráze může regenerovat všechny vaše soukromé klíče a obnovit celou peněženku na jakémkoli zařízení nebo kompatibilní aplikaci peněženky. Bez této zálohy, pokud ztratíte přístup k prohlížeči (smazaná data, nové zařízení, pád prohlížeče), vaše prostředky jsou trvale ztraceny. Zapište ji na papír a bezpečně uložte — nikdy ji neukládejte digitálně ani s nikým nesdílejte."
+      },
+      "forgotPassword": {
+        "q": "Pokud zapomenu heslo, ztratím vše?",
+        "a": "Ne, pokud máte záložní mnemotechnickou frázi. Můžete vymazat úložiště ZeldWallet a obnovit peněženku pomocí mnemotechnické fráze. Heslo chrání pouze místní šifrované úložiště — není spojeno s blockchainem. Pokud však zapomenete heslo A nemáte zálohu mnemotechnické fráze, pak ano, vaše prostředky jsou ztraceny."
+      },
+      "mnemonicPhrase": {
+        "q": "Co je \"mnemotechnická fráze\" a mohu obnovit peněženku z jiné aplikace?",
+        "a": "Mnemotechnická fráze (také nazývaná seed fráze nebo obnovovací fráze) je seznam 12 nebo 24 slov, který představuje váš hlavní soukromý klíč podle standardu BIP39. Ano, můžete obnovit mnemotechnickou frázi ZeldWallet v jiných kompatibilních peněženkách jako Xverse, Leather, Sparrow nebo jakékoli peněžence kompatibilní s BIP39/BIP84/BIP86. Váš Bitcoin a ZELD se objeví na stejných adresách."
+      },
+      "lostDevice": {
+        "q": "Může někdo získat přístup k mé peněžence, pokud ztratím počítač?",
+        "a": "Záleží na vašem nastavení zabezpečení. Pokud jste nastavili silné heslo, útočník by musel prolomit šifrování (velmi obtížné s dobrým heslem). Bez hesla by někdo s přístupem k datům vašeho prohlížeče mohl potenciálně přistupovat k vaší peněžence. Pro maximální bezpečnost: vždy používejte silné heslo, a pokud je vaše zařízení ztraceno/ukradeno, obnovte peněženku jinde pomocí mnemotechnické fráze a okamžitě převeďte prostředky."
+      }
+    },
+    "external": {
+      "title": "Externí peněženky",
+      "connectExternal": {
+        "q": "Mohu připojit svou peněženku Xverse nebo Leather místo vytvoření nového účtu?",
+        "a": "Ano! ZeldWallet podporuje připojení externích peněženek včetně Xverse, Leather a Magic Eden. Klikněte na \"Připojit peněženku\" a vyberte nainstalovanou peněženku. Rozšíření vaší peněženky vás vyzve ke schválení připojení. To vám umožní lovit ZELD pomocí adres vaší stávající peněženky bez odhalení soukromých klíčů ZeldWallet."
+      },
+      "externalVsDirect": {
+        "q": "Jaký je rozdíl mezi používáním ZeldWallet přímo nebo přes externí peněženku jako Xverse?",
+        "a1": "Úložiště klíčů: ZeldWallet Direct ukládá šifrované klíče v prohlížeči, Externí peněženka ukládá klíče v rozšíření/hardwaru.",
+        "a2": "Nastavení: ZeldWallet Direct vyžaduje vytvoření nebo obnovení v prohlížeči, Externí peněženka pouze připojí existující peněženku.",
+        "a3": "Podepisování: ZeldWallet Direct podepisuje automaticky po odemčení, Externí peněženka zobrazuje schvalovací vyskakovací okno pro každou akci.",
+        "a4": "Přenositelnost: ZeldWallet Direct je vázán na prohlížeč/zařízení, Externí peněženka funguje napříč weby.",
+        "a5": "Hardwarová peněženka: Nepodporováno v ZeldWallet Direct, Podporováno přes rozšíření v Externí peněžence.",
+        "a6": "Použijte externí peněženku, pokud chcete podporu hardwarové peněženky, již tam máte prostředky nebo preferujete uchovávat klíče ve vyhrazeném rozšíření. Pro jednodušší komplexní zážitek použijte ZeldWallet přímo."
+      }
+    }
+  },
+  "ama": {
+    "aiPowered": "AI asistent",
+    "placeholder": "Zeptejte se na ZeldHash...",
+    "submit": "Odeslat",
+    "helperText": "Otázky o ZeldHash, ZELD tokenech, vzácných transakcích nebo konceptech blockchainu.",
+    "genericError": "Došlo k chybě. Zkuste to prosím znovu.",
+    "connectionError": "Chyba připojení. Zkontrolujte připojení k internetu.",
+    "aiResponse": "Odpověď AI"
   }
 }

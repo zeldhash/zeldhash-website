@@ -1,15 +1,15 @@
 {
   "meta": {
     "title": "ZeldHash - Caça às transações raras de Bitcoin",
-    "description": "Caça às transações de Bitcoin mais raras. Encontra txids que começam com 000000... e ganha tokens ZELD."
+    "description": "Caça às transações de Bitcoin mais raras. Encontre txids que começam com 000000... e ganhe tokens ZELD."
   },
   "hero": {
     "titleLine1": "Caça às",
     "titleLine2": "transações mais raras de Bitcoin",
     "subtitleBeforeZeros": "Algumas transações de Bitcoin são extremamente raras — o seu ID começa com",
-    "subtitleAfterZeros": "Encontra-as e ganha tokens {token}.",
-    "ctaBox": "⚡ Milhares possuem ZELD sem saber. E tu?",
-    "addressPlaceholder": "Introduz o teu endereço Bitcoin...",
+    "subtitleAfterZeros": "Encontre-as e ganhe tokens {token}.",
+    "ctaBox": "⚡ Milhares possuem ZELD sem saber. E você?",
+    "addressPlaceholder": "Introduza o seu endereço Bitcoin...",
     "checkBalance": "Verificar saldo"
   },
   "stats": {
@@ -37,13 +37,13 @@
       {
         "num": "03",
         "title": "Caça ou descobre",
-        "desc": "Minera novas transações raras com as nossas ferramentas, ou verifica se as tuas transações antigas já são raras.",
+        "desc": "Mine novas transações raras com as nossas ferramentas, ou verifique se as suas transações antigas já são raras.",
         "icon": "🎯"
       },
       {
         "num": "04",
-        "title": "Ganha ZELD",
-        "desc": "As transações raras geram tokens ZELD. Transfere-os como Bitcoin. Sem intermediários.",
+        "title": "Ganhe ZELD",
+        "desc": "As transações raras geram tokens ZELD. Transfira-os como Bitcoin. Sem intermediários.",
         "icon": "🏆"
       }
     ]
@@ -55,11 +55,11 @@
     "oldHeader": "Mineração de blocos de Bitcoin",
     "newHeader": "Mineração de transações ZELD",
     "rows": [
-      ["$500K - $10M em hardware", "O teu portátil"],
+      ["$500K - $10M em hardware", "O seu portátil"],
       ["Contas de eletricidade enormes", "Quase nada"],
       ["1 vencedor por bloco", "Todos podem ganhar"],
       ["Controlado por pools de mineração", "100% descentralizado"],
-      ["Competir contra gigantes", "Compete contigo mesmo"]
+      ["Competir contra gigantes", "Compita consigo mesmo"]
     ]
   },
   "hallOfFame": {
@@ -70,8 +70,8 @@
     "tokenLabel": "ZELD"
   },
   "cta": {
-    "title": "Começa a tua caça",
-    "subtitle": "Verifica o teu saldo atual ou começa a caçar no teu navegador.",
+    "title": "Comece a sua caça",
+    "subtitle": "Verifique o seu saldo atual ou comece a caçar no seu navegador.",
     "checkBalance": "Verificar saldo",
     "startHunting": "Começar a caçar"
   }

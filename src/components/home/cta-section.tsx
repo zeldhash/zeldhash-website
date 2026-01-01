@@ -14,7 +14,7 @@ export async function CTASection() {
           {t("cta.subtitle")}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button as="link" href="/balances" size="lg">
+          <Button as="link" href="/explorer" size="lg">
             {t("cta.checkBalance")}
           </Button>
           <Button

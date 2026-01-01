@@ -1,3 +1,4 @@
+import {Suspense} from "react";
 import {Section, SectionTitle} from "@/components/ui";
 import {ExplorerHeader} from "@/components/explorer/explorer-header";
 import {fetchLatestRewards, type RewardEntry} from "@/lib/zeldhash-api-client";
@@ -189,7 +190,9 @@ export default async function ExplorerPage({params, searchParams}: Props) {
 
   return (
     <div className="w-full">
-      <ExplorerHeader />
+      <Suspense fallback={null}>
+        <ExplorerHeader />
+      </Suspense>
 
       <Section className="pt-12 pb-12">
         <SectionTitle title={t("explorer.latestRewards")} className="mb-10" />

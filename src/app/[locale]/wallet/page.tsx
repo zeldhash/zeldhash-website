@@ -1,5 +1,5 @@
 import {Section} from '@/components/ui';
-import {ZeldWalletWrapper} from '@/components/wallet';
+import {ZeldWalletWrapper, AskZeldAIBlock} from '@/components/wallet';
 import {getTranslations} from 'next-intl/server';
 import {locales, type Locale} from '@/lib/i18n/routing';
 import {notFound} from 'next/navigation';
@@ -52,9 +52,10 @@ export default async function WalletPage({params}: Props) {
         {/* Wallet Card */}
         <div className="max-w-[720px] mx-auto">
           <ZeldWalletWrapper key={locale} locale={locale} />
+          
+          {/* Ask ZeldAI Block */}
+          <AskZeldAIBlock />
         </div>
-
-        
       </Section>
     </div>
   );

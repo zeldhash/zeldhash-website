@@ -1,12 +1,31 @@
 "use client";
 
 import { useState } from "react";
-import { Badge, Button } from "@/components/ui";
+import { useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
+import { Button } from "@/components/ui";
 import { useTranslations } from "next-intl";
 
 export function HeroSection() {
   const [address, setAddress] = useState("");
   const t = useTranslations("home");
+  const router = useRouter();
+  const locale = useLocale();
+
+  const handleCheckBalance = () => {
+    const trimmed = address.trim();
+    if (trimmed) {
+      router.push(`/${locale}/explorer?q=${encodeURIComponent(trimmed)}`);
+    } else {
+      router.push(`/${locale}/explorer`);
+    }
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      handleCheckBalance();
+    }
+  };
 
   return (
     <section className="w-full px-6 md:px-12 pt-16 pb-20">
@@ -36,9 +55,10 @@ export function HeroSection() {
               placeholder={t("hero.addressPlaceholder")}
               value={address}
               onChange={(e) => setAddress(e.target.value)}
+              onKeyDown={handleKeyDown}
               className="w-full md:flex-1 px-5 py-4 text-[15px] font-mono bg-black/40 border border-gold-400/20 rounded-lg text-dark-100 focus:border-gold-400/50 transition-colors"
             />
-            <Button as="link" href="/balances" size="lg" className="w-full md:w-auto">
+            <Button type="button" onClick={handleCheckBalance} size="lg" className="w-full md:w-auto">
               {t("hero.checkBalance")}
             </Button>
           </div>

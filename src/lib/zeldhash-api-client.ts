@@ -116,6 +116,52 @@ function isBlockDetails(data: unknown): data is BlockDetails {
   );
 }
 
+function isCumulStats(data: unknown): data is CumulStats {
+  if (!data || typeof data !== "object") return false;
+  const candidate = data as Record<string, unknown>;
+
+  return (
+    typeof candidate.block_count === "number" &&
+    typeof candidate.block_index === "number" &&
+    typeof candidate.max_zero_count === "number" &&
+    typeof candidate.new_utxo_count === "number" &&
+    typeof candidate.nicest_txid === "string" &&
+    typeof candidate.reward_count === "number" &&
+    typeof candidate.total_reward === "number" &&
+    typeof candidate.utxo_spent_count === "number"
+  );
+}
+
+/**
+ * Fetches the latest cumulative stats from /blocks endpoint.
+ */
+export async function fetchCumulStats(): Promise<CumulStats> {
+  const baseUrl = getApiBaseUrl();
+  const url = new URL("blocks", baseUrl);
+
+  const response = await fetch(url.toString(), {
+    next: {revalidate: 60},
+    headers: {
+      Accept: "application/json",
+    },
+  });
+
+  if (response.status === 404) {
+    throw new Error("No stats available yet");
+  }
+
+  if (!response.ok) {
+    throw new Error(`ZeldHash API returned ${response.status} for ${url.pathname}`);
+  }
+
+  const data = await response.json();
+  if (!isCumulStats(data)) {
+    throw new Error("Unexpected ZeldHash cumul stats payload");
+  }
+
+  return data;
+}
+
 export async function fetchBlockDetails(blockIndex: number): Promise<BlockDetails> {
   const baseUrl = getApiBaseUrl();
   const url = new URL(`blocks/${blockIndex}`, baseUrl);
@@ -147,7 +193,13 @@ export async function fetchBlockDetails(blockIndex: number): Promise<BlockDetail
   return data;
 }
 
-export async function fetchLatestRewards(limit = 5, offset = 0): Promise<RewardEntry[]> {
+export type RewardSortMode = "block_index" | "zero_count";
+
+export async function fetchLatestRewards(
+  limit = 5,
+  offset = 0,
+  sort?: RewardSortMode
+): Promise<RewardEntry[]> {
   const baseUrl = getApiBaseUrl();
   const url = new URL("rewards", baseUrl);
 
@@ -156,6 +208,7 @@ export async function fetchLatestRewards(limit = 5, offset = 0): Promise<RewardE
 
   url.searchParams.set("limit", String(safeLimit));
   if (safeOffset > 0) url.searchParams.set("offset", String(safeOffset));
+  if (sort) url.searchParams.set("sort", sort);
 
   const response = await fetch(url.toString(), {
     next: {revalidate: 300},

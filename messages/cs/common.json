@@ -5,9 +5,9 @@
   "logoAlt": "Logo ZeldHash",
   "nav": {
     "hunt": "Lov",
-    "wallet": "Peněženka",
+    "wallet": "Hunt Wallet",
     "explorer": "Průzkumník",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "Bílá kniha",
     "toggleMenu": "Přepnout navigační menu",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "Protokol",
     "balances": "Zůstatky",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "100% decentralizováno. Bez předtěžby. Bez VC. Jen matematika."
@@ -34,10 +34,15 @@
   },
   "wallet": {
     "description": "Bezpečná bitcoinová peněženka ve vašem prohlížeči. Vytvářejte, spravujte a podepisujte transakce přímo ze ZeldHash.",
-    "subtitle": "Lovte, posílejte a přijímejte Zeld přímo z vašeho prohlížeče.",
+    "subtitle": "Lovte, posílejte a přijímejte ZELD přímo z vašeho prohlížeče.",
     "securityNote": "Šifrování AES-256-GCM • Standardy BIP32/39/84/86 • Uloženo lokálně ve vašem prohlížeči",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "Potřebujete pomoc?",
+      "subtitle": "Zeptejte se ZeldAI na cokoli o peněžence nebo ZeldHash",
+      "askButton": "Zeptat se ZeldAI"
+    }
   },
   "explorer": {
     "title": "ZELD Průzkumník",
@@ -62,18 +67,18 @@
     "totalBalance": "Celkový zůstatek",
     "utxo": "UTXO",
     "utxos": "UTXOs",
-    "utxoCount": "{count, plural, one {# UTXO} few {# UTXO} many {# UTXO} other {# UTXO}}",
+    "utxoCount": "{count, plural, one {# UTXO} few {# UTXO} other {# UTXO}}",
     "noUtxos": "Pro tuto adresu nebyly nalezeny žádné UTXO.",
     "leadingZeros": "{count}z",
     "tokenLabel": "ZELD",
-    "blockMetaTitle": "Blok #{blockIndex} - ZELD Prohlížeč",
+    "blockMetaTitle": "Blok #{blockIndex} - ZELD Průzkumník",
     "blockMetaDescription": "Zobrazit ZELD odměny a statistiky Bitcoin bloku {blockIndex}",
     "blockStats": "Statistiky bloku",
     "rewardCount": "Odměny",
     "totalReward": "Celková odměna",
     "maxZeroCount": "Max. nul",
-    "newUtxoCount": "Nové UTXOs",
-    "utxoSpentCount": "Utracené UTXOs",
+    "newUtxoCount": "Nové UTXO",
+    "utxoSpentCount": "Utracené UTXO",
     "nicestTxid": "Nejlepší transakce",
     "leadingZerosLabel": "{count} úvodních nul",
     "blockRewards": "Odměny bloku",
@@ -83,8 +88,8 @@
     "totalRewards": "Celkem odměn",
     "totalRewardAmount": "Celkem ZELD vytěženo",
     "globalMaxZeros": "Rekord nul",
-    "totalNewUtxos": "Celkem nových UTXOs",
-    "totalUtxosSpent": "Celkem utracených UTXOs",
+    "totalNewUtxos": "Celkem nových UTXO",
+    "totalUtxosSpent": "Celkem utracených UTXO",
     "transaction": "Transakce",
     "transactionMetaTitle": "Transakce {txid} - ZELD Průzkumník",
     "transactionMetaDescription": "Zobrazit zůstatek ZELD a informace o odměně pro bitcoinovou transakci {txid}",

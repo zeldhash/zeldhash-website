@@ -5,18 +5,18 @@
   "logoAlt": "ZeldHash Logosu",
   "nav": {
     "hunt": "Avla",
-    "wallet": "Cüzdan",
+    "wallet": "Hunt Wallet",
     "explorer": "Gezgin",
-    "faq": "SSS",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
-    "whitepaper": "Teknik Belge",
+    "whitepaper": "Beyaz Kitap",
     "toggleMenu": "Gezinme menüsünü aç/kapat",
     "openNav": "Gezinmeyi aç"
   },
   "footer": {
     "protocol": "Protokol",
     "balances": "Bakiyeler",
-    "faq": "SSS",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "%100 merkeziyetsiz. Ön madencilik yok. Risk sermayesi yok. Sadece matematik."
@@ -34,10 +34,15 @@
   },
   "wallet": {
     "description": "Tarayıcınızda güvenli Bitcoin cüzdanı. ZeldHash'ten doğrudan işlem oluşturun, yönetin ve imzalayın.",
-    "subtitle": "Tarayıcınızdan doğrudan Zeld avlayın, gönderin ve alın.",
+    "subtitle": "Tarayıcınızdan doğrudan ZELD avlayın, gönderin ve alın.",
     "securityNote": "AES-256-GCM şifreleme • BIP32/39/84/86 standartları • Tarayıcınızda yerel olarak saklanır",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "Yardıma mı ihtiyacın var?",
+      "subtitle": "Cüzdan veya ZeldHash hakkında ZeldAI'ye her şeyi sor",
+      "askButton": "ZeldAI'ye Sor"
+    }
   },
   "explorer": {
     "title": "ZELD Gezgini",
@@ -61,7 +66,7 @@
     "addressMetaDescription": "Bitcoin adresi {address} için ZELD bakiyesi ve UTXO'ları görüntüle",
     "totalBalance": "Toplam bakiye",
     "utxo": "UTXO",
-    "utxos": "UTXOs",
+    "utxos": "UTXO'lar",
     "utxoCount": "{count} UTXO",
     "noUtxos": "Bu adres için UTXO bulunamadı.",
     "leadingZeros": "{count}z",
@@ -72,8 +77,8 @@
     "rewardCount": "Ödüller",
     "totalReward": "Toplam Ödül",
     "maxZeroCount": "Maks. Sıfır",
-    "newUtxoCount": "Yeni UTXOs",
-    "utxoSpentCount": "Harcanan UTXOs",
+    "newUtxoCount": "Yeni UTXO'lar",
+    "utxoSpentCount": "Harcanan UTXO'lar",
     "nicestTxid": "En İyi İşlem",
     "leadingZerosLabel": "{count} öncü sıfır",
     "blockRewards": "Blok Ödülleri",
@@ -83,8 +88,8 @@
     "totalRewards": "Toplam Ödüller",
     "totalRewardAmount": "Toplam ZELD Basıldı",
     "globalMaxZeros": "Sıfır Rekoru",
-    "totalNewUtxos": "Toplam Yeni UTXOs",
-    "totalUtxosSpent": "Toplam Harcanan UTXOs",
+    "totalNewUtxos": "Toplam Yeni UTXO'lar",
+    "totalUtxosSpent": "Toplam Harcanan UTXO'lar",
     "transaction": "İşlem",
     "transactionMetaTitle": "İşlem {txid} - ZELD Gezgini",
     "transactionMetaDescription": "Bitcoin işlemi {txid} için ZELD bakiyesi ve ödül bilgilerini görüntüle",

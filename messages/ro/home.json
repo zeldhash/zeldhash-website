@@ -1,16 +1,16 @@
 {
   "meta": {
     "title": "ZeldHash - Vânează tranzacții Bitcoin rare",
-    "description": "Vânează cele mai rare tranzacții Bitcoin. Găsește ID-uri de tranzacții care încep cu 000000... și câștigă tokeni ZELD."
+    "description": "Vânați cele mai rare tranzacții Bitcoin. Găsiți ID-uri de tranzacții care încep cu 000000... și câștigați tokeni ZELD."
   },
   "hero": {
     "titleLine1": "Vânează cele mai",
     "titleLine2": "rare tranzacții Bitcoin",
     "subtitleBeforeZeros": "Unele tranzacții Bitcoin sunt extrem de rare — ID-ul lor începe cu",
-    "subtitleAfterZeros": "Găsește-le și câștigă tokeni {token}.",
-    "ctaBox": "⚡ Mii de oameni dețin ZELD fără să știe. Și tu?",
-    "addressPlaceholder": "Introdu adresa ta Bitcoin...",
-    "checkBalance": "Verifică soldul"
+    "subtitleAfterZeros": "Găsiți-le și câștigați tokeni {token}.",
+    "ctaBox": "⚡ Mii de oameni dețin ZELD fără să știe. Și dvs.?",
+    "addressPlaceholder": "Introduceți adresa dvs. Bitcoin...",
+    "checkBalance": "Verificați soldul"
   },
   "stats": {
     "rareHashesFound": "Hash-uri rare găsite",
@@ -37,13 +37,13 @@
       {
         "num": "03",
         "title": "Vânează sau descoperă",
-        "desc": "Minează tranzacții rare noi cu uneltele noastre, sau verifică dacă tranzacțiile tale vechi sunt deja rare.",
+        "desc": "Minați tranzacții rare noi cu uneltele noastre sau verificați dacă tranzacțiile dvs. vechi sunt deja rare.",
         "icon": "🎯"
       },
       {
         "num": "04",
-        "title": "Câștigă ZELD",
-        "desc": "Tranzacțiile rare câștigă tokeni ZELD. Transferă-i ca Bitcoin. Fără intermediari.",
+        "title": "Câștigați ZELD",
+        "desc": "Tranzacțiile rare câștigă tokeni ZELD. Transferați-i ca Bitcoin. Fără intermediari.",
         "icon": "🏆"
       }
     ]
@@ -55,11 +55,11 @@
     "oldHeader": "Minat de blocuri Bitcoin",
     "newHeader": "Minat de tranzacții ZELD",
     "rows": [
-      ["Hardware de $500K - $10M", "Laptopul tău"],
+      ["Hardware de $500K - $10M", "Laptopul dvs."],
       ["Facturi uriașe la electricitate", "Aproape nimic"],
       ["1 câștigător per bloc", "Toată lumea poate câștiga"],
       ["Controlat de pool-uri de minare", "100% descentralizat"],
-      ["Trebuie să concurezi cu giganții", "Concurezi cu tine însuți"]
+      ["Trebuie să concurați cu giganții", "Concurați cu dvs. înșivă"]
     ]
   },
   "hallOfFame": {
@@ -70,9 +70,9 @@
     "tokenLabel": "ZELD"
   },
   "cta": {
-    "title": "Începe vânătoarea",
-    "subtitle": "Verifică soldul tău existent sau începe să vânezi în browser.",
-    "checkBalance": "Verifică soldul",
-    "startHunting": "Începe vânătoarea"
+    "title": "Începeți vânătoarea",
+    "subtitle": "Verificați soldul dvs. existent sau începeți să vânați în browser.",
+    "checkBalance": "Verificați soldul",
+    "startHunting": "Începeți vânătoarea"
   }
 }

@@ -1,13 +1,13 @@
 {
   "siteTitle": "ZeldHash",
-  "siteDescription": "Caça às transações de Bitcoin mais raras. Encontra txids que começam com 000000... e ganha tokens ZELD. 100% descentralizado, sem premine, sem VC.",
+  "siteDescription": "Caça às transações de Bitcoin mais raras. Encontre txids que começam com 000000... e ganhe tokens ZELD. 100% descentralizado, sem premine, sem VC.",
   "tagline": "A caça começou",
   "logoAlt": "Logo ZeldHash",
   "nav": {
     "hunt": "Caça",
-    "wallet": "Carteira",
+    "wallet": "Hunt Wallet",
     "explorer": "Explorador",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "Whitepaper",
     "toggleMenu": "Alternar menu de navegação",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "Protocolo",
     "balances": "Saldos",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "100% descentralizado. Sem premine. Sem VC. Apenas matemática."
@@ -34,20 +34,25 @@
   },
   "wallet": {
     "description": "Carteira Bitcoin segura no seu navegador. Crie, gerencie e assine transações diretamente do ZeldHash.",
-    "subtitle": "Caçe, envie e receba Zeld diretamente do seu navegador.",
+    "subtitle": "Cace, envie e receba ZELD diretamente no seu navegador.",
     "securityNote": "Criptografia AES-256-GCM • Padrões BIP32/39/84/86 • Armazenado localmente no seu navegador",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "Precisa de ajuda?",
+      "subtitle": "Pergunte ao ZeldAI qualquer coisa sobre a carteira ou ZeldHash",
+      "askButton": "Perguntar ao ZeldAI"
+    }
   },
   "explorer": {
     "title": "Explorador ZELD",
     "metaTitle": "Explorador ZELD - ZeldHash",
     "metaDescription": "Explore as últimas recompensas do ZeldHash e pesquise endereços, blocos ou transações.",
     "searchLabel": "Pesquisar no explorador ZeldHash",
-    "searchPlaceholder": "Digite um endereço, índice de bloco ou hash de transação",
+    "searchPlaceholder": "Introduza um endereço, um índice de bloco ou um hash de transação",
     "searchButton": "Pesquisar",
-    "searchHelp": "Digite um endereço Bitcoin, altura do bloco ou hash de transação.",
-    "searchError": "Entrada inválida. Por favor, digite um endereço válido, altura do bloco ou hash de transação.",
+    "searchHelp": "Introduza um endereço Bitcoin, a altura do bloco ou o hash da transação.",
+    "searchError": "Entrada inválida. Por favor, introduza um endereço válido, a altura do bloco ou o hash da transação.",
     "latestRewards": "Últimas recompensas",
     "noRewards": "Nenhuma recompensa disponível ainda. Volte em breve.",
     "loadError": "Não foi possível carregar os dados. Tente novamente em um momento.",
@@ -81,7 +86,7 @@
     "cumulativeStats": "Estatísticas acumuladas",
     "totalBlocks": "Total de blocos",
     "totalRewards": "Total de recompensas",
-    "totalRewardAmount": "Total ZELD mintado",
+    "totalRewardAmount": "Total de ZELD cunhado",
     "globalMaxZeros": "Recorde de zeros",
     "totalNewUtxos": "Total novos UTXOs",
     "totalUtxosSpent": "Total UTXOs gastos",

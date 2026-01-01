@@ -1,3 +1,4 @@
+import {Suspense} from "react";
 import {Section, SectionTitle} from "@/components/ui";
 import {ExplorerHeader} from "@/components/explorer/explorer-header";
 import {fetchRewardsByTxid, fetchBatchUtxos, type RewardEntry, type UtxoBalance} from "@/lib/zeldhash-api-client";
@@ -233,7 +234,9 @@ export default async function TransactionPage({params}: Props) {
 
   return (
     <div className="w-full">
-      <ExplorerHeader />
+      <Suspense fallback={null}>
+        <ExplorerHeader />
+      </Suspense>
 
       <Section className="pt-12 pb-12">
         {/* Transaction Header */}

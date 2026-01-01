@@ -5,9 +5,9 @@
   "logoAlt": "Логотип ZeldHash",
   "nav": {
     "hunt": "Охота",
-    "wallet": "Кошелёк",
+    "wallet": "Hunt Wallet",
     "explorer": "Обозреватель",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "Белая книга",
     "toggleMenu": "Переключить меню навигации",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "Протокол",
     "balances": "Балансы",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "100% децентрализовано. Без премайна. Без венчурного капитала. Только математика."
@@ -36,8 +36,13 @@
     "description": "Безопасный Bitcoin-кошелёк в вашем браузере. Создавайте, управляйте и подписывайте транзакции прямо из ZeldHash.",
     "subtitle": "Охотьтесь, отправляйте и получайте Zeld прямо из браузера.",
     "securityNote": "Шифрование AES-256-GCM • Стандарты BIP32/39/84/86 • Хранится локально в вашем браузере",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "Нужна помощь?",
+      "subtitle": "Спросите ZeldAI о кошельке или ZeldHash",
+      "askButton": "Спросить ZeldAI"
+    }
   },
   "explorer": {
     "title": "Обозреватель ZELD",
@@ -61,12 +66,12 @@
     "addressMetaDescription": "Просмотр баланса ZELD и UTXO для Bitcoin-адреса {address}",
     "totalBalance": "Общий баланс",
     "utxo": "UTXO",
-    "utxos": "UTXOs",
+    "utxos": "UTXO",
     "utxoCount": "{count, plural, one {# UTXO} few {# UTXO} many {# UTXO} other {# UTXO}}",
     "noUtxos": "UTXO для этого адреса не найдены.",
     "leadingZeros": "{count}z",
     "tokenLabel": "ZELD",
-    "blockMetaTitle": "Блок #{blockIndex} - ZELD Эксплорер",
+    "blockMetaTitle": "Блок #{blockIndex} - Обозреватель ZELD",
     "blockMetaDescription": "Просмотр наград ZELD и статистики биткоин-блока {blockIndex}",
     "blockStats": "Статистика блока",
     "rewardCount": "Награды",
@@ -88,7 +93,7 @@
     "transaction": "Транзакция",
     "transactionMetaTitle": "Транзакция {txid} - Обозреватель ZELD",
     "transactionMetaDescription": "Просмотр баланса ZELD и информации о награде для Bitcoin-транзакции {txid}",
-    "rewardEligible": "{count} ведущих нулей - Право на награду!",
+    "rewardEligible": "{count} ведущих нулей — можно получить награду!",
     "rewardTransaction": "Транзакция награды",
     "rewardsReceived": "Полученные награды",
     "leadingZerosCount": "Ведущие нули",

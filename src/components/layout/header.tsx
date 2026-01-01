@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { Logo, PdfIcon, GithubIcon } from "@/components/ui";
+import { Logo, PdfIcon, GithubIcon, WalletIcon, ExplorerIcon, ZeldAIIcon } from "@/components/ui";
 import { Link, locales, usePathname, useRouter, type Locale } from "@/lib/i18n/routing";
 import { languages, getLanguageInfo } from "@/lib/i18n/languages";
 import { useTranslations, useLocale } from "next-intl";
@@ -9,13 +9,25 @@ import { useTranslations, useLocale } from "next-intl";
 type NavLink = {
   href: string;
   labelKey: string;
+  icon: "wallet" | "explorer" | "zeldai";
 };
 
 const NAV_LINKS: NavLink[] = [
-  { href: "/wallet", labelKey: "nav.wallet" },
-  { href: "/explorer", labelKey: "nav.explorer" },
-  { href: "/faq", labelKey: "nav.faq" },
+  { href: "/wallet", labelKey: "nav.wallet", icon: "wallet" },
+  { href: "/explorer", labelKey: "nav.explorer", icon: "explorer" },
+  { href: "/faq", labelKey: "nav.zeldai", icon: "zeldai" },
 ] as const;
+
+const NavIcon = ({ icon, className = "w-4 h-4" }: { icon: NavLink["icon"]; className?: string }) => {
+  switch (icon) {
+    case "wallet":
+      return <WalletIcon className={className} />;
+    case "explorer":
+      return <ExplorerIcon className={className} />;
+    case "zeldai":
+      return <ZeldAIIcon className={className} />;
+  }
+};
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,7 +68,8 @@ export function Header() {
       <div className="hidden md:flex items-center gap-6">
         <nav className="flex gap-8 text-sm uppercase tracking-[1px] items-center">
           {NAV_LINKS.map((link) => (
-            <Link key={link.href} href={link.href} className="text-dark-200 hover:text-gold-400 transition-colors">
+            <Link key={link.href} href={link.href} className="text-dark-200 hover:text-gold-400 transition-colors flex items-center gap-1.5">
+              <NavIcon icon={link.icon} />
               {t(link.labelKey)}
             </Link>
           ))}
@@ -159,9 +172,10 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-4 py-3 text-dark-200 hover:text-gold-400 transition-colors"
+                className="px-4 py-3 text-dark-200 hover:text-gold-400 transition-colors flex items-center gap-2"
                 onClick={() => setIsMenuOpen(false)}
               >
+                <NavIcon icon={link.icon} className="w-5 h-5" />
                 {t(link.labelKey)}
               </Link>
             ))}

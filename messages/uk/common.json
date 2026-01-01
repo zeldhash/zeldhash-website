@@ -5,9 +5,9 @@
   "logoAlt": "Логотип ZeldHash",
   "nav": {
     "hunt": "Полювання",
-    "wallet": "Гаманець",
+    "wallet": "Hunt Wallet",
     "explorer": "Оглядач",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "Біла книга",
     "toggleMenu": "Перемкнути меню навігації",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "Протокол",
     "balances": "Баланси",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "100% децентралізовано. Без премайну. Без венчурних інвесторів. Тільки математика."
@@ -34,10 +34,15 @@
   },
   "wallet": {
     "description": "Безпечний Bitcoin-гаманець у вашому браузері. Створюйте, керуйте та підписуйте транзакції безпосередньо з ZeldHash.",
-    "subtitle": "Полюйте, надсилайте та отримуйте Zeld прямо з вашого браузера.",
+    "subtitle": "Полюйте, надсилайте та отримуйте ZELD прямо з вашого браузера.",
     "securityNote": "Шифрування AES-256-GCM • Стандарти BIP32/39/84/86 • Зберігається локально у вашому браузері",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "Потрібна допомога?",
+      "subtitle": "Запитайте ZeldAI про гаманець або ZeldHash",
+      "askButton": "Запитати ZeldAI"
+    }
   },
   "explorer": {
     "title": "Оглядач ZELD",
@@ -61,12 +66,12 @@
     "addressMetaDescription": "Переглянути баланс ZELD та UTXO для Bitcoin-адреси {address}",
     "totalBalance": "Загальний баланс",
     "utxo": "UTXO",
-    "utxos": "UTXOs",
+    "utxos": "UTXO",
     "utxoCount": "{count, plural, one {# UTXO} few {# UTXO} many {# UTXO} other {# UTXO}}",
     "noUtxos": "UTXO для цієї адреси не знайдено.",
     "leadingZeros": "{count}z",
     "tokenLabel": "ZELD",
-    "blockMetaTitle": "Блок #{blockIndex} - ZELD Експлорер",
+    "blockMetaTitle": "Блок #{blockIndex} - Оглядач ZELD",
     "blockMetaDescription": "Переглянути нагороди ZELD та статистику біткоїн-блоку {blockIndex}",
     "blockStats": "Статистика блоку",
     "rewardCount": "Нагороди",

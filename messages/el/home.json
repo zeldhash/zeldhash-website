@@ -7,7 +7,7 @@
     "titleLine1": "Κυνηγήστε τις Σπανιότερες",
     "titleLine2": "Συναλλαγές Bitcoin",
     "subtitleBeforeZeros": "Ορισμένες συναλλαγές Bitcoin είναι εξαιρετικά σπάνιες — το αναγνωριστικό τους ξεκινά με",
-    "subtitleAfterZeros": "Βρείτε τις και κερδίστε {token} tokens.",
+    "subtitleAfterZeros": "Βρείτε τις και κερδίστε {token} tokens ZELD.",
     "ctaBox": "⚡ Χιλιάδες κατέχουν ZELD χωρίς να το γνωρίζουν. Εσείς;",
     "addressPlaceholder": "Εισάγετε τη διεύθυνση Bitcoin σας...",
     "checkBalance": "Έλεγχος Υπολοίπου"
@@ -43,7 +43,7 @@
       {
         "num": "04",
         "title": "Κερδίστε ZELD",
-        "desc": "Οι σπάνιες συναλλαγές αποδίδουν ZELD tokens. Μεταφέρετέ τα όπως το Bitcoin. Χωρίς μεσάζοντες.",
+        "desc": "Οι σπάνιες συναλλαγές αποδίδουν tokens ZELD. Μεταφέρετέ τα όπως το Bitcoin. Χωρίς μεσάζοντες.",
         "icon": "🏆"
       }
     ]

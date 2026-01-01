@@ -2,12 +2,12 @@
   "siteTitle": "ZeldHash",
   "siteDescription": "বিটকয়েনের সবচেয়ে বিরল লেনদেন খুঁজুন। 000000... দিয়ে শুরু হওয়া ট্রানজেকশন আইডি খুঁজে ZELD টোকেন অর্জন করুন। ১০০% বিকেন্দ্রীকৃত, কোনো প্রি-মাইন নেই, কোনো VC নেই।",
   "tagline": "শিকার শুরু হয়েছে",
-  "logoAlt": "জেল্ডহ্যাশ লোগো",
+  "logoAlt": "ZeldHash লোগো",
   "nav": {
     "hunt": "শিকার",
-    "wallet": "ওয়ালেট",
+    "wallet": "Hunt Wallet",
     "explorer": "এক্সপ্লোরার",
-    "faq": "প্রশ্নোত্তর",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "হোয়াইটপেপার",
     "toggleMenu": "নেভিগেশন মেনু টগল করুন",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "প্রোটোকল",
     "balances": "ব্যালেন্স",
-    "faq": "প্রশ্নোত্তর",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "১০০% বিকেন্দ্রীকৃত। কোনো প্রি-মাইন নেই। কোনো VC নেই। শুধু গণিত।"
@@ -34,10 +34,15 @@
   },
   "wallet": {
     "description": "আপনার ব্রাউজারে নিরাপদ বিটকয়েন ওয়ালেট। ZeldHash থেকে সরাসরি তৈরি করুন, পরিচালনা করুন এবং লেনদেন স্বাক্ষর করুন।",
-    "subtitle": "সরাসরি আপনার ব্রাউজার থেকে Zeld শিকার করুন, পাঠান এবং গ্রহণ করুন।",
+    "subtitle": "সরাসরি আপনার ব্রাউজার থেকে ZELD শিকার করুন, পাঠান এবং গ্রহণ করুন।",
     "securityNote": "AES-256-GCM এনক্রিপশন • BIP32/39/84/86 মান • আপনার ব্রাউজারে স্থানীয়ভাবে সংরক্ষিত",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "সাহায্য দরকার?",
+      "subtitle": "ওয়ালেট বা ZeldHash সম্পর্কে ZeldAI-কে যেকোনো কিছু জিজ্ঞাসা করুন",
+      "askButton": "ZeldAI-কে জিজ্ঞাসা করুন"
+    }
   },
   "explorer": {
     "title": "ZELD এক্সপ্লোরার",
@@ -62,7 +67,7 @@
     "totalBalance": "মোট ব্যালেন্স",
     "utxo": "UTXO",
     "utxos": "UTXOs",
-    "utxoCount": "{count} UTXO",
+    "utxoCount": "{count, plural, one {# UTXO} other {# UTXO}}",
     "noUtxos": "এই ঠিকানার জন্য কোনো UTXO পাওয়া যায়নি।",
     "leadingZeros": "{count}z",
     "tokenLabel": "ZELD",

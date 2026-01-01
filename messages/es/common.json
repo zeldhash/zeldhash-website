@@ -5,18 +5,18 @@
   "logoAlt": "Logo de ZeldHash",
   "nav": {
     "hunt": "Caza",
-    "wallet": "Cartera",
+    "wallet": "Hunt Wallet",
     "explorer": "Explorador",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "Libro blanco",
-    "toggleMenu": "Alternar menú de navegación",
-    "openNav": "Abrir navegación"
+    "toggleMenu": "Mostrar/ocultar el menú de navegación",
+    "openNav": "Abrir menú"
   },
   "footer": {
     "protocol": "Protocolo",
     "balances": "Saldos",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "100% descentralizado. Sin preminado. Sin VC. Solo matemáticas."
@@ -36,8 +36,13 @@
     "description": "Cartera Bitcoin segura en tu navegador. Crea, gestiona y firma transacciones directamente desde ZeldHash.",
     "subtitle": "Caza, envía y recibe Zeld directamente desde tu navegador.",
     "securityNote": "Cifrado AES-256-GCM • Estándares BIP32/39/84/86 • Almacenado localmente en tu navegador",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "¿Necesitas ayuda?",
+      "subtitle": "Pregúntale a ZeldAI cualquier cosa sobre el wallet o ZeldHash",
+      "askButton": "Preguntar a ZeldAI"
+    }
   },
   "explorer": {
     "title": "Explorador ZELD",

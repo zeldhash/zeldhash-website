@@ -1,4 +1,5 @@
 import { getTranslations, getLocale } from "next-intl/server";
+import { fetchCumulStats } from "@/lib/zeldhash-api-client";
 
 function formatCompact(value: number, locale: string) {
   return new Intl.NumberFormat(locale, {
@@ -11,15 +12,22 @@ function formatNumber(value: number, locale: string) {
   return new Intl.NumberFormat(locale).format(value);
 }
 
+// ZELD uses 8 decimal places (like satoshis), so we divide by 10^8
+const ZELD_DECIMALS = 100_000_000;
+
 export async function StatsSection() {
   const t = await getTranslations("home");
   const locale = await getLocale();
+  
+  const stats = await fetchCumulStats();
+  const utxosTracked = stats.new_utxo_count - stats.utxo_spent_count;
+  const zeldInCirculation = stats.total_reward / ZELD_DECIMALS;
 
   const STATS = [
-    { value: formatNumber(449228, locale), label: t("stats.rareHashesFound") },
-    { value: formatCompact(102800000, locale), label: t("stats.zeldInCirculation") },
-    { value: "12", label: t("stats.recordZeros") },
-    { value: formatCompact(78300000, locale), label: t("stats.utxosTracked") },
+    { value: formatNumber(stats.reward_count, locale), label: t("stats.rareHashesFound") },
+    { value: formatCompact(zeldInCirculation, locale), label: t("stats.zeldInCirculation") },
+    { value: String(stats.max_zero_count), label: t("stats.recordZeros") },
+    { value: formatCompact(utxosTracked, locale), label: t("stats.utxosTracked") },
   ] as const;
 
   return (

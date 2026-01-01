@@ -4,10 +4,18 @@
     "description": "Answers about the hunt for Bitcoin transactions with rare hash patterns."
   },
   "badge": "FAQ",
-  "heading": "ZeldHash FAQ",
+  "heading": "Frequently Asked Questions",
   "intro": "Everything you need to know about the hunt for Bitcoin transactions with rare hash patterns.",
   "huntIsOn": "The Hunt is On.",
-  "items": {
+  "categories": {
+    "protocol": "Protocol",
+    "wallet": "Wallet"
+  },
+  "protocol": {
+    "howToGetZeld": {
+      "q": "How do I get ZELD?",
+      "a": "The easiest way is to use ZeldWallet directly on <site>zeldhash.com</site> — it's a browser-based wallet that lets you hunt for rare transactions with no setup required. Simply create or connect a wallet and start mining. For developers who want to build their own minting solution, we provide open-source SDKs in Rust, TypeScript, and Python available on <github>GitHub</github>."
+    },
     "whatIsZeldHash": {
       "q": "What is ZeldHash?",
       "a": "ZeldHash is a protocol that rewards Bitcoin users who discover or create transactions with rare hash patterns — specifically, hashes that start with multiple zeros. Think of it as a treasure hunt on the Bitcoin blockchain."
@@ -58,7 +66,113 @@
       "q": "How do I start hunting?",
       "a": "Visit <site>zeldhash.com</site> and begin your quest. Every transaction is a chance to uncover something rare."
     }
+  },
+  "wallet": {
+    "general": {
+      "title": "General",
+      "security": {
+        "q": "Are my cryptocurrencies really safe in this wallet? Where are my private keys stored?",
+        "a": "Yes, your funds are as safe as your browser's security. ZeldWallet stores your private keys locally in your browser's IndexedDB, encrypted with AES-256-GCM. If you set a password, your keys are protected using PBKDF2 key derivation, making them extremely difficult to crack. Your private keys never leave your device and are never sent to any server. However, always create a backup of your mnemonic phrase — if you lose access to your browser or device without a backup, your funds will be lost forever."
+      },
+      "addressDifference": {
+        "q": "What's the difference between the \"Payment\" address and the \"Ordinals\" address?",
+        "a": "The Payment address is used for regular Bitcoin transactions — sending and receiving BTC. The Ordinals address (a Taproot address) is where your ZELD tokens are received when you successfully hunt a rare transaction. ZELD tokens attach to the first output of the transaction, which is always sent to your Ordinals address."
+      },
+      "twoAddresses": {
+        "q": "Why do I have two different Bitcoin addresses?",
+        "a": "This follows Bitcoin best practices for separating different asset types. The Payment address handles your BTC for paying transaction fees, while the Ordinals address receives and holds your ZELD tokens. This separation prevents accidentally spending UTXOs that contain ZELD when making regular BTC payments."
+      },
+      "mobile": {
+        "q": "Can I use ZeldWallet on my phone?",
+        "a": "Yes, ZeldWallet works in any modern mobile browser. However, mining performance on mobile devices is significantly lower than on desktop computers due to limited CPU power and the lack of GPU acceleration. For serious hunting, a desktop or laptop computer is recommended."
+      }
+    },
+    "hunting": {
+      "title": "Minting / Hunting",
+      "gpuVsCpu": {
+        "q": "What's the difference between mining with or without GPU? Will it damage my computer?",
+        "a": "GPU mining uses WebGPU technology to leverage your graphics card for much faster hash calculations — typically 10-100x faster than CPU-only mining. CPU mining uses Web Workers and is slower but works on all devices. Neither will damage your computer. Modern hardware is designed to handle sustained workloads. Your browser manages resources responsibly, and you can stop mining at any time."
+      },
+      "miningTime": {
+        "q": "How long does it take to mine a ZELD?",
+        "a": "It depends on your hardware and luck. Finding a transaction hash with 6 leading zeros has roughly a 1 in 16 million chance per attempt. With a modern GPU achieving millions of hashes per second, it might take minutes to hours. With CPU-only, it could take hours to days. There's also randomness involved — you might get lucky quickly or it might take longer than average."
+      },
+      "keepRunning": {
+        "q": "Do I need to keep my computer running during mining?",
+        "a": "Yes. Mining happens in your browser, so the tab must remain open and active. If you close the browser or navigate away, mining stops. Your progress (hashes processed) is not saved — you'll start fresh when you resume. However, no funds are at risk if you stop mid-mining; the transaction is only broadcast once a valid hash is found and signed."
+      }
+    },
+    "transactions": {
+      "title": "Transactions and Fees",
+      "feeSelection": {
+        "q": "How do I choose transaction fees? What's the difference between \"Slow\", \"Medium\", and \"Fast\"?",
+        "a1": "ZeldWallet fetches real-time fee recommendations from mempool.space:",
+        "a2": "Slow: Lower fee, may take 1+ hours to confirm. Medium: Balanced fee, typically confirms within 30-60 minutes. Fast: Higher fee, usually confirms in the next 1-2 blocks (~10-20 minutes).",
+        "a3": "You can also set a custom fee rate in sats/vB. Higher fees mean faster confirmation but cost more BTC."
+      },
+      "minimumBtc": {
+        "q": "Why am I required to have a minimum amount of BTC to start mining?",
+        "a1": "Every Bitcoin transaction requires a fee, and each output needs a minimum value (called \"dust limit\"). ZeldWallet requires approximately 2,000+ satoshis to cover:",
+        "a2": "330 sats for the dust amount for the ZELD output to your Ordinals address, and ~1,500+ sats for the transaction fee depending on current network conditions.",
+        "a3": "Without sufficient BTC, you can't create a valid transaction."
+      },
+      "sendZeld": {
+        "q": "How do I send ZELD to someone else?",
+        "a": "In ZeldWallet, go to the Hunt section and check \"Send ZELD\". Enter the recipient's Bitcoin address and the amount of ZELD you want to send. The transfer will be included in your next hunt transaction — your ZELD will be sent when the rare hash is found and the transaction is broadcast."
+      },
+      "balanceIncreased": {
+        "q": "I just sent ZELD but my balance increased!?",
+        "a": "That's normal — and great news! When you send ZELD through ZeldWallet, you're not just making a transfer, you're also hunting for a rare transaction hash. If the transaction you broadcast has 6 or more leading zeros, you earn a ZELD reward (up to 4,096 ZELD for the rarest finds). So if you sent 100 ZELD but received a 256 ZELD reward, your net balance actually went up by 156 ZELD. Every transaction is an opportunity to earn!"
+      },
+      "closeBrowser": {
+        "q": "What happens if I close my browser during a transaction?",
+        "a1": "If you close during mining: Nothing is lost. Mining simply stops and you can restart later.",
+        "a2": "If you close during signing/broadcast: If the transaction was already signed and broadcast to the network, it will confirm normally. If it wasn't broadcast yet, nothing was sent and you'll need to mine again."
+      }
+    },
+    "security": {
+      "title": "Security and Backup",
+      "backupImportance": {
+        "q": "What is a backup and why is it so important to create one?",
+        "a": "A backup is your 12 or 24-word mnemonic phrase (seed phrase). This phrase can regenerate all your private keys and recover your entire wallet on any device or compatible wallet application. Without this backup, if you lose access to your browser (cleared data, new device, browser crash), your funds are permanently lost. Write it down on paper and store it securely — never save it digitally or share it with anyone."
+      },
+      "forgotPassword": {
+        "q": "If I forget my password, do I lose everything?",
+        "a": "No, if you have your backup mnemonic phrase. You can clear ZeldWallet's storage and restore your wallet using the mnemonic. The password only protects the local encrypted storage — it's not tied to the blockchain. However, if you forget your password AND don't have your mnemonic backup, then yes, your funds are lost."
+      },
+      "mnemonicPhrase": {
+        "q": "What is a \"mnemonic phrase\" and can I restore my wallet from another application?",
+        "a": "A mnemonic phrase (also called seed phrase or recovery phrase) is a list of 12 or 24 words that represents your master private key according to the BIP39 standard. Yes, you can restore a ZeldWallet mnemonic in other compatible wallets like Xverse, Leather, Sparrow, or any BIP39/BIP84/BIP86 compatible wallet. Your Bitcoin and ZELD will appear at the same addresses."
+      },
+      "lostDevice": {
+        "q": "Can someone access my wallet if I lose my computer?",
+        "a": "It depends on your security setup. If you set a strong password, an attacker would need to crack the encryption (very difficult with a good password). Without a password, someone with access to your browser's data could potentially access your wallet. For maximum security: always use a strong password, and if your device is lost/stolen, restore your wallet elsewhere using your mnemonic and transfer your funds immediately."
+      }
+    },
+    "external": {
+      "title": "External Wallets",
+      "connectExternal": {
+        "q": "Can I connect my Xverse or Leather wallet instead of creating a new account?",
+        "a": "Yes! ZeldWallet supports connecting external wallets including Xverse, Leather, and Magic Eden. Click \"Connect Wallet\" and choose your installed wallet. Your wallet extension will prompt you to approve the connection. This lets you hunt for ZELD using your existing wallet's addresses without exposing your private keys to ZeldWallet."
+      },
+      "externalVsDirect": {
+        "q": "What's the difference between using ZeldWallet directly or through an external wallet like Xverse?",
+        "a1": "Key storage: ZeldWallet Direct stores keys encrypted in browser, External Wallet stores keys in the extension/hardware.",
+        "a2": "Setup: ZeldWallet Direct requires creating or restoring in-browser, External Wallet just connects existing wallet.",
+        "a3": "Signing: ZeldWallet Direct signs automatically after unlock, External Wallet shows approval popup for each action.",
+        "a4": "Portability: ZeldWallet Direct is tied to browser/device, External Wallet works across sites.",
+        "a5": "Hardware wallet: Not supported in ZeldWallet Direct, Supported via extension in External Wallet.",
+        "a6": "Use an external wallet if you want hardware wallet support, already have funds there, or prefer keeping keys in a dedicated extension. Use ZeldWallet directly for a simpler, all-in-one experience."
+      }
+    }
+  },
+  "ama": {
+    "aiPowered": "AI Assistant",
+    "placeholder": "Ask me anything about ZeldHash...",
+    "submit": "Send",
+    "helperText": "Ask about ZeldHash, ZELD tokens, rare transactions, or general blockchain concepts.",
+    "genericError": "An error occurred. Please try again.",
+    "connectionError": "Connection error. Please check your internet and try again.",
+    "aiResponse": "AI Response"
   }
 }
-
-

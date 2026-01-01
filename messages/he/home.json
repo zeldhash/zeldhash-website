@@ -13,7 +13,7 @@
     "checkBalance": "בדיקת יתרה"
   },
   "stats": {
-    "rareHashesFound": "\u2066hash\u2069ים נדירים שנמצאו",
+    "rareHashesFound": "האשים נדירים שנמצאו",
     "zeldInCirculation": "ZELD במחזור",
     "recordZeros": "שיא אפסים",
     "utxosTracked": "UTXOs במעקב"

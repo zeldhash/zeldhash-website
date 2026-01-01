@@ -5,9 +5,9 @@
   "logoAlt": "Logo ZeldHash",
   "nav": {
     "hunt": "Buru",
-    "wallet": "Dompet",
+    "wallet": "Hunt Wallet",
     "explorer": "Penjelajah",
-    "faq": "Soalan Lazim",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "Kertas Putih",
     "toggleMenu": "Togol menu navigasi",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "Protokol",
     "balances": "Baki",
-    "faq": "Soalan Lazim",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "100% terdesentralisasi. Tiada premine. Tiada VC. Hanya matematik."
@@ -34,10 +34,15 @@
   },
   "wallet": {
     "description": "Dompet Bitcoin selamat dalam pelayar anda. Cipta, urus dan tandatangani transaksi terus dari ZeldHash.",
-    "subtitle": "Buru, hantar dan terima Zeld terus dari pelayar anda.",
+    "subtitle": "Buru, hantar dan terima ZELD terus dari pelayar anda.",
     "securityNote": "Penyulitan AES-256-GCM • Piawaian BIP32/39/84/86 • Disimpan secara tempatan dalam pelayar anda",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "Perlukan bantuan?",
+      "subtitle": "Tanya ZeldAI apa-apa sahaja tentang dompet atau ZeldHash",
+      "askButton": "Tanya ZeldAI"
+    }
   },
   "explorer": {
     "title": "Penjelajah ZELD",

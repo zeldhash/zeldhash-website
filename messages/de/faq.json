@@ -1,20 +1,28 @@
 {
   "meta": {
-    "title": "ZeldHash FAQ",
+    "title": "ZeldHash – Häufige Fragen",
     "description": "Antworten zur Jagd nach Bitcoin-Transaktionen mit seltenen Hash-Mustern."
   },
   "badge": "FAQ",
-  "heading": "ZeldHash FAQ",
+  "heading": "Häufig gestellte Fragen",
   "intro": "Alles, was du über die Jagd nach Bitcoin-Transaktionen mit seltenen Hash-Mustern wissen musst.",
   "huntIsOn": "Die Jagd ist eröffnet.",
-  "items": {
+  "categories": {
+    "protocol": "Protokoll",
+    "wallet": "Wallet"
+  },
+  "protocol": {
+    "howToGetZeld": {
+      "q": "Wie bekomme ich ZELD?",
+      "a": "Der einfachste Weg ist, ZeldWallet direkt auf <site>zeldhash.com</site> zu nutzen — eine browserbasierte Wallet, mit der du ohne Einrichtung nach seltenen Transaktionen jagen kannst. Erstelle oder verbinde einfach eine Wallet und beginne mit dem Mining. Für Entwickler, die ihre eigene Minting-Lösung erstellen möchten, bieten wir Open-Source-SDKs in Rust, TypeScript und Python auf <github>GitHub</github> an."
+    },
     "whatIsZeldHash": {
       "q": "Was ist ZeldHash?",
       "a": "ZeldHash ist ein Protokoll, das Bitcoin-Nutzer belohnt, die Transaktionen mit seltenen Hash-Mustern entdecken oder erstellen — insbesondere Hashes, die mit mehreren Nullen beginnen. Stell es dir wie eine Schatzsuche auf der Bitcoin-Blockchain vor."
     },
     "whyName": {
-      "q": "Warum der Name 'ZeldHash'?",
-      "a1": "'Zeld' kommt vom niederländischen Wort zeldzaam, was 'selten' bedeutet. Es ist ein passender Name für ein Protokoll, das sich der Jagd nach den seltensten Transaktionen auf der Bitcoin-Blockchain widmet. Der 'Hash'-Teil bezieht sich auf den kryptografischen Fingerabdruck, der jede Transaktion einzigartig macht.",
+      "q": "Warum der Name „ZeldHash“?",
+      "a1": "„Zeld“ kommt vom niederländischen Wort zeldzaam, was „selten“ bedeutet. Es ist ein passender Name für ein Protokoll, das sich der Jagd nach den seltensten Transaktionen auf der Bitcoin-Blockchain widmet. Der „Hash“-Teil bezieht sich auf den kryptografischen Fingerabdruck, der jede Transaktion einzigartig macht.",
       "a2": "ZeldHash bedeutet also wörtlich 'Seltener Hash' — genau das, wonach wir suchen."
     },
     "whatIsHash": {
@@ -58,5 +66,113 @@
       "q": "Wie fange ich mit der Jagd an?",
       "a": "Besuche <site>zeldhash.com</site> und beginne deine Suche. Jede Transaktion ist eine Chance, etwas Seltenes zu entdecken."
     }
+  },
+  "wallet": {
+    "general": {
+      "title": "Allgemein",
+      "security": {
+        "q": "Sind meine Kryptowährungen wirklich sicher in diesem Wallet? Wo werden meine privaten Schlüssel gespeichert?",
+        "a": "Ja, deine Mittel sind so sicher wie die Sicherheit deines Browsers. ZeldWallet speichert deine privaten Schlüssel lokal in der IndexedDB deines Browsers, verschlüsselt mit AES-256-GCM. Wenn du ein Passwort festlegst, werden deine Schlüssel mit PBKDF2-Schlüsselableitung geschützt, was sie extrem schwer zu knacken macht. Deine privaten Schlüssel verlassen niemals dein Gerät und werden niemals an einen Server gesendet. Erstelle jedoch immer eine Sicherung deiner Mnemonic-Phrase — wenn du den Zugang zu deinem Browser oder Gerät ohne Backup verlierst, sind deine Mittel für immer verloren."
+      },
+      "addressDifference": {
+        "q": "Was ist der Unterschied zwischen der „Payment“-Adresse und der „Ordinals“-Adresse?",
+        "a": "Die Payment-Adresse wird für reguläre Bitcoin-Transaktionen verwendet — zum Senden und Empfangen von BTC. Die Ordinals-Adresse (eine Taproot-Adresse) ist die Adresse, an die du deine ZELD-Token erhältst, wenn du erfolgreich eine seltene Transaktion jagst. ZELD-Token werden an die erste Ausgabe (Output) der Transaktion angehängt; diese wird immer an deine Ordinals-Adresse gesendet."
+      },
+      "twoAddresses": {
+        "q": "Warum habe ich zwei verschiedene Bitcoin-Adressen?",
+        "a": "Das folgt Bitcoins Best Practices zur Trennung verschiedener Asset-Typen. Die Payment-Adresse verwaltet deine BTC für Transaktionsgebühren, während die Ordinals-Adresse deine ZELD-Token empfängt und hält. Diese Trennung verhindert, dass UTXOs, die ZELD enthalten, versehentlich bei regulären BTC-Zahlungen ausgegeben werden."
+      },
+      "mobile": {
+        "q": "Kann ich ZeldWallet auf meinem Handy nutzen?",
+        "a": "Ja, ZeldWallet funktioniert in jedem modernen mobilen Browser. Allerdings ist die Mining-Leistung auf mobilen Geräten aufgrund der begrenzten CPU-Leistung und des fehlenden GPU-Beschleunigung deutlich niedriger als auf Desktop-Computern. Für ernsthaftes Jagen wird ein Desktop- oder Laptop-Computer empfohlen."
+      }
+    },
+    "hunting": {
+      "title": "Mining / Jagd",
+      "gpuVsCpu": {
+        "q": "Was ist der Unterschied zwischen Mining mit oder ohne GPU? Wird es meinen Computer beschädigen?",
+        "a": "GPU-Mining nutzt WebGPU-Technologie, um deine Grafikkarte für viel schnellere Hash-Berechnungen zu nutzen — typischerweise 10-100x schneller als reines CPU-Mining. CPU-Mining verwendet Web Workers und ist langsamer, funktioniert aber auf allen Geräten. Keines von beiden wird deinen Computer beschädigen. Moderne Hardware ist für anhaltende Arbeitslasten ausgelegt. Dein Browser verwaltet Ressourcen verantwortungsvoll, und du kannst das Mining jederzeit stoppen."
+      },
+      "miningTime": {
+        "q": "Wie lange dauert es, ein ZELD zu minen?",
+        "a": "Es hängt von deiner Hardware und deinem Glück ab. Einen Transaktions-Hash mit 6 führenden Nullen zu finden, hat eine Chance von etwa 1 zu 16 Millionen pro Versuch. Mit einer modernen GPU, die Millionen von Hashes pro Sekunde erreicht, kann es Minuten bis Stunden dauern. Nur mit CPU kann es Stunden bis Tage dauern. Es gibt auch Zufälligkeit — du könntest schnell Glück haben oder es könnte länger als der Durchschnitt dauern."
+      },
+      "keepRunning": {
+        "q": "Muss ich meinen Computer während des Minings laufen lassen?",
+        "a": "Ja. Mining findet in deinem Browser statt, daher muss der Tab offen und aktiv bleiben. Wenn du den Browser schließt oder wegnavigierst, stoppt das Mining. Dein Fortschritt (verarbeitete Hashes) wird nicht gespeichert — du beginnst beim Fortsetzen von vorne. Allerdings sind keine Mittel gefährdet, wenn du mitten im Mining aufhörst; die Transaktion wird erst gesendet, wenn ein gültiger Hash gefunden und signiert wurde."
+      }
+    },
+    "transactions": {
+      "title": "Transaktionen und Gebühren",
+      "feeSelection": {
+        "q": "Wie wähle ich Transaktionsgebühren? Was ist der Unterschied zwischen 'Langsam', 'Mittel' und 'Schnell'?",
+        "a1": "ZeldWallet ruft Echtzeit-Gebührenempfehlungen von mempool.space ab:",
+        "a2": "Langsam: Niedrigere Gebühr, kann 1+ Stunden zur Bestätigung dauern. Mittel: Ausgewogene Gebühr, bestätigt typischerweise in 30-60 Minuten. Schnell: Höhere Gebühr, bestätigt normalerweise in den nächsten 1-2 Blöcken (~10-20 Minuten).",
+        "a3": "Du kannst auch eine benutzerdefinierte Gebührenrate in sats/vB festlegen. Höhere Gebühren bedeuten schnellere Bestätigung, kosten aber mehr BTC."
+      },
+      "minimumBtc": {
+        "q": "Warum muss ich einen Mindestbetrag an BTC haben, um mit dem Mining zu beginnen?",
+        "a1": "Jede Bitcoin-Transaktion erfordert eine Gebühr, und jede Ausgabe (Output) benötigt einen Mindestwert (das sogenannte „Dust-Limit“). ZeldWallet benötigt ungefähr 2.000+ Satoshis zur Deckung von:",
+        "a2": "330 Sats für den Dust-Betrag für den ZELD-Output an deine Ordinals-Adresse, und ~1.500+ Sats für die Transaktionsgebühr je nach aktuellen Netzwerkbedingungen.",
+        "a3": "Ohne ausreichend BTC kannst du keine gültige Transaktion erstellen."
+      },
+      "sendZeld": {
+        "q": "Wie sende ich ZELD an jemand anderen?",
+        "a": "In ZeldWallet gehe zum Hunt-Bereich und aktiviere 'ZELD senden'. Gib die Bitcoin-Adresse des Empfängers und den ZELD-Betrag ein, den du senden möchtest. Der Transfer wird in deine nächste Jagd-Transaktion aufgenommen — dein ZELD wird gesendet, wenn der seltene Hash gefunden und die Transaktion übertragen wird."
+      },
+      "balanceIncreased": {
+        "q": "Ich habe gerade ZELD gesendet, aber mein Guthaben ist gestiegen!?",
+        "a": "Das ist normal — und tolle Neuigkeiten! Wenn du ZELD über ZeldWallet sendest, machst du nicht nur einen Transfer, du jagst auch nach einem seltenen Transaktions-Hash. Wenn die Transaktion, die du sendest, 6 oder mehr führende Nullen hat, erhältst du eine ZELD-Belohnung (bis zu 4.096 ZELD für die seltensten Funde). Wenn du also 100 ZELD gesendet, aber eine 256 ZELD-Belohnung erhalten hast, ist dein Nettoguthaben tatsächlich um 156 ZELD gestiegen. Jede Transaktion ist eine Chance zu verdienen!"
+      },
+      "closeBrowser": {
+        "q": "Was passiert, wenn ich meinen Browser während einer Transaktion schließe?",
+        "a1": "Wenn du während des Minings schließt: Nichts geht verloren. Das Mining stoppt einfach und du kannst später neu starten.",
+        "a2": "Wenn du während des Signierens/Sendens schließt: Wenn die Transaktion bereits signiert und an das Netzwerk gesendet wurde, wird sie normal bestätigt. Wenn sie noch nicht gesendet wurde, wurde nichts übertragen und du musst erneut minen."
+      }
+    },
+    "security": {
+      "title": "Sicherheit und Backup",
+      "backupImportance": {
+        "q": "Was ist ein Backup und warum ist es so wichtig, eines zu erstellen?",
+        "a": "Ein Backup ist deine 12- oder 24-Wort-Mnemonic-Phrase (Seed-Phrase). Diese Phrase kann alle deine privaten Schlüssel regenerieren und dein gesamtes Wallet auf jedem Gerät oder jeder kompatiblen Wallet-Anwendung wiederherstellen. Ohne dieses Backup sind deine Mittel dauerhaft verloren, wenn du den Zugang zu deinem Browser verlierst (gelöschte Daten, neues Gerät, Browser-Absturz). Schreibe sie auf Papier und bewahre sie sicher auf — speichere sie niemals digital und teile sie mit niemandem."
+      },
+      "forgotPassword": {
+        "q": "Wenn ich mein Passwort vergesse, verliere ich dann alles?",
+        "a": "Nein, wenn du deine Backup-Mnemonic-Phrase hast. Du kannst den Speicher von ZeldWallet löschen und dein Wallet mit der Mnemonic wiederherstellen. Das Passwort schützt nur den lokalen verschlüsselten Speicher — es ist nicht mit der Blockchain verbunden. Wenn du jedoch dein Passwort vergisst UND kein Mnemonic-Backup hast, dann ja, sind deine Mittel verloren."
+      },
+      "mnemonicPhrase": {
+        "q": "Was ist eine 'Mnemonic-Phrase' und kann ich mein Wallet von einer anderen Anwendung wiederherstellen?",
+        "a": "Eine Mnemonic-Phrase (auch Seed-Phrase oder Wiederherstellungsphrase genannt) ist eine Liste von 12 oder 24 Wörtern, die deinen Master-Private-Key gemäß dem BIP39-Standard repräsentiert. Ja, du kannst eine ZeldWallet-Mnemonic in anderen kompatiblen Wallets wie Xverse, Leather, Sparrow oder jedem BIP39/BIP84/BIP86-kompatiblen Wallet wiederherstellen. Deine Bitcoin und ZELD erscheinen an denselben Adressen."
+      },
+      "lostDevice": {
+        "q": "Kann jemand auf mein Wallet zugreifen, wenn ich meinen Computer verliere?",
+        "a": "Es hängt von deiner Sicherheitskonfiguration ab. Wenn du ein starkes Passwort festgelegt hast, müsste ein Angreifer die Verschlüsselung knacken (sehr schwer mit einem guten Passwort). Ohne Passwort könnte jemand mit Zugang zu den Daten deines Browsers möglicherweise auf dein Wallet zugreifen. Für maximale Sicherheit: Verwende immer ein starkes Passwort, und wenn dein Gerät verloren/gestohlen wird, stelle dein Wallet woanders mit deiner Mnemonic wieder her und überweise deine Mittel sofort."
+      }
+    },
+    "external": {
+      "title": "Externe Wallets",
+      "connectExternal": {
+        "q": "Kann ich mein Xverse- oder Leather-Wallet verbinden, anstatt ein neues Konto zu erstellen?",
+        "a": "Ja! ZeldWallet unterstützt die Verbindung externer Wallets einschließlich Xverse, Leather und Magic Eden. Klicke auf 'Wallet verbinden' und wähle dein installiertes Wallet. Deine Wallet-Erweiterung wird dich auffordern, die Verbindung zu genehmigen. Dies ermöglicht dir, ZELD mit den Adressen deines bestehenden Wallets zu jagen, ohne deine privaten Schlüssel an ZeldWallet preiszugeben."
+      },
+      "externalVsDirect": {
+        "q": "Was ist der Unterschied zwischen der direkten Nutzung von ZeldWallet oder über ein externes Wallet wie Xverse?",
+        "a1": "Schlüsselspeicherung: ZeldWallet Direct speichert Schlüssel verschlüsselt im Browser, Externes Wallet speichert Schlüssel in der Erweiterung/Hardware.",
+        "a2": "Einrichtung: ZeldWallet Direct erfordert Erstellen oder Wiederherstellen im Browser, Externes Wallet verbindet einfach ein bestehendes Wallet.",
+        "a3": "Signierung: ZeldWallet Direct signiert automatisch nach Entsperrung, Externes Wallet zeigt Bestätigungs-Popup für jede Aktion.",
+        "a4": "Portabilität: ZeldWallet Direct ist an Browser/Gerät gebunden, Externes Wallet funktioniert über verschiedene Seiten.",
+        "a5": "Hardware-Wallet: Nicht unterstützt in ZeldWallet Direct, Unterstützt über Erweiterung im Externen Wallet.",
+        "a6": "Verwende ein externes Wallet, wenn du Hardware-Wallet-Unterstützung möchtest, bereits Mittel dort hast, oder es vorziehst, Schlüssel in einer dedizierten Erweiterung zu halten. Verwende ZeldWallet direkt für eine einfachere, All-in-One-Erfahrung."
+      }
+    }
+  },
+  "ama": {
+    "aiPowered": "KI-Assistent",
+    "placeholder": "Frag mich etwas über ZeldHash...",
+    "submit": "Senden",
+    "helperText": "Fragen zu ZeldHash, ZELD-Token, seltenen Transaktionen oder Blockchain-Konzepten.",
+    "genericError": "Ein Fehler ist aufgetreten. Bitte versuche es erneut.",
+    "connectionError": "Verbindungsfehler. Bitte überprüfe deine Internetverbindung und versuche es erneut.",
+    "aiResponse": "KI-Antwort"
   }
 }

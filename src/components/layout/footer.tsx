@@ -1,12 +1,12 @@
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/lib/i18n/routing";
-import { PdfIcon, GithubIcon } from "@/components/ui";
+import { PdfIcon, GithubIcon, WalletIcon, ExplorerIcon, ZeldAIIcon } from "@/components/ui";
 
 type FooterLink = {
   href: string;
   labelKey: string;
   external?: boolean;
-  icon?: "pdf" | "github";
+  icon?: "wallet" | "explorer" | "zeldai" | "pdf" | "github";
 };
 
 export async function Footer() {
@@ -14,17 +14,28 @@ export async function Footer() {
   const locale = await getLocale();
 
   const FOOTER_LINKS: FooterLink[] = [
-    { href: "/wallet", labelKey: "nav.wallet" },
-    { href: "/explorer", labelKey: "nav.explorer" },
-    { href: "/faq", labelKey: "nav.faq" },
+    { href: "/wallet", labelKey: "nav.wallet", icon: "wallet" },
+    { href: "/explorer", labelKey: "nav.explorer", icon: "explorer" },
+    { href: "/faq", labelKey: "nav.zeldai", icon: "zeldai" },
     { href: `/whitepaper/zeldhash-whitepaper-${locale}.pdf`, labelKey: "nav.whitepaper", external: true, icon: "pdf" },
     { href: "https://github.com/ouziel-slama/zeldhash/", labelKey: "nav.github", external: true, icon: "github" },
   ];
 
-  const renderIcon = (icon?: "pdf" | "github") => {
-    if (icon === "pdf") return <PdfIcon className="w-5 h-5" />;
-    if (icon === "github") return <GithubIcon className="w-5 h-5" />;
-    return null;
+  const renderIcon = (icon?: FooterLink["icon"]) => {
+    switch (icon) {
+      case "wallet":
+        return <WalletIcon className="w-4 h-4" />;
+      case "explorer":
+        return <ExplorerIcon className="w-4 h-4" />;
+      case "zeldai":
+        return <ZeldAIIcon className="w-4 h-4" />;
+      case "pdf":
+        return <PdfIcon className="w-5 h-5" />;
+      case "github":
+        return <GithubIcon className="w-5 h-5" />;
+      default:
+        return null;
+    }
   };
 
   return (
@@ -43,7 +54,8 @@ export async function Footer() {
               {t(link.labelKey)}
             </a>
           ) : (
-            <Link key={link.href} href={link.href} className="text-dark-500 hover:text-gold-400 transition-colors">
+            <Link key={link.href} href={link.href} className="text-dark-500 hover:text-gold-400 transition-colors flex items-center gap-1.5">
+              {renderIcon(link.icon)}
               {t(link.labelKey)}
             </Link>
           )

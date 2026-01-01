@@ -5,9 +5,9 @@
   "logoAlt": "Λογότυπο ZeldHash",
   "nav": {
     "hunt": "Κυνήγι",
-    "wallet": "Πορτοφόλι",
+    "wallet": "Hunt Wallet",
     "explorer": "Εξερευνητής",
-    "faq": "Συχνές Ερωτήσεις",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "Λευκή Βίβλος",
     "toggleMenu": "Εναλλαγή μενού πλοήγησης",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "Πρωτόκολλο",
     "balances": "Υπόλοιπα",
-    "faq": "Συχνές Ερωτήσεις",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "100% αποκεντρωμένο. Χωρίς προεξόρυξη. Χωρίς VC. Μόνο μαθηματικά."
@@ -36,8 +36,13 @@
     "description": "Ασφαλές πορτοφόλι Bitcoin στον περιηγητή σας. Δημιουργήστε, διαχειριστείτε και υπογράψτε συναλλαγές απευθείας από το ZeldHash.",
     "subtitle": "Κυνηγήστε, στείλτε και λάβετε Zeld απευθείας από τον περιηγητή σας.",
     "securityNote": "Κρυπτογράφηση AES-256-GCM • Πρότυπα BIP32/39/84/86 • Αποθηκεύεται τοπικά στον περιηγητή σας",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "Χρειάζεστε βοήθεια;",
+      "subtitle": "Ρωτήστε το ZeldAI οτιδήποτε για το πορτοφόλι ή το ZeldHash",
+      "askButton": "Ρωτήστε το ZeldAI"
+    }
   },
   "explorer": {
     "title": "Εξερευνητής ZELD",
@@ -62,7 +67,7 @@
     "totalBalance": "Συνολικό υπόλοιπο",
     "utxo": "UTXO",
     "utxos": "UTXOs",
-    "utxoCount": "{count} UTXO",
+    "utxoCount": "{count, plural, one {# UTXO} other {# UTXOs}}",
     "noUtxos": "Δεν βρέθηκαν UTXO για αυτή τη διεύθυνση.",
     "leadingZeros": "{count}z",
     "tokenLabel": "ZELD",

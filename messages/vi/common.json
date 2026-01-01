@@ -5,9 +5,9 @@
   "logoAlt": "Logo ZeldHash",
   "nav": {
     "hunt": "Săn",
-    "wallet": "Ví",
+    "wallet": "Hunt Wallet",
     "explorer": "Khám phá",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "Sách trắng",
     "toggleMenu": "Chuyển đổi menu điều hướng",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "Giao thức",
     "balances": "Số dư",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "100% phi tập trung. Không premine. Không VC. Chỉ có toán học."
@@ -34,17 +34,22 @@
   },
   "wallet": {
     "description": "Ví Bitcoin an toàn trong trình duyệt của bạn. Tạo, quản lý và ký giao dịch trực tiếp từ ZeldHash.",
-    "subtitle": "Săn, gửi và nhận Zeld trực tiếp từ trình duyệt của bạn.",
+    "subtitle": "Săn, gửi và nhận ZELD trực tiếp từ trình duyệt của bạn.",
     "securityNote": "Mã hóa AES-256-GCM • Tiêu chuẩn BIP32/39/84/86 • Lưu trữ cục bộ trong trình duyệt của bạn",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "Cần trợ giúp?",
+      "subtitle": "Hỏi ZeldAI bất cứ điều gì về ví hoặc ZeldHash",
+      "askButton": "Hỏi ZeldAI"
+    }
   },
   "explorer": {
     "title": "Khám phá ZELD",
     "metaTitle": "Khám phá ZELD - ZeldHash",
     "metaDescription": "Khám phá các phần thưởng ZeldHash mới nhất và tìm kiếm địa chỉ, khối hoặc giao dịch.",
     "searchLabel": "Tìm kiếm trong trình khám phá ZeldHash",
-    "searchPlaceholder": "Nhập địa chỉ, chỉ số khối hoặc mã hash giao dịch",
+    "searchPlaceholder": "Nhập địa chỉ, chiều cao khối hoặc mã hash giao dịch",
     "searchButton": "Tìm kiếm",
     "searchHelp": "Nhập địa chỉ Bitcoin, chiều cao khối hoặc mã hash giao dịch.",
     "searchError": "Đầu vào không hợp lệ. Vui lòng nhập địa chỉ hợp lệ, chiều cao khối hoặc mã hash giao dịch.",
@@ -66,7 +71,7 @@
     "noUtxos": "Không tìm thấy UTXO cho địa chỉ này.",
     "leadingZeros": "{count}z",
     "tokenLabel": "ZELD",
-    "blockMetaTitle": "Khối #{blockIndex} - ZELD Explorer",
+    "blockMetaTitle": "Khối #{blockIndex} - Khám phá ZELD",
     "blockMetaDescription": "Xem phần thưởng ZELD và thống kê khối Bitcoin {blockIndex}",
     "blockStats": "Thống kê khối",
     "rewardCount": "Phần thưởng",

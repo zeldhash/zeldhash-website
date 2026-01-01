@@ -1,10 +1,12 @@
 import Link from 'next/link';
 import {CTASection} from '@/components/home';
-import {Badge, Section} from '@/components/ui';
+import {Section, SectionTitle} from '@/components/ui';
 import type {ReactNode} from 'react';
 import {getTranslations} from 'next-intl/server';
 import {locales, type Locale} from '@/lib/i18n/routing';
 import {notFound} from 'next/navigation';
+import {ZeldAIHeader} from '@/components/faq/zeldai-header';
+import {FAQTabs} from '@/components/faq/faq-tabs';
 
 type FaqItem = {
   question: string;
@@ -42,27 +44,56 @@ export default async function FAQPage({params}: Props) {
 
   const t = await getTranslations({locale, namespace: 'faq'});
 
-  const FAQ_ITEMS: FaqItem[] = [
+  const PROTOCOL_ITEMS: FaqItem[] = [
     {
-      question: t('items.whatIsZeldHash.q'),
-      answer: <p>{t('items.whatIsZeldHash.a')}</p>
+      question: t('protocol.howToGetZeld.q'),
+      answer: (
+        <p>
+          {t.rich('protocol.howToGetZeld.a', {
+            site: (chunks) => (
+              <Link
+                href="https://zeldhash.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold-400 hover:text-gold-300"
+              >
+                {chunks}
+              </Link>
+            ),
+            github: (chunks) => (
+              <Link
+                href="https://github.com/ouziel-slama/zeldhash-miner"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold-400 hover:text-gold-300"
+              >
+                {chunks}
+              </Link>
+            )
+          })}
+        </p>
+      )
     },
     {
-      question: t('items.whyName.q'),
+      question: t('protocol.whatIsZeldHash.q'),
+      answer: <p>{t('protocol.whatIsZeldHash.a')}</p>
+    },
+    {
+      question: t('protocol.whyName.q'),
       answer: (
         <>
-          <p>{t('items.whyName.a1')}</p>
-          <p>{t('items.whyName.a2')}</p>
+          <p>{t('protocol.whyName.a1')}</p>
+          <p>{t('protocol.whyName.a2')}</p>
         </>
       )
     },
     {
-      question: t('items.whatIsHash.q'),
+      question: t('protocol.whatIsHash.q'),
       answer: (
         <>
-          <p>{t('items.whatIsHash.a1')}</p>
+          <p>{t('protocol.whatIsHash.a1')}</p>
           <p>
-            {t.rich('items.whatIsHash.a2', {
+            {t.rich('protocol.whatIsHash.a2', {
               mempool: (chunks) => (
                 <Link
                   href="https://mempool.space/"
@@ -79,42 +110,42 @@ export default async function FAQPage({params}: Props) {
       )
     },
     {
-      question: t('items.bitcoinRelation.q'),
-      answer: <p>{t('items.bitcoinRelation.a')}</p>
+      question: t('protocol.bitcoinRelation.q'),
+      answer: <p>{t('protocol.bitcoinRelation.a')}</p>
     },
     {
-      question: t('items.rareTxHash.q'),
-      answer: <p>{t('items.rareTxHash.a')}</p>
+      question: t('protocol.rareTxHash.q'),
+      answer: <p>{t('protocol.rareTxHash.a')}</p>
     },
     {
-      question: t('items.huntHow.q'),
-      answer: <p>{t('items.huntHow.a')}</p>
+      question: t('protocol.huntHow.q'),
+      answer: <p>{t('protocol.huntHow.a')}</p>
     },
     {
-      question: t('items.whatIsZeld.q'),
-      answer: <p>{t('items.whatIsZeld.a')}</p>
+      question: t('protocol.whatIsZeld.q'),
+      answer: <p>{t('protocol.whatIsZeld.a')}</p>
     },
     {
-      question: t('items.inCirculation.q'),
-      answer: <p>{t('items.inCirculation.a')}</p>
+      question: t('protocol.inCirculation.q'),
+      answer: <p>{t('protocol.inCirculation.a')}</p>
     },
     {
-      question: t('items.ownWithoutKnowing.q'),
-      answer: <p>{t('items.ownWithoutKnowing.a')}</p>
+      question: t('protocol.ownWithoutKnowing.q'),
+      answer: <p>{t('protocol.ownWithoutKnowing.a')}</p>
     },
     {
-      question: t('items.centralized.q'),
-      answer: <p>{t('items.centralized.a')}</p>
+      question: t('protocol.centralized.q'),
+      answer: <p>{t('protocol.centralized.a')}</p>
     },
     {
-      question: t('items.rewards.q'),
-      answer: <p>{t('items.rewards.a')}</p>
+      question: t('protocol.rewards.q'),
+      answer: <p>{t('protocol.rewards.a')}</p>
     },
     {
-      question: t('items.startHunting.q'),
+      question: t('protocol.startHunting.q'),
       answer: (
         <p>
-          {t.rich('items.startHunting.a', {
+          {t.rich('protocol.startHunting.a', {
             site: (chunks) => (
               <Link
                 href="https://zeldhash.com"
@@ -131,37 +162,152 @@ export default async function FAQPage({params}: Props) {
     }
   ];
 
+  const WALLET_ITEMS: {title: string; items: FaqItem[]}[] = [
+    {
+      title: t('wallet.general.title'),
+      items: [
+        {
+          question: t('wallet.general.security.q'),
+          answer: <p>{t('wallet.general.security.a')}</p>
+        },
+        {
+          question: t('wallet.general.addressDifference.q'),
+          answer: <p>{t('wallet.general.addressDifference.a')}</p>
+        },
+        {
+          question: t('wallet.general.twoAddresses.q'),
+          answer: <p>{t('wallet.general.twoAddresses.a')}</p>
+        },
+        {
+          question: t('wallet.general.mobile.q'),
+          answer: <p>{t('wallet.general.mobile.a')}</p>
+        }
+      ]
+    },
+    {
+      title: t('wallet.hunting.title'),
+      items: [
+        {
+          question: t('wallet.hunting.gpuVsCpu.q'),
+          answer: <p>{t('wallet.hunting.gpuVsCpu.a')}</p>
+        },
+        {
+          question: t('wallet.hunting.miningTime.q'),
+          answer: <p>{t('wallet.hunting.miningTime.a')}</p>
+        },
+        {
+          question: t('wallet.hunting.keepRunning.q'),
+          answer: <p>{t('wallet.hunting.keepRunning.a')}</p>
+        }
+      ]
+    },
+    {
+      title: t('wallet.transactions.title'),
+      items: [
+        {
+          question: t('wallet.transactions.feeSelection.q'),
+          answer: (
+            <>
+              <p>{t('wallet.transactions.feeSelection.a1')}</p>
+              <p>{t('wallet.transactions.feeSelection.a2')}</p>
+              <p>{t('wallet.transactions.feeSelection.a3')}</p>
+            </>
+          )
+        },
+        {
+          question: t('wallet.transactions.minimumBtc.q'),
+          answer: (
+            <>
+              <p>{t('wallet.transactions.minimumBtc.a1')}</p>
+              <p>{t('wallet.transactions.minimumBtc.a2')}</p>
+              <p>{t('wallet.transactions.minimumBtc.a3')}</p>
+            </>
+          )
+        },
+        {
+          question: t('wallet.transactions.sendZeld.q'),
+          answer: <p>{t('wallet.transactions.sendZeld.a')}</p>
+        },
+        {
+          question: t('wallet.transactions.balanceIncreased.q'),
+          answer: <p>{t('wallet.transactions.balanceIncreased.a')}</p>
+        },
+        {
+          question: t('wallet.transactions.closeBrowser.q'),
+          answer: (
+            <>
+              <p>{t('wallet.transactions.closeBrowser.a1')}</p>
+              <p>{t('wallet.transactions.closeBrowser.a2')}</p>
+            </>
+          )
+        }
+      ]
+    },
+    {
+      title: t('wallet.security.title'),
+      items: [
+        {
+          question: t('wallet.security.backupImportance.q'),
+          answer: <p>{t('wallet.security.backupImportance.a')}</p>
+        },
+        {
+          question: t('wallet.security.forgotPassword.q'),
+          answer: <p>{t('wallet.security.forgotPassword.a')}</p>
+        },
+        {
+          question: t('wallet.security.mnemonicPhrase.q'),
+          answer: <p>{t('wallet.security.mnemonicPhrase.a')}</p>
+        },
+        {
+          question: t('wallet.security.lostDevice.q'),
+          answer: <p>{t('wallet.security.lostDevice.a')}</p>
+        }
+      ]
+    },
+    {
+      title: t('wallet.external.title'),
+      items: [
+        {
+          question: t('wallet.external.connectExternal.q'),
+          answer: <p>{t('wallet.external.connectExternal.a')}</p>
+        },
+        {
+          question: t('wallet.external.externalVsDirect.q'),
+          answer: (
+            <>
+              <p>{t('wallet.external.externalVsDirect.a1')}</p>
+              <p>{t('wallet.external.externalVsDirect.a2')}</p>
+              <p>{t('wallet.external.externalVsDirect.a3')}</p>
+              <p>{t('wallet.external.externalVsDirect.a4')}</p>
+              <p>{t('wallet.external.externalVsDirect.a5')}</p>
+              <p>{t('wallet.external.externalVsDirect.a6')}</p>
+            </>
+          )
+        }
+      ]
+    }
+  ];
+
+  const categoryLabels = {
+    protocol: t('categories.protocol'),
+    wallet: t('categories.wallet')
+  };
+
   return (
     <div className="w-full">
-      <section className="w-full px-6 md:px-12 pt-6 pb-6 border-b border-gold-400/10 bg-black/30">
-        <div className="max-w-[900px] mx-auto">
-          <h1 className="text-[clamp(40px,7vw,64px)] font-light leading-[1.1] tracking-[-1.5px] mb-4 font-serif">
-            {t('heading')}
-          </h1>
-          <p className="text-lg text-dark-300 leading-[1.7] max-w-[760px]">
-            {t('intro')}
-            <span className="text-gold-400 font-semibold ms-2">{t('huntIsOn')}</span>
-          </p>
-        </div>
-      </section>
+      <ZeldAIHeader />
 
       <Section className="pt-12 pb-12">
-        <div className="space-y-4">
-          {FAQ_ITEMS.map((item) => (
-            <div
-              key={item.question}
-              className="p-6 md:p-7 bg-white/[0.02] border border-gold-400/10 rounded-xl hover:border-gold-400/30 transition-colors"
-            >
-              <h3 className="text-xl font-medium text-dark-100 mb-3">{item.question}</h3>
-              <div className="text-[15px] text-dark-300 leading-[1.7] space-y-3">{item.answer}</div>
-            </div>
-          ))}
-        </div>
+        <SectionTitle title={t('heading')} className="mb-10" />
+
+        <FAQTabs 
+          categoryLabels={categoryLabels}
+          protocolItems={PROTOCOL_ITEMS}
+          walletSections={WALLET_ITEMS}
+        />
       </Section>
 
       <CTASection />
     </div>
   );
 }
-
-

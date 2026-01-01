@@ -7,7 +7,7 @@
     "titleLine1": "ล่าธุรกรรม Bitcoin",
     "titleLine2": "ที่หายากที่สุด",
     "subtitleBeforeZeros": "ธุรกรรม Bitcoin บางรายการหายากมาก — ID ของมันขึ้นต้นด้วย",
-    "subtitleAfterZeros": "ค้นหาและรับโทเค็น {token}.",
+    "subtitleAfterZeros": "ค้นหาและรับโทเค็น {token}",
     "ctaBox": "⚡ คนหลายพันคนเป็นเจ้าของ ZELD โดยไม่รู้ตัว คุณล่ะ?",
     "addressPlaceholder": "กรอกที่อยู่ Bitcoin ของคุณ...",
     "checkBalance": "ตรวจสอบยอดคงเหลือ"

@@ -7,7 +7,7 @@
     "titleLine1": "Jage nach den",
     "titleLine2": "seltensten Bitcoin-Transaktionen",
     "subtitleBeforeZeros": "Manche Bitcoin-Transaktionen sind extrem selten — ihre ID beginnt mit",
-    "subtitleAfterZeros": "Finde sie und verdiene {token}-Token.",
+    "subtitleAfterZeros": "Finde sie und verdiene {token} Token.",
     "ctaBox": "⚡ Tausende besitzen ZELD, ohne es zu wissen. Gehörst du dazu?",
     "addressPlaceholder": "Gib deine Bitcoin-Adresse ein...",
     "checkBalance": "Guthaben prüfen"
@@ -66,7 +66,7 @@
     "label": "Ruhmeshalle",
     "title": "Seltenste Entdeckungen",
     "leadingZeros": "{count} führende Nullen",
-    "recordSuffix": "— Allzeitrekord 🏆",
+    "recordSuffix": "— ALLZEITREKORD 🏆",
     "tokenLabel": "ZELD"
   },
   "cta": {

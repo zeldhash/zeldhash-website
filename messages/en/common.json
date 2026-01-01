@@ -5,9 +5,9 @@
   "logoAlt": "ZeldHash Logo",
   "nav": {
     "hunt": "Hunt",
-    "wallet": "Wallet",
+    "wallet": "Hunt Wallet",
     "explorer": "Explorer",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "Whitepaper",
     "toggleMenu": "Toggle navigation menu",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "Protocol",
     "balances": "Balances",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "100% decentralized. No premine. No VC. Just math."
@@ -34,10 +34,15 @@
   },
   "wallet": {
     "description": "Secure Bitcoin wallet in your browser. Create, manage, and sign transactions directly from ZeldHash.",
-    "subtitle": "Hunt, send and receive Zeld directly from your browser.",
+    "subtitle": "Hunt, send, and receive ZELD directly in your browser.",
     "securityNote": "AES-256-GCM encryption • BIP32/39/84/86 standards • Stored locally in your browser",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "Need help?",
+      "subtitle": "Ask ZeldAI anything about the wallet or ZeldHash",
+      "askButton": "Ask ZeldAI"
+    }
   },
   "explorer": {
     "title": "ZELD Explorer",

@@ -1,62 +1,178 @@
 {
   "meta": {
-    "title": "Maswali Yanayoulizwa Mara kwa Mara kuhusu ZeldHash",
-    "description": "Majibu kuhusu uwindaji wa miamala ya Bitcoin yenye mifumo adimu ya hash."
+    "title": "Maswali Yanayoulizwa Mara kwa Mara ya ZeldHash",
+    "description": "Majibu kuhusu kuwinda miamala ya Bitcoin yenye miundo ya hash adimu."
   },
-  "badge": "Maswali",
-  "heading": "Maswali kuhusu ZeldHash",
-  "intro": "Kila kitu unachohitaji kujua kuhusu uwindaji wa miamala ya Bitcoin yenye mifumo adimu ya hash.",
-  "huntIsOn": "Uwindaji Umeanza.",
-  "items": {
+  "badge": "FAQ",
+  "heading": "Maswali Yanayoulizwa Mara kwa Mara",
+  "intro": "Yote unayohitaji kujua kuhusu kuwinda miamala ya Bitcoin yenye miundo ya hash adimu.",
+  "huntIsOn": "Uwindaji umeanza.",
+  "categories": {
+    "protocol": "Itifaki",
+    "wallet": "Pochi"
+  },
+  "protocol": {
+    "howToGetZeld": {
+      "q": "Ninawezaje kupata ZELD?",
+      "a": "Njia rahisi zaidi ni kutumia ZeldWallet moja kwa moja kwenye <site>zeldhash.com</site> — ni pochi ya kivinjari inayokuruhusu kuwinda miamala adimu bila usanidi wowote. Unda au unganisha pochi na uanze kuchimba. Kwa wasanidi programu wanaotaka kujenga suluhisho lao la kutengeneza, tunatoa SDK za chanzo huria katika Rust, TypeScript na Python zinazopatikana kwenye <github>GitHub</github>."
+    },
     "whatIsZeldHash": {
       "q": "ZeldHash ni nini?",
-      "a": "ZeldHash ni itifaki inayotuza watumiaji wa Bitcoin wanaogundua au kuunda miamala yenye mifumo adimu ya hash — hasa, hash zinazoanza na sifuri nyingi. Fikiria kama uwindaji wa hazina kwenye blockchain ya Bitcoin."
+      "a": "ZeldHash ni itifaki inayotuza watumiaji wa Bitcoin wanaogundua au kuunda miamala yenye miundo ya hash adimu — haswa, hash zinazoanza na sifuri nyingi. Fikiria kama uwindaji wa hazina kwenye blockchain ya Bitcoin."
     },
     "whyName": {
       "q": "Kwa nini jina \"ZeldHash\"?",
-      "a1": "\"Zeld\" inatoka kwa neno la Kiholanzi zeldzaam, linalomaanisha \"adimu\". Ni jina linalofaa kwa itifaki iliyojitolea kuwinda miamala adimu zaidi kwenye blockchain ya Bitcoin. Sehemu ya \"hash\" inarejelea alama ya kidijitali inayofanya kila muamala kuwa wa kipekee.",
-      "a2": "Kwa hivyo ZeldHash maana yake halisi ni \"Hash Adimu\" — hasa tunachokiwinda."
+      "a1": "\"Zeld\" inatoka kwa neno la Kiholanzi zeldzaam, linalomaanisha \"adimu\". Ni jina linalofaa kwa itifaki iliyojitolea kuwinda miamala adimu zaidi kwenye blockchain ya Bitcoin. Sehemu ya \"hash\" inarejelea alama ya kidijitali ya kriptografia inayofanya kila muamala kuwa wa kipekee.",
+      "a2": "Kwa hivyo ZeldHash kihalisi inamaanisha \"Hash Adimu\" — haswa tunachowinda."
     },
     "whatIsHash": {
       "q": "Hash ni nini?",
-      "a1": "Hash ni kama alama ya vidole vya kidijitali. Ni kitambulisho cha kipekee kinachozalishwa kutoka kwa data yoyote — iwe ni picha, hati, au muamala wa Bitcoin. Kila hash ni mfuatano wa herufi 64 za hexadecimal.",
+      "a1": "Hash ni kama alama ya kidole ya kidijitali. Ni kitambulisho cha kipekee kinachozalishwa kutoka kwa data yoyote — iwe ni picha, hati, au muamala wa Bitcoin. Kila hash ni mfuatano wa herufi 64 za hexadecimal.",
       "a2": "Unaweza kuona mifano ya hash kwenye <mempool>mempool.space</mempool>."
     },
     "bitcoinRelation": {
-      "q": "Hii inahusiana vipi na Bitcoin?",
-      "a": "Kila bloku ya Bitcoin ina hash, na kila muamala ndani ya bloku una hash yake inayoitwa kitambulisho cha muamala (txid). Ikiwa umewahi kuangalia hash za bloku, unaweza kuwa umeona zinaanza na sifuri nyingi. Hiyo ni matokeo ya uchimbaji: wachimbaji huhesabu hash mara kwa mara hadi wapate moja yenye sifuri za kutosha mwanzoni."
+      "q": "Hii inahusianaje na Bitcoin?",
+      "a": "Kila block ya Bitcoin ina hash, na kila muamala ndani ya block ina hash yake inayoitwa kitambulisho cha muamala (txid). Ukiangalia hash za block, huenda umegundua zinaanza na sifuri nyingi. Hiyo ni matokeo ya uchimbaji: wachimbaji huhesabu hash mara kwa mara hadi wapate moja yenye sifuri za kutosha mwanzoni."
     },
     "rareTxHash": {
-      "q": "Ni nini kinachofanya hash ya muamala kuwa \"adimu\"?",
-      "a": "Tofauti na hash za bloku, hash za miamala kimsingi ni za nasibu — zinaweza kuanza na herufi yoyote. Hash ya muamala inayoanza na sifuri nyingi ni adimu kitakwimu, kama kupata karafu yenye majani manne. Kadri sifuri za mbele zinavyoongezeka, ndivyo muamala unavyokuwa adimu zaidi."
+      "q": "Nini kinachofanya hash ya muamala \"adimu\"?",
+      "a": "Tofauti na hash za block, hash za muamala ni za nasibu — zinaweza kuanza na herufi yoyote. Hash ya muamala inayoanza na sifuri nyingi ni adimu kistastika, kama kupata shamroki ya majani manne. Sifuri nyingi zaidi mwanzoni, muamala ni adimu zaidi."
     },
     "huntHow": {
-      "q": "Ninawinda vipi miamala adimu?",
+      "q": "Nawezaje kuwinda miamala adimu?",
       "a": "Kama wachimbaji. Unaongeza data ya nasibu kwenye muamala wako na kuhesabu hash hadi upate moja inayoanza na sifuri. Inaweza kuchukua majaribio mengi, lakini ukifanikiwa, umegundua kitu adimu."
     },
     "whatIsZeld": {
       "q": "ZELD ni nini?",
-      "a": "ZELD ni tokeni unayoipata unapopata au kuunda muamala wa Bitcoin wenye hash inayoanza na angalau sifuri 6. Kadri ugunduzi wako unavyokuwa adimu (sifuri zaidi), ndivyo ZELD unavyopata zaidi."
+      "a": "ZELD ni tokeni unayoipata unapopata au kuunda muamala wa Bitcoin wenye hash inayoanza na angalau sifuri 6. Ugunduzi wako ukiwa adimu zaidi (sifuri nyingi), utapata ZELD nyingi."
     },
     "inCirculation": {
-      "q": "Je, tayari kuna tokeni za ZELD zinazozunguka?",
-      "a": "Ndiyo. Tangu Bitcoin ilipoanzishwa mwaka 2009, miamala mingi imejikuta kwa bahati na hash zinazoanza na sifuri 6+. Hazina hizi za bahati tayari zinaweza kudaiwa. Baadhi ya wawindaji pia wanaziunda kimakusudi."
+      "q": "Je, kuna tokeni za ZELD zinazozunguka tayari?",
+      "a": "Ndiyo. Tangu Bitcoin ilipozinduliwa mwaka 2009, miamala mingi imejikuta ikiwa na hash zinazoanza na sifuri 6+. Hazina hizi za bahati zinaweza kudaiwa tayari. Baadhi ya wawindaji pia huzitengeneza kwa makusudi."
     },
     "ownWithoutKnowing": {
       "q": "Je, watu wengine wanamiliki ZELD bila kujua?",
-      "a": "Kabisa. Maelfu ya watumiaji wa Bitcoin wanamiliki miamala adimu bila kujua. ZELD yao inasubiri kudaiwa."
+      "a": "Kabisa. Maelfu ya watumiaji wa Bitcoin wanamiliki miamala adimu bila kujua. ZELD zao zinasubiri kudaiwa."
     },
     "centralized": {
-      "q": "Je, ZeldHash ina usimamizi wa kati? Nani anaidhibiti?",
-      "a": "Hakuna. ZeldHash haina usimamizi wa kati kabisa, kama Bitcoin. Tokeni za ZELD zinaweza kuhamishwa kama mali yoyote ya Bitcoin. Hakuna mamlaka kuu."
+      "q": "Je, ZeldHash ni ya kati (centralized)? Nani anaidhibiti?",
+      "a": "Hakuna mtu. ZeldHash imegatuliwa kikamilifu, kama Bitcoin. Tokeni za ZELD zinaweza kuhamishwa kama mali yoyote ya Bitcoin. Hakuna mamlaka kuu."
     },
     "rewards": {
       "q": "Mfumo wa tuzo unafanyaje kazi?",
-      "a": "Itifaki inatuza uadimu. Muamala wenye sifuri 6 za mbele unapata ZELD, na sifuri zaidi inamaanisha tuzo kubwa zaidi. Kadri wawindaji zaidi wanavyojiunga, ushindani unaongezeka — lakini daima kuna kitu cha kupata kwa wale wanaoendelea kutafuta."
+      "a": "Itifaki inatuza uadimu. Muamala wenye sifuri 6 mwanzoni unapata ZELD, na sifuri nyingi zaidi inamaanisha tuzo kubwa. Wawindaji wengi wanavyojiunga, ushindani unaongezeka — lakini daima kuna kitu cha kupatikana kwa wanaoendelea kutafuta."
     },
     "startHunting": {
-      "q": "Ninaanzaje kuwinda?",
-      "a": "Tembelea <site>zeldhash.com</site> na uanze safari yako. Kila muamala ni nafasi ya kugundua kitu adimu."
+      "q": "Nianzeje kuwinda?",
+      "a": "Tembelea <site>zeldhash.com</site> na uanze utafutaji wako. Kila muamala ni nafasi ya kugundua kitu adimu."
     }
+  },
+  "wallet": {
+    "general": {
+      "title": "Kwa ujumla",
+      "security": {
+        "q": "Je, sarafu zangu za kripto ziko salama kweli kwenye pochi hii? Funguo zangu za faragha zimehifadhiwa wapi?",
+        "a": "Ndiyo, fedha zako ziko salama kama usalama wa kivinjari chako. ZeldWallet inahifadhi funguo zako za faragha ndani ya IndexedDB ya kivinjari, zilizosimbwa kwa AES-256-GCM. Ukiweka nenosiri, funguo zako zinalindwa kwa kutumia upatikanaji wa ufunguo wa PBKDF2. Funguo zako za faragha hazitoki kifaani chako na hazitatumwa kwa seva yoyote. Hata hivyo, daima unda nakala ya maneno yako ya kumbukumbu — ukipoteza ufikiaji wa kivinjari au kifaa bila nakala, fedha zako zitapotea milele."
+      },
+      "addressDifference": {
+        "q": "Tofauti kati ya anwani ya \"Malipo\" na anwani ya \"Ordinals\" ni nini?",
+        "a": "Anwani ya Malipo inatumika kwa miamala ya kawaida ya Bitcoin — kutuma na kupokea BTC. Anwani ya Ordinals (anwani ya Taproot) ndipo unapopokea tokeni za ZELD unapowinda muamala adimu kwa mafanikio. Tokeni za ZELD zimeambatanishwa na pato la kwanza la muamala, ambalo daima linatumwa kwa anwani yako ya Ordinals."
+      },
+      "twoAddresses": {
+        "q": "Kwa nini nina anwani mbili tofauti za Bitcoin?",
+        "a": "Hii inafuata mazoea bora ya Bitcoin ya kutenganisha aina tofauti za mali. Anwani ya Malipo inashughulikia BTC yako kwa kulipa ada za muamala, wakati anwani ya Ordinals inapokea na kushikilia tokeni zako za ZELD. Utenganishaji huu unazuia kutumia UTXO zenye ZELD kwa bahati mbaya wakati wa malipo ya kawaida ya BTC."
+      },
+      "mobile": {
+        "q": "Je, naweza kutumia ZeldWallet kwenye simu yangu?",
+        "a": "Ndiyo, ZeldWallet inafanya kazi kwenye kivinjari chochote cha kisasa cha simu. Hata hivyo, utendaji wa uchimbaji kwenye vifaa vya simu ni mdogo sana kuliko kompyuta za mezani kwa sababu ya nguvu ndogo ya CPU na ukosefu wa kuongeza kasi ya GPU. Kwa uwindaji wa kweli, kompyuta ya mezani au laptop inapendekezwa."
+      }
+    },
+    "hunting": {
+      "title": "Uchimbaji / Uwindaji",
+      "gpuVsCpu": {
+        "q": "Tofauti kati ya uchimbaji na au bila GPU ni nini? Je, itaharibu kompyuta yangu?",
+        "a": "Uchimbaji wa GPU unatumia teknolojia ya WebGPU kutumia kadi yako ya graphics kwa hesabu za hash haraka zaidi — kwa kawaida mara 10-100 haraka kuliko uchimbaji wa CPU peke yake. Uchimbaji wa CPU unatumia Web Workers na ni polepole lakini unafanya kazi kwenye vifaa vyote. Hakuna itakayoharibu kompyuta yako. Vifaa vya kisasa vimeundwa kushughulikia mzigo wa kazi endelevu. Kivinjari chako kinasimamia rasilimali kwa uwajibikaji, na unaweza kusimamisha uchimbaji wakati wowote."
+      },
+      "miningTime": {
+        "q": "Inachukua muda gani kuchimba ZELD?",
+        "a": "Inategemea vifaa na bahati yako. Kupata hash ya muamala yenye sifuri 6 mwanzoni ina nafasi ya takriban 1 kati ya milioni 16 kwa jaribio. Na GPU ya kisasa inayofikia mamilioni ya hash kwa sekunde, inaweza kuchukua dakika hadi masaa. Na CPU peke yake, inaweza kuchukua masaa hadi siku. Kuna nasibu pia — unaweza kuwa na bahati haraka au inaweza kuchukua muda mrefu zaidi ya wastani."
+      },
+      "keepRunning": {
+        "q": "Je, ninahitaji kuweka kompyuta yangu ikiendesha wakati wa uchimbaji?",
+        "a": "Ndiyo. Uchimbaji unafanyika kwenye kivinjari chako, kwa hivyo tab lazima ibaki wazi na hai. Ukifunga kivinjari au kwenda mahali pengine, uchimbaji unasimama. Maendeleo yako (hash zilizosindikwa) hayahifadhiwi — utaanza upya unapoanza tena. Hata hivyo, hakuna fedha zilizo hatarini ukisimama katikati ya uchimbaji; muamala unatangazwa tu baada ya hash halali kupatikana na kusainiwa."
+      }
+    },
+    "transactions": {
+      "title": "Miamala na Ada",
+      "feeSelection": {
+        "q": "Ninawezaje kuchagua ada za muamala? Tofauti kati ya \"Polepole\", \"Wastani\", na \"Haraka\" ni nini?",
+        "a1": "ZeldWallet inapata mapendekezo ya ada ya wakati halisi kutoka mempool.space:",
+        "a2": "Polepole: Ada ndogo, inaweza kuchukua saa 1+ kwa uthibitisho. Wastani: Ada iliyosawazishwa, kwa kawaida inathibitishwa ndani ya dakika 30-60. Haraka: Ada kubwa, kwa kawaida inathibitishwa katika block 1-2 zifuatazo (~dakika 10-20).",
+        "a3": "Unaweza pia kuweka kiwango cha ada maalum katika sats/vB. Ada kubwa inamaanisha uthibitisho wa haraka lakini inagharimu BTC zaidi."
+      },
+      "minimumBtc": {
+        "q": "Kwa nini ninahitajika kuwa na kiasi cha chini cha BTC ili kuanza kuchimba?",
+        "a1": "Kila muamala wa Bitcoin unahitaji ada, na kila pato linahitaji thamani ya chini (inayoitwa \"kikomo cha vumbi\"). ZeldWallet inahitaji takriban satoshi 2,000+ kufidia:",
+        "a2": "sats 330 kwa kiasi cha vumbi kwa pato la ZELD kwa anwani yako ya Ordinals, na ~sats 1,500+ kwa ada ya muamala kulingana na hali za sasa za mtandao.",
+        "a3": "Bila BTC ya kutosha, huwezi kuunda muamala halali."
+      },
+      "sendZeld": {
+        "q": "Ninawezaje kutuma ZELD kwa mtu mwingine?",
+        "a": "Katika ZeldWallet, nenda sehemu ya Uwindaji na angalia \"Tuma ZELD\". Ingiza anwani ya Bitcoin ya mpokeaji na kiasi cha ZELD unachotaka kutuma. Uhamisho utajumuishwa katika muamala wako unaofuata wa uwindaji — ZELD yako itatumwa hash adimu inapopatikana na muamala unatangazwa."
+      },
+      "balanceIncreased": {
+        "q": "Nimetuma ZELD lakini salio langu limeongezeka!?",
+        "a": "Hiyo ni kawaida — na habari njema! Unapotuma ZELD kupitia ZeldWallet, hufanyi uhamisho tu, unawinda pia hash adimu ya muamala. Muamala unaotangaza ukiwa na sifuri 6 au zaidi mwanzoni, unapata tuzo ya ZELD (hadi ZELD 4,096 kwa ugunduzi adimu zaidi). Kwa hivyo ukituma ZELD 100 lakini kupokea tuzo ya ZELD 256, salio lako halisi liliongezeka kwa ZELD 156. Kila muamala ni fursa!"
+      },
+      "closeBrowser": {
+        "q": "Nini kinatokea nikifunga kivinjari wakati wa muamala?",
+        "a1": "Ukifunga wakati wa uchimbaji: Hakuna kinachopotea. Uchimbaji unasimama tu na unaweza kuanza tena baadaye.",
+        "a2": "Ukifunga wakati wa kusaini/kutangaza: Ikiwa muamala tayari umesainiwa na kutangazwa kwenye mtandao, utathibitishwa kawaida. Ikiwa haujatangazwa bado, hakuna kilichotumwa na utahitaji kuchimba tena."
+      }
+    },
+    "security": {
+      "title": "Usalama na Nakala",
+      "backupImportance": {
+        "q": "Nakala ni nini na kwa nini ni muhimu sana kuiunda?",
+        "a": "Nakala ni maneno yako 12 au 24 ya kumbukumbu (maneno ya mbegu). Maneno haya yanaweza kuzalisha upya funguo zako zote za faragha na kurejesha pochi yako yote kwenye kifaa chochote au programu ya pochi inayoendana. Bila nakala hii, ukipoteza ufikiaji wa kivinjari (data iliyofutwa, kifaa kipya, kivinjari kilichoanguka), fedha zako zimepotea milele. Andika kwenye karatasi na hifadhi salama — usiiokoe kidijitali au kuishiriki na mtu yeyote."
+      },
+      "forgotPassword": {
+        "q": "Nikisahau nenosiri langu, ninapoteza kila kitu?",
+        "a": "Hapana, ukiwa na maneno yako ya kumbukumbu ya nakala. Unaweza kufuta hifadhi ya ZeldWallet na kurejesha pochi ukitumia maneno ya kumbukumbu. Nenosiri linalinda tu hifadhi iliyosimbwa ya ndani — haihusiani na blockchain. Hata hivyo, ukisahau nenosiri NA huna nakala ya maneno ya kumbukumbu, basi ndiyo, fedha zako zimepotea."
+      },
+      "mnemonicPhrase": {
+        "q": "\"Maneno ya kumbukumbu\" ni nini na naweza kurejesha pochi kutoka programu nyingine?",
+        "a": "Maneno ya kumbukumbu (pia yanaitwa maneno ya mbegu au maneno ya urejeshaji) ni orodha ya maneno 12 au 24 yanayowakilisha ufunguo wako wa siri mkuu kulingana na kiwango cha BIP39. Ndiyo, unaweza kurejesha maneno ya kumbukumbu ya ZeldWallet katika pochi nyingine zinazoendana kama Xverse, Leather, Sparrow, au pochi yoyote inayoendana na BIP39/BIP84/BIP86. Bitcoin na ZELD yako itaonekana kwenye anwani sawa."
+      },
+      "lostDevice": {
+        "q": "Je, mtu anaweza kufikia pochi yangu nikipoteza kompyuta yangu?",
+        "a": "Inategemea mpangilio wako wa usalama. Ukiweka nenosiri imara, mshambuliaji atahitaji kuvunja usimbaji (ngumu sana na nenosiri nzuri). Bila nenosiri, mtu anayefikia data ya kivinjari chako anaweza kufikia pochi yako. Kwa usalama wa juu: daima tumia nenosiri imara, na kifaa chako kikipotea/kuibiwa, rejesha pochi mahali pengine ukitumia maneno ya kumbukumbu na uhamishe fedha zako mara moja."
+      }
+    },
+    "external": {
+      "title": "Pochi za Nje",
+      "connectExternal": {
+        "q": "Je, naweza kuunganisha pochi yangu ya Xverse au Leather badala ya kuunda akaunti mpya?",
+        "a": "Ndiyo! ZeldWallet inasaidia kuunganisha pochi za nje ikiwa ni pamoja na Xverse, Leather, na Magic Eden. Bofya \"Unganisha Pochi\" na uchague pochi yako iliyosanikishwa. Kiendelezi cha pochi yako kitakuomba uidhinishe muunganisho. Hii inakuruhusu kuwinda ZELD ukitumia anwani za pochi yako iliyopo bila kufunua funguo zako za faragha kwa ZeldWallet."
+      },
+      "externalVsDirect": {
+        "q": "Tofauti kati ya kutumia ZeldWallet moja kwa moja au kupitia pochi ya nje kama Xverse ni nini?",
+        "a1": "Hifadhi ya ufunguo: ZeldWallet Direct inahifadhi funguo zilizosimbwa kwenye kivinjari, Pochi ya Nje inahifadhi funguo kwenye kiendelezi/vifaa.",
+        "a2": "Mpangilio: ZeldWallet Direct inahitaji kuunda au kurejesha kwenye kivinjari, Pochi ya Nje inaunganisha tu pochi iliyopo.",
+        "a3": "Kusaini: ZeldWallet Direct inasaini kiotomatiki baada ya kufungua, Pochi ya Nje inaonyesha popup ya idhini kwa kila kitendo.",
+        "a4": "Uhamishaji: ZeldWallet Direct imefungwa kwa kivinjari/kifaa, Pochi ya Nje inafanya kazi kwenye tovuti.",
+        "a5": "Pochi ya vifaa: Haijasaidiwa kwenye ZeldWallet Direct, Inasaidiwa kupitia kiendelezi kwenye Pochi ya Nje.",
+        "a6": "Tumia pochi ya nje ukitaka msaada wa pochi ya vifaa, una fedha tayari, au unapendelea kuweka funguo kwenye kiendelezi maalum. Tumia ZeldWallet moja kwa moja kwa uzoefu rahisi na kamili."
+      }
+    }
+  },
+  "ama": {
+    "aiPowered": "Msaidizi wa AI",
+    "placeholder": "Uliza kuhusu ZeldHash...",
+    "submit": "Tuma",
+    "helperText": "Maswali kuhusu ZeldHash, tokeni za ZELD, miamala adimu, au dhana za blockchain.",
+    "genericError": "Hitilafu ilitokea. Tafadhali jaribu tena.",
+    "connectionError": "Hitilafu ya muunganisho. Angalia muunganisho wako wa mtandao.",
+    "aiResponse": "Jibu la AI"
   }
 }

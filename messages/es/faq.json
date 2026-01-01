@@ -4,10 +4,18 @@
     "description": "Respuestas sobre la caza de transacciones de Bitcoin con patrones de hash raros."
   },
   "badge": "FAQ",
-  "heading": "FAQ de ZeldHash",
+  "heading": "Preguntas frecuentes",
   "intro": "Todo lo que necesitas saber sobre la caza de transacciones de Bitcoin con patrones de hash raros.",
   "huntIsOn": "La caza ha comenzado.",
-  "items": {
+  "categories": {
+    "protocol": "Protocolo",
+    "wallet": "Cartera"
+  },
+  "protocol": {
+    "howToGetZeld": {
+      "q": "¿Cómo obtengo ZELD?",
+      "a": "La forma más fácil es usar ZeldWallet directamente en <site>zeldhash.com</site> — es una cartera basada en navegador que te permite cazar transacciones raras sin configuración. Simplemente crea o conecta una cartera y comienza a minar. Para desarrolladores que quieran construir su propia solución de minado, proporcionamos SDKs de código abierto en Rust, TypeScript y Python disponibles en <github>GitHub</github>."
+    },
     "whatIsZeldHash": {
       "q": "¿Qué es ZeldHash?",
       "a": "ZeldHash es un protocolo que recompensa a usuarios de Bitcoin que descubren o crean transacciones con patrones de hash raros — en concreto, hashes que empiezan con varios ceros. Piénsalo como una búsqueda del tesoro en la blockchain de Bitcoin."
@@ -58,7 +66,113 @@
       "q": "¿Cómo empiezo a cazar?",
       "a": "Visita <site>zeldhash.com</site> y comienza tu misión. Cada transacción es una oportunidad de descubrir algo raro."
     }
+  },
+  "wallet": {
+    "general": {
+      "title": "General",
+      "security": {
+        "q": "¿Están mis criptomonedas realmente seguras en esta cartera? ¿Dónde se almacenan mis claves privadas?",
+        "a": "Sí, tus fondos están tan seguros como la seguridad de tu navegador. ZeldWallet almacena tus claves privadas localmente en el IndexedDB de tu navegador, cifradas con AES-256-GCM. Si estableces una contraseña, tus claves están protegidas mediante derivación de claves PBKDF2, haciéndolas extremadamente difíciles de descifrar. Tus claves privadas nunca salen de tu dispositivo y nunca se envían a ningún servidor. Sin embargo, siempre crea una copia de seguridad de tu frase mnemónica — si pierdes acceso a tu navegador o dispositivo sin copia de seguridad, tus fondos se perderán para siempre."
+      },
+      "addressDifference": {
+        "q": "¿Cuál es la diferencia entre la dirección de \"Pago\" y la dirección de \"Ordinals\"?",
+        "a": "La dirección de Pago se usa para transacciones Bitcoin regulares — enviar y recibir BTC. La dirección de Ordinals (una dirección Taproot) es donde se reciben tus tokens ZELD cuando cazas con éxito una transacción rara. Los tokens ZELD se adjuntan a la primera salida de la transacción, que siempre se envía a tu dirección de Ordinals."
+      },
+      "twoAddresses": {
+        "q": "¿Por qué tengo dos direcciones Bitcoin diferentes?",
+        "a": "Esto sigue las mejores prácticas de Bitcoin para separar diferentes tipos de activos. La dirección de Pago maneja tus BTC para pagar comisiones de transacción, mientras que la dirección de Ordinals recibe y mantiene tus tokens ZELD. Esta separación evita gastar accidentalmente UTXOs que contienen ZELD al hacer pagos BTC regulares."
+      },
+      "mobile": {
+        "q": "¿Puedo usar ZeldWallet en mi teléfono?",
+        "a": "Sí, ZeldWallet funciona en cualquier navegador móvil moderno. Sin embargo, el rendimiento de minería en dispositivos móviles es significativamente menor que en ordenadores de escritorio debido a la potencia de CPU limitada y la falta de aceleración GPU. Para cazar en serio, se recomienda un ordenador de escritorio o portátil."
+      }
+    },
+    "hunting": {
+      "title": "Minería / Caza",
+      "gpuVsCpu": {
+        "q": "¿Cuál es la diferencia entre minar con o sin GPU? ¿Dañará mi ordenador?",
+        "a": "La minería GPU usa tecnología WebGPU para aprovechar tu tarjeta gráfica para cálculos de hash mucho más rápidos — típicamente 10-100x más rápido que la minería solo con CPU. La minería CPU usa Web Workers y es más lenta pero funciona en todos los dispositivos. Ninguna dañará tu ordenador. El hardware moderno está diseñado para manejar cargas de trabajo sostenidas. Tu navegador gestiona los recursos responsablemente, y puedes detener la minería en cualquier momento."
+      },
+      "miningTime": {
+        "q": "¿Cuánto tiempo se tarda en minar un ZELD?",
+        "a": "Depende de tu hardware y suerte. Encontrar un hash de transacción con 6 ceros iniciales tiene aproximadamente 1 en 16 millones de probabilidad por intento. Con una GPU moderna alcanzando millones de hashes por segundo, puede tardar minutos a horas. Solo con CPU, puede tardar horas a días. También hay aleatoriedad involucrada — podrías tener suerte rápido o podría tardar más que el promedio."
+      },
+      "keepRunning": {
+        "q": "¿Necesito mantener mi ordenador encendido durante la minería?",
+        "a": "Sí. La minería ocurre en tu navegador, así que la pestaña debe permanecer abierta y activa. Si cierras el navegador o navegas a otro lugar, la minería se detiene. Tu progreso (hashes procesados) no se guarda — empezarás de nuevo cuando retomes. Sin embargo, ningún fondo está en riesgo si paras a mitad de la minería; la transacción solo se transmite una vez que se encuentra un hash válido y se firma."
+      }
+    },
+    "transactions": {
+      "title": "Transacciones y Comisiones",
+      "feeSelection": {
+        "q": "¿Cómo elijo las comisiones de transacción? ¿Cuál es la diferencia entre \"Lento\", \"Medio\" y \"Rápido\"?",
+        "a1": "ZeldWallet obtiene recomendaciones de comisiones en tiempo real de mempool.space:",
+        "a2": "Lento: Comisión más baja, puede tardar 1+ horas en confirmar. Medio: Comisión equilibrada, típicamente confirma en 30-60 minutos. Rápido: Comisión más alta, usualmente confirma en los próximos 1-2 bloques (~10-20 minutos).",
+        "a3": "También puedes establecer una tasa de comisión personalizada en sats/vB. Comisiones más altas significan confirmación más rápida pero cuestan más BTC."
+      },
+      "minimumBtc": {
+        "q": "¿Por qué necesito tener una cantidad mínima de BTC para empezar a minar?",
+        "a1": "Cada transacción Bitcoin requiere una comisión, y cada salida necesita un valor mínimo (llamado \"límite de polvo\"). ZeldWallet requiere aproximadamente 2.000+ satoshis para cubrir:",
+        "a2": "330 sats para la cantidad de polvo para la salida ZELD a tu dirección Ordinals, y ~1.500+ sats para la comisión de transacción dependiendo de las condiciones actuales de la red.",
+        "a3": "Sin suficiente BTC, no puedes crear una transacción válida."
+      },
+      "sendZeld": {
+        "q": "¿Cómo envío ZELD a alguien más?",
+        "a": "En ZeldWallet, ve a la sección Caza y marca \"Enviar ZELD\". Introduce la dirección Bitcoin del destinatario y la cantidad de ZELD que quieres enviar. La transferencia se incluirá en tu próxima transacción de caza — tu ZELD se enviará cuando se encuentre el hash raro y la transacción se transmita."
+      },
+      "balanceIncreased": {
+        "q": "¡Acabo de enviar ZELD pero mi saldo aumentó!?",
+        "a": "Eso es normal — ¡y son buenas noticias! Cuando envías ZELD a través de ZeldWallet, no solo estás haciendo una transferencia, también estás cazando un hash de transacción raro. Si la transacción que transmites tiene 6 o más ceros iniciales, ganas una recompensa ZELD (hasta 4.096 ZELD para los hallazgos más raros). Así que si enviaste 100 ZELD pero recibiste una recompensa de 256 ZELD, tu saldo neto en realidad subió 156 ZELD. ¡Cada transacción es una oportunidad de ganar!"
+      },
+      "closeBrowser": {
+        "q": "¿Qué pasa si cierro mi navegador durante una transacción?",
+        "a1": "Si cierras durante la minería: Nada se pierde. La minería simplemente se detiene y puedes reiniciar después.",
+        "a2": "Si cierras durante la firma/transmisión: Si la transacción ya fue firmada y transmitida a la red, confirmará normalmente. Si no fue transmitida aún, nada se envió y necesitarás minar de nuevo."
+      }
+    },
+    "security": {
+      "title": "Seguridad y Respaldo",
+      "backupImportance": {
+        "q": "¿Qué es una copia de seguridad y por qué es tan importante crear una?",
+        "a": "Una copia de seguridad es tu frase mnemónica de 12 o 24 palabras (frase semilla). Esta frase puede regenerar todas tus claves privadas y recuperar toda tu cartera en cualquier dispositivo o aplicación de cartera compatible. Sin esta copia de seguridad, si pierdes acceso a tu navegador (datos borrados, nuevo dispositivo, fallo del navegador), tus fondos se pierden permanentemente. Escríbela en papel y guárdala de forma segura — nunca la guardes digitalmente ni la compartas con nadie."
+      },
+      "forgotPassword": {
+        "q": "Si olvido mi contraseña, ¿pierdo todo?",
+        "a": "No, si tienes tu frase mnemónica de respaldo. Puedes borrar el almacenamiento de ZeldWallet y restaurar tu cartera usando la mnemónica. La contraseña solo protege el almacenamiento local cifrado — no está vinculada a la blockchain. Sin embargo, si olvidas tu contraseña Y no tienes tu respaldo mnemónico, entonces sí, tus fondos se pierden."
+      },
+      "mnemonicPhrase": {
+        "q": "¿Qué es una \"frase mnemónica\" y puedo restaurar mi cartera desde otra aplicación?",
+        "a": "Una frase mnemónica (también llamada frase semilla o frase de recuperación) es una lista de 12 o 24 palabras que representa tu clave privada maestra según el estándar BIP39. Sí, puedes restaurar una mnemónica de ZeldWallet en otras carteras compatibles como Xverse, Leather, Sparrow, o cualquier cartera compatible con BIP39/BIP84/BIP86. Tus Bitcoin y ZELD aparecerán en las mismas direcciones."
+      },
+      "lostDevice": {
+        "q": "¿Puede alguien acceder a mi cartera si pierdo mi ordenador?",
+        "a": "Depende de tu configuración de seguridad. Si estableciste una contraseña fuerte, un atacante necesitaría descifrar el cifrado (muy difícil con una buena contraseña). Sin contraseña, alguien con acceso a los datos de tu navegador podría potencialmente acceder a tu cartera. Para máxima seguridad: siempre usa una contraseña fuerte, y si tu dispositivo se pierde/roba, restaura tu cartera en otro lugar usando tu mnemónica y transfiere tus fondos inmediatamente."
+      }
+    },
+    "external": {
+      "title": "Carteras Externas",
+      "connectExternal": {
+        "q": "¿Puedo conectar mi cartera Xverse o Leather en lugar de crear una cuenta nueva?",
+        "a": "¡Sí! ZeldWallet soporta la conexión de carteras externas incluyendo Xverse, Leather y Magic Eden. Haz clic en \"Conectar Cartera\" y elige tu cartera instalada. La extensión de tu cartera te pedirá aprobar la conexión. Esto te permite cazar ZELD usando las direcciones de tu cartera existente sin exponer tus claves privadas a ZeldWallet."
+      },
+      "externalVsDirect": {
+        "q": "¿Cuál es la diferencia entre usar ZeldWallet directamente o a través de una cartera externa como Xverse?",
+        "a1": "Almacenamiento de claves: ZeldWallet Direct almacena las claves cifradas en el navegador, la Cartera Externa almacena las claves en la extensión/hardware.",
+        "a2": "Configuración: ZeldWallet Direct requiere crear o restaurar en el navegador, la Cartera Externa simplemente conecta la cartera existente.",
+        "a3": "Firma: ZeldWallet Direct firma automáticamente después de desbloquear, la Cartera Externa muestra una ventana emergente de aprobación para cada acción.",
+        "a4": "Portabilidad: ZeldWallet Direct está vinculado al navegador/dispositivo, la Cartera Externa funciona en múltiples sitios.",
+        "a5": "Cartera de hardware: No compatible con ZeldWallet Direct; compatible vía extensión en Cartera Externa.",
+        "a6": "Usa una cartera externa si quieres soporte de cartera hardware, ya tienes fondos ahí, o prefieres mantener las claves en una extensión dedicada. Usa ZeldWallet directamente para una experiencia más simple y todo en uno."
+      }
+    }
+  },
+  "ama": {
+    "aiPowered": "Asistente IA",
+    "placeholder": "Pregúntame sobre ZeldHash...",
+    "submit": "Enviar",
+    "helperText": "Pregunta sobre ZeldHash, tokens ZELD, transacciones raras o conceptos blockchain.",
+    "genericError": "Ocurrió un error. Por favor, inténtalo de nuevo.",
+    "connectionError": "Error de conexión. Verifica tu conexión a internet.",
+    "aiResponse": "Respuesta IA"
   }
 }
-
-

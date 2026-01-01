@@ -25,13 +25,13 @@
       {
         "num": "01",
         "title": "Bawat transaksyon ay may ID",
-        "desc": "Parang serial number. Karamihan ay mukhang random: a7f3b2c1e9d8... Pero may iba na nagsisimula sa zeros.",
+        "desc": "Parang serial number. Karamihan ay mukhang random: a7f3b2c1e9d8... Pero may ilan na nagsisimula sa mga zero.",
         "icon": "🔢"
       },
       {
         "num": "02",
         "title": "Ang mga zeros ay bihira",
-        "desc": "Makakita ng 6 na zeros? 1 sa 16 milyong pagkakataon. 12 zeros? 1 sa 281 trilyong pagkakataon. Mga kayamanan ito.",
+        "desc": "Makahanap ng 6 na zero? 1 sa 16 milyong pagkakataon. 12 zero? 1 sa 281 trilyong pagkakataon. Kayamanan ito.",
         "icon": "💎"
       },
       {
@@ -65,7 +65,7 @@
   "hallOfFame": {
     "label": "Bulwagan ng Katanyagan",
     "title": "Pinakabihirang mga Tuklas",
-    "leadingZeros": "{count} na paunang zero",
+    "leadingZeros": "{count} na zero sa unahan",
     "recordSuffix": "— LAHAT NG PANAHON NA REKORD 🏆",
     "tokenLabel": "ZELD"
   },

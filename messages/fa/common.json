@@ -5,18 +5,18 @@
   "logoAlt": "لوگو ZeldHash",
   "nav": {
     "hunt": "شکار",
-    "wallet": "کیف پول",
+    "wallet": "Hunt Wallet",
     "explorer": "کاوشگر",
-    "faq": "سؤالات متداول",
+    "zeldai": "ZeldAI",
     "github": "گیت‌هاب",
     "whitepaper": "وایت‌پیپر",
-    "toggleMenu": "تغییر منوی ناوبری",
-    "openNav": "باز کردن ناوبری"
+    "toggleMenu": "نمایش/پنهان‌کردن منوی ناوبری",
+    "openNav": "باز کردن منو"
   },
   "footer": {
     "protocol": "پروتکل",
     "balances": "موجودی‌ها",
-    "faq": "سؤالات متداول",
+    "zeldai": "ZeldAI",
     "github": "گیت‌هاب",
     "twitter": "توییتر",
     "motto": "۱۰۰٪ غیرمتمرکز. بدون پیش‌استخراج. بدون سرمایه‌گذار خطرپذیر. فقط ریاضیات."
@@ -34,10 +34,15 @@
   },
   "wallet": {
     "description": "کیف پول بیت‌کوین امن در مرورگر شما. تراکنش‌ها را مستقیماً از ZeldHash ایجاد، مدیریت و امضا کنید.",
-    "subtitle": "مستقیماً از مرورگر خود Zeld شکار کنید، ارسال و دریافت کنید.",
+    "subtitle": "مستقیماً از مرورگر خود ZELD را شکار کنید، ارسال و دریافت کنید.",
     "securityNote": "رمزنگاری AES-256-GCM • استانداردهای BIP32/39/84/86 • به صورت محلی در مرورگر شما ذخیره می‌شود",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "کمک لازم دارید؟",
+      "subtitle": "هر سؤالی درباره کیف پول یا ZeldHash از ZeldAI بپرسید",
+      "askButton": "از ZeldAI بپرسید"
+    }
   },
   "explorer": {
     "title": "کاوشگر ZELD",
@@ -62,7 +67,7 @@
     "totalBalance": "موجودی کل",
     "utxo": "UTXO",
     "utxos": "UTXOs",
-    "utxoCount": "{count} UTXO",
+    "utxoCount": "{count, plural, one {# UTXO} other {# UTXO}}",
     "noUtxos": "هیچ UTXO برای این آدرس یافت نشد.",
     "leadingZeros": "{count}z",
     "tokenLabel": "ZELD",

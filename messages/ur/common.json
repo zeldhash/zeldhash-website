@@ -5,9 +5,9 @@
   "logoAlt": "ZeldHash لوگو",
   "nav": {
     "hunt": "شکار",
-    "wallet": "والیٹ",
+    "wallet": "Hunt Wallet",
     "explorer": "ایکسپلورر",
-    "faq": "عمومی سوالات",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "وائٹ پیپر",
     "toggleMenu": "نیویگیشن مینو ٹوگل کریں",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "پروٹوکول",
     "balances": "بیلنس",
-    "faq": "عمومی سوالات",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "100% غیرمرکزی۔ کوئی پری مائن نہیں۔ کوئی VC نہیں۔ صرف ریاضی۔"
@@ -34,10 +34,15 @@
   },
   "wallet": {
     "description": "آپ کے براؤزر میں محفوظ Bitcoin والیٹ۔ ZeldHash سے براہ راست ٹرانزیکشنز بنائیں، منظم کریں اور دستخط کریں۔",
-    "subtitle": "براہ راست اپنے براؤزر سے Zeld شکار کریں، بھیجیں اور وصول کریں۔",
+    "subtitle": "براہ راست اپنے براؤزر سے ZELD شکار کریں، بھیجیں اور وصول کریں۔",
     "securityNote": "AES-256-GCM انکرپشن • BIP32/39/84/86 معیارات • آپ کے براؤزر میں مقامی طور پر ذخیرہ شدہ",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "مدد چاہیے؟",
+      "subtitle": "والیٹ یا ZeldHash کے بارے میں ZeldAI سے کچھ بھی پوچھیں",
+      "askButton": "ZeldAI سے پوچھیں"
+    }
   },
   "explorer": {
     "title": "ZELD ایکسپلورر",
@@ -61,7 +66,7 @@
     "addressMetaDescription": "Bitcoin ایڈریس {address} کا ZELD بیلنس اور UTXOs دیکھیں",
     "totalBalance": "کل بیلنس",
     "utxo": "UTXO",
-    "utxos": "UTXOs",
+    "utxos": "UTXO",
     "utxoCount": "{count} UTXO",
     "noUtxos": "اس ایڈریس کے لیے کوئی UTXO نہیں ملا۔",
     "leadingZeros": "{count}z",

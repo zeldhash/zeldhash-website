@@ -1,3 +1,4 @@
+import {Suspense} from "react";
 import {Section, SectionTitle} from "@/components/ui";
 import {ExplorerHeader} from "@/components/explorer/explorer-header";
 import {fetchBlockDetails, type BlockDetails, type BlockReward} from "@/lib/zeldhash-api-client";
@@ -173,7 +174,9 @@ export default async function BlockPage({params}: Props) {
   if (!blockDetails) {
     return (
       <div className="w-full">
-        <ExplorerHeader />
+        <Suspense fallback={null}>
+          <ExplorerHeader />
+        </Suspense>
         <Section className="pt-12 pb-12">
           <div className="p-6 rounded-lg border border-red-400/20 bg-red-500/5 text-red-200">
             {fetchError || t("explorer.loadError")}
@@ -187,7 +190,9 @@ export default async function BlockPage({params}: Props) {
 
   return (
     <div className="w-full">
-      <ExplorerHeader />
+      <Suspense fallback={null}>
+        <ExplorerHeader />
+      </Suspense>
 
       <Section className="pt-12 pb-12">
         <div className="mb-10">

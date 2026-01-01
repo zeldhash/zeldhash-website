@@ -5,9 +5,9 @@
   "logoAlt": "Logo ng ZeldHash",
   "nav": {
     "hunt": "Mangaso",
-    "wallet": "Pitaka",
+    "wallet": "Hunt Wallet",
     "explorer": "Explorer",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "Whitepaper",
     "toggleMenu": "I-toggle ang menu ng nabigasyon",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "Protokolo",
     "balances": "Mga Balanse",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "100% desentralisado. Walang premine. Walang VC. Matematika lamang."
@@ -34,10 +34,15 @@
   },
   "wallet": {
     "description": "Ligtas na Bitcoin wallet sa iyong browser. Lumikha, pamahalaan at lagdaan ang mga transaksyon direkta mula sa ZeldHash.",
-    "subtitle": "Mangaso, magpadala at tumanggap ng Zeld direkta mula sa iyong browser.",
+    "subtitle": "Mangaso, magpadala at tumanggap ng ZELD direkta mula sa iyong browser.",
     "securityNote": "AES-256-GCM encryption • BIP32/39/84/86 standards • Nakaimbak nang lokal sa iyong browser",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "Kailangan mo ng tulong?",
+      "subtitle": "Magtanong kay ZeldAI tungkol sa wallet o ZeldHash",
+      "askButton": "Magtanong sa ZeldAI"
+    }
   },
   "explorer": {
     "title": "ZELD Explorer",
@@ -75,7 +80,7 @@
     "newUtxoCount": "Bagong UTXOs",
     "utxoSpentCount": "Nagamit na UTXOs",
     "nicestTxid": "Pinakamahusay na Transaksyon",
-    "leadingZerosLabel": "{count} nangunguna na zero",
+    "leadingZerosLabel": "{count} na zero sa unahan",
     "blockRewards": "Mga Block Reward",
     "noBlockRewards": "Walang nakitang reward sa block na ito.",
     "cumulativeStats": "Pinagsama-samang Estadistika",
@@ -88,7 +93,7 @@
     "transaction": "Transaksyon",
     "transactionMetaTitle": "Transaksyon {txid} - ZELD Explorer",
     "transactionMetaDescription": "Tingnan ang ZELD balance at impormasyon ng reward para sa Bitcoin transaksyon {txid}",
-    "rewardEligible": "{count} nangunguna na zero - Karapat-dapat sa reward!",
+    "rewardEligible": "{count} na zero sa unahan — kwalipikado sa reward!",
     "rewardTransaction": "Reward na Transaksyon",
     "rewardsReceived": "Mga Natanggap na Reward",
     "leadingZerosCount": "Nangunguna na Zero",

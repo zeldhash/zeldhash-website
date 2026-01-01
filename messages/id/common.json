@@ -5,9 +5,9 @@
   "logoAlt": "Logo ZeldHash",
   "nav": {
     "hunt": "Berburu",
-    "wallet": "Dompet",
+    "wallet": "Hunt Wallet",
     "explorer": "Penjelajah",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "Whitepaper",
     "toggleMenu": "Alihkan menu navigasi",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "Protokol",
     "balances": "Saldo",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "100% terdesentralisasi. Tanpa premine. Tanpa VC. Hanya matematika."
@@ -34,10 +34,15 @@
   },
   "wallet": {
     "description": "Dompet Bitcoin aman di browser Anda. Buat, kelola, dan tanda tangani transaksi langsung dari ZeldHash.",
-    "subtitle": "Berburu, kirim, dan terima Zeld langsung dari browser Anda.",
+    "subtitle": "Berburu, kirim, dan terima ZELD langsung dari browser Anda.",
     "securityNote": "Enkripsi AES-256-GCM • Standar BIP32/39/84/86 • Disimpan secara lokal di browser Anda",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "Butuh bantuan?",
+      "subtitle": "Tanyakan apa saja tentang dompet atau ZeldHash kepada ZeldAI",
+      "askButton": "Tanya ZeldAI"
+    }
   },
   "explorer": {
     "title": "Penjelajah ZELD",
@@ -62,11 +67,11 @@
     "totalBalance": "Total saldo",
     "utxo": "UTXO",
     "utxos": "UTXOs",
-    "utxoCount": "{count} UTXO",
+    "utxoCount": "{count, plural, one {# UTXO} other {# UTXOs}}",
     "noUtxos": "Tidak ada UTXO ditemukan untuk alamat ini.",
     "leadingZeros": "{count}z",
     "tokenLabel": "ZELD",
-    "blockMetaTitle": "Blok #{blockIndex} - ZELD Explorer",
+    "blockMetaTitle": "Blok #{blockIndex} - Penjelajah ZELD",
     "blockMetaDescription": "Lihat hadiah ZELD dan statistik blok Bitcoin {blockIndex}",
     "blockStats": "Statistik Blok",
     "rewardCount": "Hadiah",

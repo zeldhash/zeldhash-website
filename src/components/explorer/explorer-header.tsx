@@ -1,7 +1,7 @@
 "use client";
 
-import {useState} from "react";
-import {useRouter} from "next/navigation";
+import {useState, useEffect, useRef, useCallback} from "react";
+import {useRouter, useSearchParams} from "next/navigation";
 import {useLocale, useTranslations} from "next-intl";
 import {Button} from "@/components/ui";
 
@@ -15,11 +15,13 @@ export function ExplorerHeader() {
   const t = useTranslations("common");
   const router = useRouter();
   const locale = useLocale();
+  const searchParams = useSearchParams();
   const [query, setQuery] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const hasProcessedInitialQuery = useRef(false);
 
-  const handleSearch = () => {
-    const trimmed = query.trim();
+  const handleSearch = useCallback((searchQuery?: string) => {
+    const trimmed = (searchQuery ?? query).trim();
     if (!trimmed) return;
 
     setError(null);
@@ -44,12 +46,29 @@ export function ExplorerHeader() {
 
     // Invalid input - show error
     setError(t("explorer.searchError"));
-  };
+  }, [query, router, locale, t]);
+
+  // Handle initial query from URL parameter
+  useEffect(() => {
+    const initialQuery = searchParams.get("q");
+    if (initialQuery && !hasProcessedInitialQuery.current) {
+      hasProcessedInitialQuery.current = true;
+      setQuery(initialQuery);
+      // Use setTimeout to ensure the state is set before triggering search
+      setTimeout(() => {
+        handleSearch(initialQuery);
+      }, 0);
+    }
+  }, [searchParams, handleSearch]);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       handleSearch();
     }
+  };
+
+  const handleButtonClick = () => {
+    handleSearch();
   };
 
   return (
@@ -85,7 +104,7 @@ export function ExplorerHeader() {
               type="button"
               className="sm:w-auto w-full"
               variant="secondary"
-              onClick={handleSearch}
+              onClick={handleButtonClick}
             >
               {t("explorer.searchButton")}
             </Button>

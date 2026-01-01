@@ -1,3 +1,4 @@
+import {Suspense} from "react";
 import {Section, SectionTitle} from "@/components/ui";
 import {ExplorerHeader} from "@/components/explorer/explorer-header";
 import {fetchAddressUtxos, type AddressUtxo} from "@/lib/zeldhash-api-client";
@@ -157,7 +158,9 @@ export default async function AddressPage({params}: Props) {
 
   return (
     <div className="w-full">
-      <ExplorerHeader />
+      <Suspense fallback={null}>
+        <ExplorerHeader />
+      </Suspense>
 
       <Section className="pt-12 pb-12">
         <div className="mb-10">

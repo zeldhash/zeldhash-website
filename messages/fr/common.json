@@ -5,9 +5,9 @@
   "logoAlt": "Logo ZeldHash",
   "nav": {
     "hunt": "Chasse",
-    "wallet": "Portefeuille",
+    "wallet": "Hunt Wallet",
     "explorer": "Explorateur",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "Livre blanc",
     "toggleMenu": "Ouvrir/fermer le menu de navigation",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "Protocole",
     "balances": "Soldes",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "100% décentralisé. Pas de prémine. Pas de VC. Juste des maths."
@@ -34,10 +34,15 @@
   },
   "wallet": {
     "description": "Portefeuille Bitcoin sécurisé dans votre navigateur. Créez, gérez et signez des transactions directement depuis ZeldHash.",
-    "subtitle": "Chassez, envoyez et recevez des Zeld directement depuis votre navigateur.",
+    "subtitle": "Chassez, envoyez et recevez du ZELD directement depuis votre navigateur.",
     "securityNote": "Chiffrement AES-256-GCM • Standards BIP32/39/84/86 • Stocké localement dans votre navigateur",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "Besoin d'aide ?",
+      "subtitle": "Posez n'importe quelle question sur le wallet ou ZeldHash",
+      "askButton": "Demander à ZeldAI"
+    }
   },
   "explorer": {
     "title": "Explorateur ZELD",
@@ -81,7 +86,7 @@
     "cumulativeStats": "Statistiques cumulatives",
     "totalBlocks": "Total des blocs",
     "totalRewards": "Total des récompenses",
-    "totalRewardAmount": "Total ZELD minté",
+    "totalRewardAmount": "Total de ZELD émis",
     "globalMaxZeros": "Record de zéros",
     "totalNewUtxos": "Total nouveaux UTXOs",
     "totalUtxosSpent": "Total UTXOs dépensés",

@@ -5,9 +5,9 @@
   "logoAlt": "ZeldHash 標誌",
   "nav": {
     "hunt": "狩獵",
-    "wallet": "錢包",
-    "explorer": "瀏覽器",
-    "faq": "常見問題",
+    "wallet": "Hunt Wallet",
+    "explorer": "區塊瀏覽器",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "白皮書",
     "toggleMenu": "切換導航選單",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "協議",
     "balances": "餘額",
-    "faq": "常見問題",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "100% 去中心化。無預挖。無風投。純粹數學。"
@@ -33,17 +33,22 @@
     "status": "開發中"
   },
   "wallet": {
-    "description": "瀏覽器中的安全比特幣錢包。直接從 ZeldHash 創建、管理和簽署交易。",
-    "subtitle": "直接從瀏覽器狩獵、發送和接收 Zeld。",
-    "securityNote": "AES-256-GCM 加密 • BIP32/39/84/86 標準 • 本地存儲在您的瀏覽器中",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "description": "瀏覽器中的安全比特幣錢包。直接在 ZeldHash 上建立、管理並簽署交易。",
+    "subtitle": "直接在瀏覽器中狩獵、發送並接收 ZELD。",
+    "securityNote": "AES-256-GCM 加密 • BIP32/39/84/86 標準 • 本地儲存在你的瀏覽器中",
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "需要幫助？",
+      "subtitle": "向 ZeldAI 詢問有關錢包或 ZeldHash 的任何問題",
+      "askButton": "詢問 ZeldAI"
+    }
   },
   "explorer": {
-    "title": "ZELD 瀏覽器",
-    "metaTitle": "ZELD 瀏覽器 - ZeldHash",
+    "title": "ZELD 區塊瀏覽器",
+    "metaTitle": "ZELD 區塊瀏覽器 - ZeldHash",
     "metaDescription": "探索最新的 ZeldHash 獎勵，搜尋地址、區塊或交易。",
-    "searchLabel": "搜尋 ZeldHash 瀏覽器",
+    "searchLabel": "搜尋 ZeldHash 區塊瀏覽器",
     "searchPlaceholder": "輸入地址、區塊索引或交易雜湊",
     "searchButton": "搜尋",
     "searchHelp": "輸入比特幣地址、區塊高度或交易雜湊。",
@@ -57,7 +62,7 @@
     "page": "頁",
     "previous": "上一頁",
     "next": "下一頁",
-    "addressMetaTitle": "地址 {address} - ZELD 瀏覽器",
+    "addressMetaTitle": "地址 {address} - ZELD 區塊瀏覽器",
     "addressMetaDescription": "查看比特幣地址 {address} 的 ZELD 餘額和 UTXO",
     "totalBalance": "總餘額",
     "utxo": "UTXO",
@@ -66,7 +71,7 @@
     "noUtxos": "未找到此地址的 UTXO。",
     "leadingZeros": "{count}z",
     "tokenLabel": "ZELD",
-    "blockMetaTitle": "區塊 #{blockIndex} - ZELD 瀏覽器",
+    "blockMetaTitle": "區塊 #{blockIndex} - ZELD 區塊瀏覽器",
     "blockMetaDescription": "查看比特幣區塊 {blockIndex} 的 ZELD 獎勵和統計資訊",
     "blockStats": "區塊統計",
     "rewardCount": "獎勵數",
@@ -86,7 +91,7 @@
     "totalNewUtxos": "新 UTXOs 總數",
     "totalUtxosSpent": "已花費 UTXOs 總數",
     "transaction": "交易",
-    "transactionMetaTitle": "交易 {txid} - ZELD 瀏覽器",
+    "transactionMetaTitle": "交易 {txid} - ZELD 區塊瀏覽器",
     "transactionMetaDescription": "查看比特幣交易 {txid} 的 ZELD 餘額和獎勵資訊",
     "rewardEligible": "{count} 個前導零 - 符合獎勵條件！",
     "rewardTransaction": "獎勵交易",

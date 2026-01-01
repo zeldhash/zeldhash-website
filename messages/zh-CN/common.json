@@ -5,9 +5,9 @@
   "logoAlt": "ZeldHash 标志",
   "nav": {
     "hunt": "狩猎",
-    "wallet": "钱包",
-    "explorer": "浏览器",
-    "faq": "常见问题",
+    "wallet": "Hunt Wallet",
+    "explorer": "区块浏览器",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "白皮书",
     "toggleMenu": "切换导航菜单",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "协议",
     "balances": "余额",
-    "faq": "常见问题",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "100% 去中心化。无预挖。无风投。只有数学。"
@@ -34,16 +34,21 @@
   },
   "wallet": {
     "description": "浏览器中的安全比特币钱包。直接从 ZeldHash 创建、管理和签署交易。",
-    "subtitle": "直接从浏览器狩猎、发送和接收 Zeld。",
-    "securityNote": "AES-256-GCM 加密 • BIP32/39/84/86 标准 • 本地存储在您的浏览器中",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "subtitle": "直接在浏览器中狩猎、发送并接收 ZELD。",
+    "securityNote": "AES-256-GCM 加密 • BIP32/39/84/86 标准 • 本地存储在你的浏览器中",
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "需要帮助？",
+      "subtitle": "向 ZeldAI 询问有关钱包或 ZeldHash 的任何问题",
+      "askButton": "询问 ZeldAI"
+    }
   },
   "explorer": {
-    "title": "ZELD 浏览器",
-    "metaTitle": "ZELD 浏览器 - ZeldHash",
+    "title": "ZELD 区块浏览器",
+    "metaTitle": "ZELD 区块浏览器 - ZeldHash",
     "metaDescription": "探索最新的 ZeldHash 奖励，搜索地址、区块或交易。",
-    "searchLabel": "搜索 ZeldHash 浏览器",
+    "searchLabel": "搜索 ZeldHash 区块浏览器",
     "searchPlaceholder": "输入地址、区块索引或交易哈希",
     "searchButton": "搜索",
     "searchHelp": "输入比特币地址、区块高度或交易哈希。",
@@ -57,7 +62,7 @@
     "page": "页",
     "previous": "上一页",
     "next": "下一页",
-    "addressMetaTitle": "地址 {address} - ZELD 浏览器",
+    "addressMetaTitle": "地址 {address} - ZELD 区块浏览器",
     "addressMetaDescription": "查看比特币地址 {address} 的 ZELD 余额和 UTXO",
     "totalBalance": "总余额",
     "utxo": "UTXO",
@@ -66,7 +71,7 @@
     "noUtxos": "未找到此地址的 UTXO。",
     "leadingZeros": "{count}z",
     "tokenLabel": "ZELD",
-    "blockMetaTitle": "区块 #{blockIndex} - ZELD 浏览器",
+    "blockMetaTitle": "区块 #{blockIndex} - ZELD 区块浏览器",
     "blockMetaDescription": "查看比特币区块 {blockIndex} 的 ZELD 奖励和统计信息",
     "blockStats": "区块统计",
     "rewardCount": "奖励数",
@@ -86,7 +91,7 @@
     "totalNewUtxos": "新 UTXOs 总数",
     "totalUtxosSpent": "已花费 UTXOs 总数",
     "transaction": "交易",
-    "transactionMetaTitle": "交易 {txid} - ZELD 浏览器",
+    "transactionMetaTitle": "交易 {txid} - ZELD 区块浏览器",
     "transactionMetaDescription": "查看比特币交易 {txid} 的 ZELD 余额和奖励信息",
     "rewardEligible": "{count} 个前导零 - 符合奖励条件！",
     "rewardTransaction": "奖励交易",

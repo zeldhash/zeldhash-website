@@ -1,62 +1,178 @@
 {
   "meta": {
-    "title": "Soalan Lazim ZeldHash",
-    "description": "Jawapan tentang pemburuan transaksi Bitcoin dengan corak hash yang jarang."
+    "title": "FAQ ZeldHash",
+    "description": "Jawapan tentang memburu transaksi Bitcoin dengan corak hash yang jarang."
   },
-  "badge": "Soalan Lazim",
-  "heading": "Soalan Lazim ZeldHash",
-  "intro": "Semua yang anda perlu tahu tentang pemburuan transaksi Bitcoin dengan corak hash yang jarang.",
+  "badge": "FAQ",
+  "heading": "Soalan Lazim",
+  "intro": "Semua yang anda perlu tahu tentang memburu transaksi Bitcoin dengan corak hash yang jarang.",
   "huntIsOn": "Pemburuan Bermula.",
-  "items": {
+  "categories": {
+    "protocol": "Protokol",
+    "wallet": "Dompet"
+  },
+  "protocol": {
+    "howToGetZeld": {
+      "q": "Bagaimana untuk mendapatkan ZELD?",
+      "a": "Cara paling mudah adalah menggunakan ZeldWallet terus di <site>zeldhash.com</site> — dompet berasaskan pelayar yang membolehkan anda memburu transaksi jarang tanpa sebarang persediaan. Hanya cipta atau sambung dompet dan mula melombong. Untuk pembangun yang ingin membina penyelesaian pencetakan sendiri, kami menyediakan SDK sumber terbuka dalam Rust, TypeScript dan Python tersedia di <github>GitHub</github>."
+    },
     "whatIsZeldHash": {
       "q": "Apa itu ZeldHash?",
-      "a": "ZeldHash ialah protokol yang memberi ganjaran kepada pengguna Bitcoin yang menemui atau mencipta transaksi dengan corak hash yang jarang — khususnya, hash yang bermula dengan banyak sifar. Anggap ia sebagai pemburuan harta karun di blockchain Bitcoin."
+      "a": "ZeldHash adalah protokol yang memberi ganjaran kepada pengguna Bitcoin yang menemui atau mencipta transaksi dengan corak hash yang jarang — khususnya, hash yang bermula dengan beberapa sifar. Anggap ia sebagai pemburuan harta karun di blockchain Bitcoin."
     },
     "whyName": {
       "q": "Mengapa nama \"ZeldHash\"?",
-      "a1": "\"Zeld\" berasal daripada perkataan Belanda zeldzaam, yang bermaksud \"jarang\". Ia adalah nama yang sesuai untuk protokol yang didedikasikan untuk memburu transaksi paling jarang di blockchain Bitcoin. Bahagian \"hash\" merujuk kepada cap jari kriptografi yang menjadikan setiap transaksi unik.",
+      "a1": "\"Zeld\" berasal dari perkataan Belanda zeldzaam, yang bermaksud \"jarang\". Ia nama yang sesuai untuk protokol yang didedikasikan untuk memburu transaksi paling jarang di blockchain Bitcoin. Bahagian \"hash\" merujuk kepada cap jari kriptografi yang menjadikan setiap transaksi unik.",
       "a2": "Jadi ZeldHash secara literal bermaksud \"Hash Jarang\" — tepat apa yang kita buru."
     },
     "whatIsHash": {
       "q": "Apa itu hash?",
-      "a1": "Hash ialah seperti cap jari digital. Ia ialah pengecam unik yang dijana daripada sebarang data — sama ada imej, dokumen atau transaksi Bitcoin. Setiap hash ialah rentetan 64 aksara heksadesimal.",
-      "a2": "Anda boleh melihat contoh hash di <mempool>mempool.space</mempool>."
+      "a1": "Hash seperti cap jari digital. Ia adalah pengenal unik yang dihasilkan dari sebarang data — sama ada gambar, dokumen, atau transaksi Bitcoin. Setiap hash adalah rentetan 64 aksara heksadesimal.",
+      "a2": "Anda boleh lihat contoh hash di <mempool>mempool.space</mempool>."
     },
     "bitcoinRelation": {
       "q": "Bagaimana ini berkaitan dengan Bitcoin?",
-      "a": "Setiap blok Bitcoin mempunyai hash, dan setiap transaksi dalam blok mempunyai hash sendiri yang dipanggil ID transaksi (txid). Jika anda pernah melihat hash blok, anda mungkin perasan ia bermula dengan banyak sifar. Itu adalah hasil perlombongan: pelombong berulang kali mengira hash sehingga mereka menjumpai satu dengan cukup sifar di hadapan."
+      "a": "Setiap blok Bitcoin mempunyai hash, dan setiap transaksi dalam blok mempunyai hash sendiri yang dipanggil ID transaksi (txid). Jika anda pernah melihat hash blok, anda mungkin perasan ia bermula dengan banyak sifar. Itu hasil perlombongan: pelombong berulang kali mengira hash sehingga menemui satu dengan sifar pendahuluan yang mencukupi."
     },
     "rareTxHash": {
       "q": "Apa yang menjadikan hash transaksi \"jarang\"?",
-      "a": "Tidak seperti hash blok, hash transaksi pada dasarnya adalah rawak — ia boleh bermula dengan mana-mana aksara. Hash transaksi yang bermula dengan banyak sifar adalah jarang secara statistik, seperti mencari daun semanggi empat helai. Lebih banyak sifar di hadapan, lebih jarang transaksi itu."
+      "a": "Berbeza dengan hash blok, hash transaksi pada dasarnya rawak — ia boleh bermula dengan sebarang aksara. Hash transaksi yang bermula dengan beberapa sifar adalah jarang secara statistik, seperti mencari semanggi empat daun. Lebih banyak sifar pendahuluan, lebih jarang transaksi itu."
     },
     "huntHow": {
       "q": "Bagaimana saya memburu transaksi jarang?",
-      "a": "Sama seperti pelombong. Anda menambah data rawak ke transaksi anda dan mengira hash sehingga anda menjumpai satu yang bermula dengan sifar. Ia mungkin mengambil banyak percubaan, tetapi apabila anda berjaya, anda telah menemui sesuatu yang jarang."
+      "a": "Sama seperti pelombong. Anda menambah data rawak ke transaksi anda dan mengira hash sehingga menemui satu yang bermula dengan sifar. Mungkin mengambil banyak percubaan, tetapi apabila berjaya, anda telah menemui sesuatu yang jarang."
     },
     "whatIsZeld": {
       "q": "Apa itu ZELD?",
-      "a": "ZELD adalah token yang anda peroleh apabila anda menjumpai atau mencipta transaksi Bitcoin dengan hash bermula dengan sekurang-kurangnya 6 sifar. Lebih jarang penemuan anda (lebih banyak sifar), lebih banyak ZELD yang anda peroleh."
+      "a": "ZELD adalah token yang anda peroleh apabila menemui atau mencipta transaksi Bitcoin dengan hash yang bermula dengan sekurang-kurangnya 6 sifar. Lebih jarang penemuan anda (lebih banyak sifar), lebih banyak ZELD yang anda peroleh."
     },
     "inCirculation": {
-      "q": "Adakah sudah ada token ZELD dalam edaran?",
-      "a": "Ya. Sejak pelancaran Bitcoin pada 2009, banyak transaksi secara rawak berakhir dengan hash bermula dengan 6+ sifar. Harta karun tidak sengaja ini sudah boleh dituntut. Sesetengah pemburu juga menciptanya dengan sengaja."
+      "q": "Adakah token ZELD sudah dalam edaran?",
+      "a": "Ya. Sejak pelancaran Bitcoin pada 2009, banyak transaksi secara kebetulan berakhir dengan hash yang bermula dengan 6+ sifar. Harta karun yang ditemui secara kebetulan ini sudah boleh dituntut. Sesetengah pemburu juga menciptanya dengan sengaja."
     },
     "ownWithoutKnowing": {
       "q": "Adakah sesetengah orang memiliki ZELD tanpa mengetahuinya?",
-      "a": "Sudah tentu. Ribuan pengguna Bitcoin tanpa sedar memiliki transaksi jarang. ZELD mereka menunggu untuk dituntut."
+      "a": "Sudah tentu. Beribu-ribu pengguna Bitcoin tanpa sedar memiliki transaksi jarang. ZELD mereka menunggu untuk dituntut."
     },
     "centralized": {
-      "q": "Adakah ZeldHash berpusat? Siapa yang mengawalnya?",
+      "q": "Adakah ZeldHash berpusat? Siapa yang mengawal?",
       "a": "Tiada siapa. ZeldHash sepenuhnya terdesentralisasi, sama seperti Bitcoin. Token ZELD boleh dipindahkan seperti mana-mana aset Bitcoin. Tiada pihak berkuasa pusat."
     },
     "rewards": {
       "q": "Bagaimana sistem ganjaran berfungsi?",
-      "a": "Protokol memberi ganjaran untuk kejarangan. Transaksi dengan 6 sifar hadapan memperoleh ZELD, dan lebih banyak sifar bermakna ganjaran lebih besar. Apabila lebih ramai pemburu menyertai, persaingan meningkat — tetapi sentiasa ada sesuatu untuk ditemui bagi mereka yang terus mencari."
+      "a": "Protokol memberi ganjaran untuk kejarangan. Transaksi dengan 6 sifar pendahuluan memperoleh ZELD, dan lebih banyak sifar bermakna ganjaran lebih besar. Apabila lebih ramai pemburu menyertai, persaingan meningkat — tetapi sentiasa ada sesuatu untuk ditemui bagi mereka yang terus mencari."
     },
     "startHunting": {
       "q": "Bagaimana saya mula memburu?",
       "a": "Lawati <site>zeldhash.com</site> dan mulakan pencarian anda. Setiap transaksi adalah peluang untuk menemui sesuatu yang jarang."
     }
+  },
+  "wallet": {
+    "general": {
+      "title": "Umum",
+      "security": {
+        "q": "Adakah mata wang kripto saya benar-benar selamat dalam dompet ini? Di mana kunci peribadi saya disimpan?",
+        "a": "Ya, dana anda selamat seperti keselamatan pelayar anda. ZeldWallet menyimpan kunci peribadi anda secara tempatan dalam IndexedDB pelayar, disulitkan dengan AES-256-GCM. Jika anda menetapkan kata laluan, kunci anda dilindungi menggunakan terbitan kunci PBKDF2. Kunci peribadi anda tidak pernah meninggalkan peranti dan tidak pernah dihantar ke mana-mana pelayan. Walau bagaimanapun, sentiasa buat sandaran frasa mnemonik anda — jika anda kehilangan akses ke pelayar atau peranti tanpa sandaran, dana anda akan hilang selama-lamanya."
+      },
+      "addressDifference": {
+        "q": "Apakah perbezaan antara alamat \"Pembayaran\" dan alamat \"Ordinals\"?",
+        "a": "Alamat Pembayaran digunakan untuk transaksi Bitcoin biasa — menghantar dan menerima BTC. Alamat Ordinals (alamat Taproot) adalah tempat anda menerima token ZELD apabila berjaya memburu transaksi jarang. Token ZELD dilampirkan pada output pertama transaksi, yang sentiasa dihantar ke alamat Ordinals anda."
+      },
+      "twoAddresses": {
+        "q": "Mengapa saya mempunyai dua alamat Bitcoin yang berbeza?",
+        "a": "Ini mengikuti amalan terbaik Bitcoin untuk memisahkan jenis aset yang berbeza. Alamat Pembayaran mengendalikan BTC anda untuk membayar yuran transaksi, manakala alamat Ordinals menerima dan memegang token ZELD anda. Pemisahan ini menghalang perbelanjaan UTXO yang mengandungi ZELD secara tidak sengaja semasa membuat pembayaran BTC biasa."
+      },
+      "mobile": {
+        "q": "Bolehkah saya menggunakan ZeldWallet di telefon?",
+        "a": "Ya, ZeldWallet berfungsi dalam mana-mana pelayar mudah alih moden. Walau bagaimanapun, prestasi perlombongan pada peranti mudah alih jauh lebih rendah berbanding komputer desktop kerana kuasa CPU yang terhad dan kekurangan pecutan GPU. Untuk pemburuan serius, komputer desktop atau laptop disyorkan."
+      }
+    },
+    "hunting": {
+      "title": "Pencetakan / Pemburuan",
+      "gpuVsCpu": {
+        "q": "Apakah perbezaan antara perlombongan dengan atau tanpa GPU? Adakah ia akan merosakkan komputer saya?",
+        "a": "Perlombongan GPU menggunakan teknologi WebGPU untuk memanfaatkan kad grafik anda untuk pengiraan hash yang lebih pantas — biasanya 10-100x lebih pantas daripada perlombongan CPU sahaja. Perlombongan CPU menggunakan Web Workers dan lebih perlahan tetapi berfungsi pada semua peranti. Kedua-duanya tidak akan merosakkan komputer anda. Perkakasan moden direka untuk mengendalikan beban kerja berterusan. Pelayar anda menguruskan sumber secara bertanggungjawab, dan anda boleh menghentikan perlombongan pada bila-bila masa."
+      },
+      "miningTime": {
+        "q": "Berapa lama untuk melombong ZELD?",
+        "a": "Bergantung pada perkakasan dan nasib anda. Mencari hash transaksi dengan 6 sifar pendahuluan mempunyai peluang kira-kira 1 dalam 16 juta setiap percubaan. Dengan GPU moden yang mencapai berjuta-juta hash sesaat, mungkin mengambil minit hingga jam. Dengan CPU sahaja, mungkin mengambil jam hingga hari. Terdapat juga kerawakan — anda mungkin bertuah dengan cepat atau mungkin mengambil lebih lama daripada purata."
+      },
+      "keepRunning": {
+        "q": "Adakah saya perlu mengekalkan komputer berjalan semasa perlombongan?",
+        "a": "Ya. Perlombongan berlaku dalam pelayar anda, jadi tab mesti kekal terbuka dan aktif. Jika anda menutup pelayar atau menavigasi ke tempat lain, perlombongan berhenti. Kemajuan anda (hash yang diproses) tidak disimpan — anda akan bermula semula apabila anda menyambung semula. Walau bagaimanapun, tiada dana berisiko jika anda berhenti di tengah perlombongan; transaksi hanya disiarkan selepas hash yang sah ditemui dan ditandatangani."
+      }
+    },
+    "transactions": {
+      "title": "Transaksi dan Yuran",
+      "feeSelection": {
+        "q": "Bagaimana saya memilih yuran transaksi? Apakah perbezaan antara \"Perlahan\", \"Sederhana\", dan \"Cepat\"?",
+        "a1": "ZeldWallet mendapatkan cadangan yuran masa nyata dari mempool.space:",
+        "a2": "Perlahan: Yuran lebih rendah, mungkin mengambil 1+ jam untuk pengesahan. Sederhana: Yuran seimbang, biasanya disahkan dalam 30-60 minit. Cepat: Yuran lebih tinggi, biasanya disahkan dalam 1-2 blok seterusnya (~10-20 minit).",
+        "a3": "Anda juga boleh menetapkan kadar yuran tersuai dalam sats/vB. Yuran lebih tinggi bermakna pengesahan lebih cepat tetapi kos BTC lebih banyak."
+      },
+      "minimumBtc": {
+        "q": "Mengapa saya perlu mempunyai jumlah minimum BTC untuk mula melombong?",
+        "a1": "Setiap transaksi Bitcoin memerlukan yuran, dan setiap output memerlukan nilai minimum (dipanggil \"had habuk\"). ZeldWallet memerlukan kira-kira 2,000+ satoshi untuk menampung:",
+        "a2": "330 sats untuk jumlah habuk untuk output ZELD ke alamat Ordinals anda, dan ~1,500+ sats untuk yuran transaksi bergantung pada keadaan rangkaian semasa.",
+        "a3": "Tanpa BTC yang mencukupi, anda tidak boleh mencipta transaksi yang sah."
+      },
+      "sendZeld": {
+        "q": "Bagaimana saya menghantar ZELD kepada orang lain?",
+        "a": "Dalam ZeldWallet, pergi ke bahagian Pemburuan dan tandakan \"Hantar ZELD\". Masukkan alamat Bitcoin penerima dan jumlah ZELD yang anda mahu hantar. Pemindahan akan dimasukkan dalam transaksi pemburuan seterusnya — ZELD anda akan dihantar apabila hash jarang ditemui dan transaksi disiarkan."
+      },
+      "balanceIncreased": {
+        "q": "Saya baru menghantar ZELD tetapi baki saya meningkat!?",
+        "a": "Itu normal — dan berita baik! Apabila anda menghantar ZELD melalui ZeldWallet, anda bukan sahaja membuat pemindahan, anda juga memburu hash transaksi jarang. Jika transaksi yang anda siarkan mempunyai 6 atau lebih sifar pendahuluan, anda memperoleh ganjaran ZELD (sehingga 4,096 ZELD untuk penemuan paling jarang). Jadi jika anda menghantar 100 ZELD tetapi menerima ganjaran 256 ZELD, baki bersih anda sebenarnya meningkat sebanyak 156 ZELD. Setiap transaksi adalah peluang!"
+      },
+      "closeBrowser": {
+        "q": "Apa yang berlaku jika saya menutup pelayar semasa transaksi?",
+        "a1": "Jika menutup semasa perlombongan: Tiada apa yang hilang. Perlombongan hanya berhenti dan anda boleh memulakan semula kemudian.",
+        "a2": "Jika menutup semasa menandatangani/menyiarkan: Jika transaksi sudah ditandatangani dan disiarkan ke rangkaian, ia akan disahkan seperti biasa. Jika belum disiarkan, tiada apa yang dihantar dan anda perlu melombong semula."
+      }
+    },
+    "security": {
+      "title": "Keselamatan dan Sandaran",
+      "backupImportance": {
+        "q": "Apakah sandaran dan mengapa sangat penting untuk membuatnya?",
+        "a": "Sandaran adalah frasa mnemonik 12 atau 24 perkataan anda (frasa benih). Frasa ini boleh menjana semula semua kunci peribadi anda dan memulihkan keseluruhan dompet pada mana-mana peranti atau aplikasi dompet yang serasi. Tanpa sandaran ini, jika anda kehilangan akses ke pelayar (data dipadam, peranti baharu, pelayar ranap), dana anda hilang secara kekal. Tulis di atas kertas dan simpan dengan selamat — jangan sekali-kali menyimpan secara digital atau berkongsi dengan sesiapa."
+      },
+      "forgotPassword": {
+        "q": "Jika saya lupa kata laluan, adakah saya kehilangan segala-galanya?",
+        "a": "Tidak, jika anda mempunyai frasa mnemonik sandaran. Anda boleh membersihkan storan ZeldWallet dan memulihkan dompet menggunakan mnemonik. Kata laluan hanya melindungi storan tersulit tempatan — ia tidak dikaitkan dengan blockchain. Walau bagaimanapun, jika anda lupa kata laluan DAN tidak mempunyai sandaran mnemonik, maka ya, dana anda hilang."
+      },
+      "mnemonicPhrase": {
+        "q": "Apakah \"frasa mnemonik\" dan bolehkah saya memulihkan dompet dari aplikasi lain?",
+        "a": "Frasa mnemonik (juga dipanggil frasa benih atau frasa pemulihan) adalah senarai 12 atau 24 perkataan yang mewakili kunci peribadi induk anda mengikut standard BIP39. Ya, anda boleh memulihkan mnemonik ZeldWallet dalam dompet serasi lain seperti Xverse, Leather, Sparrow, atau mana-mana dompet serasi BIP39/BIP84/BIP86. Bitcoin dan ZELD anda akan muncul di alamat yang sama."
+      },
+      "lostDevice": {
+        "q": "Bolehkah seseorang mengakses dompet saya jika saya kehilangan komputer?",
+        "a": "Bergantung pada persediaan keselamatan anda. Jika anda menetapkan kata laluan yang kuat, penyerang perlu memecahkan penyulitan (sangat sukar dengan kata laluan yang baik). Tanpa kata laluan, seseorang yang mempunyai akses kepada data pelayar anda berpotensi mengakses dompet anda. Untuk keselamatan maksimum: sentiasa gunakan kata laluan yang kuat, dan jika peranti anda hilang/dicuri, pulihkan dompet di tempat lain menggunakan mnemonik dan pindahkan dana dengan segera."
+      }
+    },
+    "external": {
+      "title": "Dompet Luaran",
+      "connectExternal": {
+        "q": "Bolehkah saya menyambung dompet Xverse atau Leather saya dan bukannya membuat akaun baru?",
+        "a": "Ya! ZeldWallet menyokong penyambungan dompet luaran termasuk Xverse, Leather, dan Magic Eden. Klik \"Sambung Dompet\" dan pilih dompet yang dipasang. Sambungan dompet anda akan meminta anda meluluskan sambungan. Ini membolehkan anda memburu ZELD menggunakan alamat dompet sedia ada tanpa mendedahkan kunci peribadi kepada ZeldWallet."
+      },
+      "externalVsDirect": {
+        "q": "Apakah perbezaan antara menggunakan ZeldWallet secara langsung atau melalui dompet luaran seperti Xverse?",
+        "a1": "Storan kunci: ZeldWallet Direct menyimpan kunci tersulit dalam pelayar, Dompet Luaran menyimpan kunci dalam sambungan/perkakasan.",
+        "a2": "Persediaan: ZeldWallet Direct memerlukan penciptaan atau pemulihan dalam pelayar, Dompet Luaran hanya menyambung dompet sedia ada.",
+        "a3": "Penandatanganan: ZeldWallet Direct menandatangani secara automatik selepas membuka kunci, Dompet Luaran menunjukkan popup kelulusan untuk setiap tindakan.",
+        "a4": "Portabiliti: ZeldWallet Direct terikat pada pelayar/peranti, Dompet Luaran berfungsi merentas laman web.",
+        "a5": "Dompet perkakasan: Tidak disokong dalam ZeldWallet Direct, Disokong melalui sambungan dalam Dompet Luaran.",
+        "a6": "Gunakan dompet luaran jika anda mahu sokongan dompet perkakasan, sudah mempunyai dana di sana, atau lebih suka menyimpan kunci dalam sambungan khusus. Gunakan ZeldWallet secara langsung untuk pengalaman yang lebih mudah dan lengkap."
+      }
+    }
+  },
+  "ama": {
+    "aiPowered": "Pembantu AI",
+    "placeholder": "Tanya tentang ZeldHash...",
+    "submit": "Hantar",
+    "helperText": "Soalan tentang ZeldHash, token ZELD, transaksi jarang, atau konsep blockchain.",
+    "genericError": "Ralat berlaku. Sila cuba lagi.",
+    "connectionError": "Ralat sambungan. Semak sambungan internet anda.",
+    "aiResponse": "Respons AI"
   }
 }

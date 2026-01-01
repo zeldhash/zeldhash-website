@@ -5,9 +5,9 @@
   "logoAlt": "Nembo ya ZeldHash",
   "nav": {
     "hunt": "Winda",
-    "wallet": "Pochi",
+    "wallet": "Hunt Wallet",
     "explorer": "Kichunguzi",
-    "faq": "Maswali",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "Karatasi Nyeupe",
     "toggleMenu": "Badilisha menyu ya urambazaji",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "Itifaki",
     "balances": "Salio",
-    "faq": "Maswali",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "Imegatuliwa 100%. Hakuna premine. Hakuna VC. Hisabati tu."
@@ -34,10 +34,15 @@
   },
   "wallet": {
     "description": "Pochi salama ya Bitcoin kwenye kivinjari chako. Unda, simamia na saini miamala moja kwa moja kutoka ZeldHash.",
-    "subtitle": "Winda, tuma na pokea Zeld moja kwa moja kutoka kivinjari chako.",
+    "subtitle": "Winda, tuma na pokea ZELD moja kwa moja kutoka kivinjari chako.",
     "securityNote": "Usimbaji wa AES-256-GCM • Viwango vya BIP32/39/84/86 • Imehifadhiwa ndani ya kivinjari chako",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "Unahitaji msaada?",
+      "subtitle": "Uliza ZeldAI chochote kuhusu pochi au ZeldHash",
+      "askButton": "Uliza ZeldAI"
+    }
   },
   "explorer": {
     "title": "Kichunguzi cha ZELD",
@@ -52,7 +57,7 @@
     "noRewards": "Hakuna zawadi zinazopatikana bado. Rudi baadaye.",
     "loadError": "Imeshindwa kupakia data. Tafadhali jaribu tena baadaye.",
     "tooManyUtxos": "Anwani hii ina UTXO nyingi sana kuonyeshwa (kiwango cha juu: 500).",
-    "block": "Block",
+    "block": "Bloku",
     "vout": "vout",
     "page": "Ukurasa",
     "previous": "Iliyopita",
@@ -66,7 +71,7 @@
     "noUtxos": "Hakuna UTXO zilizopatikana kwa anwani hii.",
     "leadingZeros": "{count}z",
     "tokenLabel": "ZELD",
-    "blockMetaTitle": "Bloku #{blockIndex} - ZELD Explorer",
+    "blockMetaTitle": "Bloku #{blockIndex} - Kichunguzi cha ZELD",
     "blockMetaDescription": "Angalia tuzo za ZELD na takwimu za bloku la Bitcoin {blockIndex}",
     "blockStats": "Takwimu za Bloku",
     "rewardCount": "Tuzo",
@@ -75,7 +80,7 @@
     "newUtxoCount": "UTXOs Mpya",
     "utxoSpentCount": "UTXOs Zilizotumika",
     "nicestTxid": "Muamala Bora",
-    "leadingZerosLabel": "sifuri {count} zinazoongoza",
+    "leadingZerosLabel": "{count} sufuri za mwanzo",
     "blockRewards": "Tuzo za Bloku",
     "noBlockRewards": "Hakuna tuzo zilizopatikana katika bloku hii.",
     "cumulativeStats": "Takwimu za Jumla",
@@ -88,7 +93,7 @@
     "transaction": "Muamala",
     "transactionMetaTitle": "Muamala {txid} - Kichunguzi cha ZELD",
     "transactionMetaDescription": "Tazama salio la ZELD na maelezo ya tuzo kwa muamala wa Bitcoin {txid}",
-    "rewardEligible": "sifuri {count} zinazoongoza - Anastahili tuzo!",
+    "rewardEligible": "{count} sufuri za mwanzo — unastahili tuzo!",
     "rewardTransaction": "Muamala wa Tuzo",
     "rewardsReceived": "Tuzo Zilizopokelewa",
     "leadingZerosCount": "Sifuri Zinazoongoza",

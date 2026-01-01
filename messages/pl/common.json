@@ -5,9 +5,9 @@
   "logoAlt": "Logo ZeldHash",
   "nav": {
     "hunt": "Polowanie",
-    "wallet": "Portfel",
+    "wallet": "Hunt Wallet",
     "explorer": "Eksplorator",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "Biała Księga",
     "toggleMenu": "Przełącz menu nawigacji",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "Protokół",
     "balances": "Salda",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "100% zdecentralizowane. Bez premine. Bez VC. Tylko matematyka."
@@ -36,8 +36,13 @@
     "description": "Bezpieczny portfel Bitcoin w przeglądarce. Twórz, zarządzaj i podpisuj transakcje bezpośrednio z ZeldHash.",
     "subtitle": "Poluj, wysyłaj i odbieraj Zeld bezpośrednio z przeglądarki.",
     "securityNote": "Szyfrowanie AES-256-GCM • Standardy BIP32/39/84/86 • Przechowywane lokalnie w przeglądarce",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "Potrzebujesz pomocy?",
+      "subtitle": "Zapytaj ZeldAI o wszystko dotyczące portfela lub ZeldHash",
+      "askButton": "Zapytaj ZeldAI"
+    }
   },
   "explorer": {
     "title": "Eksplorator ZELD",

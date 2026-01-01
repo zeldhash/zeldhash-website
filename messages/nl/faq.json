@@ -1,62 +1,178 @@
 {
   "meta": {
-    "title": "ZeldHash FAQ",
-    "description": "Antwoorden over de jacht op Bitcoin-transacties met zeldzame hashpatronen."
+    "title": "Veelgestelde vragen over ZeldHash",
+    "description": "Antwoorden over de jacht op Bitcoin-transacties met zeldzame hash-patronen."
   },
   "badge": "FAQ",
-  "heading": "ZeldHash FAQ",
-  "intro": "Alles wat je moet weten over de jacht op Bitcoin-transacties met zeldzame hashpatronen.",
-  "huntIsOn": "De Jacht is Begonnen.",
-  "items": {
+  "heading": "Veelgestelde Vragen",
+  "intro": "Alles wat je moet weten over de jacht op Bitcoin-transacties met zeldzame hash-patronen.",
+  "huntIsOn": "De jacht is begonnen.",
+  "categories": {
+    "protocol": "Protocol",
+    "wallet": "Portemonnee"
+  },
+  "protocol": {
+    "howToGetZeld": {
+      "q": "Hoe krijg ik ZELD?",
+      "a": "De makkelijkste manier is om ZeldWallet direct op <site>zeldhash.com</site> te gebruiken — een browsergebaseerde wallet waarmee je zonder setup op zeldzame transacties kunt jagen. Maak gewoon een wallet aan of verbind er een en begin met minen. Voor ontwikkelaars die hun eigen minting-oplossing willen bouwen, bieden we open-source SDK's in Rust, TypeScript en Python aan op <github>GitHub</github>."
+    },
     "whatIsZeldHash": {
       "q": "Wat is ZeldHash?",
-      "a": "ZeldHash is een protocol dat Bitcoin-gebruikers beloont die transacties ontdekken of creëren met zeldzame hashpatronen — specifiek hashes die beginnen met meerdere nullen. Zie het als een schattenjacht op de Bitcoin-blockchain."
+      "a": "ZeldHash is een protocol dat Bitcoin-gebruikers beloont die transacties ontdekken of creëren met zeldzame hash-patronen — specifiek, hashes die beginnen met meerdere nullen. Zie het als een schattenjacht op de Bitcoin-blockchain."
     },
     "whyName": {
-      "q": "Waarom de naam \"ZeldHash\"?",
-      "a1": "\"Zeld\" komt van het Nederlandse woord zeldzaam. Het is een passende naam voor een protocol dat gewijd is aan het jagen op de zeldzaamste transacties op de Bitcoin-blockchain. Het \"hash\"-gedeelte verwijst naar de cryptografische vingerafdruk die elke transactie uniek maakt.",
-      "a2": "Dus ZeldHash betekent letterlijk \"Zeldzame Hash\" — precies waar we naar op jacht zijn."
+      "q": "Waarom de naam 'ZeldHash'?",
+      "a1": "'Zeld' komt van het Nederlandse woord zeldzaam. Het is een passende naam voor een protocol dat gewijd is aan het jagen op de zeldzaamste transacties op de Bitcoin-blockchain. Het 'hash'-gedeelte verwijst naar de cryptografische vingerafdruk die elke transactie uniek maakt.",
+      "a2": "Dus ZeldHash betekent letterlijk 'zeldzame hash' — precies waar we naar op jacht zijn."
     },
     "whatIsHash": {
       "q": "Wat is een hash?",
-      "a1": "Een hash is als een digitale vingerafdruk. Het is een unieke identificatie gegenereerd uit elk stuk data — of het nu een afbeelding is, een document, of een Bitcoin-transactie. Elke hash is een reeks van 64 hexadecimale tekens.",
+      "a1": "Een hash is als een digitale vingerafdruk. Het is een unieke identificatie die wordt gegenereerd uit willekeurige gegevens — of het nu een afbeelding, document of Bitcoin-transactie is. Elke hash is een tekenreeks van 64 hexadecimale tekens.",
       "a2": "Je kunt voorbeelden van hashes bekijken op <mempool>mempool.space</mempool>."
     },
     "bitcoinRelation": {
-      "q": "Wat heeft dit met Bitcoin te maken?",
-      "a": "Elk Bitcoin-block heeft een hash, en elke transactie in een blok heeft zijn eigen hash genaamd een transactie-ID (txid). Als je naar blok-hashes hebt gekeken, heb je misschien gemerkt dat ze beginnen met veel nullen. Dat is het resultaat van mining: miners berekenen herhaaldelijk hashes totdat ze er een vinden met genoeg leidende nullen."
+      "q": "Hoe hangt dit samen met Bitcoin?",
+      "a": "Elk Bitcoin-blok heeft een hash, en elke transactie binnen een blok heeft zijn eigen hash genaamd transactie-ID (txid). Als je naar blokhashes hebt gekeken, heb je misschien gemerkt dat ze beginnen met veel nullen. Dat is het resultaat van mining: miners berekenen herhaaldelijk hashes totdat ze er een vinden met genoeg leidende nullen."
     },
     "rareTxHash": {
-      "q": "Wat maakt een transactiehash \"zeldzaam\"?",
-      "a": "In tegenstelling tot blok-hashes zijn transactiehashes in wezen willekeurig — ze kunnen met elk karakter beginnen. Een transactiehash die begint met meerdere nullen is statistisch zeldzaam, zoals het vinden van een klavertje vier. Hoe meer leidende nullen, hoe zeldzamer de transactie."
+      "q": "Wat maakt een transactie-hash 'zeldzaam'?",
+      "a": "In tegenstelling tot blokhashes zijn transactiehashes in wezen willekeurig — ze kunnen met elk teken beginnen. Een transactiehash die begint met meerdere nullen is statistisch zeldzaam, zoals het vinden van een klavertje vier. Hoe meer leidende nullen, hoe zeldzamer de transactie."
     },
     "huntHow": {
       "q": "Hoe jaag ik op zeldzame transacties?",
-      "a": "Net als miners. Je voegt willekeurige data toe aan je transactie en berekent hashes totdat je er een vindt die begint met nullen. Het kan vele pogingen kosten, maar wanneer je slaagt, heb je iets zeldzaams ontdekt."
+      "a": "Net als miners. Je voegt willekeurige gegevens toe aan je transactie en berekent hashes totdat je er een vindt die begint met nullen. Het kan vele pogingen kosten, maar als je slaagt, heb je iets zeldzaams ontdekt."
     },
     "whatIsZeld": {
       "q": "Wat is ZELD?",
-      "a": "ZELD is de token die je verdient wanneer je een Bitcoin-transactie vindt of creëert met een hash die begint met minstens 6 nullen. Hoe zeldzamer je vondst (meer nullen), hoe meer ZELD je verdient."
+      "a": "ZELD is de token die je verdient wanneer je een Bitcoin-transactie vindt of creëert met een hash die begint met minimaal 6 nullen. Hoe zeldzamer je vondst (meer nullen), hoe meer ZELD je verdient."
     },
     "inCirculation": {
       "q": "Zijn er al ZELD-tokens in omloop?",
-      "a": "Ja. Sinds de lancering van Bitcoin in 2009 zijn veel transacties per toeval geëindigd met hashes die beginnen met 6+ nullen. Deze toevallige schatten zijn al te claimen. Sommige jagers creëren ze ook opzettelijk."
+      "a": "Ja. Sinds de lancering van Bitcoin in 2009 zijn veel transacties toevallig geëindigd met hashes die beginnen met 6+ nullen. Deze toevallige schatten zijn al claimbaar. Sommige jagers creëren ze ook opzettelijk."
     },
     "ownWithoutKnowing": {
       "q": "Bezitten sommige mensen ZELD zonder het te weten?",
       "a": "Absoluut. Duizenden Bitcoin-gebruikers bezitten onbewust zeldzame transacties. Hun ZELD wacht om geclaimd te worden."
     },
     "centralized": {
-      "q": "Is ZeldHash gecentraliseerd? Wie heeft de controle?",
-      "a": "Niemand. ZeldHash is volledig gedecentraliseerd, net als Bitcoin. ZELD-tokens kunnen worden overgedragen zoals elk Bitcoin-asset. Er is geen centrale autoriteit."
+      "q": "Is ZeldHash gecentraliseerd? Wie controleert het?",
+      "a": "Niemand. ZeldHash is volledig gedecentraliseerd, net als Bitcoin. ZELD-tokens kunnen worden overgedragen als elk Bitcoin-asset. Er is geen centrale autoriteit."
     },
     "rewards": {
       "q": "Hoe werkt het beloningssysteem?",
-      "a": "Het protocol beloont zeldzaamheid. Een transactie met 6 leidende nullen levert ZELD op, en meer nullen betekent grotere beloningen. Naarmate meer jagers meedoen, neemt de concurrentie toe — maar er is altijd iets te vinden voor degenen die blijven zoeken."
+      "a": "Het protocol beloont zeldzaamheid. Een transactie met 6 leidende nullen verdient ZELD, en meer nullen betekent grotere beloningen. Naarmate meer jagers meedoen, neemt de concurrentie toe — maar er is altijd iets te vinden voor wie blijft zoeken."
     },
     "startHunting": {
       "q": "Hoe begin ik met jagen?",
       "a": "Bezoek <site>zeldhash.com</site> en begin je zoektocht. Elke transactie is een kans om iets zeldzaams te ontdekken."
     }
+  },
+  "wallet": {
+    "general": {
+      "title": "Algemeen",
+      "security": {
+        "q": "Zijn mijn cryptovaluta's echt veilig in deze portemonnee? Waar worden mijn privésleutels opgeslagen?",
+        "a": "Ja, je fondsen zijn zo veilig als de beveiliging van je browser. ZeldWallet slaat je privésleutels lokaal op in de IndexedDB van je browser, versleuteld met AES-256-GCM. Als je een wachtwoord instelt, worden je sleutels beschermd met PBKDF2-sleutelafleiding, waardoor ze extreem moeilijk te kraken zijn. Je privésleutels verlaten nooit je apparaat en worden nooit naar een server gestuurd. Maak echter altijd een back-up van je geheugensteun — als je toegang verliest tot je browser of apparaat zonder back-up, zijn je fondsen voor altijd verloren."
+      },
+      "addressDifference": {
+        "q": "Wat is het verschil tussen het 'Betalings'-adres en het 'Ordinals'-adres?",
+        "a": "Het Betalingsadres wordt gebruikt voor reguliere Bitcoin-transacties — verzenden en ontvangen van BTC. Het Ordinals-adres (een Taproot-adres) is waar je ZELD-tokens worden ontvangen wanneer je succesvol een zeldzame transactie jaagt. ZELD-tokens worden gekoppeld aan de eerste output van de transactie, die altijd naar je Ordinals-adres wordt gestuurd."
+      },
+      "twoAddresses": {
+        "q": "Waarom heb ik twee verschillende Bitcoin-adressen?",
+        "a": "Dit volgt de beste praktijken van Bitcoin voor het scheiden van verschillende activatypes. Het Betalingsadres verwerkt je BTC voor het betalen van transactiekosten, terwijl het Ordinals-adres je ZELD-tokens ontvangt en bewaart. Deze scheiding voorkomt het per ongeluk uitgeven van UTXO's die ZELD bevatten bij reguliere BTC-betalingen."
+      },
+      "mobile": {
+        "q": "Kan ik ZeldWallet op mijn telefoon gebruiken?",
+        "a": "Ja, ZeldWallet werkt in elke moderne mobiele browser. De miningprestaties op mobiele apparaten zijn echter aanzienlijk lager dan op desktopcomputers vanwege beperkte CPU-kracht en het ontbreken van GPU-versnelling. Voor serieus jagen wordt een desktop- of laptopcomputer aanbevolen."
+      }
+    },
+    "hunting": {
+      "title": "Mining / Jagen",
+      "gpuVsCpu": {
+        "q": "Wat is het verschil tussen minen met of zonder GPU? Beschadigt het mijn computer?",
+        "a": "GPU-mining gebruikt WebGPU-technologie om je grafische kaart te benutten voor veel snellere hashberekeningen — doorgaans 10-100x sneller dan alleen CPU-mining. CPU-mining gebruikt Web Workers en is langzamer maar werkt op alle apparaten. Geen van beide zal je computer beschadigen. Moderne hardware is ontworpen om aanhoudende werklasten aan te kunnen. Je browser beheert bronnen verantwoord, en je kunt het minen op elk moment stoppen."
+      },
+      "miningTime": {
+        "q": "Hoe lang duurt het om een ZELD te minen?",
+        "a": "Het hangt af van je hardware en geluk. Een transactiehash vinden met 6 leidende nullen heeft ongeveer 1 op 16 miljoen kans per poging. Met een moderne GPU die miljoenen hashes per seconde haalt, kan het minuten tot uren duren. Met alleen CPU kan het uren tot dagen duren. Er zit ook willekeur in — je kunt snel geluk hebben of het kan langer duren dan gemiddeld."
+      },
+      "keepRunning": {
+        "q": "Moet ik mijn computer aan laten staan tijdens het minen?",
+        "a": "Ja. Mining vindt plaats in je browser, dus de tab moet open en actief blijven. Als je de browser sluit of ergens anders naartoe navigeert, stopt het minen. Je voortgang (verwerkte hashes) wordt niet opgeslagen — je begint opnieuw wanneer je hervat. Er staan echter geen fondsen op het spel als je halverwege stopt; de transactie wordt alleen uitgezonden wanneer een geldige hash is gevonden en ondertekend."
+      }
+    },
+    "transactions": {
+      "title": "Transacties en Kosten",
+      "feeSelection": {
+        "q": "Hoe kies ik transactiekosten? Wat is het verschil tussen 'Langzaam', 'Gemiddeld' en 'Snel'?",
+        "a1": "ZeldWallet haalt realtime kostenadvies op van mempool.space:",
+        "a2": "Langzaam: Lagere kosten, kan 1+ uur duren om te bevestigen. Gemiddeld: Gebalanceerde kosten, bevestigt doorgaans binnen 30-60 minuten. Snel: Hogere kosten, bevestigt meestal in de volgende 1-2 blokken (~10-20 minuten).",
+        "a3": "Je kunt ook een aangepast tarief instellen in sats/vB. Hogere kosten betekenen snellere bevestiging maar kosten meer BTC."
+      },
+      "minimumBtc": {
+        "q": "Waarom moet ik een minimumbedrag aan BTC hebben om te beginnen met minen?",
+        "a1": "Elke Bitcoin-transactie vereist kosten, en elke output heeft een minimumwaarde nodig (genaamd 'stoflimiet'). ZeldWallet vereist ongeveer 2.000+ satoshi's om te dekken:",
+        "a2": "330 sats voor het stofbedrag voor de ZELD-output naar je Ordinals-adres, en ~1.500+ sats voor de transactiekosten afhankelijk van de huidige netwerkomstandigheden.",
+        "a3": "Zonder voldoende BTC kun je geen geldige transactie maken."
+      },
+      "sendZeld": {
+        "q": "Hoe stuur ik ZELD naar iemand anders?",
+        "a": "In ZeldWallet, ga naar de Jacht-sectie en vink 'Stuur ZELD' aan. Voer het Bitcoin-adres van de ontvanger in en het bedrag aan ZELD dat je wilt versturen. De overdracht wordt opgenomen in je volgende jachttransactie — je ZELD wordt verzonden wanneer de zeldzame hash is gevonden en de transactie wordt uitgezonden."
+      },
+      "balanceIncreased": {
+        "q": "Ik heb net ZELD verstuurd maar mijn saldo is gestegen!?",
+        "a": "Dat is normaal — en geweldig nieuws! Wanneer je ZELD verstuurt via ZeldWallet, doe je niet alleen een overdracht, je jaagt ook op een zeldzame transactiehash. Als de transactie die je uitzendt 6 of meer leidende nullen heeft, verdien je een ZELD-beloning (tot 4.096 ZELD voor de zeldzaamste vondsten). Dus als je 100 ZELD verstuurde maar een beloning van 256 ZELD ontving, is je nettosaldo eigenlijk gestegen met 156 ZELD. Elke transactie is een kans om te verdienen!"
+      },
+      "closeBrowser": {
+        "q": "Wat gebeurt er als ik mijn browser sluit tijdens een transactie?",
+        "a1": "Als je sluit tijdens het minen: Er gaat niets verloren. Mining stopt gewoon en je kunt later opnieuw starten.",
+        "a2": "Als je sluit tijdens ondertekening/uitzending: Als de transactie al was ondertekend en uitgezonden naar het netwerk, wordt deze normaal bevestigd. Als deze nog niet was uitgezonden, is er niets verzonden en moet je opnieuw minen."
+      }
+    },
+    "security": {
+      "title": "Beveiliging en Back-up",
+      "backupImportance": {
+        "q": "Wat is een back-up en waarom is het zo belangrijk om er een te maken?",
+        "a": "Een back-up is je 12 of 24-woorden geheugensteun (seed phrase). Deze zin kan al je privésleutels regenereren en je hele portemonnee herstellen op elk apparaat of compatibele portemonnee-applicatie. Zonder deze back-up, als je toegang verliest tot je browser (gewiste gegevens, nieuw apparaat, browsercrash), zijn je fondsen permanent verloren. Schrijf het op papier en bewaar het veilig — sla het nooit digitaal op en deel het met niemand."
+      },
+      "forgotPassword": {
+        "q": "Als ik mijn wachtwoord vergeet, verlies ik dan alles?",
+        "a": "Nee, als je je back-up geheugensteun hebt. Je kunt de opslag van ZeldWallet wissen en je portemonnee herstellen met de geheugensteun. Het wachtwoord beschermt alleen de lokale versleutelde opslag — het is niet gekoppeld aan de blockchain. Als je echter je wachtwoord vergeet EN geen back-up van je geheugensteun hebt, dan ja, je fondsen zijn verloren."
+      },
+      "mnemonicPhrase": {
+        "q": "Wat is een 'geheugensteun' en kan ik mijn portemonnee herstellen vanuit een andere applicatie?",
+        "a": "Een geheugensteun (ook wel seed phrase of herstelzin genoemd) is een lijst van 12 of 24 woorden die je master privésleutel vertegenwoordigt volgens de BIP39-standaard. Ja, je kunt een ZeldWallet-geheugensteun herstellen in andere compatibele portemonnees zoals Xverse, Leather, Sparrow, of elke BIP39/BIP84/BIP86-compatibele portemonnee. Je Bitcoin en ZELD verschijnen op dezelfde adressen."
+      },
+      "lostDevice": {
+        "q": "Kan iemand toegang krijgen tot mijn portemonnee als ik mijn computer verlies?",
+        "a": "Het hangt af van je beveiligingsinstellingen. Als je een sterk wachtwoord hebt ingesteld, zou een aanvaller de versleuteling moeten kraken (zeer moeilijk met een goed wachtwoord). Zonder wachtwoord zou iemand met toegang tot je browsergegevens mogelijk toegang kunnen krijgen tot je portemonnee. Voor maximale beveiliging: gebruik altijd een sterk wachtwoord, en als je apparaat verloren/gestolen is, herstel je portemonnee elders met je geheugensteun en draag je fondsen onmiddellijk over."
+      }
+    },
+    "external": {
+      "title": "Externe Portemonnees",
+      "connectExternal": {
+        "q": "Kan ik mijn Xverse of Leather portemonnee verbinden in plaats van een nieuw account aan te maken?",
+        "a": "Ja! ZeldWallet ondersteunt het verbinden van externe portemonnees inclusief Xverse, Leather en Magic Eden. Klik op 'Portemonnee Verbinden' en kies je geïnstalleerde portemonnee. Je portemonnee-extensie vraagt je de verbinding goed te keuren. Dit laat je jagen op ZELD met de adressen van je bestaande portemonnee zonder je privésleutels aan ZeldWallet bloot te stellen."
+      },
+      "externalVsDirect": {
+        "q": "Wat is het verschil tussen ZeldWallet direct gebruiken of via een externe portemonnee zoals Xverse?",
+        "a1": "Sleutelopslag: ZeldWallet Direct slaat sleutels versleuteld op in de browser, Externe Portemonnee slaat sleutels op in de extensie/hardware.",
+        "a2": "Setup: ZeldWallet Direct vereist aanmaken of herstellen in de browser, Externe Portemonnee verbindt gewoon bestaande portemonnee.",
+        "a3": "Ondertekening: ZeldWallet Direct ondertekent automatisch na ontgrendeling, Externe Portemonnee toont goedkeuringspopup voor elke actie.",
+        "a4": "Draagbaarheid: ZeldWallet Direct is gebonden aan browser/apparaat, Externe Portemonnee werkt over sites.",
+        "a5": "Hardware portemonnee: Niet ondersteund in ZeldWallet Direct, Ondersteund via extensie in Externe Portemonnee.",
+        "a6": "Gebruik een externe portemonnee als je hardware portemonnee-ondersteuning wilt, al fondsen daar hebt, of de voorkeur geeft aan het bewaren van sleutels in een speciale extensie. Gebruik ZeldWallet direct voor een eenvoudigere, alles-in-één ervaring."
+      }
+    }
+  },
+  "ama": {
+    "aiPowered": "AI-Assistent",
+    "placeholder": "Vraag over ZeldHash...",
+    "submit": "Verzenden",
+    "helperText": "Vragen over ZeldHash, ZELD-tokens, zeldzame transacties of blockchain-concepten.",
+    "genericError": "Er is een fout opgetreden. Probeer het opnieuw.",
+    "connectionError": "Verbindingsfout. Controleer je internetverbinding.",
+    "aiResponse": "AI-Antwoord"
   }
 }

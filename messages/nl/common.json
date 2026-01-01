@@ -5,9 +5,9 @@
   "logoAlt": "ZeldHash-logo",
   "nav": {
     "hunt": "Jacht",
-    "wallet": "Portemonnee",
+    "wallet": "Hunt Wallet",
     "explorer": "Verkenner",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "Whitepaper",
     "toggleMenu": "Navigatiemenu wisselen",
@@ -16,7 +16,7 @@
   "footer": {
     "protocol": "Protocol",
     "balances": "Saldi",
-    "faq": "FAQ",
+    "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
     "motto": "100% gedecentraliseerd. Geen premine. Geen VC. Alleen wiskunde."
@@ -34,10 +34,15 @@
   },
   "wallet": {
     "description": "Veilige Bitcoin-portemonnee in je browser. Maak, beheer en onderteken transacties rechtstreeks vanuit ZeldHash.",
-    "subtitle": "Jaag, verzend en ontvang Zeld rechtstreeks vanuit je browser.",
+    "subtitle": "Jaag, verzend en ontvang ZELD rechtstreeks vanuit je browser.",
     "securityNote": "AES-256-GCM-versleuteling • BIP32/39/84/86-standaarden • Lokaal opgeslagen in je browser",
-    "titlePrefix": "Zeld",
-    "titleSuffix": "Wallet"
+    "titlePrefix": "Hunt",
+    "titleSuffix": " Wallet",
+    "askZeldai": {
+      "title": "Hulp nodig?",
+      "subtitle": "Vraag ZeldAI alles over de wallet of ZeldHash",
+      "askButton": "Vraag ZeldAI"
+    }
   },
   "explorer": {
     "title": "ZELD Verkenner",
@@ -66,7 +71,7 @@
     "noUtxos": "Geen UTXO's gevonden voor dit adres.",
     "leadingZeros": "{count}z",
     "tokenLabel": "ZELD",
-    "blockMetaTitle": "Blok #{blockIndex} - ZELD Explorer",
+    "blockMetaTitle": "Blok #{blockIndex} - ZELD Verkenner",
     "blockMetaDescription": "Bekijk ZELD-beloningen en statistieken voor Bitcoin-blok {blockIndex}",
     "blockStats": "Blokstatistieken",
     "rewardCount": "Beloningen",
