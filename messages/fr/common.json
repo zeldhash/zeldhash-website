@@ -1,6 +1,6 @@
 {
   "siteTitle": "ZeldHash",
-  "siteDescription": "Traquez les transactions Bitcoin les plus rares. Trouvez des identifiants (txid) qui commencent par 000000... et gagnez des tokens ZELD. 100% décentralisé, pas de prémine, pas de VC.",
+  "siteDescription": "Traquez les transactions Bitcoin les plus rares. Trouvez des identifiants de transaction (TXID) commençant par 000000… et gagnez des jetons ZELD. 100 % décentralisé, pas de préminage, pas de VC.",
   "tagline": "La chasse est ouverte",
   "logoAlt": "Logo ZeldHash",
   "nav": {
@@ -19,7 +19,7 @@
     "zeldai": "ZeldAI",
     "github": "GitHub",
     "twitter": "Twitter",
-    "motto": "100% décentralisé. Pas de prémine. Pas de VC. Juste des maths."
+    "motto": "100 % décentralisé. Pas de préminage. Pas de VC. Juste des maths."
   },
   "language": {
     "label": "Langue",
@@ -35,12 +35,12 @@
   "wallet": {
     "description": "Portefeuille Bitcoin sécurisé dans votre navigateur. Créez, gérez et signez des transactions directement depuis ZeldHash.",
     "subtitle": "Chassez, envoyez et recevez du ZELD directement depuis votre navigateur.",
-    "securityNote": "Chiffrement AES-256-GCM • Standards BIP32/39/84/86 • Stocké localement dans votre navigateur",
+    "securityNote": "Chiffrement AES-256-GCM • Normes BIP32/39/84/86 • Stocké localement dans votre navigateur",
     "titlePrefix": "Hunt",
     "titleSuffix": " Wallet",
     "askZeldai": {
       "title": "Besoin d'aide ?",
-      "subtitle": "Posez n'importe quelle question sur le wallet ou ZeldHash",
+      "subtitle": "Posez une question sur ZeldWallet ou sur ZeldHash.",
       "askButton": "Demander à ZeldAI"
     }
   },
@@ -49,10 +49,10 @@
     "metaTitle": "Explorateur ZELD - ZeldHash",
     "metaDescription": "Explorez les dernières récompenses ZeldHash et recherchez des adresses, blocs ou transactions.",
     "searchLabel": "Rechercher dans l'explorateur ZeldHash",
-    "searchPlaceholder": "Entrez une adresse, un numéro de bloc ou un hash de transaction",
+    "searchPlaceholder": "Entrez une adresse, un numéro de bloc ou un TXID",
     "searchButton": "Rechercher",
-    "searchHelp": "Entrez une adresse Bitcoin, une hauteur de bloc ou un hash de transaction.",
-    "searchError": "Entrée invalide. Veuillez entrer une adresse valide, une hauteur de bloc ou un hash de transaction.",
+    "searchHelp": "Entrez une adresse Bitcoin, une hauteur de bloc ou un TXID.",
+    "searchError": "Entrée invalide. Veuillez entrer une adresse valide, une hauteur de bloc ou un TXID.",
     "latestRewards": "Dernières récompenses",
     "noRewards": "Aucune récompense disponible pour le moment. Revenez bientôt.",
     "loadError": "Impossible de charger les données. Veuillez réessayer dans un moment.",
@@ -63,7 +63,7 @@
     "previous": "Précédent",
     "next": "Suivant",
     "addressMetaTitle": "Adresse {address} - Explorateur ZELD",
-    "addressMetaDescription": "Consultez le solde ZELD et les UTXOs pour l'adresse Bitcoin {address}",
+    "addressMetaDescription": "Consultez le solde ZELD et les UTXOs pour l'adresse Bitcoin {address}.",
     "totalBalance": "Solde total",
     "utxo": "UTXO",
     "utxos": "UTXOs",
@@ -93,7 +93,7 @@
     "transaction": "Transaction",
     "transactionMetaTitle": "Transaction {txid} - Explorateur ZELD",
     "transactionMetaDescription": "Voir le solde ZELD et les informations de récompense pour la transaction Bitcoin {txid}",
-    "rewardEligible": "{count} zéros en tête - Éligible à une récompense !",
+    "rewardEligible": "{count} zéros en tête — éligible à une récompense !",
     "rewardTransaction": "Transaction récompensée",
     "rewardsReceived": "Récompenses reçues",
     "leadingZerosCount": "Zéros en tête",

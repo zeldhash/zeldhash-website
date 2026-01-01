@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "ZeldHash - Poluj na rzadkie transakcje Bitcoin",
-    "description": "Poluj na najrzadsze transakcje Bitcoin. Znajdź identyfikatory transakcji zaczynające się od 000000... i zdobądź tokeny ZELD."
+    "description": "Poluj na najrzadsze transakcje Bitcoina. Znajdź identyfikatory transakcji zaczynające się od 000000… i zdobądź tokeny ZELD."
   },
   "hero": {
     "titleLine1": "Poluj na najrzadsze",
     "titleLine2": "transakcje Bitcoin",
-    "subtitleBeforeZeros": "Niektóre transakcje Bitcoin są niezwykle rzadkie — ich ID zaczyna się od",
+    "subtitleBeforeZeros": "Niektóre transakcje Bitcoina są niezwykle rzadkie — ich ID zaczyna się od",
     "subtitleAfterZeros": "Znajdź je i zdobądź tokeny {token}.",
-    "tagline": "100% Zdecentralizowany · Bez premine · Bez VC · Tylko matematyka.",
+    "tagline": "100% zdecentralizowane · Bez premine · Bez VC · Tylko matematyka.",
     "cta": {
       "hunt": {
         "title": "Rozpocznij polowanie",
@@ -43,13 +43,13 @@
       {
         "num": "02",
         "title": "Zera są rzadkie",
-        "desc": "Znalezienie 6 zer? Szansa 1 na 16 milionów. 12 zer? 1 na 281 bilionów. To są skarby.",
+        "desc": "Znalezienie 6 zer? To 1 na 16 milionów. 12 zer? 1 na 281 bilionów. To są skarby.",
         "icon": "💎"
       },
       {
         "num": "03",
         "title": "Poluj lub odkrywaj",
-        "desc": "Wydobywaj nowe rzadkie transakcje naszymi narzędziami albo sprawdź, czy Twoje stare transakcje są już rzadkie.",
+        "desc": "Wydobywaj nowe rzadkie transakcje naszymi narzędziami albo sprawdź, czy twoje stare transakcje są już rzadkie.",
         "icon": "🎯"
       },
       {
@@ -63,16 +63,16 @@
   "comparison": {
     "label": "Dlaczego to ma znaczenie",
     "title": "Kopanie dla każdego",
-    "intro": "Tradycyjne kopanie Bitcoina wymaga sprzętu za miliony dolarów i tyle energii, by zasilić małe miasto. ZELD zmienia zasady gry.",
-    "oldHeader": "Kopanie bloków Bitcoina",
-    "newHeader": "Kopanie transakcji ZELD",
+    "intro": "Tradycyjne wydobycie Bitcoina wymaga sprzętu za miliony dolarów i tyle energii, by zasilić małe miasto. ZELD zmienia zasady gry.",
+    "oldHeader": "Wydobycie bloków Bitcoina",
+    "newHeader": "Wydobycie transakcji ZELD",
     "rows": [
       [
-        "Sprzęt za $500K - $10M",
+        "Sprzęt za 500 tys. – 10 mln USD",
         "Twój laptop"
       ],
       [
-        "Ogromne rachunki za prąd",
+        "Ogromne koszty energii",
         "Prawie nic"
       ],
       [
@@ -84,7 +84,7 @@
         "100% zdecentralizowane"
       ],
       [
-        "Konkurencja z gigantami",
+        "Musisz konkurować z gigantami",
         "Konkurujesz sam ze sobą"
       ]
     ]

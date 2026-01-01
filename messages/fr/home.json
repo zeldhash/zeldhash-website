@@ -1,18 +1,18 @@
 {
   "meta": {
     "title": "ZeldHash - Chasse aux transactions Bitcoin rares",
-    "description": "Traquez les transactions Bitcoin les plus rares. Trouvez des txid commençant par 000000... et gagnez des tokens ZELD."
+    "description": "Traquez les transactions Bitcoin les plus rares. Trouvez des TXID commençant par 000000… et gagnez des jetons ZELD."
   },
   "hero": {
     "titleLine1": "Traquez les transactions",
     "titleLine2": "Bitcoin les plus rares",
-    "subtitleBeforeZeros": "Certaines transactions Bitcoin sont extrêmement rares — leur ID commence par",
-    "subtitleAfterZeros": "Trouvez-les et gagnez des tokens {token}.",
-    "tagline": "100% Décentralisé · Pas de premine · Pas de VC · Juste des maths.",
+    "subtitleBeforeZeros": "Certaines transactions Bitcoin sont extrêmement rares — leur identifiant commence par",
+    "subtitleAfterZeros": "Trouvez-les et gagnez des jetons {token}.",
+    "tagline": "100 % décentralisé · Pas de préminage · Pas de VC · Juste des maths.",
     "cta": {
       "hunt": {
         "title": "Commencer la chasse",
-        "button": "Ouvrir le wallet"
+        "button": "Ouvrir ZeldWallet"
       },
       "explorer": {
         "title": "Vérifier votre solde",
@@ -36,8 +36,8 @@
     "steps": [
       {
         "num": "01",
-        "title": "Chaque transaction a un ID",
-        "desc": "Comme un numéro de série. La plupart semblent aléatoires : a7f3b2c1e9d8... Mais certaines commencent par des zéros.",
+        "title": "Chaque transaction a un identifiant",
+        "desc": "Comme un numéro de série. La plupart semblent aléatoires : a7f3b2c1e9d8… Mais certaines commencent par des zéros.",
         "icon": "🔢"
       },
       {
@@ -55,7 +55,7 @@
       {
         "num": "04",
         "title": "Gagner du ZELD",
-        "desc": "Les transactions rares rapportent des tokens ZELD. Transférez-les comme du Bitcoin. Aucun intermédiaire.",
+        "desc": "Les transactions rares rapportent des jetons ZELD. Transférez-les comme du Bitcoin. Aucun intermédiaire.",
         "icon": "🏆"
       }
     ]
@@ -68,7 +68,7 @@
     "newHeader": "Minage des transactions ZELD",
     "rows": [
       [
-        "500 k$ à 10 M$ de matériel",
+        "500 000 $ à 10 M$ de matériel",
         "Votre ordinateur portable"
       ],
       [
@@ -81,24 +81,24 @@
       ],
       [
         "Contrôlé par des pools de minage",
-        "100% décentralisé"
+        "100 % décentralisé"
       ],
       [
-        "Devoir rivaliser avec des géants",
+        "Rivaliser avec des géants",
         "Rivaliser avec soi-même"
       ]
     ]
   },
   "hallOfFame": {
     "label": "Temple de la renommée",
-    "title": "Découvertes les plus rares",
+    "title": "Les découvertes les plus rares",
     "leadingZeros": "{count} zéros en tête",
-    "recordSuffix": "— RECORD ABSOLU 🏆",
+    "recordSuffix": "— record absolu",
     "tokenLabel": "ZELD"
   },
   "cta": {
     "title": "Prêt à chasser ?",
-    "subtitle": "Rejoignez des milliers de chasseurs découvrant les transactions Bitcoin les plus rares.",
+    "subtitle": "Rejoignez des milliers de chasseurs et découvrez les transactions Bitcoin les plus rares.",
     "startHunting": "Commencer la chasse",
     "checkBalance": "Explorer",
     "askZeldAI": "Demander à ZeldAI"

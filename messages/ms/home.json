@@ -1,13 +1,13 @@
 {
   "meta": {
     "title": "ZeldHash - Buru Transaksi Bitcoin Jarang",
-    "description": "Buru transaksi Bitcoin paling jarang. Cari ID transaksi bermula dengan 000000... dan dapatkan token ZELD."
+    "description": "Buru transaksi Bitcoin paling jarang. Cari ID transaksi yang bermula dengan 000000... dan peroleh token ZELD."
   },
   "hero": {
     "titleLine1": "Buru Transaksi",
     "titleLine2": "Bitcoin Paling Jarang",
     "subtitleBeforeZeros": "Sesetengah transaksi Bitcoin sangat jarang — ID mereka bermula dengan",
-    "subtitleAfterZeros": "Temui mereka dan dapatkan token {token}.",
+    "subtitleAfterZeros": "Temui mereka dan peroleh token {token}.",
     "tagline": "100% Terdesentralisasi · Tiada Premine · Tiada VC · Hanya matematik.",
     "cta": {
       "hunt": {
@@ -42,20 +42,20 @@
       },
       {
         "num": "02",
-        "title": "Sifar adalah jarang",
-        "desc": "Mencari 6 sifar? Kebarangkalian 1 dalam 16 juta. 12 sifar? 1 dalam 281 trilion. Ini adalah harta karun.",
+        "title": "Sifar itu jarang",
+        "desc": "Mencari 6 sifar? Kebarangkalian 1 dalam 16 juta. 12 sifar? 1 dalam 281 trilion. Ini ibarat harta karun.",
         "icon": "💎"
       },
       {
         "num": "03",
         "title": "Buru atau temui",
-        "desc": "Lombong transaksi jarang baharu dengan alat kami, atau semak jika transaksi lama anda sudah jarang.",
+        "desc": "Melombong transaksi jarang baharu dengan alatan kami, atau semak sama ada transaksi lama anda sudah jarang.",
         "icon": "🎯"
       },
       {
         "num": "04",
         "title": "Dapatkan ZELD",
-        "desc": "Transaksi jarang memperoleh token ZELD. Pindahkan seperti Bitcoin. Tiada orang tengah.",
+        "desc": "Transaksi jarang memberi anda token ZELD. Pindahkan seperti Bitcoin. Tiada orang tengah.",
         "icon": "🏆"
       }
     ]
@@ -63,7 +63,7 @@
   "comparison": {
     "label": "Mengapa ia penting",
     "title": "Perlombongan untuk Semua",
-    "intro": "Perlombongan Bitcoin tradisional memerlukan berjuta-juta dalam perkakasan dan elektrik yang cukup untuk menjana kuasa sebuah bandar kecil. ZELD mengubah permainan.",
+    "intro": "Perlombongan Bitcoin tradisional memerlukan perkakasan bernilai berjuta-juta dan elektrik yang cukup untuk membekalkan kuasa kepada sebuah bandar kecil. ZELD mengubah permainan.",
     "oldHeader": "Perlombongan Blok Bitcoin",
     "newHeader": "Perlombongan Transaksi ZELD",
     "rows": [
@@ -72,7 +72,7 @@
         "Komputer riba anda"
       ],
       [
-        "Bil elektrik besar",
+        "Bil elektrik melambung",
         "Hampir tiada"
       ],
       [
@@ -80,7 +80,7 @@
         "Semua boleh menang"
       ],
       [
-        "Dikawal oleh pool perlombongan",
+        "Dikawal oleh kolam perlombongan",
         "100% terdesentralisasi"
       ],
       [
@@ -92,7 +92,7 @@
   "hallOfFame": {
     "label": "Dewan Kemasyhuran",
     "title": "Penemuan Paling Jarang",
-    "leadingZeros": "{count} sifar hadapan",
+    "leadingZeros": "{count} sifar pendahulu",
     "recordSuffix": "— REKOD SEPANJANG MASA 🏆",
     "tokenLabel": "ZELD"
   },

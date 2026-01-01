@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "ZeldHash SSS",
-    "description": "Nadir hash kalıplarına sahip Bitcoin işlemlerini avlama hakkında cevaplar."
+    "description": "Nadir hash desenlerine sahip Bitcoin işlemlerini avlamaya dair yanıtlar."
   },
   "badge": "SSS",
   "heading": "Sık Sorulan Sorular",
@@ -13,46 +13,46 @@
   },
   "protocol": {
     "howToGetZeld": {
-      "q": "ZELD nasıl elde edilir?",
-      "a": "En kolay yol, doğrudan <site>zeldhash.com</site> üzerinden ZeldWallet kullanmaktır — kurulum gerektirmeden nadir işlemleri avlamanızı sağlayan tarayıcı tabanlı bir cüzdandır. Sadece bir cüzdan oluşturun veya bağlayın ve madenciliğe başlayın. Kendi basım çözümünü oluşturmak isteyen geliştiriciler için <github>GitHub</github>'da Rust, TypeScript ve Python'da açık kaynaklı SDK'lar sağlıyoruz."
+      "q": "ZELD nasıl kazanılır?",
+      "a": "En kolay yol, doğrudan <site>zeldhash.com</site> üzerinden ZeldWallet kullanmaktır — kurulum gerektirmeden nadir işlemleri avlamanızı sağlayan tarayıcı tabanlı bir cüzdandır. Sadece bir cüzdan oluşturun veya bağlayın ve madenciliğe başlayın. Kendi basım çözümünü oluşturmak isteyen geliştiriciler için <github>GitHub</github> üzerinde Rust, TypeScript ve Python ile açık kaynaklı SDK'lar sunuyoruz."
     },
     "whatIsZeldHash": {
       "q": "ZeldHash nedir?",
-      "a": "ZeldHash, nadir hash kalıplarına sahip Bitcoin işlemlerini keşfeden veya oluşturan kullanıcıları ödüllendiren bir protokoldür — özellikle birden fazla sıfırla başlayan hashler. Bunu Bitcoin blok zincirinde bir hazine avı olarak düşünün."
+      "a": "ZeldHash, nadir hash kalıplarına sahip Bitcoin işlemlerini keşfeden veya oluşturan kullanıcıları ödüllendiren bir protokoldür — özellikle birden fazla sıfırla başlayan hash'ler. Bunu Bitcoin blok zincirinde bir hazine avı olarak düşünün."
     },
     "whyName": {
-      "q": "Neden 'ZeldHash' adı?",
-      "a1": "'Zeld' Hollandaca zeldzaam kelimesinden gelir ve 'nadir' anlamına gelir. Bitcoin blok zincirindeki en nadir işlemleri avlamaya adanmış bir protokol için uygun bir isimdir. 'Hash' kısmı, her işlemi benzersiz kılan kriptografik parmak izini ifade eder.",
-      "a2": "Yani ZeldHash kelime anlamıyla 'nadir hash' demektir — tam olarak aradığımız şey."
+      "q": "Neden \"ZeldHash\"?",
+      "a1": "\"Zeld\", Hollandaca zeldzaam kelimesinden gelir ve \"nadir\" anlamına gelir. Bitcoin blok zincirindeki en nadir işlemleri avlamaya adanmış bir protokol için uygun bir isimdir. \"Hash\" kısmı, her işlemi benzersiz kılan kriptografik parmak izini ifade eder.",
+      "a2": "Yani ZeldHash kelime anlamıyla \"nadir hash\" demektir — tam olarak avladığımız şey."
     },
     "whatIsHash": {
       "q": "Hash nedir?",
-      "a1": "Hash dijital bir parmak izi gibidir. Herhangi bir veriden — ister bir görsel, belge veya Bitcoin işlemi olsun — oluşturulan benzersiz bir tanımlayıcıdır. Her hash 64 onaltılık karakterden oluşan bir dizedir.",
-      "a2": "Hash örneklerini <mempool>mempool.space</mempool> üzerinde görebilirsiniz."
+      "a1": "Hash, dijital bir parmak izi gibidir. Herhangi bir veriden — ister bir görsel, belge veya Bitcoin işlemi olsun — oluşturulan benzersiz bir tanımlayıcıdır. Her hash, 64 onaltılık karakterden oluşan bir dizedir.",
+      "a2": "Hash örneklerini <mempool>mempool.space</mempool> üzerinden görebilirsiniz."
     },
     "bitcoinRelation": {
-      "q": "Bu Bitcoin ile nasıl ilişkili?",
-      "a": "Her Bitcoin bloğunun bir hashi vardır ve bir blok içindeki her işlemin işlem kimliği (txid) adı verilen kendi hashi vardır. Blok hashlerine baktıysanız, birçok sıfırla başladıklarını fark etmiş olabilirsiniz. Bu madenciliğin sonucudur: madenciler yeterli başlangıç sıfırına sahip bir hash bulana kadar sürekli hash hesaplarlar."
+      "q": "Bu, Bitcoin'le nasıl ilişkili?",
+      "a": "Her Bitcoin bloğunun bir hash'i vardır ve bir blok içindeki her işlemin işlem kimliği (txid) adı verilen kendi hash'i vardır. Blok hash'lerine baktıysanız, birçok sıfırla başladıklarını fark etmiş olabilirsiniz. Bu madenciliğin sonucudur: madenciler yeterli başlangıç sıfırına sahip bir hash bulana kadar sürekli hash hesaplarlar."
     },
     "rareTxHash": {
-      "q": "Bir işlem hashini 'nadir' yapan nedir?",
-      "a": "Blok hashlerinin aksine, işlem hashleri esasen rastgeledir — herhangi bir karakterle başlayabilirler. Birden fazla sıfırla başlayan bir işlem hashi istatistiksel olarak nadirdir, dört yapraklı yonca bulmak gibi. Ne kadar çok başlangıç sıfırı varsa, işlem o kadar nadirdir."
+      "q": "Bir işlem hash'ini 'nadir' yapan nedir?",
+      "a": "Blok hash'lerinin aksine, işlem hash'leri esasen rastgeledir — herhangi bir karakterle başlayabilirler. Birden fazla sıfırla başlayan bir işlem hash'i istatistiksel olarak nadirdir, dört yapraklı yonca bulmak gibi. Ne kadar çok başlangıç sıfırı varsa, işlem o kadar nadirdir."
     },
     "huntHow": {
       "q": "Nadir işlemleri nasıl avlarım?",
-      "a": "Tıpkı madenciler gibi. İşleminize rastgele veri ekler ve sıfırlarla başlayan birini bulana kadar hashler hesaplarsınız. Birçok deneme gerektirebilir, ama başarılı olduğunuzda nadir bir şey keşfetmiş olursunuz."
+      "a": "Tıpkı madenciler gibi. İşleminize rastgele veri ekler ve sıfırlarla başlayan birini bulana kadar hash'ler hesaplarsınız. Birçok deneme gerektirebilir, ama başarılı olduğunuzda nadir bir şey keşfetmiş olursunuz."
     },
     "whatIsZeld": {
       "q": "ZELD nedir?",
-      "a": "ZELD, en az 6 sıfırla başlayan bir hashe sahip Bitcoin işlemi bulduğunuzda veya oluşturduğunuzda kazandığınız tokendir. Bulgunuz ne kadar nadir olursa (daha fazla sıfır), o kadar çok ZELD kazanırsınız."
+      "a": "ZELD, en az 6 sıfırla başlayan bir hash'e sahip Bitcoin işlemi bulduğunuzda veya oluşturduğunuzda kazandığınız tokendir. Bulgunuz ne kadar nadir olursa (daha fazla sıfır), o kadar çok ZELD kazanırsınız."
     },
     "inCirculation": {
       "q": "Dolaşımda zaten ZELD tokenleri var mı?",
-      "a": "Evet. 2009'da Bitcoin'in başlamasından bu yana, birçok işlem rastgele olarak 6+ sıfırla başlayan hashlere sahip oldu. Bu tesadüfi hazineler zaten talep edilebilir. Bazı avcılar da bunları kasıtlı olarak oluşturuyor."
+      "a": "Evet. 2009'da Bitcoin'in başlamasından bu yana, birçok işlem rastgele olarak 6+ sıfırla başlayan hash'lere sahip oldu. Bu tesadüfi hazineler zaten talep edilebilir. Bazı avcılar da bunları kasıtlı olarak oluşturuyor."
     },
     "ownWithoutKnowing": {
       "q": "Bazı insanlar farkında olmadan ZELD'e mi sahip?",
-      "a": "Kesinlikle. Binlerce Bitcoin kullanıcısı bilmeden nadir işlemlere sahip. ZELD'leri talep edilmeyi bekliyor."
+      "a": "Kesinlikle. Binlerce Bitcoin kullanıcısı bilmeden nadir işlemlere sahip. ZELD'leri talep edilmek için bekliyor."
     },
     "centralized": {
       "q": "ZeldHash merkezi mi? Kim kontrol ediyor?",
@@ -64,7 +64,7 @@
     },
     "startHunting": {
       "q": "Avlamaya nasıl başlarım?",
-      "a": "<site>zeldhash.com</site> adresini ziyaret edin ve arayışınıza başlayın. Her işlem nadir bir şey keşfetme şansıdır."
+      "a": "<site>zeldhash.com</site> adresini ziyaret edin ve avınıza başlayın. Her işlem, nadir bir şey keşfetme şansıdır."
     }
   },
   "wallet": {
@@ -72,7 +72,7 @@
       "title": "Genel",
       "security": {
         "q": "Kripto paralarım bu cüzdanda gerçekten güvende mi? Özel anahtarlarım nerede saklanıyor?",
-        "a": "Evet, fonlarınız tarayıcınızın güvenliği kadar güvendedir. ZeldWallet özel anahtarlarınızı tarayıcınızın IndexedDB'sinde yerel olarak saklar, AES-256-GCM ile şifrelenir. Bir şifre belirlerseniz, anahtarlarınız PBKDF2 anahtar türetme kullanılarak korunur, bu da onları kırmayı son derece zorlaştırır. Özel anahtarlarınız cihazınızı asla terk etmez ve hiçbir sunucuya gönderilmez. Ancak, her zaman hatırlatıcı ifadenizin yedeğini oluşturun — yedek olmadan tarayıcınıza veya cihazınıza erişimi kaybederseniz, fonlarınız sonsuza dek kaybolacaktır."
+        "a": "Evet, fonlarınız tarayıcınızın güvenliği kadar güvendedir. ZeldWallet özel anahtarlarınızı tarayıcınızın IndexedDB'sinde yerel olarak saklar ve AES-256-GCM ile şifreler. Bir şifre belirlerseniz, anahtarlarınız PBKDF2 anahtar türetme kullanılarak korunur; bu da kırılmalarını son derece zorlaştırır. Özel anahtarlarınız cihazınızı asla terk etmez ve hiçbir sunucuya gönderilmez. Ancak her zaman kurtarma ifadenizin (tohum ifadenizin) yedeğini alın — yedek olmadan tarayıcınıza veya cihazınıza erişimi kaybederseniz, fonlarınız sonsuza dek kaybolur."
       },
       "addressDifference": {
         "q": "\"Ödeme\" adresi ile \"Ordinals\" adresi arasındaki fark nedir?",
@@ -88,41 +88,41 @@
       }
     },
     "hunting": {
-      "title": "Basım / Avlanma",
+      "title": "Basım / Av",
       "gpuVsCpu": {
-        "q": "GPU ile veya GPU olmadan madencilik arasındaki fark nedir? Bilgisayarıma zarar verir mi?",
+        "q": "GPU'lu veya GPU'suz madencilik arasındaki fark nedir? Bilgisayarıma zarar verir mi?",
         "a": "GPU madenciliği, çok daha hızlı hash hesaplamaları için grafik kartınızı kullanmak üzere WebGPU teknolojisini kullanır — genellikle yalnızca CPU madenciliğinden 10-100 kat daha hızlı. CPU madenciliği Web Workers kullanır ve daha yavaştır ama tüm cihazlarda çalışır. İkisi de bilgisayarınıza zarar vermez. Modern donanım sürekli iş yüklerini kaldırmak için tasarlanmıştır. Tarayıcınız kaynakları sorumlu bir şekilde yönetir ve madenciliği istediğiniz zaman durdurabilirsiniz."
       },
       "miningTime": {
-        "q": "Bir ZELD madencilik yapmak ne kadar sürer?",
-        "a": "Donanımınıza ve şansınıza bağlı. 6 başlangıç sıfırına sahip bir işlem hashi bulmak deneme başına yaklaşık 16 milyonda 1 şansa sahiptir. Saniyede milyonlarca hash elde eden modern bir GPU ile dakikalardan saatlere kadar sürebilir. Yalnızca CPU ile saatlerden günlere kadar sürebilir. Rastgelelik de söz konusu — hızlı şanslı olabilirsiniz veya ortalamadan daha uzun sürebilir."
+        "q": "Bir ZELD kazanmak ne kadar sürer?",
+        "a": "Donanımınıza ve şansınıza bağlı. 6 başlangıç sıfırına sahip bir işlem hash'i bulmak deneme başına yaklaşık 16 milyonda 1 şansa sahiptir. Saniyede milyonlarca hash elde eden modern bir GPU ile dakikalardan saatlere kadar sürebilir. Yalnızca CPU ile saatlerden günlere kadar sürebilir. Rastgelelik de söz konusu — hızlı şanslı olabilirsiniz veya ortalamadan daha uzun sürebilir."
       },
       "keepRunning": {
         "q": "Madencilik sırasında bilgisayarımı açık tutmam gerekiyor mu?",
-        "a": "Evet. Madencilik tarayıcınızda gerçekleşir, bu yüzden sekme açık ve aktif kalmalıdır. Tarayıcıyı kapatırsanız veya başka bir yere giderseniz, madencilik durur. İlerlemeniz (işlenen hashler) kaydedilmez — devam ettiğinizde sıfırdan başlarsınız. Ancak, madencilik ortasında durursanız fonlar risk altında değildir; işlem yalnızca geçerli bir hash bulunup imzalandıktan sonra yayınlanır."
+        "a": "Evet. Madencilik tarayıcınızda gerçekleşir, bu yüzden sekme açık ve aktif kalmalıdır. Tarayıcıyı kapatırsanız veya başka bir yere giderseniz, madencilik durur. İlerlemeniz (işlenen hash'ler) kaydedilmez — devam ettiğinizde sıfırdan başlarsınız. Ancak, madencilik ortasında durursanız fonlar risk altında değildir; işlem yalnızca geçerli bir hash bulunup imzalandıktan sonra yayınlanır."
       }
     },
     "transactions": {
       "title": "İşlemler ve Ücretler",
       "feeSelection": {
-        "q": "İşlem ücretlerini nasıl seçerim? 'Yavaş', 'Orta' ve 'Hızlı' arasındaki fark nedir?",
+        "q": "İşlem ücretlerini nasıl seçerim? \"Yavaş\", \"Orta\" ve \"Hızlı\" arasındaki fark nedir?",
         "a1": "ZeldWallet, mempool.space'den gerçek zamanlı ücret önerileri alır:",
         "a2": "Yavaş: Düşük ücret, onaylanması 1+ saat sürebilir. Orta: Dengeli ücret, genellikle 30-60 dakikada onaylanır. Hızlı: Yüksek ücret, genellikle sonraki 1-2 blokta (~10-20 dakika) onaylanır.",
         "a3": "Ayrıca sats/vB cinsinden özel bir ücret oranı belirleyebilirsiniz. Daha yüksek ücretler daha hızlı onay anlamına gelir ama daha fazla BTC'ye mal olur."
       },
       "minimumBtc": {
         "q": "Madenciliğe başlamak için neden minimum BTC miktarına sahip olmam gerekiyor?",
-        "a1": "Her Bitcoin işlemi bir ücret gerektirir ve her çıktının minimum bir değere ihtiyacı vardır (\"toz limiti\" olarak adlandırılır). ZeldWallet karşılamak için yaklaşık 2.000+ satoshi gerektirir:",
+        "a1": "Her Bitcoin işlemi bir ücret gerektirir ve her çıktının minimum bir değere ihtiyacı vardır (\"toz limiti\" olarak adlandırılır). ZeldWallet, şunları karşılamak için yaklaşık 2.000+ satoshi gerektirir:",
         "a2": "Ordinals adresinize ZELD çıktısı için toz miktarı olarak 330 sat ve mevcut ağ koşullarına bağlı olarak işlem ücreti için ~1.500+ sat.",
         "a3": "Yeterli BTC olmadan geçerli bir işlem oluşturamazsınız."
       },
       "sendZeld": {
-        "q": "Başka birine ZELD'i nasıl gönderirim?",
-        "a": "ZeldWallet'ta Avlanma bölümüne gidin ve 'ZELD Gönder'i işaretleyin. Alıcının Bitcoin adresini ve göndermek istediğiniz ZELD miktarını girin. Transfer bir sonraki avlanma işleminize dahil edilecek — nadir hash bulunduğunda ve işlem yayınlandığında ZELD'iniz gönderilecektir."
+        "q": "Başka birine ZELD nasıl gönderirim?",
+        "a": "ZeldWallet'ta Av bölümüne gidin ve \"ZELD Gönder\" seçeneğini işaretleyin. Alıcının Bitcoin adresini ve göndermek istediğiniz ZELD miktarını girin. Transfer bir sonraki av işleminize dahil edilecek — nadir hash bulunduğunda ve işlem yayınlandığında ZELD'iniz gönderilecektir."
       },
       "balanceIncreased": {
         "q": "Az önce ZELD gönderdim ama bakiyem arttı!?",
-        "a": "Bu normal — ve harika bir haber! ZeldWallet aracılığıyla ZELD gönderdiğinizde, sadece transfer yapmıyorsunuz, aynı zamanda nadir bir işlem hashi de avlıyorsunuz. Yayınladığınız işlem 6 veya daha fazla başlangıç sıfırına sahipse, ZELD ödülü kazanırsınız (en nadir bulgular için 4.096 ZELD'e kadar). Yani 100 ZELD gönderdiyseniz ama 256 ZELD ödülü aldıysanız, net bakiyeniz aslında 156 ZELD arttı. Her işlem kazanma fırsatıdır!"
+        "a": "Bu normal — ve harika bir haber! ZeldWallet aracılığıyla ZELD gönderdiğinizde, sadece transfer yapmıyorsunuz, aynı zamanda nadir bir işlem hash'i de avlıyorsunuz. Yayınladığınız işlem 6 veya daha fazla başlangıç sıfırına sahipse, ZELD ödülü kazanırsınız (en nadir bulgular için 4.096 ZELD'e kadar). Yani 100 ZELD gönderdiyseniz ama 256 ZELD ödülü aldıysanız, net bakiyeniz aslında 156 ZELD arttı. Her işlem kazanma fırsatıdır!"
       },
       "closeBrowser": {
         "q": "İşlem sırasında tarayıcımı kapatırsam ne olur?",
@@ -134,15 +134,15 @@
       "title": "Güvenlik ve Yedekleme",
       "backupImportance": {
         "q": "Yedekleme nedir ve neden oluşturmak bu kadar önemli?",
-        "a": "Yedekleme 12 veya 24 kelimelik hatırlatıcı ifadenizdir (tohum ifadesi). Bu ifade tüm özel anahtarlarınızı yeniden oluşturabilir ve herhangi bir cihazda veya uyumlu cüzdan uygulamasında tüm cüzdanınızı kurtarabilir. Bu yedekleme olmadan, tarayıcınıza erişimi kaybederseniz (silinen veriler, yeni cihaz, tarayıcı çökmesi), fonlarınız kalıcı olarak kaybolur. Kağıda yazın ve güvenli bir şekilde saklayın — asla dijital olarak kaydetmeyin veya kimseyle paylaşmayın."
+        "a": "Yedek, 12 veya 24 kelimelik kurtarma ifadenizdir (tohum ifadesi). Bu ifade tüm özel anahtarlarınızı yeniden oluşturabilir ve herhangi bir cihazda veya uyumlu bir cüzdan uygulamasında cüzdanınızı kurtarabilir. Bu yedek olmadan tarayıcınıza erişimi kaybederseniz (verilerin silinmesi, yeni cihaz, tarayıcı çökmesi), fonlarınız kalıcı olarak kaybolur. Kağıda yazın ve güvenli bir şekilde saklayın — asla dijital olarak kaydetmeyin veya kimseyle paylaşmayın."
       },
       "forgotPassword": {
         "q": "Şifremi unutursam her şeyi kaybeder miyim?",
-        "a": "Hayır, yedek hatırlatıcı ifadeniz varsa. ZeldWallet depolama alanını temizleyebilir ve hatırlatıcı ifadeyi kullanarak cüzdanınızı geri yükleyebilirsiniz. Şifre yalnızca yerel şifreli depolamayı korur — blok zinciriyle bağlantılı değildir. Ancak, şifrenizi unutursanız VE hatırlatıcı yedeğiniz yoksa, evet, fonlarınız kaybolur."
+        "a": "Hayır, kurtarma ifadenizin yedeği varsa. ZeldWallet depolama alanını temizleyebilir ve kurtarma ifadenizi kullanarak cüzdanınızı geri yükleyebilirsiniz. Şifre yalnızca yerel şifreli depolamayı korur — blok zinciriyle bağlantılı değildir. Ancak hem şifrenizi unutursanız hem de kurtarma ifadenizin yedeği yoksa, evet, fonlarınız kaybolur."
       },
       "mnemonicPhrase": {
-        "q": "\"Hatırlatıcı ifade\" nedir ve cüzdanımı başka bir uygulamadan geri yükleyebilir miyim?",
-        "a": "Hatırlatıcı ifade (tohum ifadesi veya kurtarma ifadesi olarak da bilinir), BIP39 standardına göre ana özel anahtarınızı temsil eden 12 veya 24 kelimelik bir listedir. Evet, bir ZeldWallet hatırlatıcı ifadesini Xverse, Leather, Sparrow veya herhangi bir BIP39/BIP84/BIP86 uyumlu cüzdanda geri yükleyebilirsiniz. Bitcoin ve ZELD'iniz aynı adreslerde görünecektir."
+        "q": "\"Kurtarma ifadesi\" nedir ve cüzdanımı başka bir uygulamadan geri yükleyebilir miyim?",
+        "a": "Kurtarma ifadesi (tohum ifadesi / seed phrase olarak da bilinir), BIP39 standardına göre ana özel anahtarınızı temsil eden 12 veya 24 kelimelik bir listedir. Evet, bir ZeldWallet kurtarma ifadesini Xverse, Leather, Sparrow veya herhangi bir BIP39/BIP84/BIP86 uyumlu cüzdanda geri yükleyebilirsiniz. Bitcoin ve ZELD'iniz aynı adreslerde görünecektir."
       },
       "lostDevice": {
         "q": "Bilgisayarımı kaybedersem birisi cüzdanıma erişebilir mi?",
@@ -153,26 +153,26 @@
       "title": "Harici Cüzdanlar",
       "connectExternal": {
         "q": "Yeni hesap oluşturmak yerine Xverse veya Leather cüzdanımı bağlayabilir miyim?",
-        "a": "Evet! ZeldWallet, Xverse, Leather ve Magic Eden dahil harici cüzdanları bağlamayı destekler. 'Cüzdan Bağla'ya tıklayın ve kurulu cüzdanınızı seçin. Cüzdan uzantınız bağlantıyı onaylamanızı isteyecektir. Bu, özel anahtarlarınızı ZeldWallet'a açıklamadan mevcut cüzdanınızın adreslerini kullanarak ZELD avlamanıza olanak tanır."
+        "a": "Evet! ZeldWallet; Xverse, Leather ve Magic Eden gibi harici cüzdanlara bağlanmayı destekler. \"Cüzdan Bağla\"ya tıklayın ve kurulu cüzdanınızı seçin. Cüzdan uzantınız bağlantıyı onaylamanızı isteyecektir. Bu sayede özel anahtarlarınızı ZeldWallet'a paylaşmadan, mevcut cüzdanınızın adreslerini kullanarak ZELD avlayabilirsiniz."
       },
       "externalVsDirect": {
         "q": "ZeldWallet'ı doğrudan veya Xverse gibi harici bir cüzdan aracılığıyla kullanmak arasındaki fark nedir?",
-        "a1": "Anahtar depolama: ZeldWallet Doğrudan anahtarları tarayıcıda şifreli olarak saklar, Harici Cüzdan anahtarları uzantıda/donanımda saklar.",
-        "a2": "Kurulum: ZeldWallet Doğrudan tarayıcıda oluşturma veya geri yükleme gerektirir, Harici Cüzdan mevcut cüzdanı bağlar.",
-        "a3": "İmzalama: ZeldWallet Doğrudan kilit açıldıktan sonra otomatik imzalar, Harici Cüzdan her eylem için onay açılır penceresi gösterir.",
-        "a4": "Taşınabilirlik: ZeldWallet Doğrudan tarayıcı/cihaza bağlı, Harici Cüzdan siteler arasında çalışır.",
-        "a5": "Donanım cüzdanı: ZeldWallet Doğrudan'da desteklenmiyor, Harici Cüzdan'da uzantı aracılığıyla destekleniyor.",
-        "a6": "Donanım cüzdanı desteği istiyorsanız, zaten orada fonlarınız varsa veya anahtarları özel bir uzantıda tutmayı tercih ediyorsanız harici cüzdan kullanın. Daha basit, hepsi bir arada bir deneyim için ZeldWallet'ı doğrudan kullanın."
+        "a1": "Anahtar saklama: ZeldWallet'ta anahtarlar tarayıcıda şifreli saklanır; harici cüzdanda anahtarlar eklentide/donanımda saklanır.",
+        "a2": "Kurulum: ZeldWallet'ta tarayıcıda oluşturma veya geri yükleme gerekir; harici cüzdanda sadece mevcut cüzdanınızı bağlarsınız.",
+        "a3": "İmzalama: ZeldWallet'ta kilidi açtıktan sonra işlemler otomatik imzalanır; harici cüzdanda her işlem için onay penceresi gelir.",
+        "a4": "Taşınabilirlik: ZeldWallet tarayıcı/cihaza bağlıdır; harici cüzdan farklı sitelerde çalışır.",
+        "a5": "Donanım cüzdanı: ZeldWallet'ta desteklenmez; harici cüzdan (eklenti) üzerinden desteklenebilir.",
+        "a6": "Donanım cüzdanı desteği istiyorsanız, fonlarınız zaten eklentideyse veya anahtarları ayrı bir eklentide tutmayı tercih ediyorsanız harici cüzdan kullanın. Daha basit, hepsi bir arada bir deneyim için ZeldWallet'ı doğrudan kullanın."
       }
     }
   },
   "ama": {
-    "aiPowered": "AI Asistan",
-    "placeholder": "ZeldHash hakkında sorun...",
+    "aiPowered": "Yapay Zekâ Asistanı",
+    "placeholder": "ZeldHash hakkında istediğinizi sorun...",
     "submit": "Gönder",
-    "helperText": "ZeldHash, ZELD tokenleri, nadir işlemler veya blok zinciri kavramları hakkında sorular.",
+    "helperText": "ZeldHash, ZELD tokenleri, nadir işlemler veya blok zinciri kavramları hakkında sorular sorun.",
     "genericError": "Bir hata oluştu. Lütfen tekrar deneyin.",
-    "connectionError": "Bağlantı hatası. İnternet bağlantınızı kontrol edin.",
-    "aiResponse": "AI Yanıtı"
+    "connectionError": "Bağlantı hatası. İnternet bağlantınızı kontrol edin ve tekrar deneyin.",
+    "aiResponse": "Yapay Zekâ Yanıtı"
   }
 }

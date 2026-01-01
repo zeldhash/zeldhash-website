@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "ZeldHash - Vânează tranzacții Bitcoin rare",
-    "description": "Vânați cele mai rare tranzacții Bitcoin. Găsiți ID-uri de tranzacții care încep cu 000000... și câștigați tokeni ZELD."
+    "description": "Vânează cele mai rare tranzacții Bitcoin. Găsește ID-uri de tranzacție care încep cu 000000... și câștigă tokeni ZELD."
   },
   "hero": {
     "titleLine1": "Vânează cele mai",
     "titleLine2": "rare tranzacții Bitcoin",
     "subtitleBeforeZeros": "Unele tranzacții Bitcoin sunt extrem de rare — ID-ul lor începe cu",
-    "subtitleAfterZeros": "Găsiți-le și câștigați tokeni {token}.",
-    "tagline": "100% Descentralizat · Fără premine · Fără VC · Doar matematică.",
+    "subtitleAfterZeros": "Găsește-le și câștigă tokeni {token}.",
+    "tagline": "100% descentralizat · Fără premine · Fără VC · Doar matematică.",
     "cta": {
       "hunt": {
         "title": "Începe vânătoarea",
@@ -43,19 +43,19 @@
       {
         "num": "02",
         "title": "Zerourile sunt rare",
-        "desc": "Să găsești 6 zerouri? Șansă de 1 la 16 milioane. 12 zerouri? 1 la 281 de trilioane. Acestea sunt comori.",
+        "desc": "Să găsești 6 zerouri? O șansă de 1 la 16 milioane. 12 zerouri? 1 la 281 de trilioane. Astea sunt comori.",
         "icon": "💎"
       },
       {
         "num": "03",
         "title": "Vânează sau descoperă",
-        "desc": "Minați tranzacții rare noi cu uneltele noastre sau verificați dacă tranzacțiile dvs. vechi sunt deja rare.",
+        "desc": "Minează tranzacții rare noi cu uneltele noastre sau verifică dacă tranzacțiile tale vechi sunt deja rare.",
         "icon": "🎯"
       },
       {
         "num": "04",
-        "title": "Câștigați ZELD",
-        "desc": "Tranzacțiile rare câștigă tokeni ZELD. Transferați-i ca Bitcoin. Fără intermediari.",
+        "title": "Câștigă ZELD",
+        "desc": "Tranzacțiile rare câștigă tokeni ZELD. Transferă-i ca Bitcoin. Fără intermediari.",
         "icon": "🏆"
       }
     ]
@@ -69,7 +69,7 @@
     "rows": [
       [
         "Hardware de $500K - $10M",
-        "Laptopul dvs."
+        "Laptopul tău"
       ],
       [
         "Facturi uriașe la electricitate",
@@ -84,8 +84,8 @@
         "100% descentralizat"
       ],
       [
-        "Trebuie să concurați cu giganții",
-        "Concurați cu dvs. înșivă"
+        "Trebuie să concurezi cu giganții",
+        "Concuri doar cu tine"
       ]
     ]
   },

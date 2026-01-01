@@ -4,11 +4,11 @@
     "description": "Jage die seltensten Bitcoin-Transaktionen. Finde Transaktions-IDs, die mit 000000... beginnen, und verdiene ZELD-Token."
   },
   "hero": {
-    "titleLine1": "Jage nach den",
+    "titleLine1": "Jage die",
     "titleLine2": "seltensten Bitcoin-Transaktionen",
     "subtitleBeforeZeros": "Manche Bitcoin-Transaktionen sind extrem selten — ihre ID beginnt mit",
-    "subtitleAfterZeros": "Finde sie und verdiene {token} Token.",
-    "tagline": "100% Dezentralisiert · Kein Premine · Kein VC · Nur Mathematik.",
+    "subtitleAfterZeros": "Finde sie und verdiene {token}-Token.",
+    "tagline": "100% dezentralisiert · Kein Premine · Kein VC · Nur Mathematik.",
     "cta": {
       "hunt": {
         "title": "Jagd starten",
@@ -27,7 +27,7 @@
   "stats": {
     "rareHashesFound": "Seltene Hashes gefunden",
     "zeldInCirculation": "ZELD im Umlauf",
-    "recordZeros": "Rekord-Nullen",
+    "recordZeros": "Nullen-Rekord",
     "utxosTracked": "Verfolgte UTXOs"
   },
   "howItWorks": {
@@ -68,7 +68,7 @@
     "newHeader": "ZELD-Transaktions-Mining",
     "rows": [
       [
-        "$500K - $10M Hardware",
+        "$500K–$10M Hardware",
         "Dein Laptop"
       ],
       [
@@ -98,7 +98,7 @@
   },
   "cta": {
     "title": "Bereit zur Jagd?",
-    "subtitle": "Schließen Sie sich Tausenden von Jägern an, die Bitcoins seltenste Transaktionen entdecken.",
+    "subtitle": "Schließ dich Tausenden von Jägern an, die die seltensten Bitcoin-Transaktionen entdecken.",
     "startHunting": "Jagd starten",
     "checkBalance": "Erkunden",
     "askZeldAI": "ZeldAI fragen"

@@ -8,14 +8,14 @@
     "titleLine2": "transacciones más raras de Bitcoin",
     "subtitleBeforeZeros": "Algunas transacciones de Bitcoin son extremadamente raras — su ID empieza con",
     "subtitleAfterZeros": "Encuéntralas y gana tokens {token}.",
-    "tagline": "100% Descentralizado · Sin preminado · Sin VC · Solo matemáticas.",
+    "tagline": "100% descentralizado · Sin preminado · Sin VC · Solo matemáticas.",
     "cta": {
       "hunt": {
         "title": "Comenzar la caza",
-        "button": "Abrir wallet"
+        "button": "Abrir cartera"
       },
       "explorer": {
-        "title": "Verificar tu saldo",
+        "title": "Consultar tu saldo",
         "button": "Explorar"
       },
       "learn": {
@@ -49,13 +49,13 @@
       {
         "num": "03",
         "title": "Caza o descubre",
-        "desc": "Mina nuevas transacciones raras con nuestras herramientas, o comprueba si tus transacciones antiguas ya son raras.",
+        "desc": "Mina nuevas transacciones raras con nuestras herramientas o comprueba si tus transacciones antiguas ya son raras.",
         "icon": "🎯"
       },
       {
         "num": "04",
         "title": "Gana ZELD",
-        "desc": "Las transacciones raras generan tokens ZELD. Transfiérelos como Bitcoin. Sin intermediarios.",
+        "desc": "Las transacciones raras generan tokens ZELD. Transfiérelos igual que Bitcoin. Sin intermediarios.",
         "icon": "🏆"
       }
     ]

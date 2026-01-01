@@ -1,6 +1,6 @@
 {
   "siteTitle": "ZeldHash",
-  "siteDescription": "Vânați cele mai rare tranzacții Bitcoin. Găsiți ID-uri de tranzacții care încep cu 000000... și câștigați tokeni ZELD. 100% descentralizat, fără premine, fără VC.",
+  "siteDescription": "Vânează cele mai rare tranzacții Bitcoin. Găsește ID-uri de tranzacție care încep cu 000000... și câștigă tokeni ZELD. 100% descentralizat, fără premine, fără VC.",
   "tagline": "Vânătoarea a început",
   "logoAlt": "Logo ZeldHash",
   "nav": {
@@ -11,7 +11,7 @@
     "github": "GitHub",
     "whitepaper": "Carte Albă",
     "toggleMenu": "Comută meniul de navigare",
-    "openNav": "Deschide navigarea"
+    "openNav": "Deschide meniul"
   },
   "footer": {
     "protocol": "Protocol",
@@ -28,13 +28,13 @@
     "es": "ES"
   },
   "comingSoon": {
-    "title": "În Curând",
-    "description": "Această funcție este în curs de dezvoltare. Rămâneți la curent!",
-    "status": "În Dezvoltare"
+    "title": "În curând",
+    "description": "Această funcție este în curs de dezvoltare. Revino în curând!",
+    "status": "În dezvoltare"
   },
   "wallet": {
     "description": "Portofel Bitcoin securizat în browser. Creează, gestionează și semnează tranzacții direct din ZeldHash.",
-    "subtitle": "Vânați, trimiteți și primiți ZELD direct din browser.",
+    "subtitle": "Vânează, trimite și primește ZELD direct din browser.",
     "securityNote": "Criptare AES-256-GCM • Standarde BIP32/39/84/86 • Stocat local în browser",
     "titlePrefix": "Hunt",
     "titleSuffix": " Wallet",
@@ -47,15 +47,15 @@
   "explorer": {
     "title": "Explorer ZELD",
     "metaTitle": "Explorer ZELD - ZeldHash",
-    "metaDescription": "Explorați cele mai recente recompense ZeldHash și căutați adrese, blocuri sau tranzacții.",
-    "searchLabel": "Căutați în exploratorul ZeldHash",
-    "searchPlaceholder": "Introduceți o adresă, un index de bloc sau un hash de tranzacție",
-    "searchButton": "Căutați",
-    "searchHelp": "Introduceți o adresă Bitcoin, înălțimea blocului sau hash-ul tranzacției.",
-    "searchError": "Intrare invalidă. Vă rugăm să introduceți o adresă validă, înălțimea blocului sau hash-ul tranzacției.",
+    "metaDescription": "Explorează cele mai recente recompense ZeldHash și caută adrese, blocuri sau tranzacții.",
+    "searchLabel": "Caută în Explorerul ZeldHash",
+    "searchPlaceholder": "Introdu o adresă, un index de bloc sau un hash de tranzacție",
+    "searchButton": "Caută",
+    "searchHelp": "Introdu o adresă Bitcoin, înălțimea blocului sau hash-ul tranzacției.",
+    "searchError": "Intrare invalidă. Te rugăm să introduci o adresă validă, înălțimea blocului sau hash-ul tranzacției.",
     "latestRewards": "Ultimele recompense",
-    "noRewards": "Nicio recompensă disponibilă încă. Reveniți în curând.",
-    "loadError": "Nu se pot încărca datele acum. Vă rugăm să încercați din nou mai târziu.",
+    "noRewards": "Nicio recompensă disponibilă încă. Revino în curând.",
+    "loadError": "Nu se pot încărca datele acum. Te rugăm să încerci din nou mai târziu.",
     "tooManyUtxos": "Această adresă are prea multe UTXO-uri pentru a fi afișate (maximum: 500).",
     "block": "Bloc",
     "vout": "vout",
@@ -63,7 +63,7 @@
     "previous": "Anterior",
     "next": "Următor",
     "addressMetaTitle": "Adresa {address} - Explorer ZELD",
-    "addressMetaDescription": "Vedeți soldul ZELD și UTXO-urile pentru adresa Bitcoin {address}",
+    "addressMetaDescription": "Vezi soldul ZELD și UTXO-urile pentru adresa Bitcoin {address}",
     "totalBalance": "Sold total",
     "utxo": "UTXO",
     "utxos": "UTXO-uri",
@@ -72,7 +72,7 @@
     "leadingZeros": "{count}z",
     "tokenLabel": "ZELD",
     "blockMetaTitle": "Bloc #{blockIndex} - ZELD Explorer",
-    "blockMetaDescription": "Vizualizați recompensele ZELD și statisticile blocului Bitcoin {blockIndex}",
+    "blockMetaDescription": "Vezi recompensele ZELD și statisticile blocului Bitcoin {blockIndex}",
     "blockStats": "Statistici bloc",
     "rewardCount": "Recompense",
     "totalReward": "Recompensă totală",
@@ -101,7 +101,7 @@
     "transactionOutputs": "Ieșiri tranzacție",
     "viewOnMempool": "Vezi pe mempool.space",
     "noUtxosInTx": "Nu s-au găsit UTXO-uri pentru această tranzacție.",
-    "txLoadError": "Nu se pot încărca datele tranzacției. Încercați din nou.",
+    "txLoadError": "Nu se pot încărca datele tranzacției. Încearcă din nou.",
     "voutShort": "#",
     "output": "Ieșire"
   }

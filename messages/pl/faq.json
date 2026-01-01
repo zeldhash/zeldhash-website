@@ -1,11 +1,11 @@
 {
   "meta": {
     "title": "FAQ ZeldHash",
-    "description": "Odpowiedzi o polowaniu na transakcje Bitcoin z rzadkimi wzorcami skrótu."
+    "description": "Odpowiedzi o polowaniu na transakcje Bitcoina z rzadkimi wzorami hasha."
   },
   "badge": "FAQ",
-  "heading": "Często Zadawane Pytania",
-  "intro": "Wszystko, co musisz wiedzieć o polowaniu na transakcje Bitcoin z rzadkimi wzorcami skrótu.",
+  "heading": "Często zadawane pytania",
+  "intro": "Wszystko, co musisz wiedzieć o polowaniu na transakcje Bitcoina z rzadkimi wzorami hasha.",
   "huntIsOn": "Polowanie rozpoczęte.",
   "categories": {
     "protocol": "Protokół",
@@ -14,41 +14,41 @@
   "protocol": {
     "howToGetZeld": {
       "q": "Jak zdobyć ZELD?",
-      "a": "Najłatwiej użyć ZeldWallet bezpośrednio na <site>zeldhash.com</site> — to portfel w przeglądarce, który pozwala polować na rzadkie transakcje bez konfiguracji. Po prostu utwórz lub połącz portfel i zacznij kopać. Dla programistów, którzy chcą stworzyć własne rozwiązanie do mintowania, udostępniamy SDK open-source w Rust, TypeScript i Python na <github>GitHub</github>."
+      "a": "Najłatwiej użyć ZeldWallet bezpośrednio na <site>zeldhash.com</site> — to portfel w przeglądarce, który pozwala polować na rzadkie transakcje bez konfiguracji. Po prostu utwórz lub połącz portfel i zacznij wydobywać. Dla programistów, którzy chcą stworzyć własne rozwiązanie do mintowania, udostępniamy open-source’owe SDK w Rust, TypeScript i Python na <github>GitHub</github>."
     },
     "whatIsZeldHash": {
       "q": "Co to jest ZeldHash?",
-      "a": "ZeldHash to protokół, który nagradza użytkowników Bitcoin odkrywających lub tworzących transakcje z rzadkimi wzorcami skrótu — konkretnie, skróty zaczynające się od wielu zer. Pomyśl o tym jak o polowaniu na skarby na blockchainie Bitcoin."
+      "a": "ZeldHash to protokół, który nagradza użytkowników Bitcoina za odkrywanie lub tworzenie transakcji z rzadkimi wzorami hasha — konkretnie takich, których hash zaczyna się od wielu zer. Pomyśl o tym jak o polowaniu na skarby w sieci Bitcoin."
     },
     "whyName": {
-      "q": "Dlaczego nazwa 'ZeldHash'?",
-      "a1": "'Zeld' pochodzi od holenderskiego słowa zeldzaam, co oznacza 'rzadki'. To odpowiednia nazwa dla protokołu poświęconego polowaniu na najrzadsze transakcje na blockchainie Bitcoin. Część 'hash' odnosi się do kryptograficznego odcisku palca, który czyni każdą transakcję unikalną.",
-      "a2": "Więc ZeldHash dosłownie oznacza 'rzadki skrót' — dokładnie to, czego szukamy."
+      "q": "Dlaczego nazwa „ZeldHash”?",
+      "a1": "„Zeld” pochodzi od holenderskiego słowa zeldzaam, które oznacza „rzadki”. To odpowiednia nazwa dla protokołu poświęconego polowaniu na najrzadsze transakcje w sieci Bitcoin. Część „hash” odnosi się do kryptograficznego „odcisku palca”, który czyni każdą transakcję unikalną.",
+      "a2": "ZeldHash dosłownie oznacza więc „rzadki hash” — dokładnie to, czego szukamy."
     },
     "whatIsHash": {
       "q": "Co to jest skrót (hash)?",
-      "a1": "Skrót jest jak cyfrowy odcisk palca. To unikalny identyfikator generowany z dowolnych danych — czy to obrazu, dokumentu, czy transakcji Bitcoin. Każdy skrót to ciąg 64 znaków szesnastkowych.",
-      "a2": "Możesz zobaczyć przykłady skrótów na <mempool>mempool.space</mempool>."
+      "a1": "Hash jest jak cyfrowy odcisk palca. To unikalny identyfikator generowany z dowolnych danych — obrazu, dokumentu czy transakcji Bitcoina. Każdy hash to ciąg 64 znaków szesnastkowych.",
+      "a2": "Przykłady hashy możesz zobaczyć na <mempool>mempool.space</mempool>."
     },
     "bitcoinRelation": {
-      "q": "Jak to się ma do Bitcoin?",
-      "a": "Każdy blok Bitcoin ma skrót, a każda transakcja wewnątrz bloku ma własny skrót zwany identyfikatorem transakcji (txid). Jeśli patrzyłeś na skróty bloków, mogłeś zauważyć, że zaczynają się od wielu zer. To wynik kopania: górnicy wielokrotnie obliczają skróty, aż znajdą jeden z wystarczającą liczbą początkowych zer."
+      "q": "Jak to się ma do Bitcoina?",
+      "a": "Każdy blok Bitcoina ma hash, a każda transakcja w bloku ma własny hash zwany identyfikatorem transakcji (txid). Jeśli oglądałeś hashe bloków, mogłeś zauważyć, że zaczynają się od wielu zer. To efekt wydobycia: górnicy wielokrotnie obliczają hashe, aż znajdą taki z wystarczającą liczbą początkowych zer."
     },
     "rareTxHash": {
       "q": "Co sprawia, że skrót transakcji jest 'rzadki'?",
-      "a": "W przeciwieństwie do skrótów bloków, skróty transakcji są zasadniczo losowe — mogą zaczynać się od dowolnego znaku. Skrót transakcji zaczynający się od wielu zer jest statystycznie rzadki, jak znalezienie czterolistnej koniczyny. Im więcej początkowych zer, tym rzadsza transakcja."
+      "a": "W przeciwieństwie do hashy bloków, hashe transakcji są zasadniczo losowe — mogą zaczynać się od dowolnego znaku. Hash transakcji zaczynający się od wielu zer jest statystycznie rzadki, jak znalezienie czterolistnej koniczyny. Im więcej początkowych zer, tym rzadsza transakcja."
     },
     "huntHow": {
       "q": "Jak polować na rzadkie transakcje?",
-      "a": "Tak jak górnicy. Dodajesz losowe dane do transakcji i obliczasz skróty, aż znajdziesz jeden zaczynający się od zer. Może to wymagać wielu prób, ale gdy ci się uda, odkryłeś coś rzadkiego."
+      "a": "Tak jak górnicy. Dodajesz losowe dane do transakcji i obliczasz hashe, aż znajdziesz taki zaczynający się od zer. Może to wymagać wielu prób, ale gdy ci się uda, odkrywasz coś rzadkiego."
     },
     "whatIsZeld": {
       "q": "Co to jest ZELD?",
-      "a": "ZELD to token, który zarabiasz, gdy znajdziesz lub stworzysz transakcję Bitcoin ze skrótem zaczynającym się od co najmniej 6 zer. Im rzadsze twoje znalezisko (więcej zer), tym więcej ZELD zarabiasz."
+      "a": "ZELD to token, który otrzymujesz, gdy znajdziesz lub stworzysz transakcję Bitcoina z hashem zaczynającym się od co najmniej 6 zer. Im rzadsze twoje znalezisko (więcej zer), tym więcej ZELD otrzymujesz."
     },
     "inCirculation": {
       "q": "Czy są już tokeny ZELD w obiegu?",
-      "a": "Tak. Od uruchomienia Bitcoin w 2009 roku, wiele transakcji przypadkowo skończyło ze skrótami zaczynającymi się od 6+ zer. Te przypadkowe skarby są już do odebrania. Niektórzy łowcy też je celowo tworzą."
+      "a": "Tak. Od uruchomienia Bitcoina w 2009 roku wiele transakcji przypadkowo miało hashe zaczynające się od 6+ zer. Te przypadkowe skarby są już do odebrania. Niektórzy łowcy tworzą je też celowo."
     },
     "ownWithoutKnowing": {
       "q": "Czy niektórzy ludzie posiadają ZELD, nie wiedząc o tym?",
@@ -56,7 +56,7 @@
     },
     "centralized": {
       "q": "Czy ZeldHash jest scentralizowany? Kto go kontroluje?",
-      "a": "Nikt. ZeldHash jest w pełni zdecentralizowany, tak jak Bitcoin. Tokeny ZELD można przenosić jak każdy zasób Bitcoin. Nie ma centralnego organu."
+      "a": "Nikt. ZeldHash jest w pełni zdecentralizowany, tak jak Bitcoin. Tokeny ZELD można przenosić jak każdy inny zasób w sieci Bitcoin. Nie ma centralnego organu."
     },
     "rewards": {
       "q": "Jak działa system nagród?",
@@ -72,11 +72,11 @@
       "title": "Ogólne",
       "security": {
         "q": "Czy moje kryptowaluty są naprawdę bezpieczne w tym portfelu? Gdzie przechowywane są moje klucze prywatne?",
-        "a": "Tak, twoje środki są tak bezpieczne jak bezpieczeństwo twojej przeglądarki. ZeldWallet przechowuje twoje klucze prywatne lokalnie w IndexedDB przeglądarki, zaszyfrowane AES-256-GCM. Jeśli ustawisz hasło, twoje klucze są chronione przy użyciu derywacji klucza PBKDF2, co czyni je niezwykle trudnymi do złamania. Twoje klucze prywatne nigdy nie opuszczają urządzenia i nigdy nie są wysyłane na żaden serwer. Jednak zawsze twórz kopię zapasową frazy mnemonicznej — jeśli stracisz dostęp do przeglądarki lub urządzenia bez kopii zapasowej, twoje środki zostaną utracone na zawsze."
+        "a": "Tak — twoje środki są tak bezpieczne, jak pozwala na to bezpieczeństwo twojej przeglądarki. ZeldWallet przechowuje klucze prywatne lokalnie w IndexedDB przeglądarki, szyfrując je AES-256-GCM. Jeśli ustawisz hasło, klucze są dodatkowo chronione przez PBKDF2 (derywację klucza), co bardzo utrudnia ich złamanie. Klucze prywatne nigdy nie opuszczają urządzenia i nie są wysyłane na żaden serwer. Zawsze wykonaj kopię zapasową frazy mnemonicznej — jeśli stracisz dostęp do przeglądarki lub urządzenia bez kopii zapasowej, środki przepadną bezpowrotnie."
       },
       "addressDifference": {
-        "q": "Jaka jest różnica między adresem 'Płatności' a adresem 'Ordinals'?",
-        "a": "Adres Płatności służy do zwykłych transakcji Bitcoin — wysyłania i otrzymywania BTC. Adres Ordinals (adres Taproot) to miejsce, gdzie otrzymujesz tokeny ZELD po udanym upolowaniu rzadkiej transakcji. Tokeny ZELD są dołączane do pierwszego wyjścia transakcji, które zawsze jest wysyłane na twój adres Ordinals."
+        "q": "Jaka jest różnica między adresem „Payment” a adresem „Ordinals”?",
+        "a": "Adres „Payment” służy do zwykłych transakcji Bitcoina — wysyłania i odbierania BTC. Adres „Ordinals” (Taproot) to miejsce, gdzie trafiają tokeny ZELD po udanym upolowaniu rzadkiej transakcji. ZELD są dołączane do pierwszego wyjścia transakcji, które zawsze jest wysyłane na adres „Ordinals”."
       },
       "twoAddresses": {
         "q": "Dlaczego mam dwa różne adresy Bitcoin?",
@@ -88,37 +88,37 @@
       }
     },
     "hunting": {
-      "title": "Bicie / Polowanie",
+      "title": "Mintowanie / polowanie",
       "gpuVsCpu": {
-        "q": "Jaka jest różnica między kopaniem z GPU lub bez? Czy to uszkodzi mój komputer?",
-        "a": "Kopanie GPU wykorzystuje technologię WebGPU do wykorzystania karty graficznej do znacznie szybszych obliczeń skrótów — zwykle 10-100x szybciej niż kopanie tylko na CPU. Kopanie CPU używa Web Workers i jest wolniejsze, ale działa na wszystkich urządzeniach. Żadne nie uszkodzi twojego komputera. Nowoczesny sprzęt jest zaprojektowany do obsługi ciągłych obciążeń. Twoja przeglądarka odpowiedzialnie zarządza zasobami i możesz zatrzymać kopanie w dowolnym momencie."
+        "q": "Jaka jest różnica między wydobywaniem z GPU a bez? Czy to może zaszkodzić mojemu komputerowi?",
+        "a": "Wydobywanie na GPU wykorzystuje technologię WebGPU, dzięki czemu karta graficzna dużo szybciej liczy hashe — zwykle 10–100× szybciej niż samo CPU. Wydobywanie na CPU używa Web Workers i jest wolniejsze, ale działa na wszystkich urządzeniach. To nie powinno uszkodzić komputera. Nowoczesny sprzęt jest zaprojektowany do pracy pod stałym obciążeniem, a przeglądarka zarządza zasobami — możesz też zatrzymać wydobywanie w dowolnym momencie."
       },
       "miningTime": {
         "q": "Ile czasu zajmuje wykopanie ZELD?",
-        "a": "Zależy od twojego sprzętu i szczęścia. Znalezienie skrótu transakcji z 6 początkowymi zerami ma szansę około 1 na 16 milionów na próbę. Z nowoczesnym GPU osiągającym miliony skrótów na sekundę, może to zająć od minut do godzin. Tylko z CPU może to zająć od godzin do dni. Jest też element losowości — możesz mieć szybkie szczęście lub może to potrwać dłużej niż średnia."
+        "a": "Zależy od sprzętu i szczęścia. Znalezienie txid z 6 początkowymi zerami ma szansę ok. 1 na 16 milionów na próbę. Z nowoczesnym GPU (miliony hashy na sekundę) może to zająć od minut do godzin. Na samym CPU — od godzin do dni. Jest też element losowości: możesz trafić szybko, ale może to też potrwać dłużej niż średnio."
       },
       "keepRunning": {
         "q": "Czy muszę utrzymywać komputer włączony podczas kopania?",
-        "a": "Tak. Kopanie odbywa się w przeglądarce, więc karta musi pozostać otwarta i aktywna. Jeśli zamkniesz przeglądarkę lub przejdziesz gdzie indziej, kopanie się zatrzymuje. Twój postęp (przetworzone skróty) nie jest zapisywany — zaczniesz od nowa po wznowieniu. Jednak środki nie są zagrożone, jeśli zatrzymasz się w trakcie kopania; transakcja jest nadawana dopiero po znalezieniu ważnego skrótu i podpisaniu."
+        "a": "Tak. Wydobywanie odbywa się w przeglądarce, więc zakładka musi pozostać otwarta i aktywna. Jeśli zamkniesz przeglądarkę lub przejdziesz gdzie indziej, wydobywanie się zatrzyma. Postęp (liczba sprawdzonych hashy) nie jest zapisywany — po wznowieniu zaczniesz od zera. Środki nie są jednak zagrożone, jeśli przerwiesz w trakcie: transakcja jest nadawana dopiero po znalezieniu poprawnego hasha i podpisaniu."
       }
     },
     "transactions": {
-      "title": "Transakcje i Opłaty",
+      "title": "Transakcje i opłaty",
       "feeSelection": {
-        "q": "Jak wybrać opłaty transakcyjne? Jaka jest różnica między 'Wolno', 'Średnio' i 'Szybko'?",
+        "q": "Jak wybrać opłaty transakcyjne? Jaka jest różnica między „Wolno”, „Średnio” i „Szybko”?",
         "a1": "ZeldWallet pobiera zalecenia opłat w czasie rzeczywistym z mempool.space:",
-        "a2": "Wolno: Niższa opłata, potwierdzenie może zająć 1+ godzinę. Średnio: Zrównoważona opłata, zazwyczaj potwierdza w 30-60 minut. Szybko: Wyższa opłata, zwykle potwierdza w następnych 1-2 blokach (~10-20 minut).",
+        "a2": "Wolno: niższa opłata, potwierdzenie może zająć 1+ godzinę. Średnio: zrównoważona opłata, zwykle potwierdzenie w 30–60 minut. Szybko: wyższa opłata, zwykle potwierdzenie w 1–2 kolejnych blokach (~10–20 minut).",
         "a3": "Możesz też ustawić własną stawkę opłaty w sats/vB. Wyższe opłaty oznaczają szybsze potwierdzenie, ale kosztują więcej BTC."
       },
       "minimumBtc": {
         "q": "Dlaczego muszę mieć minimalną ilość BTC, aby zacząć kopać?",
-        "a1": "Każda transakcja Bitcoin wymaga opłaty, a każde wyjście potrzebuje minimalnej wartości (zwanej \"limitem kurzu\"). ZeldWallet wymaga około 2000+ satoshi do pokrycia:",
-        "a2": "330 sat na kwotę kurzu dla wyjścia ZELD na twój adres Ordinals i ~1500+ sat na opłatę transakcyjną w zależności od aktualnych warunków sieci.",
+        "a1": "Każda transakcja Bitcoina wymaga opłaty, a każde wyjście ma minimalną wartość (tzw. dust limit). ZeldWallet wymaga ok. 2000+ satoshi na pokrycie:",
+        "a2": "330 sat na minimalną wartość wyjścia ZELD na adres „Ordinals” i ~1500+ sat na opłatę transakcyjną (w zależności od aktualnych warunków sieci).",
         "a3": "Bez wystarczającej ilości BTC nie możesz utworzyć ważnej transakcji."
       },
       "sendZeld": {
         "q": "Jak wysłać ZELD komuś innemu?",
-        "a": "W ZeldWallet przejdź do sekcji Polowanie i zaznacz \"Wyślij ZELD\". Wprowadź adres Bitcoin odbiorcy i ilość ZELD, którą chcesz wysłać. Transfer zostanie uwzględniony w twojej następnej transakcji polowania — twój ZELD zostanie wysłany, gdy zostanie znaleziony rzadki skrót i transakcja zostanie nadana."
+        "a": "W ZeldWallet przejdź do sekcji Polowanie i zaznacz „Wyślij ZELD”. Wprowadź adres Bitcoina odbiorcy oraz ilość ZELD, którą chcesz wysłać. Transfer zostanie uwzględniony w kolejnej transakcji w ramach polowania — ZELD zostanie wysłany, gdy znajdzie się rzadki hash i transakcja zostanie nadana."
       },
       "balanceIncreased": {
         "q": "Właśnie wysłałem ZELD, ale moje saldo wzrosło!?",
@@ -126,23 +126,23 @@
       },
       "closeBrowser": {
         "q": "Co się stanie, jeśli zamknę przeglądarkę podczas transakcji?",
-        "a1": "Jeśli zamkniesz podczas kopania: Nic nie jest tracone. Kopanie po prostu się zatrzymuje i możesz później wznowić.",
+        "a1": "Jeśli zamkniesz podczas wydobywania: nic nie tracisz. Wydobywanie po prostu się zatrzymuje i możesz później wznowić.",
         "a2": "Jeśli zamkniesz podczas podpisywania/nadawania: Jeśli transakcja została już podpisana i nadana do sieci, zostanie potwierdzona normalnie. Jeśli nie została jeszcze nadana, nic nie zostało wysłane i będziesz musiał kopać ponownie."
       }
     },
     "security": {
-      "title": "Bezpieczeństwo i Kopia Zapasowa",
+      "title": "Bezpieczeństwo i kopia zapasowa",
       "backupImportance": {
         "q": "Co to jest kopia zapasowa i dlaczego tak ważne jest jej utworzenie?",
-        "a": "Kopia zapasowa to twoja 12 lub 24-wyrazowa fraza mnemoniczna (fraza seed). Ta fraza może zregenerować wszystkie twoje klucze prywatne i odzyskać cały portfel na dowolnym urządzeniu lub kompatybilnej aplikacji portfela. Bez tej kopii zapasowej, jeśli stracisz dostęp do przeglądarki (usunięte dane, nowe urządzenie, awaria przeglądarki), twoje środki zostaną trwale utracone. Zapisz ją na papierze i przechowuj bezpiecznie — nigdy nie zapisuj cyfrowo ani nie udostępniaj nikomu."
+        "a": "Kopia zapasowa to twoja 12- lub 24-wyrazowa fraza mnemoniczna (seed phrase). Ta fraza pozwala odtworzyć wszystkie klucze prywatne i odzyskać cały portfel na dowolnym urządzeniu lub w kompatybilnej aplikacji. Bez kopii zapasowej — jeśli stracisz dostęp do przeglądarki (usunięte dane, nowe urządzenie, awaria) — środki przepadną bezpowrotnie. Zapisz frazę na papierze i przechowuj bezpiecznie — nigdy nie zapisuj jej cyfrowo ani nikomu nie udostępniaj."
       },
       "forgotPassword": {
         "q": "Jeśli zapomnę hasła, stracę wszystko?",
-        "a": "Nie, jeśli masz swoją zapasową frazę mnemoniczną. Możesz wyczyścić magazyn ZeldWallet i przywrócić portfel używając frazy mnemonicznej. Hasło chroni tylko lokalny zaszyfrowany magazyn — nie jest powiązane z blockchainem. Jednak jeśli zapomnisz hasła I nie masz kopii zapasowej frazy mnemonicznej, to tak, twoje środki zostaną utracone."
+        "a": "Nie — jeśli masz kopię zapasową frazy mnemonicznej. Możesz wyczyścić dane ZeldWallet i przywrócić portfel przy użyciu frazy. Hasło chroni tylko lokalnie zaszyfrowane dane — nie jest powiązane z blockchainem. Jeśli jednak zapomnisz hasła i nie masz kopii zapasowej frazy mnemonicznej, wtedy tak: środki przepadną bezpowrotnie."
       },
       "mnemonicPhrase": {
         "q": "Co to jest \"fraza mnemoniczna\" i czy mogę przywrócić portfel z innej aplikacji?",
-        "a": "Fraza mnemoniczna (zwana też frazą seed lub frazą odzyskiwania) to lista 12 lub 24 słów reprezentujących twój główny klucz prywatny zgodnie ze standardem BIP39. Tak, możesz przywrócić frazę mnemoniczną ZeldWallet w innych kompatybilnych portfelach jak Xverse, Leather, Sparrow lub dowolny portfel kompatybilny z BIP39/BIP84/BIP86. Twoje Bitcoin i ZELD pojawią się pod tymi samymi adresami."
+        "a": "Fraza mnemoniczna (seed phrase, fraza odzyskiwania) to lista 12 lub 24 słów, która reprezentuje twój główny klucz prywatny zgodnie ze standardem BIP39. Tak — możesz przywrócić frazę mnemoniczną ZeldWallet w innych kompatybilnych portfelach, takich jak Xverse, Leather, Sparrow lub w dowolnym portfelu zgodnym z BIP39/BIP84/BIP86. Twoje BTC i ZELD pojawią się pod tymi samymi adresami."
       },
       "lostDevice": {
         "q": "Czy ktoś może uzyskać dostęp do mojego portfela, jeśli zgubię komputer?",
@@ -150,29 +150,29 @@
       }
     },
     "external": {
-      "title": "Zewnętrzne Portfele",
+      "title": "Zewnętrzne portfele",
       "connectExternal": {
         "q": "Czy mogę podłączyć mój portfel Xverse lub Leather zamiast tworzyć nowe konto?",
-        "a": "Tak! ZeldWallet obsługuje łączenie zewnętrznych portfeli w tym Xverse, Leather i Magic Eden. Kliknij \"Połącz Portfel\" i wybierz zainstalowany portfel. Rozszerzenie portfela poprosi o zatwierdzenie połączenia. Pozwala to polować na ZELD używając adresów istniejącego portfela bez ujawniania kluczy prywatnych ZeldWallet."
+        "a": "Tak! ZeldWallet obsługuje łączenie zewnętrznych portfeli, w tym Xverse, Leather i Magic Eden. Kliknij „Połącz portfel” i wybierz zainstalowany portfel. Rozszerzenie poprosi o zatwierdzenie połączenia. Dzięki temu możesz polować na ZELD, używając adresów istniejącego portfela, bez ujawniania kluczy prywatnych ZeldWalletowi."
       },
       "externalVsDirect": {
         "q": "Jaka jest różnica między używaniem ZeldWallet bezpośrednio a przez zewnętrzny portfel jak Xverse?",
-        "a1": "Przechowywanie kluczy: ZeldWallet Direct przechowuje klucze zaszyfrowane w przeglądarce, Zewnętrzny Portfel przechowuje klucze w rozszerzeniu/sprzęcie.",
-        "a2": "Konfiguracja: ZeldWallet Direct wymaga tworzenia lub przywracania w przeglądarce, Zewnętrzny Portfel po prostu łączy istniejący portfel.",
-        "a3": "Podpisywanie: ZeldWallet Direct podpisuje automatycznie po odblokowaniu, Zewnętrzny Portfel pokazuje popup zatwierdzenia dla każdej akcji.",
-        "a4": "Przenośność: ZeldWallet Direct jest powiązany z przeglądarką/urządzeniem, Zewnętrzny Portfel działa między stronami.",
-        "a5": "Portfel sprzętowy: Nie obsługiwany w ZeldWallet Direct, Obsługiwany przez rozszerzenie w Zewnętrznym Portfelu.",
-        "a6": "Użyj zewnętrznego portfela, jeśli chcesz wsparcia dla portfela sprzętowego, masz już tam środki lub wolisz trzymać klucze w dedykowanym rozszerzeniu. Użyj ZeldWallet bezpośrednio dla prostszego, kompleksowego doświadczenia."
+        "a1": "Przechowywanie kluczy: ZeldWallet przechowuje klucze zaszyfrowane w przeglądarce, a portfel zewnętrzny — w rozszerzeniu lub urządzeniu sprzętowym.",
+        "a2": "Konfiguracja: w ZeldWallet tworzysz lub przywracasz portfel w przeglądarce, a portfel zewnętrzny po prostu podłączasz.",
+        "a3": "Podpisywanie: ZeldWallet podpisuje automatycznie po odblokowaniu, a portfel zewnętrzny prosi o akceptację każdej akcji w wyskakującym oknie.",
+        "a4": "Przenośność: ZeldWallet jest powiązany z daną przeglądarką/urządzeniem, a portfel zewnętrzny działa na różnych stronach.",
+        "a5": "Portfel sprzętowy: w ZeldWallet — brak, w portfelu zewnętrznym — tak (przez rozszerzenie).",
+        "a6": "Wybierz portfel zewnętrzny, jeśli chcesz obsługi portfela sprzętowego, masz już tam środki albo wolisz trzymać klucze w dedykowanym rozszerzeniu. ZeldWallet wybierz, jeśli wolisz prostsze rozwiązanie „wszystko w jednym”."
       }
     }
   },
   "ama": {
     "aiPowered": "Asystent AI",
-    "placeholder": "Zapytaj o ZeldHash...",
+    "placeholder": "Zapytaj o ZeldHash…",
     "submit": "Wyślij",
-    "helperText": "Pytania o ZeldHash, tokeny ZELD, rzadkie transakcje lub koncepcje blockchain.",
+    "helperText": "Pytania o ZeldHash, tokeny ZELD, rzadkie transakcje lub pojęcia związane z blockchainem.",
     "genericError": "Wystąpił błąd. Spróbuj ponownie.",
-    "connectionError": "Błąd połączenia. Sprawdź połączenie internetowe.",
+    "connectionError": "Błąd połączenia. Sprawdź internet i spróbuj ponownie.",
     "aiResponse": "Odpowiedź AI"
   }
 }

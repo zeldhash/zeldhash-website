@@ -67,7 +67,7 @@
     "totalBalance": "Total saldo",
     "utxo": "UTXO",
     "utxos": "UTXOs",
-    "utxoCount": "{count, plural, one {# UTXO} other {# UTXOs}}",
+    "utxoCount": "{count} UTXO",
     "noUtxos": "Tidak ada UTXO ditemukan untuk alamat ini.",
     "leadingZeros": "{count}z",
     "tokenLabel": "ZELD",

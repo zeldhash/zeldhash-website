@@ -1,7 +1,7 @@
 {
   "siteTitle": "ZeldHash",
-  "siteDescription": "Κυνηγήστε τις σπανιότερες συναλλαγές Bitcoin. Βρείτε αναγνωριστικά συναλλαγών που ξεκινούν με 000000... και κερδίστε ZELD tokens. 100% αποκεντρωμένο, χωρίς προεξόρυξη, χωρίς VC.",
-  "tagline": "Το Κυνήγι Ξεκινά",
+  "siteDescription": "Κυνηγήστε τις σπανιότερες συναλλαγές Bitcoin. Βρείτε αναγνωριστικά συναλλαγών (txid) που ξεκινούν με 000000... και κερδίστε ZELD. 100% αποκεντρωμένο, χωρίς προεξόρυξη, χωρίς VC.",
+  "tagline": "Το κυνήγι ξεκίνησε",
   "logoAlt": "Λογότυπο ZeldHash",
   "nav": {
     "hunt": "Κυνήγι",
@@ -11,7 +11,7 @@
     "github": "GitHub",
     "whitepaper": "Λευκή Βίβλος",
     "toggleMenu": "Εναλλαγή μενού πλοήγησης",
-    "openNav": "Άνοιγμα πλοήγησης"
+    "openNav": "Άνοιγμα μενού πλοήγησης"
   },
   "footer": {
     "protocol": "Πρωτόκολλο",
@@ -34,13 +34,13 @@
   },
   "wallet": {
     "description": "Ασφαλές πορτοφόλι Bitcoin στον περιηγητή σας. Δημιουργήστε, διαχειριστείτε και υπογράψτε συναλλαγές απευθείας από το ZeldHash.",
-    "subtitle": "Κυνηγήστε, στείλτε και λάβετε Zeld απευθείας από τον περιηγητή σας.",
+    "subtitle": "Κυνηγήστε, στείλτε και λάβετε ZELD απευθείας από τον περιηγητή σας.",
     "securityNote": "Κρυπτογράφηση AES-256-GCM • Πρότυπα BIP32/39/84/86 • Αποθηκεύεται τοπικά στον περιηγητή σας",
     "titlePrefix": "Hunt",
     "titleSuffix": " Wallet",
     "askZeldai": {
       "title": "Χρειάζεστε βοήθεια;",
-      "subtitle": "Ρωτήστε το ZeldAI οτιδήποτε για το πορτοφόλι ή το ZeldHash",
+      "subtitle": "Ρωτήστε το ZeldAI ό,τι θέλετε για το πορτοφόλι ή το ZeldHash",
       "askButton": "Ρωτήστε το ZeldAI"
     }
   },
@@ -49,13 +49,13 @@
     "metaTitle": "Εξερευνητής ZELD - ZeldHash",
     "metaDescription": "Εξερευνήστε τις τελευταίες ανταμοιβές ZeldHash και αναζητήστε διευθύνσεις, μπλοκ ή συναλλαγές.",
     "searchLabel": "Αναζήτηση στον εξερευνητή ZeldHash",
-    "searchPlaceholder": "Εισάγετε διεύθυνση, δείκτη μπλοκ ή hash συναλλαγής",
+    "searchPlaceholder": "Εισαγάγετε μια διεύθυνση, ύψος μπλοκ ή hash συναλλαγής",
     "searchButton": "Αναζήτηση",
     "searchHelp": "Εισάγετε διεύθυνση Bitcoin, ύψος μπλοκ ή hash συναλλαγής.",
-    "searchError": "Μη έγκυρη είσοδος. Εισάγετε μια έγκυρη διεύθυνση, ύψος μπλοκ ή hash συναλλαγής.",
+    "searchError": "Μη έγκυρη τιμή. Εισαγάγετε μια έγκυρη διεύθυνση, ύψος μπλοκ ή hash συναλλαγής.",
     "latestRewards": "Τελευταίες ανταμοιβές",
-    "noRewards": "Δεν υπάρχουν ακόμα διαθέσιμες ανταμοιβές. Επιστρέψτε σύντομα.",
-    "loadError": "Δεν είναι δυνατή η φόρτωση των δεδομένων. Δοκιμάστε ξανά αργότερα.",
+    "noRewards": "Δεν υπάρχουν ακόμη διαθέσιμες ανταμοιβές. Δοκιμάστε ξανά σύντομα.",
+    "loadError": "Αδυναμία φόρτωσης δεδομένων αυτή τη στιγμή. Δοκιμάστε ξανά σε λίγο.",
     "tooManyUtxos": "Αυτή η διεύθυνση έχει πάρα πολλά UTXO για εμφάνιση (μέγιστο: 500).",
     "block": "Μπλοκ",
     "vout": "vout",
@@ -63,7 +63,7 @@
     "previous": "Προηγούμενη",
     "next": "Επόμενη",
     "addressMetaTitle": "Διεύθυνση {address} - Εξερευνητής ZELD",
-    "addressMetaDescription": "Δείτε υπόλοιπο ZELD και UTXOs για τη διεύθυνση Bitcoin {address}",
+    "addressMetaDescription": "Δείτε το υπόλοιπο ZELD και τα UTXO για τη διεύθυνση Bitcoin {address}",
     "totalBalance": "Συνολικό υπόλοιπο",
     "utxo": "UTXO",
     "utxos": "UTXOs",
@@ -71,7 +71,7 @@
     "noUtxos": "Δεν βρέθηκαν UTXO για αυτή τη διεύθυνση.",
     "leadingZeros": "{count}z",
     "tokenLabel": "ZELD",
-    "blockMetaTitle": "Μπλοκ #{blockIndex} - ZELD Εξερευνητής",
+    "blockMetaTitle": "Μπλοκ #{blockIndex} - Εξερευνητής ZELD",
     "blockMetaDescription": "Δείτε τις ανταμοιβές ZELD και τα στατιστικά του μπλοκ Bitcoin {blockIndex}",
     "blockStats": "Στατιστικά μπλοκ",
     "rewardCount": "Ανταμοιβές",
@@ -93,7 +93,7 @@
     "transaction": "Συναλλαγή",
     "transactionMetaTitle": "Συναλλαγή {txid} - Εξερευνητής ZELD",
     "transactionMetaDescription": "Δείτε υπόλοιπο ZELD και πληροφορίες ανταμοιβής για τη συναλλαγή Bitcoin {txid}",
-    "rewardEligible": "{count} αρχικά μηδενικά - Δικαιούται ανταμοιβή!",
+    "rewardEligible": "{count} αρχικά μηδενικά — Επιλέξιμη για ανταμοιβή!",
     "rewardTransaction": "Συναλλαγή ανταμοιβής",
     "rewardsReceived": "Ανταμοιβές που ελήφθησαν",
     "leadingZerosCount": "Αρχικά μηδενικά",

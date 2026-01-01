@@ -9,12 +9,12 @@
   "huntIsOn": "Nagsimula na ang pangangaso.",
   "categories": {
     "protocol": "Protokolo",
-    "wallet": "Pitaka"
+    "wallet": "Wallet"
   },
   "protocol": {
     "howToGetZeld": {
-      "q": "Paano makakuha ng ZELD?",
-      "a": "Ang pinakamadaling paraan ay gamitin ang ZeldWallet direkta sa <site>zeldhash.com</site> — isang browser-based na wallet na nagbibigay-daan sa iyo na mangaso ng mga bihirang transaksyon nang walang setup. Gumawa o ikonekta ang isang wallet at magsimulang mag-mine. Para sa mga developer na gustong bumuo ng sariling minting solution, nagbibigay kami ng open-source SDK sa Rust, TypeScript at Python na available sa <github>GitHub</github>."
+      "q": "Paano ako makakakuha ng ZELD?",
+      "a": "Ang pinakamadaling paraan ay gamitin ang ZeldWallet sa <site>zeldhash.com</site> — browser-based wallet ito na puwede kang mangaso ng mga bihirang transaksyon nang walang setup. Gumawa o mag-connect ng wallet at magsimulang magmina. Para sa mga developer na gustong bumuo ng sariling minting solution, nagbibigay kami ng open-source SDK sa Rust, TypeScript, at Python na available sa <github>GitHub</github>."
     },
     "whatIsZeldHash": {
       "q": "Ano ang ZeldHash?",
@@ -32,35 +32,35 @@
     },
     "bitcoinRelation": {
       "q": "Paano ito nauugnay sa Bitcoin?",
-      "a": "Bawat Bitcoin block ay may hash, at bawat transaksyon sa loob ng block ay may sariling hash na tinatawag na transaction ID (txid). Kung napagmasdan mo ang mga block hash, maaaring napansin mo na nagsisimula sila sa maraming zero. Iyan ang resulta ng mining: ang mga miner ay paulit-ulit na nag-compute ng mga hash hanggang makahanap sila ng isa na may sapat na leading zero."
+      "a": "Bawat Bitcoin block ay may hash, at bawat transaksyon sa loob ng block ay may sariling hash na tinatawag na transaction ID (txid). Kung napagmasdan mo ang mga block hash, maaaring napansin mo na nagsisimula sila sa maraming zero. Iyan ang resulta ng mining: paulit-ulit na nagkakalkula ang mga miner ng mga hash hanggang makahanap sila ng isa na may sapat na leading zero."
     },
     "rareTxHash": {
       "q": "Ano ang ginagawang \"bihira\" ng isang transaction hash?",
-      "a": "Hindi tulad ng mga block hash, ang mga transaction hash ay random — maaari silang magsimula sa anumang character. Ang isang transaction hash na nagsisimula sa maraming zero ay statistical na bihira, tulad ng paghahanap ng four-leaf clover. Kung mas maraming leading zero, mas bihira ang transaksyon."
+      "a": "Hindi tulad ng mga block hash, ang mga transaction hash ay random — maaari silang magsimula sa anumang character. Ang isang transaction hash na nagsisimula sa maraming zero ay napakabihira sa istatistika, tulad ng paghahanap ng trebol na may apat na dahon. Kung mas maraming leading zero, mas bihira ang transaksyon."
     },
     "huntHow": {
       "q": "Paano ako mangangaso ng mga bihirang transaksyon?",
-      "a": "Tulad ng mga miner. Nagdadagdag ka ng random data sa iyong transaksyon at nag-compute ng mga hash hanggang makahanap ka ng isa na nagsisimula sa mga zero. Maaaring maraming attempt ang kailangan, ngunit kapag nagtagumpay ka, nakahanap ka ng isang bagay na bihira."
+      "a": "Tulad ng mga miner. Nagdadagdag ka ng random na data sa iyong transaksyon at nagko-compute ng mga hash hanggang makahanap ka ng isa na nagsisimula sa mga zero. Maaaring maraming pagsubok ang kailangan, ngunit kapag nagtagumpay ka, nakahanap ka ng isang bagay na bihira."
     },
     "whatIsZeld": {
       "q": "Ano ang ZELD?",
-      "a": "Ang ZELD ay ang token na nakukuha mo kapag nakahanap o nakagawa ka ng Bitcoin transaksyon na may hash na nagsisimula sa hindi bababa sa 6 na zero. Kung mas bihira ang nahanap mo (mas maraming zero), mas maraming ZELD ang makukuha mo."
+      "a": "Ang ZELD ay ang token na nakukuha mo kapag nakahanap o nakagawa ka ng transaksyon sa Bitcoin na may hash na nagsisimula sa hindi bababa sa 6 na zero. Kung mas bihira ang nahanap mo (mas maraming zero), mas maraming ZELD ang makukuha mo."
     },
     "inCirculation": {
-      "q": "May mga ZELD token na ba sa circulation?",
-      "a": "Oo. Mula noong inilunsad ang Bitcoin noong 2009, maraming mga transaksyon ang nagkataon na may mga hash na nagsisimula sa 6+ zero. Ang mga aksidenteng yaman na ito ay maaari nang i-claim. Ang ilang mga mangangaso ay sinasadya ring gumawa nito."
+      "q": "May mga ZELD token na ba sa sirkulasyon?",
+      "a": "Oo. Mula noong inilunsad ang Bitcoin noong 2009, maraming transaksyon ang nagkataon na may mga hash na nagsisimula sa 6+ na zero. Ang mga aksidenteng kayamanang ito ay maaari nang i-claim. Ang ilang mangangaso ay sinasadya ring gumagawa nito."
     },
     "ownWithoutKnowing": {
       "q": "May mga tao bang nagmamay-ari ng ZELD nang hindi nila alam?",
-      "a": "Oo naman. Libu-libong mga gumagamit ng Bitcoin ang hindi namamalayang nagmamay-ari ng mga bihirang transaksyon. Ang kanilang ZELD ay naghihintay na ma-claim."
+      "a": "Oo. Libu-libong gumagamit ng Bitcoin ang hindi namamalayang nagmamay-ari ng mga bihirang transaksyon. Ang kanilang ZELD ay naghihintay na ma-claim."
     },
     "centralized": {
       "q": "Ang ZeldHash ba ay centralized? Sino ang namamahala?",
-      "a": "Walang sinuman. Ang ZeldHash ay ganap na decentralized, tulad ng Bitcoin. Ang mga ZELD token ay maaaring i-transfer tulad ng anumang Bitcoin asset. Walang central authority."
+      "a": "Walang sinuman. Ang ZeldHash ay ganap na desentralisado, tulad ng Bitcoin. Ang mga ZELD token ay maaaring i-transfer tulad ng anumang Bitcoin asset. Walang sentral na awtoridad."
     },
     "rewards": {
       "q": "Paano gumagana ang reward system?",
-      "a": "Ginagantimpalaan ng protocol ang raridad. Ang transaksyon na may 6 na leading zero ay kumikita ng ZELD, at mas maraming zero ay nangangahulugang mas malaking gantimpala. Habang mas maraming mangangaso ang sumali, tumataas ang kompetisyon — ngunit palaging may makikita para sa mga patuloy na naghahanap."
+      "a": "Ginagantimpalaan ng protocol ang pagiging bihira. Ang transaksyon na may 6 na leading zero ay kumikita ng ZELD, at mas maraming zero ay nangangahulugang mas malaking gantimpala. Habang mas maraming mangangaso ang sumali, tumataas ang kompetisyon — ngunit palaging may makikita para sa mga patuloy na naghahanap."
     },
     "startHunting": {
       "q": "Paano ako magsisimulang mangaso?",
@@ -91,15 +91,15 @@
       "title": "Pagmimina / Pangangaso",
       "gpuVsCpu": {
         "q": "Ano ang pagkakaiba ng mining na may o walang GPU? Masisira ba nito ang aking computer?",
-        "a": "Ang GPU mining ay gumagamit ng WebGPU technology para gamitin ang iyong graphics card para sa mas mabilis na hash calculation — karaniwang 10-100x na mas mabilis kaysa sa CPU-only mining. Ang CPU mining ay gumagamit ng Web Workers at mas mabagal ngunit gumagana sa lahat ng device. Wala sa dalawa ang makakasira sa iyong computer. Ang modernong hardware ay idinisenyo para hawakan ang sustained workload. Ang iyong browser ay responsableng namamahala ng resources, at maaari mong ihinto ang mining anumang oras."
+        "a": "Ang GPU mining ay gumagamit ng WebGPU para magamit ang graphics card mo sa mas mabilis na pagkalkula ng hash — kadalasan 10–100× na mas mabilis kaysa sa CPU-only mining. Ang CPU mining ay gumagamit ng Web Workers at mas mabagal, pero gumagana sa lahat ng device. Wala sa dalawa ang makakasira sa iyong computer. Ang modernong hardware ay idinisenyo para sa tuloy-tuloy na mabibigat na workload. Maayos na pinamamahalaan ng browser mo ang resources, at maaari mong ihinto ang mining anumang oras."
       },
       "miningTime": {
         "q": "Gaano katagal mag-mine ng ZELD?",
-        "a": "Depende sa iyong hardware at swerte. Ang paghahanap ng transaction hash na may 6 na leading zero ay may humigit-kumulang 1 sa 16 milyon na pagkakataon bawat attempt. Sa modernong GPU na nakakamit ng milyun-milyong hash bawat segundo, maaaring tumagal ng ilang minuto hanggang oras. Sa CPU lamang, maaaring tumagal ng ilang oras hanggang araw. May randomness din — maaari kang maging maswerte agad o maaaring tumagal nang mas mahaba kaysa sa average."
+        "a": "Depende sa iyong hardware at swerte. Ang paghahanap ng transaction hash na may 6 na leading zero ay may humigit-kumulang 1 sa 16 milyong pagkakataon bawat pagsubok. Sa modernong GPU na nakakamit ng milyun-milyong hash bawat segundo, maaaring tumagal ng ilang minuto hanggang oras. Sa CPU lamang, maaaring tumagal ng ilang oras hanggang araw. May elemento rin ng randomness — maaari kang maging maswerte agad o maaaring tumagal nang mas matagal kaysa sa average."
       },
       "keepRunning": {
         "q": "Kailangan ko bang panatilihing nakabukas ang aking computer habang nag-mine?",
-        "a": "Oo. Ang mining ay nangyayari sa iyong browser, kaya ang tab ay dapat manatiling bukas at aktibo. Kung isasara mo ang browser o mag-navigate palayo, titigil ang mining. Ang iyong progress (na-process na hash) ay hindi nase-save — magsisimula kang muli kapag nagpatuloy ka. Gayunpaman, walang pondo ang nanganganib kung titigil ka sa gitna ng mining; ang transaksyon ay ibo-broadcast lamang kapag may nahanap na valid hash at napirmahan."
+        "a": "Oo. Ang mining ay nangyayari sa iyong browser, kaya ang tab ay dapat manatiling bukas at aktibo. Kung isasara mo ang browser o mag-navigate palayo, titigil ang mining. Hindi nai-save ang progreso mo (bilang ng na-process na hash) — magsisimula ka ulit kapag nagpatuloy ka. Gayunpaman, walang pondo ang nanganganib kung titigil ka sa gitna ng mining; ang transaksyon ay ibi-broadcast lamang kapag may nahanap na valid hash at na-sign."
       }
     },
     "transactions": {
@@ -126,19 +126,19 @@
       },
       "closeBrowser": {
         "q": "Ano ang mangyayari kung isasara ko ang browser habang may transaksyon?",
-        "a1": "Kung isasara habang nag-mine: Walang mawawala. Titigil lang ang mining at maaari mong i-restart mamaya.",
-        "a2": "Kung isasara habang nag-sign/broadcast: Kung ang transaksyon ay napirmahan na at nai-broadcast sa network, makukumpirma ito nang normal. Kung hindi pa nai-broadcast, walang naipadala at kailangan mong mag-mine ulit."
+        "a1": "Kung isasara habang nagmimina: Walang mawawala. Titigil lang ang mining at maaari mong i-restart mamaya.",
+        "a2": "Kung isasara habang nagsi-sign/nagba-broadcast: Kung ang transaksyon ay na-sign na at nai-broadcast sa network, makukumpirma ito nang normal. Kung hindi pa nai-broadcast, walang naipadala at kailangan mong magmina ulit."
       }
     },
     "security": {
       "title": "Seguridad at Backup",
       "backupImportance": {
         "q": "Ano ang backup at bakit napakahalaga na gumawa nito?",
-        "a": "Ang backup ay ang iyong 12 o 24-word mnemonic phrase (seed phrase). Ang phrase na ito ay maaaring i-regenerate ang lahat ng iyong private key at i-recover ang buong wallet sa anumang device o compatible wallet application. Kung wala ang backup na ito, kung mawalan ka ng access sa browser (nabura ang data, bagong device, nag-crash ang browser), permanenteng mawawala ang iyong pondo. Isulat ito sa papel at itago nang ligtas — huwag kailanman i-save nang digital o ibahagi kaninuman."
+        "a": "Ang backup ay ang 12 o 24 na salitang mnemonic phrase (seed phrase). Maaari itong gamitin para mabuo muli ang lahat ng private key at maibalik ang buong wallet sa anumang device o compatible na wallet app. Kung wala ang backup na ito at mawalan ka ng access sa browser (nabura ang data, bagong device, nag-crash ang browser), permanenteng mawawala ang pondo mo. Isulat ito sa papel at itago nang ligtas — huwag kailanman i-save nang digital o ibahagi kaninuman."
       },
       "forgotPassword": {
         "q": "Kung makalimutan ko ang aking password, mawawala ba lahat?",
-        "a": "Hindi, kung mayroon kang backup mnemonic phrase. Maaari mong i-clear ang storage ng ZeldWallet at i-restore ang wallet gamit ang mnemonic. Ang password ay nagpo-protekta lamang sa local encrypted storage — hindi ito konektado sa blockchain. Gayunpaman, kung makalimutan mo ang password AT wala kang mnemonic backup, oo, mawawala ang iyong pondo."
+        "a": "Hindi, kung mayroon kang backup mnemonic phrase. Maaari mong i-clear ang storage ng ZeldWallet at i-restore ang wallet gamit ang mnemonic. Ang password ay para lang protektahan ang lokal na encrypted storage — hindi ito naka-link sa blockchain. Gayunpaman, kung makalimutan mo ang password AT wala kang mnemonic backup, oo, mawawala ang pondo mo."
       },
       "mnemonicPhrase": {
         "q": "Ano ang \"mnemonic phrase\" at maaari ko bang i-restore ang wallet mula sa ibang application?",
@@ -146,7 +146,7 @@
       },
       "lostDevice": {
         "q": "Maaari bang ma-access ng iba ang aking wallet kung mawala ang aking computer?",
-        "a": "Depende sa iyong security setup. Kung nagtakda ka ng malakas na password, kailangang i-crack ng attacker ang encryption (napakahirap sa magandang password). Kung walang password, ang sinumang may access sa data ng iyong browser ay posibleng maka-access sa iyong wallet. Para sa maximum na seguridad: palaging gumamit ng malakas na password, at kung ang iyong device ay nawala/nanakaw, i-restore ang wallet sa ibang lugar gamit ang mnemonic at agad na ilipat ang iyong pondo."
+        "a": "Depende sa security setup mo. Kung nagtakda ka ng malakas na password, kailangang i-crack ng attacker ang encryption (napakahirap kung maganda ang password). Kung walang password, ang sinumang may access sa data ng browser mo ay posibleng maka-access sa wallet mo. Para sa maximum na seguridad: palaging gumamit ng malakas na password, at kung nawala/nanakaw ang device mo, i-restore ang wallet sa ibang lugar gamit ang mnemonic at agad na ilipat ang pondo mo."
       }
     },
     "external": {
@@ -157,7 +157,7 @@
       },
       "externalVsDirect": {
         "q": "Ano ang pagkakaiba ng direktang paggamit ng ZeldWallet o sa pamamagitan ng external wallet tulad ng Xverse?",
-        "a1": "Pag-iimbak ng key: Sa ZeldWallet Direct, naka-encrypt at nakaimbak ang mga key sa browser; sa External Wallet, nasa extension/hardware nakaimbak ang mga key.",
+        "a1": "Pag-iimbak ng key: Sa ZeldWallet Direct, nasa browser ang mga key (naka-encrypt); sa External Wallet, nasa extension/hardware ang mga key.",
         "a2": "Setup: Sa ZeldWallet Direct, kailangan gumawa o mag-restore sa browser; sa External Wallet, ikinokonekta lang ang kasalukuyang wallet.",
         "a3": "Pag-sign: Sa ZeldWallet Direct, awtomatikong nag-si-sign pagkatapos i-unlock; sa External Wallet, may approval popup para sa bawat aksyon.",
         "a4": "Portability: Ang ZeldWallet Direct ay nakatali sa browser/device; ang External Wallet ay gumagana sa iba’t ibang site.",
@@ -170,7 +170,7 @@
     "aiPowered": "Katulong na AI",
     "placeholder": "Magtanong tungkol sa ZeldHash...",
     "submit": "Ipadala",
-    "helperText": "Mga tanong tungkol sa ZeldHash, ZELD token, bihirang transaksyon, o blockchain concept.",
+    "helperText": "Magtanong tungkol sa ZeldHash, ZELD token, bihirang transaksyon, o mga konsepto sa blockchain.",
     "genericError": "May naganap na error. Pakisubukang muli.",
     "connectionError": "Error sa koneksyon. Pakisuri ang iyong koneksyon sa internet at subukang muli.",
     "aiResponse": "Sagot ng AI"

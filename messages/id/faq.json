@@ -56,7 +56,7 @@
     },
     "centralized": {
       "q": "Apakah ZeldHash terpusat? Siapa yang mengendalikannya?",
-      "a": "Tidak ada. ZeldHash sepenuhnya terdesentralisasi, sama seperti Bitcoin. Token ZELD dapat ditransfer seperti aset Bitcoin lainnya. Tidak ada otoritas pusat."
+      "a": "Tidak ada yang mengendalikannya. ZeldHash sepenuhnya terdesentralisasi, sama seperti Bitcoin. Token ZELD dapat ditransfer seperti aset Bitcoin lainnya. Tidak ada otoritas pusat."
     },
     "rewards": {
       "q": "Bagaimana sistem hadiah bekerja?",
@@ -159,7 +159,7 @@
         "q": "Apa perbedaan antara menggunakan ZeldWallet langsung atau melalui dompet eksternal seperti Xverse?",
         "a1": "Penyimpanan kunci: ZeldWallet Direct menyimpan kunci terenkripsi di browser, Dompet Eksternal menyimpan kunci di ekstensi/perangkat keras.",
         "a2": "Pengaturan: ZeldWallet Direct memerlukan pembuatan atau pemulihan di browser, Dompet Eksternal hanya menghubungkan dompet yang ada.",
-        "a3": "Penandatanganan: ZeldWallet Direct menandatangani secara otomatis setelah dibuka, Dompet Eksternal menampilkan popup persetujuan untuk setiap tindakan.",
+        "a3": "Penandatanganan: ZeldWallet Direct menandatangani secara otomatis setelah kunci dibuka, Dompet Eksternal menampilkan popup persetujuan untuk setiap tindakan.",
         "a4": "Portabilitas: ZeldWallet Direct terikat ke browser/perangkat, Dompet Eksternal bekerja di seluruh situs.",
         "a5": "Dompet perangkat keras: Tidak didukung di ZeldWallet Direct, Didukung melalui ekstensi di Dompet Eksternal.",
         "a6": "Gunakan dompet eksternal jika Anda menginginkan dukungan dompet perangkat keras, sudah memiliki dana di sana, atau lebih suka menyimpan kunci di ekstensi khusus. Gunakan ZeldWallet langsung untuk pengalaman yang lebih sederhana dan lengkap."
@@ -172,7 +172,7 @@
     "submit": "Kirim",
     "helperText": "Pertanyaan tentang ZeldHash, token ZELD, transaksi langka, atau konsep blockchain.",
     "genericError": "Terjadi kesalahan. Silakan coba lagi.",
-    "connectionError": "Kesalahan koneksi. Periksa koneksi internet Anda.",
+    "connectionError": "Kesalahan koneksi. Periksa internet Anda dan coba lagi.",
     "aiResponse": "Respons AI"
   }
 }

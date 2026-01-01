@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "ZeldHash - 寻找稀有比特币交易",
-    "description": "寻找最稀有的比特币交易。发现以 000000... 开头的交易 ID，赚取 ZELD 代币。"
+    "description": "寻找最稀有的比特币交易。发现以 000000... 开头的交易 ID（TxID），赚取 ZELD 代币。"
   },
   "hero": {
     "titleLine1": "寻找比特币的",
     "titleLine2": "最稀有的交易",
-    "subtitleBeforeZeros": "某些比特币交易极其稀有——它们的 ID 以",
+    "subtitleBeforeZeros": "某些比特币交易极其稀有——它们的交易 ID（TxID）以",
     "subtitleAfterZeros": "开头。找到它们，赚取 {token} 代币。",
-    "tagline": "100%去中心化 · 无预挖 · 无风投 · 只有数学。",
+    "tagline": "100% 去中心化 · 无预挖 · 无风投 · 只有数学。",
     "cta": {
       "hunt": {
         "title": "开始狩猎",
@@ -25,10 +25,10 @@
     }
   },
   "stats": {
-    "rareHashesFound": "已发现稀有哈希",
+    "rareHashesFound": "已发现稀有交易哈希",
     "zeldInCirculation": "流通中的 ZELD",
     "recordZeros": "前导零纪录",
-    "utxosTracked": "追踪的 UTXO"
+    "utxosTracked": "已追踪 UTXO"
   },
   "howItWorks": {
     "label": "工作原理",
@@ -36,14 +36,14 @@
     "steps": [
       {
         "num": "01",
-        "title": "每笔交易都有一个 ID",
-        "desc": "就像序列号。大多数看起来是随机的：a7f3b2c1e9d8... 但有些以零开头。",
+        "title": "每笔交易都有一个交易 ID（TxID）",
+        "desc": "就像序列号。大多数看起来是随机的：a7f3b2c1e9d8... 但也有少数以 0 开头。",
         "icon": "🔢"
       },
       {
         "num": "02",
         "title": "零很稀有",
-        "desc": "找到 6 个零？一千六百万分之一的概率。12 个零？281 万亿分之一。这些是宝藏。",
+        "desc": "找到 6 个零？概率约为一千六百万分之一。12 个零？约为 281 万亿分之一。它们就是宝藏。",
         "icon": "💎"
       },
       {
@@ -68,16 +68,16 @@
     "newHeader": "ZELD 交易挖矿",
     "rows": [
       [
-        "价值 $50万–$1000万 的硬件",
+        "50 万～1000 万美元的硬件投入",
         "你的笔记本电脑"
       ],
       [
-        "巨额电费账单",
+        "巨额电费",
         "几乎为零"
       ],
       [
         "每个区块只有 1 个赢家",
-        "人人都能赢"
+        "人人都有机会"
       ],
       [
         "由矿池控制",

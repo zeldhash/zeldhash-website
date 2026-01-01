@@ -4,9 +4,9 @@
     "description": "Câu trả lời về việc săn giao dịch Bitcoin với các mẫu hash hiếm."
   },
   "badge": "FAQ",
-  "heading": "Câu Hỏi Thường Gặp",
+  "heading": "Câu hỏi thường gặp",
   "intro": "Tất cả những gì bạn cần biết về việc săn giao dịch Bitcoin với các mẫu hash hiếm.",
-  "huntIsOn": "Cuộc săn bắt đầu.",
+  "huntIsOn": "Cuộc săn đã bắt đầu.",
   "categories": {
     "protocol": "Giao thức",
     "wallet": "Ví"
@@ -14,7 +14,7 @@
   "protocol": {
     "howToGetZeld": {
       "q": "Làm thế nào để có ZELD?",
-      "a": "Cách dễ nhất là sử dụng ZeldWallet trực tiếp trên <site>zeldhash.com</site> — một ví dựa trên trình duyệt cho phép bạn săn các giao dịch hiếm mà không cần thiết lập. Chỉ cần tạo hoặc kết nối ví và bắt đầu đào. Cho các nhà phát triển muốn xây dựng giải pháp đúc tiền riêng, chúng tôi cung cấp SDK mã nguồn mở bằng Rust, TypeScript và Python trên <github>GitHub</github>."
+      "a": "Cách dễ nhất là dùng ZeldWallet trực tiếp trên <site>zeldhash.com</site> — ví chạy trong trình duyệt giúp bạn săn giao dịch hiếm mà không cần cài đặt. Chỉ cần tạo hoặc kết nối ví rồi bắt đầu đào. Với lập trình viên muốn tự xây dựng giải pháp mint, chúng tôi có các SDK mã nguồn mở (Rust, TypeScript và Python) trên <github>GitHub</github>."
     },
     "whatIsZeldHash": {
       "q": "ZeldHash là gì?",
@@ -22,37 +22,37 @@
     },
     "whyName": {
       "q": "Tại sao có tên \"ZeldHash\"?",
-      "a1": "\"Zeld\" đến từ từ tiếng Hà Lan zeldzaam, có nghĩa là \"hiếm\". Đây là tên phù hợp cho một giao thức dành riêng cho việc săn các giao dịch hiếm nhất trên blockchain Bitcoin. Phần \"hash\" đề cập đến dấu vân tay mật mã làm cho mỗi giao dịch trở nên độc nhất.",
+      "a1": "\"Zeld\" đến từ tiếng Hà Lan \"zeldzaam\", nghĩa là \"hiếm\". Đây là cái tên phù hợp cho một giao thức chuyên săn những giao dịch hiếm nhất trên blockchain Bitcoin. Phần \"hash\" nói về “dấu vân tay” mật mã khiến mỗi giao dịch là duy nhất.",
       "a2": "Vì vậy ZeldHash có nghĩa đen là \"hash hiếm\" — chính xác những gì chúng tôi đang tìm kiếm."
     },
     "whatIsHash": {
       "q": "Hash là gì?",
-      "a1": "Hash giống như dấu vân tay số. Đó là một định danh duy nhất được tạo ra từ bất kỳ dữ liệu nào — dù đó là hình ảnh, tài liệu hay giao dịch Bitcoin. Mỗi hash là một chuỗi 64 ký tự thập lục phân.",
+      "a1": "Hash giống như dấu vân tay số. Đó là một mã định danh duy nhất được tạo ra từ bất kỳ dữ liệu nào — dù là hình ảnh, tài liệu hay một giao dịch Bitcoin. Mỗi hash là một chuỗi 64 ký tự thập lục phân.",
       "a2": "Bạn có thể xem ví dụ về hash tại <mempool>mempool.space</mempool>."
     },
     "bitcoinRelation": {
       "q": "Điều này liên quan đến Bitcoin như thế nào?",
-      "a": "Mỗi khối Bitcoin có một hash, và mỗi giao dịch bên trong một khối có hash riêng được gọi là ID giao dịch (txid). Nếu bạn đã xem các hash khối, bạn có thể nhận thấy chúng bắt đầu bằng nhiều số 0. Đó là kết quả của việc đào: thợ đào tính toán hash liên tục cho đến khi tìm được một hash có đủ số 0 đầu tiên."
+      "a": "Mỗi khối Bitcoin có một hash, và mỗi giao dịch trong khối cũng có hash riêng gọi là ID giao dịch (txid). Nếu bạn từng nhìn hash của các khối, bạn sẽ thấy chúng bắt đầu bằng rất nhiều số 0. Đó là kết quả của việc đào: thợ đào liên tục thử tính hash cho đến khi tìm được hash có đủ số 0 ở đầu."
     },
     "rareTxHash": {
       "q": "Điều gì làm cho hash giao dịch \"hiếm\"?",
-      "a": "Không giống như hash khối, hash giao dịch về cơ bản là ngẫu nhiên — chúng có thể bắt đầu bằng bất kỳ ký tự nào. Một hash giao dịch bắt đầu bằng nhiều số 0 là hiếm về mặt thống kê, giống như tìm một cỏ bốn lá. Càng nhiều số 0 đầu tiên, giao dịch càng hiếm."
+      "a": "Không giống như hash khối, hash giao dịch về cơ bản là ngẫu nhiên — chúng có thể bắt đầu bằng bất kỳ ký tự nào. Một hash giao dịch bắt đầu bằng nhiều số 0 là hiếm về mặt thống kê, giống như tìm được cỏ bốn lá. Càng nhiều số 0 ở đầu, giao dịch càng hiếm."
     },
     "huntHow": {
       "q": "Làm thế nào để săn giao dịch hiếm?",
-      "a": "Giống như thợ đào. Bạn thêm dữ liệu ngẫu nhiên vào giao dịch và tính toán hash cho đến khi tìm được một hash bắt đầu bằng số 0. Có thể mất nhiều lần thử, nhưng khi thành công, bạn đã khám phá ra điều gì đó hiếm."
+      "a": "Giống như cách thợ đào làm. Bạn thêm dữ liệu ngẫu nhiên vào giao dịch và tính hash cho đến khi tìm được một hash bắt đầu bằng số 0. Có thể phải thử rất nhiều lần, nhưng khi thành công, bạn đã khám phá ra điều gì đó hiếm."
     },
     "whatIsZeld": {
       "q": "ZELD là gì?",
-      "a": "ZELD là token bạn kiếm được khi tìm thấy hoặc tạo ra một giao dịch Bitcoin với hash bắt đầu bằng ít nhất 6 số 0. Phát hiện của bạn càng hiếm (càng nhiều số 0), bạn càng kiếm được nhiều ZELD."
+      "a": "ZELD là token bạn kiếm được khi tìm thấy hoặc tạo ra một giao dịch Bitcoin với hash bắt đầu bằng ít nhất 6 số 0. Giao dịch của bạn càng hiếm (càng nhiều số 0), bạn càng kiếm được nhiều ZELD."
     },
     "inCirculation": {
-      "q": "Đã có token ZELD trong lưu thông chưa?",
-      "a": "Có. Kể từ khi Bitcoin ra mắt năm 2009, nhiều giao dịch đã ngẫu nhiên có hash bắt đầu bằng 6+ số 0. Những kho báu tình cờ này đã có thể được yêu cầu. Một số thợ săn cũng tạo ra chúng một cách có chủ đích."
+      "q": "ZELD đã có lưu hành chưa?",
+      "a": "Có. Kể từ khi Bitcoin ra mắt năm 2009, nhiều giao dịch đã ngẫu nhiên có hash bắt đầu bằng 6+ số 0. Những kho báu vô tình này đã sẵn sàng để được nhận. Một số thợ săn cũng tạo ra chúng một cách có chủ đích."
     },
     "ownWithoutKnowing": {
-      "q": "Có người sở hữu ZELD mà không biết không?",
-      "a": "Chắc chắn rồi. Hàng ngàn người dùng Bitcoin vô tình sở hữu các giao dịch hiếm. ZELD của họ đang chờ được yêu cầu."
+      "q": "Có ai đang sở hữu ZELD mà không hề biết không?",
+      "a": "Chắc chắn rồi. Hàng ngàn người dùng Bitcoin vô tình sở hữu các giao dịch hiếm. ZELD của họ đang chờ được nhận."
     },
     "centralized": {
       "q": "ZeldHash có tập trung không? Ai kiểm soát nó?",
@@ -60,11 +60,11 @@
     },
     "rewards": {
       "q": "Hệ thống thưởng hoạt động như thế nào?",
-      "a": "Giao thức thưởng cho sự hiếm. Một giao dịch với 6 số 0 đầu tiên kiếm được ZELD, và nhiều số 0 hơn có nghĩa là phần thưởng lớn hơn. Khi nhiều thợ săn tham gia, cạnh tranh tăng lên — nhưng luôn có thứ gì đó để tìm cho những ai tiếp tục tìm kiếm."
+      "a": "Giao thức thưởng cho độ hiếm. Giao dịch có 6 số 0 ở đầu sẽ nhận ZELD, và càng nhiều số 0 thì phần thưởng càng lớn. Khi nhiều thợ săn tham gia, cạnh tranh tăng lên — nhưng vẫn luôn có thứ gì đó để tìm cho những ai kiên trì."
     },
     "startHunting": {
       "q": "Làm thế nào để bắt đầu săn?",
-      "a": "Truy cập <site>zeldhash.com</site> và bắt đầu cuộc phiêu lưu. Mỗi giao dịch là cơ hội khám phá điều gì đó hiếm."
+      "a": "Truy cập <site>zeldhash.com</site> và bắt đầu cuộc săn của bạn. Mỗi giao dịch là một cơ hội để khám phá điều gì đó hiếm."
     }
   },
   "wallet": {
@@ -72,11 +72,11 @@
       "title": "Chung",
       "security": {
         "q": "Tiền mã hóa của tôi có thực sự an toàn trong ví này không? Khóa riêng của tôi được lưu trữ ở đâu?",
-        "a": "Có, tiền của bạn an toàn như bảo mật trình duyệt của bạn. ZeldWallet lưu trữ khóa riêng của bạn cục bộ trong IndexedDB của trình duyệt, được mã hóa bằng AES-256-GCM. Nếu bạn đặt mật khẩu, khóa của bạn được bảo vệ bằng phương pháp tạo khóa PBKDF2, khiến chúng cực kỳ khó bị bẻ khóa. Khóa riêng của bạn không bao giờ rời khỏi thiết bị và không bao giờ được gửi đến bất kỳ máy chủ nào. Tuy nhiên, hãy luôn tạo bản sao lưu cụm từ ghi nhớ — nếu bạn mất quyền truy cập vào trình duyệt hoặc thiết bị mà không có bản sao lưu, tiền của bạn sẽ bị mất vĩnh viễn."
+        "a": "Có, tiền của bạn an toàn tương đương với mức bảo mật của trình duyệt. ZeldWallet lưu trữ khóa riêng của bạn cục bộ trong IndexedDB của trình duyệt, được mã hóa bằng AES-256-GCM. Nếu bạn đặt mật khẩu, khóa của bạn được bảo vệ bằng thuật toán PBKDF2, khiến chúng cực kỳ khó bị bẻ khóa. Khóa riêng của bạn không bao giờ rời khỏi thiết bị và không bao giờ được gửi đến bất kỳ máy chủ nào. Tuy nhiên, hãy luôn tạo bản sao lưu cụm từ khôi phục — nếu bạn mất quyền truy cập vào trình duyệt hoặc thiết bị mà không có bản sao lưu, tiền của bạn sẽ bị mất vĩnh viễn."
       },
       "addressDifference": {
         "q": "Sự khác biệt giữa địa chỉ \"Thanh toán\" và địa chỉ \"Ordinals\" là gì?",
-        "a": "Địa chỉ Thanh toán được sử dụng cho các giao dịch Bitcoin thông thường — gửi và nhận BTC. Địa chỉ Ordinals (địa chỉ Taproot) là nơi bạn nhận token ZELD khi săn thành công một giao dịch hiếm. Token ZELD được gắn vào đầu ra đầu tiên của giao dịch, luôn được gửi đến địa chỉ Ordinals của bạn."
+        "a": "Địa chỉ \"Thanh toán\" dùng cho các giao dịch Bitcoin thông thường — gửi và nhận BTC. Địa chỉ \"Ordinals\" (địa chỉ Taproot) là nơi bạn nhận token ZELD khi săn thành công một giao dịch hiếm. Token ZELD được gắn vào đầu ra đầu tiên của giao dịch và luôn được gửi đến địa chỉ Ordinals của bạn."
       },
       "twoAddresses": {
         "q": "Tại sao tôi có hai địa chỉ Bitcoin khác nhau?",
@@ -88,41 +88,41 @@
       }
     },
     "hunting": {
-      "title": "Đúc / Săn",
+      "title": "Mint / Săn",
       "gpuVsCpu": {
         "q": "Sự khác biệt giữa đào có GPU và không có GPU là gì? Nó có làm hỏng máy tính không?",
         "a": "Đào GPU sử dụng công nghệ WebGPU để tận dụng card đồ họa cho các phép tính hash nhanh hơn nhiều — thường nhanh hơn 10-100 lần so với chỉ đào CPU. Đào CPU sử dụng Web Workers và chậm hơn nhưng hoạt động trên tất cả các thiết bị. Không cái nào làm hỏng máy tính của bạn. Phần cứng hiện đại được thiết kế để xử lý khối lượng công việc liên tục. Trình duyệt của bạn quản lý tài nguyên một cách có trách nhiệm, và bạn có thể dừng đào bất cứ lúc nào."
       },
       "miningTime": {
         "q": "Mất bao lâu để đào một ZELD?",
-        "a": "Phụ thuộc vào phần cứng và may mắn của bạn. Tìm một hash giao dịch với 6 số 0 đầu tiên có xác suất khoảng 1 trên 16 triệu mỗi lần thử. Với GPU hiện đại đạt hàng triệu hash mỗi giây, có thể mất từ vài phút đến vài giờ. Chỉ với CPU, có thể mất từ vài giờ đến vài ngày. Cũng có yếu tố ngẫu nhiên — bạn có thể may mắn nhanh chóng hoặc mất nhiều thời gian hơn trung bình."
+        "a": "Phụ thuộc vào phần cứng và may mắn của bạn. Tìm một hash giao dịch với 6 số 0 ở đầu có xác suất khoảng 1 trên 16 triệu mỗi lần thử. Với GPU hiện đại đạt hàng triệu hash mỗi giây, có thể mất từ vài phút đến vài giờ. Chỉ với CPU, có thể mất từ vài giờ đến vài ngày. Cũng có yếu tố ngẫu nhiên — bạn có thể may mắn nhanh chóng hoặc mất nhiều thời gian hơn trung bình."
       },
       "keepRunning": {
         "q": "Tôi có cần giữ máy tính chạy trong khi đào không?",
-        "a": "Có. Đào diễn ra trong trình duyệt của bạn, vì vậy tab phải mở và hoạt động. Nếu bạn đóng trình duyệt hoặc điều hướng đi nơi khác, việc đào sẽ dừng. Tiến trình của bạn (hash đã xử lý) không được lưu — bạn sẽ bắt đầu lại khi tiếp tục. Tuy nhiên, không có tiền nào gặp rủi ro nếu bạn dừng giữa chừng; giao dịch chỉ được phát khi tìm thấy hash hợp lệ và ký."
+        "a": "Có. Đào diễn ra trong trình duyệt của bạn, vì vậy tab phải luôn mở và đang hoạt động. Nếu bạn đóng trình duyệt hoặc chuyển sang trang khác, việc đào sẽ dừng. Tiến trình của bạn (số hash đã thử) không được lưu — bạn sẽ bắt đầu lại khi tiếp tục. Tuy nhiên, sẽ không có tiền nào gặp rủi ro nếu bạn dừng giữa chừng; giao dịch chỉ được ký và phát sóng khi tìm thấy hash hợp lệ."
       }
     },
     "transactions": {
-      "title": "Giao dịch và Phí",
+      "title": "Giao dịch và phí",
       "feeSelection": {
         "q": "Làm thế nào để chọn phí giao dịch? Sự khác biệt giữa \"Chậm\", \"Trung bình\" và \"Nhanh\" là gì?",
         "a1": "ZeldWallet lấy đề xuất phí theo thời gian thực từ mempool.space:",
-        "a2": "Chậm: Phí thấp hơn, có thể mất 1+ giờ để xác nhận. Trung bình: Phí cân bằng, thường xác nhận trong 30-60 phút. Nhanh: Phí cao hơn, thường xác nhận trong 1-2 khối tiếp theo (~10-20 phút).",
+        "a2": "Chậm: Phí thấp hơn, có thể mất hơn 1 giờ để xác nhận. Trung bình: Phí cân bằng, thường xác nhận trong 30-60 phút. Nhanh: Phí cao hơn, thường xác nhận trong 1-2 khối tiếp theo (~10-20 phút).",
         "a3": "Bạn cũng có thể đặt tỷ lệ phí tùy chỉnh theo sats/vB. Phí cao hơn có nghĩa là xác nhận nhanh hơn nhưng tốn nhiều BTC hơn."
       },
       "minimumBtc": {
         "q": "Tại sao tôi cần có số lượng BTC tối thiểu để bắt đầu đào?",
-        "a1": "Mỗi giao dịch Bitcoin cần một khoản phí, và mỗi đầu ra cần một giá trị tối thiểu (gọi là \"giới hạn bụi\"). ZeldWallet cần khoảng 2.000+ satoshi để trang trải:",
-        "a2": "330 sat cho số tiền bụi cho đầu ra ZELD đến địa chỉ Ordinals của bạn, và ~1.500+ sat cho phí giao dịch tùy thuộc vào điều kiện mạng hiện tại.",
-        "a3": "Không đủ BTC, bạn không thể tạo giao dịch hợp lệ."
+        "a1": "Mỗi giao dịch Bitcoin cần một khoản phí, và mỗi đầu ra cần một giá trị tối thiểu (gọi là \"dust limit\"). ZeldWallet cần khoảng 2.000 satoshi trở lên để trang trải:",
+        "a2": "330 sat cho giá trị tối thiểu của đầu ra ZELD đến địa chỉ Ordinals của bạn, và ~1.500+ sat cho phí giao dịch tùy thuộc vào điều kiện mạng hiện tại.",
+        "a3": "Nếu không đủ BTC, bạn không thể tạo giao dịch hợp lệ."
       },
       "sendZeld": {
         "q": "Làm thế nào để gửi ZELD cho người khác?",
-        "a": "Trong ZeldWallet, đi đến phần Săn và đánh dấu \"Gửi ZELD\". Nhập địa chỉ Bitcoin của người nhận và số lượng ZELD bạn muốn gửi. Việc chuyển sẽ được bao gồm trong giao dịch săn tiếp theo — ZELD của bạn sẽ được gửi khi tìm thấy hash hiếm và giao dịch được phát."
+        "a": "Trong ZeldWallet, vào mục Săn và đánh dấu \"Gửi ZELD\". Nhập địa chỉ Bitcoin của người nhận và số lượng ZELD bạn muốn gửi. Việc chuyển sẽ được thực hiện trong giao dịch săn tiếp theo — ZELD của bạn sẽ được gửi khi tìm thấy hash hiếm và giao dịch được phát sóng."
       },
       "balanceIncreased": {
-        "q": "Tôi vừa gửi ZELD nhưng số dư của tôi tăng lên!?",
-        "a": "Điều đó bình thường — và là tin tuyệt vời! Khi bạn gửi ZELD qua ZeldWallet, bạn không chỉ thực hiện chuyển khoản, bạn cũng đang săn hash giao dịch hiếm. Nếu giao dịch bạn phát có 6 hoặc nhiều số 0 đầu tiên, bạn kiếm được phần thưởng ZELD (lên đến 4.096 ZELD cho những phát hiện hiếm nhất). Vì vậy nếu bạn gửi 100 ZELD nhưng nhận được phần thưởng 256 ZELD, số dư ròng của bạn thực sự tăng 156 ZELD. Mỗi giao dịch là cơ hội kiếm tiền!"
+        "q": "Tôi vừa gửi ZELD nhưng số dư lại tăng?!",
+        "a": "Điều đó bình thường — và là tin tuyệt vời! Khi bạn gửi ZELD qua ZeldWallet, bạn không chỉ thực hiện chuyển khoản, bạn cũng đang săn hash giao dịch hiếm. Nếu giao dịch bạn phát có 6 hoặc nhiều số 0 ở đầu, bạn kiếm được phần thưởng ZELD (lên đến 4.096 ZELD cho những phát hiện hiếm nhất). Vì vậy nếu bạn gửi 100 ZELD nhưng nhận được phần thưởng 256 ZELD, số dư ròng của bạn thực sự tăng 156 ZELD. Mỗi giao dịch là một cơ hội để kiếm thêm!"
       },
       "closeBrowser": {
         "q": "Điều gì xảy ra nếu tôi đóng trình duyệt trong khi giao dịch?",
@@ -131,46 +131,46 @@
       }
     },
     "security": {
-      "title": "Bảo mật và Sao lưu",
+      "title": "Bảo mật và sao lưu",
       "backupImportance": {
         "q": "Sao lưu là gì và tại sao việc tạo sao lưu quan trọng như vậy?",
-        "a": "Sao lưu là cụm từ ghi nhớ 12 hoặc 24 từ của bạn (cụm từ seed). Cụm từ này có thể tái tạo tất cả khóa riêng của bạn và khôi phục toàn bộ ví trên bất kỳ thiết bị hoặc ứng dụng ví tương thích nào. Không có sao lưu này, nếu bạn mất quyền truy cập vào trình duyệt (dữ liệu bị xóa, thiết bị mới, trình duyệt bị lỗi), tiền của bạn sẽ bị mất vĩnh viễn. Viết ra giấy và bảo quản an toàn — không bao giờ lưu kỹ thuật số hoặc chia sẻ với ai."
+        "a": "Sao lưu là cụm từ khôi phục 12 hoặc 24 từ của bạn (seed phrase). Cụm từ này có thể tái tạo tất cả khóa riêng của bạn và khôi phục toàn bộ ví trên bất kỳ thiết bị hoặc ứng dụng ví tương thích nào. Không có bản sao lưu này, nếu bạn mất quyền truy cập vào trình duyệt (dữ liệu bị xóa, thiết bị mới, trình duyệt bị lỗi), tiền của bạn sẽ bị mất vĩnh viễn. Hãy viết ra giấy và bảo quản an toàn — không bao giờ lưu trữ kỹ thuật số hoặc chia sẻ với bất kỳ ai."
       },
       "forgotPassword": {
         "q": "Nếu tôi quên mật khẩu, tôi có mất tất cả không?",
-        "a": "Không, nếu bạn có cụm từ ghi nhớ sao lưu. Bạn có thể xóa bộ nhớ ZeldWallet và khôi phục ví bằng cụm từ ghi nhớ. Mật khẩu chỉ bảo vệ bộ nhớ mã hóa cục bộ — không liên quan đến blockchain. Tuy nhiên, nếu bạn quên mật khẩu VÀ không có sao lưu cụm từ ghi nhớ, thì đúng, tiền của bạn bị mất."
+        "a": "Không, nếu bạn có cụm từ khôi phục. Bạn có thể xóa dữ liệu lưu trữ của ZeldWallet và khôi phục ví bằng cụm từ khôi phục. Mật khẩu chỉ bảo vệ dữ liệu mã hóa cục bộ — không liên quan đến blockchain. Tuy nhiên, nếu bạn quên mật khẩu và đồng thời không có bản sao lưu cụm từ khôi phục, thì đúng, tiền của bạn sẽ bị mất."
       },
       "mnemonicPhrase": {
-        "q": "\"Cụm từ ghi nhớ\" là gì và tôi có thể khôi phục ví từ ứng dụng khác không?",
-        "a": "Cụm từ ghi nhớ (còn gọi là cụm từ seed hoặc cụm từ khôi phục) là danh sách 12 hoặc 24 từ đại diện cho khóa riêng chính của bạn theo tiêu chuẩn BIP39. Có, bạn có thể khôi phục cụm từ ghi nhớ ZeldWallet trong các ví tương thích khác như Xverse, Leather, Sparrow, hoặc bất kỳ ví tương thích BIP39/BIP84/BIP86 nào. Bitcoin và ZELD của bạn sẽ xuất hiện tại cùng địa chỉ."
+        "q": "\"Cụm từ khôi phục\" là gì và tôi có thể khôi phục ví từ ứng dụng khác không?",
+        "a": "Cụm từ khôi phục (còn gọi là cụm từ ghi nhớ/seed phrase hoặc mnemonic phrase) là danh sách 12 hoặc 24 từ đại diện cho khóa riêng chính của bạn theo tiêu chuẩn BIP39. Có, bạn có thể khôi phục cụm từ này trong các ví tương thích khác như Xverse, Leather, Sparrow hoặc bất kỳ ví tương thích BIP39/BIP84/BIP86 nào. Bitcoin và ZELD của bạn sẽ xuất hiện tại cùng địa chỉ."
       },
       "lostDevice": {
         "q": "Ai đó có thể truy cập ví của tôi nếu tôi mất máy tính không?",
-        "a": "Phụ thuộc vào cài đặt bảo mật của bạn. Nếu bạn đặt mật khẩu mạnh, kẻ tấn công cần phải phá mã hóa (rất khó với mật khẩu tốt). Không có mật khẩu, ai đó có quyền truy cập vào dữ liệu trình duyệt của bạn có thể truy cập ví. Để bảo mật tối đa: luôn sử dụng mật khẩu mạnh, và nếu thiết bị bị mất/đánh cắp, khôi phục ví ở nơi khác bằng cụm từ ghi nhớ và chuyển tiền ngay lập tức."
+        "a": "Phụ thuộc vào cài đặt bảo mật của bạn. Nếu bạn đặt mật khẩu mạnh, kẻ tấn công cần phải phá mã hóa (rất khó với mật khẩu tốt). Nếu không có mật khẩu, ai đó có quyền truy cập vào dữ liệu trình duyệt của bạn có thể truy cập ví. Để bảo mật tối đa: luôn sử dụng mật khẩu mạnh, và nếu thiết bị bị mất hoặc bị đánh cắp, hãy khôi phục ví ở nơi khác bằng cụm từ khôi phục và chuyển tiền ngay lập tức."
       }
     },
     "external": {
-      "title": "Ví Bên Ngoài",
+      "title": "Ví bên ngoài",
       "connectExternal": {
         "q": "Tôi có thể kết nối ví Xverse hoặc Leather thay vì tạo tài khoản mới không?",
-        "a": "Có! ZeldWallet hỗ trợ kết nối ví bên ngoài bao gồm Xverse, Leather và Magic Eden. Nhấp vào \"Kết nối Ví\" và chọn ví đã cài đặt. Tiện ích ví sẽ yêu cầu bạn phê duyệt kết nối. Điều này cho phép bạn săn ZELD bằng địa chỉ ví hiện có mà không tiết lộ khóa riêng cho ZeldWallet."
+        "a": "Có! ZeldWallet hỗ trợ kết nối ví bên ngoài bao gồm Xverse, Leather và Magic Eden. Nhấp vào \"Kết nối Ví\" và chọn ví đã cài đặt của bạn. Tiện ích mở rộng của ví sẽ yêu cầu bạn phê duyệt kết nối. Điều này cho phép bạn săn ZELD bằng địa chỉ ví hiện có mà không cần tiết lộ khóa riêng cho ZeldWallet."
       },
       "externalVsDirect": {
         "q": "Sự khác biệt giữa sử dụng ZeldWallet trực tiếp hoặc qua ví bên ngoài như Xverse là gì?",
-        "a1": "Lưu trữ khóa: ZeldWallet Direct lưu khóa mã hóa trong trình duyệt, Ví Bên Ngoài lưu khóa trong tiện ích/phần cứng.",
-        "a2": "Thiết lập: ZeldWallet Direct yêu cầu tạo hoặc khôi phục trong trình duyệt, Ví Bên Ngoài chỉ kết nối ví hiện có.",
-        "a3": "Ký: ZeldWallet Direct ký tự động sau khi mở khóa, Ví Bên Ngoài hiển thị popup phê duyệt cho mỗi hành động.",
-        "a4": "Tính di động: ZeldWallet Direct gắn với trình duyệt/thiết bị, Ví Bên Ngoài hoạt động trên nhiều trang web.",
-        "a5": "Ví phần cứng: Không hỗ trợ trong ZeldWallet Direct, Hỗ trợ qua tiện ích trong Ví Bên Ngoài.",
-        "a6": "Sử dụng ví bên ngoài nếu bạn muốn hỗ trợ ví phần cứng, đã có tiền ở đó, hoặc thích giữ khóa trong tiện ích chuyên dụng. Sử dụng ZeldWallet trực tiếp để có trải nghiệm đơn giản hơn, tất cả trong một."
+        "a1": "Lưu trữ khóa: ZeldWallet (trực tiếp) lưu khóa được mã hóa trong trình duyệt; ví bên ngoài lưu khóa trong tiện ích mở rộng/thiết bị phần cứng.",
+        "a2": "Thiết lập: ZeldWallet (trực tiếp) yêu cầu tạo hoặc khôi phục ngay trong trình duyệt; ví bên ngoài chỉ cần kết nối ví hiện có.",
+        "a3": "Ký: ZeldWallet (trực tiếp) ký tự động sau khi mở khóa; ví bên ngoài sẽ hiện hộp thoại phê duyệt cho mỗi hành động.",
+        "a4": "Tính di động: ZeldWallet (trực tiếp) gắn với trình duyệt/thiết bị; ví bên ngoài dùng được trên nhiều trang web.",
+        "a5": "Ví phần cứng: Không hỗ trợ với ZeldWallet (trực tiếp); được hỗ trợ thông qua ví bên ngoài.",
+        "a6": "Hãy dùng ví bên ngoài nếu bạn muốn ví phần cứng, đã có tiền ở đó hoặc thích giữ khóa trong tiện ích chuyên dụng. Dùng ZeldWallet trực tiếp nếu bạn muốn trải nghiệm đơn giản, “tất cả trong một”."
       }
     }
   },
   "ama": {
     "aiPowered": "Trợ lý AI",
-    "placeholder": "Hỏi về ZeldHash...",
+    "placeholder": "Hỏi bất kỳ điều gì về ZeldHash...",
     "submit": "Gửi",
-    "helperText": "Câu hỏi về ZeldHash, token ZELD, giao dịch hiếm hoặc khái niệm blockchain.",
+    "helperText": "Bạn có thể hỏi về ZeldHash, token ZELD, giao dịch hiếm hoặc các khái niệm blockchain nói chung.",
     "genericError": "Đã xảy ra lỗi. Vui lòng thử lại.",
     "connectionError": "Lỗi kết nối. Vui lòng kiểm tra internet và thử lại.",
     "aiResponse": "Phản hồi AI"

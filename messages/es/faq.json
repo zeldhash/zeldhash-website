@@ -44,7 +44,7 @@
     },
     "whatIsZeld": {
       "q": "¿Qué es ZELD?",
-      "a": "ZELD es el token que ganas cuando encuentras o creas una transacción de Bitcoin cuyo hash empieza con al menos 6 ceros. Cuanto más rara sea tu hallazgo (más ceros), más ZELD ganas."
+      "a": "ZELD es el token que ganas cuando encuentras o creas una transacción de Bitcoin cuyo hash empieza con al menos 6 ceros. Cuanto más raro sea tu hallazgo (más ceros), más ZELD ganas."
     },
     "inCirculation": {
       "q": "¿Ya hay tokens ZELD en circulación?",
@@ -91,15 +91,15 @@
       "title": "Minería / Caza",
       "gpuVsCpu": {
         "q": "¿Cuál es la diferencia entre minar con o sin GPU? ¿Dañará mi ordenador?",
-        "a": "La minería GPU usa tecnología WebGPU para aprovechar tu tarjeta gráfica para cálculos de hash mucho más rápidos — típicamente 10-100x más rápido que la minería solo con CPU. La minería CPU usa Web Workers y es más lenta pero funciona en todos los dispositivos. Ninguna dañará tu ordenador. El hardware moderno está diseñado para manejar cargas de trabajo sostenidas. Tu navegador gestiona los recursos responsablemente, y puedes detener la minería en cualquier momento."
+        "a": "La minería con GPU usa tecnología WebGPU para aprovechar tu tarjeta gráfica y realizar cálculos de hash mucho más rápidos — típicamente 10-100 veces más rápido que la minería solo con CPU. La minería con CPU usa Web Workers y es más lenta, pero funciona en todos los dispositivos. Ninguna dañará tu ordenador. El hardware moderno está diseñado para manejar cargas de trabajo sostenidas. Tu navegador gestiona los recursos de forma responsable, y puedes detener la minería en cualquier momento."
       },
       "miningTime": {
         "q": "¿Cuánto tiempo se tarda en minar un ZELD?",
-        "a": "Depende de tu hardware y suerte. Encontrar un hash de transacción con 6 ceros iniciales tiene aproximadamente 1 en 16 millones de probabilidad por intento. Con una GPU moderna alcanzando millones de hashes por segundo, puede tardar minutos a horas. Solo con CPU, puede tardar horas a días. También hay aleatoriedad involucrada — podrías tener suerte rápido o podría tardar más que el promedio."
+        "a": "Depende de tu hardware y tu suerte. Encontrar un hash de transacción con 6 ceros iniciales tiene una probabilidad de aproximadamente 1 entre 16 millones por intento. Con una GPU moderna que alcanza millones de hashes por segundo, puede tardar de minutos a horas. Solo con CPU, puede tardar de horas a días. También interviene el azar — podrías tener suerte rápidamente o podría tardar más de lo habitual."
       },
       "keepRunning": {
         "q": "¿Necesito mantener mi ordenador encendido durante la minería?",
-        "a": "Sí. La minería ocurre en tu navegador, así que la pestaña debe permanecer abierta y activa. Si cierras el navegador o navegas a otro lugar, la minería se detiene. Tu progreso (hashes procesados) no se guarda — empezarás de nuevo cuando retomes. Sin embargo, ningún fondo está en riesgo si paras a mitad de la minería; la transacción solo se transmite una vez que se encuentra un hash válido y se firma."
+        "a": "Sí. La minería ocurre en tu navegador, así que la pestaña debe permanecer abierta y activa. Si cierras el navegador o navegas a otra página, la minería se detiene. Tu progreso (hashes procesados) no se guarda — empezarás de cero cuando retomes. Sin embargo, ningún fondo está en riesgo si paras a mitad de la minería; la transacción solo se transmite una vez que se encuentra y firma un hash válido."
       }
     },
     "transactions": {
@@ -107,13 +107,13 @@
       "feeSelection": {
         "q": "¿Cómo elijo las comisiones de transacción? ¿Cuál es la diferencia entre \"Lento\", \"Medio\" y \"Rápido\"?",
         "a1": "ZeldWallet obtiene recomendaciones de comisiones en tiempo real de mempool.space:",
-        "a2": "Lento: Comisión más baja, puede tardar 1+ horas en confirmar. Medio: Comisión equilibrada, típicamente confirma en 30-60 minutos. Rápido: Comisión más alta, usualmente confirma en los próximos 1-2 bloques (~10-20 minutos).",
+        "a2": "Lento: Comisión más baja, puede tardar más de 1 hora en confirmar. Medio: Comisión equilibrada, normalmente confirma en 30-60 minutos. Rápido: Comisión más alta, generalmente confirma en los próximos 1-2 bloques (~10-20 minutos).",
         "a3": "También puedes establecer una tasa de comisión personalizada en sats/vB. Comisiones más altas significan confirmación más rápida pero cuestan más BTC."
       },
       "minimumBtc": {
         "q": "¿Por qué necesito tener una cantidad mínima de BTC para empezar a minar?",
-        "a1": "Cada transacción Bitcoin requiere una comisión, y cada salida necesita un valor mínimo (llamado \"límite de polvo\"). ZeldWallet requiere aproximadamente 2.000+ satoshis para cubrir:",
-        "a2": "330 sats para la cantidad de polvo para la salida ZELD a tu dirección Ordinals, y ~1.500+ sats para la comisión de transacción dependiendo de las condiciones actuales de la red.",
+        "a1": "Cada transacción Bitcoin requiere una comisión, y cada salida necesita un valor mínimo (conocido en inglés como \"dust limit\"). ZeldWallet requiere aproximadamente 2.000+ satoshis para cubrir:",
+        "a2": "330 sats para el mínimo requerido de la salida ZELD a tu dirección Ordinals, y ~1.500+ sats para la comisión de transacción según las condiciones actuales de la red.",
         "a3": "Sin suficiente BTC, no puedes crear una transacción válida."
       },
       "sendZeld": {
@@ -134,11 +134,11 @@
       "title": "Seguridad y Respaldo",
       "backupImportance": {
         "q": "¿Qué es una copia de seguridad y por qué es tan importante crear una?",
-        "a": "Una copia de seguridad es tu frase mnemónica de 12 o 24 palabras (frase semilla). Esta frase puede regenerar todas tus claves privadas y recuperar toda tu cartera en cualquier dispositivo o aplicación de cartera compatible. Sin esta copia de seguridad, si pierdes acceso a tu navegador (datos borrados, nuevo dispositivo, fallo del navegador), tus fondos se pierden permanentemente. Escríbela en papel y guárdala de forma segura — nunca la guardes digitalmente ni la compartas con nadie."
+        "a": "Una copia de seguridad es tu frase mnemónica de 12 o 24 palabras (frase semilla). Esta frase puede regenerar todas tus claves privadas y recuperar toda tu cartera en cualquier dispositivo o aplicación compatible. Sin esta copia de seguridad, si pierdes acceso a tu navegador (datos borrados, dispositivo nuevo, fallo del navegador), tus fondos se perderán permanentemente. Escríbela en papel y guárdala de forma segura — nunca la guardes en formato digital ni la compartas con nadie."
       },
       "forgotPassword": {
         "q": "Si olvido mi contraseña, ¿pierdo todo?",
-        "a": "No, si tienes tu frase mnemónica de respaldo. Puedes borrar el almacenamiento de ZeldWallet y restaurar tu cartera usando la mnemónica. La contraseña solo protege el almacenamiento local cifrado — no está vinculada a la blockchain. Sin embargo, si olvidas tu contraseña Y no tienes tu respaldo mnemónico, entonces sí, tus fondos se pierden."
+        "a": "No, si tienes tu frase mnemónica de respaldo. Puedes borrar el almacenamiento de ZeldWallet y restaurar tu cartera usando la frase mnemónica. La contraseña solo protege el almacenamiento local cifrado — no está vinculada a la blockchain. Sin embargo, si olvidas tu contraseña Y no tienes tu respaldo mnemónico, entonces sí, tus fondos se perderán."
       },
       "mnemonicPhrase": {
         "q": "¿Qué es una \"frase mnemónica\" y puedo restaurar mi cartera desde otra aplicación?",
@@ -146,7 +146,7 @@
       },
       "lostDevice": {
         "q": "¿Puede alguien acceder a mi cartera si pierdo mi ordenador?",
-        "a": "Depende de tu configuración de seguridad. Si estableciste una contraseña fuerte, un atacante necesitaría descifrar el cifrado (muy difícil con una buena contraseña). Sin contraseña, alguien con acceso a los datos de tu navegador podría potencialmente acceder a tu cartera. Para máxima seguridad: siempre usa una contraseña fuerte, y si tu dispositivo se pierde/roba, restaura tu cartera en otro lugar usando tu mnemónica y transfiere tus fondos inmediatamente."
+        "a": "Depende de tu configuración de seguridad. Si estableciste una contraseña fuerte, un atacante necesitaría romper el cifrado (muy difícil con una buena contraseña). Sin contraseña, alguien con acceso a los datos de tu navegador podría acceder a tu cartera. Para máxima seguridad: usa siempre una contraseña fuerte, y si tu dispositivo se pierde o es robado, restaura tu cartera en otro lugar usando tu frase mnemónica y transfiere tus fondos de inmediato."
       }
     },
     "external": {
@@ -171,8 +171,8 @@
     "placeholder": "Pregúntame sobre ZeldHash...",
     "submit": "Enviar",
     "helperText": "Pregunta sobre ZeldHash, tokens ZELD, transacciones raras o conceptos blockchain.",
-    "genericError": "Ocurrió un error. Por favor, inténtalo de nuevo.",
-    "connectionError": "Error de conexión. Verifica tu conexión a internet.",
+    "genericError": "Ha ocurrido un error. Por favor, inténtalo de nuevo.",
+    "connectionError": "Error de conexión. Verifica tu conexión a internet e inténtalo de nuevo.",
     "aiResponse": "Respuesta IA"
   }
 }

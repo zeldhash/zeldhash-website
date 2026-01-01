@@ -8,7 +8,7 @@
     "titleLine2": "Adimu ya Bitcoin",
     "subtitleBeforeZeros": "Baadhi ya miamala ya Bitcoin ni adimu sana — kitambulisho chake kinaanza na",
     "subtitleAfterZeros": "Ipate na upokee tokeni za {token}.",
-    "tagline": "100% Kutokuwa na Serikali Kuu · Hakuna Premine · Hakuna VC · Hisabati tu.",
+    "tagline": "Imegatuliwa 100% · Hakuna premine · Hakuna VC · Hisabati tu.",
     "cta": {
       "hunt": {
         "title": "Anza uwindaji",
@@ -25,7 +25,7 @@
     }
   },
   "stats": {
-    "rareHashesFound": "Hashi adimu zilizopatikana",
+    "rareHashesFound": "Hashi adimu zilizogundulika",
     "zeldInCirculation": "ZELD kwenye mzunguko",
     "recordZeros": "Rekodi ya sufuri",
     "utxosTracked": "UTXO Zinazofuatiliwa"
@@ -37,13 +37,13 @@
       {
         "num": "01",
         "title": "Kila muamala una kitambulisho",
-        "desc": "Kama nambari ya mfululizo. Nyingi zinaonekana bila mpangilio: a7f3b2c1e9d8... Lakini zingine zinaanza na sifuri.",
+        "desc": "Kama nambari ya kipekee. Nyingi zinaonekana bila mpangilio: a7f3b2c1e9d8... Lakini zingine zinaanza na sifuri.",
         "icon": "🔢"
       },
       {
         "num": "02",
         "title": "Sifuri ni adimu",
-        "desc": "Kupata sifuri 6? Nafasi 1 kati ya milioni 16. Sifuri 12? 1 kati ya trilioni 281. Hizi ni hazina.",
+        "desc": "Kupata sifuri 6? Uwezekano wa 1 kati ya milioni 16. Sifuri 12? 1 kati ya trilioni 281. Hizi ndizo hazina.",
         "icon": "💎"
       },
       {
@@ -55,7 +55,7 @@
       {
         "num": "04",
         "title": "Pata ZELD",
-        "desc": "Miamala adimu inapata tokeni za ZELD. Zihamishe kama Bitcoin. Bila wapatanishi.",
+        "desc": "Miamala adimu hukuletea tokeni za ZELD. Zihamishe kama Bitcoin. Bila wa kati.",
         "icon": "🏆"
       }
     ]
@@ -63,16 +63,16 @@
   "comparison": {
     "label": "Kwa nini ni muhimu",
     "title": "Uchimbaji kwa Kila Mtu",
-    "intro": "Uchimbaji wa kawaida wa Bitcoin unahitaji mamilioni ya dola katika vifaa na umeme wa kutosha kuendesha mji mdogo. ZELD inabadilisha mchezo.",
+    "intro": "Uchimbaji wa kawaida wa Bitcoin unahitaji mamilioni ya dola kwa vifaa na umeme wa kutosha kuendesha mji mdogo. ZELD inabadilisha mchezo.",
     "oldHeader": "Uchimbaji wa Bloku za Bitcoin",
     "newHeader": "Uchimbaji wa Miamala ya ZELD",
     "rows": [
       [
         "Vifaa vya $500K - $10M",
-        "Kompyuta yako ya mkononi"
+        "Kompyuta yako tu"
       ],
       [
-        "Bili kubwa za umeme",
+        "Gharama kubwa za umeme",
         "Karibu hakuna"
       ],
       [
@@ -84,8 +84,8 @@
         "100% imegatuliwa"
       ],
       [
-        "Lazima ushindane na majitu",
-        "Shindana na wewe mwenyewe"
+        "Lazima ushindane na makampuni makubwa",
+        "Shindana na nafsi yako"
       ]
     ]
   },

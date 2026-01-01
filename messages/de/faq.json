@@ -23,7 +23,7 @@
     "whyName": {
       "q": "Warum der Name „ZeldHash“?",
       "a1": "„Zeld“ kommt vom niederländischen Wort zeldzaam, was „selten“ bedeutet. Es ist ein passender Name für ein Protokoll, das sich der Jagd nach den seltensten Transaktionen auf der Bitcoin-Blockchain widmet. Der „Hash“-Teil bezieht sich auf den kryptografischen Fingerabdruck, der jede Transaktion einzigartig macht.",
-      "a2": "ZeldHash bedeutet also wörtlich 'Seltener Hash' — genau das, wonach wir suchen."
+      "a2": "ZeldHash bedeutet also wörtlich „Seltener Hash“ — genau das, wonach wir suchen."
     },
     "whatIsHash": {
       "q": "Was ist ein Hash?",
@@ -35,7 +35,7 @@
       "a": "Jeder Bitcoin-Block hat einen Hash, und jede Transaktion innerhalb eines Blocks hat ihren eigenen Hash, genannt Transaktions-ID (txid). Wenn du dir Block-Hashes angesehen hast, ist dir vielleicht aufgefallen, dass sie mit vielen Nullen beginnen. Das ist das Ergebnis des Minings: Miner berechnen wiederholt Hashes, bis sie einen mit genügend führenden Nullen finden."
     },
     "rareTxHash": {
-      "q": "Was macht einen Transaktions-Hash 'selten'?",
+      "q": "Was macht einen Transaktions-Hash „selten“?",
       "a": "Im Gegensatz zu Block-Hashes sind Transaktions-Hashes im Wesentlichen zufällig — sie können mit jedem beliebigen Zeichen beginnen. Ein Transaktions-Hash, der mit mehreren Nullen beginnt, ist statistisch selten, wie ein vierblättriges Kleeblatt zu finden. Je mehr führende Nullen, desto seltener die Transaktion."
     },
     "huntHow": {
@@ -76,22 +76,22 @@
       },
       "addressDifference": {
         "q": "Was ist der Unterschied zwischen der „Payment“-Adresse und der „Ordinals“-Adresse?",
-        "a": "Die Payment-Adresse wird für reguläre Bitcoin-Transaktionen verwendet — zum Senden und Empfangen von BTC. Die Ordinals-Adresse (eine Taproot-Adresse) ist die Adresse, an die du deine ZELD-Token erhältst, wenn du erfolgreich eine seltene Transaktion jagst. ZELD-Token werden an die erste Ausgabe (Output) der Transaktion angehängt; diese wird immer an deine Ordinals-Adresse gesendet."
+        "a": "Die Payment-Adresse wird für reguläre Bitcoin-Transaktionen verwendet — zum Senden und Empfangen von BTC. Die Ordinals-Adresse (eine Taproot-Adresse) ist die Adresse, an die deine ZELD-Token gesendet werden, wenn du erfolgreich eine seltene Transaktion jagst. ZELD-Token werden an die erste Ausgabe (Output) der Transaktion angehängt, die immer an deine Ordinals-Adresse geht."
       },
       "twoAddresses": {
         "q": "Warum habe ich zwei verschiedene Bitcoin-Adressen?",
-        "a": "Das folgt Bitcoins Best Practices zur Trennung verschiedener Asset-Typen. Die Payment-Adresse verwaltet deine BTC für Transaktionsgebühren, während die Ordinals-Adresse deine ZELD-Token empfängt und hält. Diese Trennung verhindert, dass UTXOs, die ZELD enthalten, versehentlich bei regulären BTC-Zahlungen ausgegeben werden."
+        "a": "Das entspricht den Best Practices von Bitcoin zur Trennung verschiedener Asset-Typen. Die Payment-Adresse verwaltet deine BTC für Transaktionsgebühren, während die Ordinals-Adresse deine ZELD-Token empfängt und hält. Diese Trennung verhindert, dass UTXOs, die ZELD enthalten, versehentlich bei regulären BTC-Zahlungen ausgegeben werden."
       },
       "mobile": {
         "q": "Kann ich ZeldWallet auf meinem Handy nutzen?",
-        "a": "Ja, ZeldWallet funktioniert in jedem modernen mobilen Browser. Allerdings ist die Mining-Leistung auf mobilen Geräten aufgrund der begrenzten CPU-Leistung und des fehlenden GPU-Beschleunigung deutlich niedriger als auf Desktop-Computern. Für ernsthaftes Jagen wird ein Desktop- oder Laptop-Computer empfohlen."
+        "a": "Ja, ZeldWallet funktioniert in jedem modernen mobilen Browser. Allerdings ist die Mining-Leistung auf mobilen Geräten aufgrund der begrenzten CPU-Leistung und der fehlenden GPU-Beschleunigung deutlich niedriger als auf Desktop-Computern. Für ernsthaftes Jagen wird ein Desktop- oder Laptop-Computer empfohlen."
       }
     },
     "hunting": {
       "title": "Mining / Jagd",
       "gpuVsCpu": {
         "q": "Was ist der Unterschied zwischen Mining mit oder ohne GPU? Wird es meinen Computer beschädigen?",
-        "a": "GPU-Mining nutzt WebGPU-Technologie, um deine Grafikkarte für viel schnellere Hash-Berechnungen zu nutzen — typischerweise 10-100x schneller als reines CPU-Mining. CPU-Mining verwendet Web Workers und ist langsamer, funktioniert aber auf allen Geräten. Keines von beiden wird deinen Computer beschädigen. Moderne Hardware ist für anhaltende Arbeitslasten ausgelegt. Dein Browser verwaltet Ressourcen verantwortungsvoll, und du kannst das Mining jederzeit stoppen."
+        "a": "GPU-Mining verwendet WebGPU-Technologie, um deine Grafikkarte für viel schnellere Hash-Berechnungen zu nutzen — typischerweise 10–100× schneller als reines CPU-Mining. CPU-Mining nutzt Web Workers und ist langsamer, funktioniert aber auf allen Geräten. Keines von beiden wird deinen Computer beschädigen. Moderne Hardware ist für anhaltende Arbeitslasten ausgelegt. Dein Browser verwaltet Ressourcen verantwortungsvoll, und du kannst das Mining jederzeit stoppen."
       },
       "miningTime": {
         "q": "Wie lange dauert es, ein ZELD zu minen?",
@@ -105,9 +105,9 @@
     "transactions": {
       "title": "Transaktionen und Gebühren",
       "feeSelection": {
-        "q": "Wie wähle ich Transaktionsgebühren? Was ist der Unterschied zwischen 'Langsam', 'Mittel' und 'Schnell'?",
+        "q": "Wie wähle ich Transaktionsgebühren? Was ist der Unterschied zwischen „Langsam“, „Mittel“ und „Schnell“?",
         "a1": "ZeldWallet ruft Echtzeit-Gebührenempfehlungen von mempool.space ab:",
-        "a2": "Langsam: Niedrigere Gebühr, kann 1+ Stunden zur Bestätigung dauern. Mittel: Ausgewogene Gebühr, bestätigt typischerweise in 30-60 Minuten. Schnell: Höhere Gebühr, bestätigt normalerweise in den nächsten 1-2 Blöcken (~10-20 Minuten).",
+        "a2": "Langsam: Niedrigere Gebühr, kann 1+ Stunden zur Bestätigung dauern. Mittel: Ausgewogene Gebühr, bestätigt typischerweise in 30–60 Minuten. Schnell: Höhere Gebühr, bestätigt normalerweise in den nächsten 1–2 Blöcken (~10–20 Minuten).",
         "a3": "Du kannst auch eine benutzerdefinierte Gebührenrate in sats/vB festlegen. Höhere Gebühren bedeuten schnellere Bestätigung, kosten aber mehr BTC."
       },
       "minimumBtc": {
@@ -118,7 +118,7 @@
       },
       "sendZeld": {
         "q": "Wie sende ich ZELD an jemand anderen?",
-        "a": "In ZeldWallet gehe zum Hunt-Bereich und aktiviere 'ZELD senden'. Gib die Bitcoin-Adresse des Empfängers und den ZELD-Betrag ein, den du senden möchtest. Der Transfer wird in deine nächste Jagd-Transaktion aufgenommen — dein ZELD wird gesendet, wenn der seltene Hash gefunden und die Transaktion übertragen wird."
+        "a": "Gehe in ZeldWallet zum Hunt-Bereich und aktiviere „ZELD senden“. Gib die Bitcoin-Adresse des Empfängers und den ZELD-Betrag ein, den du senden möchtest. Der Transfer wird in deine nächste Jagd-Transaktion aufgenommen — dein ZELD wird gesendet, wenn der seltene Hash gefunden und die Transaktion übertragen wird."
       },
       "balanceIncreased": {
         "q": "Ich habe gerade ZELD gesendet, aber mein Guthaben ist gestiegen!?",
@@ -141,7 +141,7 @@
         "a": "Nein, wenn du deine Backup-Mnemonic-Phrase hast. Du kannst den Speicher von ZeldWallet löschen und dein Wallet mit der Mnemonic wiederherstellen. Das Passwort schützt nur den lokalen verschlüsselten Speicher — es ist nicht mit der Blockchain verbunden. Wenn du jedoch dein Passwort vergisst UND kein Mnemonic-Backup hast, dann ja, sind deine Mittel verloren."
       },
       "mnemonicPhrase": {
-        "q": "Was ist eine 'Mnemonic-Phrase' und kann ich mein Wallet von einer anderen Anwendung wiederherstellen?",
+        "q": "Was ist eine „Mnemonic-Phrase“ und kann ich mein Wallet von einer anderen Anwendung wiederherstellen?",
         "a": "Eine Mnemonic-Phrase (auch Seed-Phrase oder Wiederherstellungsphrase genannt) ist eine Liste von 12 oder 24 Wörtern, die deinen Master-Private-Key gemäß dem BIP39-Standard repräsentiert. Ja, du kannst eine ZeldWallet-Mnemonic in anderen kompatiblen Wallets wie Xverse, Leather, Sparrow oder jedem BIP39/BIP84/BIP86-kompatiblen Wallet wiederherstellen. Deine Bitcoin und ZELD erscheinen an denselben Adressen."
       },
       "lostDevice": {
@@ -153,7 +153,7 @@
       "title": "Externe Wallets",
       "connectExternal": {
         "q": "Kann ich mein Xverse- oder Leather-Wallet verbinden, anstatt ein neues Konto zu erstellen?",
-        "a": "Ja! ZeldWallet unterstützt die Verbindung externer Wallets einschließlich Xverse, Leather und Magic Eden. Klicke auf 'Wallet verbinden' und wähle dein installiertes Wallet. Deine Wallet-Erweiterung wird dich auffordern, die Verbindung zu genehmigen. Dies ermöglicht dir, ZELD mit den Adressen deines bestehenden Wallets zu jagen, ohne deine privaten Schlüssel an ZeldWallet preiszugeben."
+        "a": "Ja! ZeldWallet unterstützt die Verbindung externer Wallets einschließlich Xverse, Leather und Magic Eden. Klicke auf „Wallet verbinden“ und wähle dein installiertes Wallet. Deine Wallet-Erweiterung wird dich auffordern, die Verbindung zu genehmigen. So kannst du mit den Adressen deines bestehenden Wallets nach ZELD jagen, ohne deine privaten Schlüssel an ZeldWallet preiszugeben."
       },
       "externalVsDirect": {
         "q": "Was ist der Unterschied zwischen der direkten Nutzung von ZeldWallet oder über ein externes Wallet wie Xverse?",

@@ -6,7 +6,7 @@
   "hero": {
     "titleLine1": "Mangaso ng mga",
     "titleLine2": "Pinakabihirang Transaksyon ng Bitcoin",
-    "subtitleBeforeZeros": "May mga transaksyon ng Bitcoin na napakabihira — ang kanilang ID ay nagsisimula sa",
+    "subtitleBeforeZeros": "May ilang transaksyon sa Bitcoin na napakabihira — nagsisimula ang ID nila sa",
     "subtitleAfterZeros": "Hanapin sila at kumita ng {token} tokens.",
     "tagline": "100% Desentralisado · Walang Premine · Walang VC · Matematika lang.",
     "cta": {
@@ -25,9 +25,9 @@
     }
   },
   "stats": {
-    "rareHashesFound": "Mga Bihirang Hash na Nahanap",
-    "zeldInCirculation": "ZELD na Umiikot",
-    "recordZeros": "Pinakamataas na Zeros",
+    "rareHashesFound": "Mga Bihirang Hash na Natuklasan",
+    "zeldInCirculation": "ZELD sa Sirkulasyon",
+    "recordZeros": "Rekord na Zeros",
     "utxosTracked": "Mga UTXO na Sinusubaybayan"
   },
   "howItWorks": {
@@ -43,7 +43,7 @@
       {
         "num": "02",
         "title": "Ang mga zeros ay bihira",
-        "desc": "Makahanap ng 6 na zero? 1 sa 16 milyong pagkakataon. 12 zero? 1 sa 281 trilyong pagkakataon. Kayamanan ito.",
+        "desc": "Makahanap ng 6 na zero? 1 sa 16 milyon. 12 zero? 1 sa 281 trilyon. Mga kayamanan ito.",
         "icon": "💎"
       },
       {
@@ -55,7 +55,7 @@
       {
         "num": "04",
         "title": "Kumita ng ZELD",
-        "desc": "Ang mga bihirang transaksyon ay kumikita ng ZELD tokens. Ilipat sila tulad ng Bitcoin. Walang tagapamagitan.",
+        "desc": "Ang mga bihirang transaksyon ay kumikita ng ZELD tokens. Maaari mo silang i-transfer tulad ng Bitcoin. Walang tagapamagitan.",
         "icon": "🏆"
       }
     ]
@@ -68,7 +68,7 @@
     "newHeader": "Pagmimina ng ZELD Transactions",
     "rows": [
       [
-        "$500K - $10M na hardware",
+        "$500K - $10M na halaga ng hardware",
         "Ang iyong laptop"
       ],
       [
@@ -77,7 +77,7 @@
       ],
       [
         "1 panalo bawat block",
-        "Lahat ay pwedeng manalo"
+        "Lahat ay maaaring manalo"
       ],
       [
         "Kontrolado ng mga mining pool",
@@ -85,20 +85,20 @@
       ],
       [
         "Kailangang makipagkumpitensya sa mga higante",
-        "Makipagkumpitensya sa sarili mo"
+        "Makipagkumpitensya sa iyong sarili"
       ]
     ]
   },
   "hallOfFame": {
     "label": "Bulwagan ng Katanyagan",
-    "title": "Pinakabihirang mga Tuklas",
+    "title": "Mga Pinakabihirang Tuklas",
     "leadingZeros": "{count} na zero sa unahan",
-    "recordSuffix": "— LAHAT NG PANAHON NA REKORD 🏆",
+    "recordSuffix": "— REKORD SA LAHAT NG PANAHON 🏆",
     "tokenLabel": "ZELD"
   },
   "cta": {
     "title": "Handa nang mangaso?",
-    "subtitle": "Sumali sa libu-libong mangangaso na nagdidiskubre ng pinakabihirang Bitcoin transactions.",
+    "subtitle": "Sumali sa libu-libong mangangaso na nagtutuklas ng mga pinakabihirang transaksyon ng Bitcoin.",
     "startHunting": "Simulan ang pangangaso",
     "checkBalance": "I-explore",
     "askZeldAI": "Magtanong sa ZeldAI"

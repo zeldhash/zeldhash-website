@@ -1,7 +1,7 @@
 {
   "siteTitle": "ZeldHash",
-  "siteDescription": "En nadir Bitcoin işlemlerini avlayın. 000000... ile başlayan işlem kimliklerini bulun ve ZELD token kazanın. %100 merkeziyetsiz, ön madencilik yok, risk sermayesi yok.",
-  "tagline": "Av Başladı",
+  "siteDescription": "En nadir Bitcoin işlemlerini avlayın. 000000... ile başlayan işlem kimliklerini bulun ve ZELD token'ları kazanın. %100 merkeziyetsiz, ön madencilik yok, risk sermayesi yok.",
+  "tagline": "Av başladı",
   "logoAlt": "ZeldHash Logosu",
   "nav": {
     "hunt": "Avla",
@@ -11,7 +11,7 @@
     "github": "GitHub",
     "whitepaper": "Beyaz Kitap",
     "toggleMenu": "Gezinme menüsünü aç/kapat",
-    "openNav": "Gezinmeyi aç"
+    "openNav": "Gezinme menüsünü aç"
   },
   "footer": {
     "protocol": "Protokol",
@@ -30,17 +30,17 @@
   "comingSoon": {
     "title": "Yakında",
     "description": "Bu özellik şu anda geliştirme aşamasındadır. Güncellemeler için takipte kalın!",
-    "status": "Geliştirme Aşamasında"
+    "status": "Geliştirme aşamasında"
   },
   "wallet": {
-    "description": "Tarayıcınızda güvenli Bitcoin cüzdanı. ZeldHash'ten doğrudan işlem oluşturun, yönetin ve imzalayın.",
+    "description": "Tarayıcınızda güvenli bir Bitcoin cüzdanı. ZeldHash üzerinden doğrudan işlem oluşturun, yönetin ve imzalayın.",
     "subtitle": "Tarayıcınızdan doğrudan ZELD avlayın, gönderin ve alın.",
     "securityNote": "AES-256-GCM şifreleme • BIP32/39/84/86 standartları • Tarayıcınızda yerel olarak saklanır",
     "titlePrefix": "Hunt",
     "titleSuffix": " Wallet",
     "askZeldai": {
-      "title": "Yardıma mı ihtiyacın var?",
-      "subtitle": "Cüzdan veya ZeldHash hakkında ZeldAI'ye her şeyi sor",
+      "title": "Yardıma mı ihtiyacınız var?",
+      "subtitle": "ZeldAI'ye cüzdan veya ZeldHash hakkında her şeyi sorabilirsiniz",
       "askButton": "ZeldAI'ye Sor"
     }
   },
@@ -49,7 +49,7 @@
     "metaTitle": "ZELD Gezgini - ZeldHash",
     "metaDescription": "En son ZeldHash ödüllerini keşfedin ve adres, blok veya işlem arayın.",
     "searchLabel": "ZeldHash gezgininde ara",
-    "searchPlaceholder": "Bir adres, blok indeksi veya işlem hash'i girin",
+    "searchPlaceholder": "Bir adres, blok yüksekliği veya işlem hash'i girin",
     "searchButton": "Ara",
     "searchHelp": "Bir Bitcoin adresi, blok yüksekliği veya işlem hash'i girin.",
     "searchError": "Geçersiz giriş. Lütfen geçerli bir adres, blok yüksekliği veya işlem hash'i girin.",
@@ -80,23 +80,23 @@
     "newUtxoCount": "Yeni UTXO'lar",
     "utxoSpentCount": "Harcanan UTXO'lar",
     "nicestTxid": "En İyi İşlem",
-    "leadingZerosLabel": "{count} öncü sıfır",
+    "leadingZerosLabel": "Başlangıçta {count} sıfır",
     "blockRewards": "Blok Ödülleri",
     "noBlockRewards": "Bu blokta ödül bulunamadı.",
-    "cumulativeStats": "Kümülatif İstatistikler",
+    "cumulativeStats": "Toplam İstatistikler",
     "totalBlocks": "Toplam Bloklar",
     "totalRewards": "Toplam Ödüller",
-    "totalRewardAmount": "Toplam ZELD Basıldı",
+    "totalRewardAmount": "Basılan Toplam ZELD",
     "globalMaxZeros": "Sıfır Rekoru",
     "totalNewUtxos": "Toplam Yeni UTXO'lar",
     "totalUtxosSpent": "Toplam Harcanan UTXO'lar",
     "transaction": "İşlem",
     "transactionMetaTitle": "İşlem {txid} - ZELD Gezgini",
     "transactionMetaDescription": "Bitcoin işlemi {txid} için ZELD bakiyesi ve ödül bilgilerini görüntüle",
-    "rewardEligible": "{count} öncü sıfır - Ödül hakkı var!",
+    "rewardEligible": "Başlangıçta {count} sıfır — ödüle uygun!",
     "rewardTransaction": "Ödül İşlemi",
     "rewardsReceived": "Alınan Ödüller",
-    "leadingZerosCount": "Öncü Sıfırlar",
+    "leadingZerosCount": "Başlangıç Sıfırları",
     "totalUtxoBalance": "Toplam UTXO Bakiyesi",
     "transactionOutputs": "İşlem Çıktıları",
     "viewOnMempool": "mempool.space'te görüntüle",

@@ -6,9 +6,9 @@
   "hero": {
     "titleLine1": "Caça às",
     "titleLine2": "transações mais raras de Bitcoin",
-    "subtitleBeforeZeros": "Algumas transações de Bitcoin são extremamente raras — o seu ID começa com",
+    "subtitleBeforeZeros": "Algumas transações de Bitcoin são extremamente raras — seu ID começa com",
     "subtitleAfterZeros": "Encontre-as e ganhe tokens {token}.",
-    "tagline": "100% Descentralizado · Sem premine · Sem VC · Apenas matemática.",
+    "tagline": "100% descentralizado · Sem premine · Sem VC · Apenas matemática.",
     "cta": {
       "hunt": {
         "title": "Iniciar a caça",
@@ -42,37 +42,37 @@
       },
       {
         "num": "02",
-        "title": "Os zeros são raros",
-        "desc": "Encontrar 6 zeros? 1 em 16 milhões. 12 zeros? 1 em 281 triliões. São tesouros.",
+        "title": "Zeros são raros",
+        "desc": "Encontrar 6 zeros? 1 em 16 milhões. 12 zeros? 1 em 281 trilhões. São verdadeiros tesouros.",
         "icon": "💎"
       },
       {
         "num": "03",
-        "title": "Caça ou descobre",
-        "desc": "Mine novas transações raras com as nossas ferramentas, ou verifique se as suas transações antigas já são raras.",
+        "title": "Cace ou descubra",
+        "desc": "Minere novas transações raras com nossas ferramentas, ou verifique se suas transações antigas já são raras.",
         "icon": "🎯"
       },
       {
         "num": "04",
         "title": "Ganhe ZELD",
-        "desc": "As transações raras geram tokens ZELD. Transfira-os como Bitcoin. Sem intermediários.",
+        "desc": "Transações raras geram tokens ZELD. Transfira-os como Bitcoin. Sem intermediários.",
         "icon": "🏆"
       }
     ]
   },
   "comparison": {
-    "label": "Porque importa",
+    "label": "Por que importa",
     "title": "Mineração para todos",
-    "intro": "A mineração tradicional de Bitcoin requer milhões em hardware e eletricidade suficiente para alimentar uma pequena cidade. O ZELD muda o jogo.",
-    "oldHeader": "Mineração de blocos de Bitcoin",
+    "intro": "A mineração tradicional de Bitcoin exige milhões em hardware e eletricidade suficiente para abastecer uma cidade pequena. O ZELD muda o jogo.",
+    "oldHeader": "Mineração de blocos Bitcoin",
     "newHeader": "Mineração de transações ZELD",
     "rows": [
       [
         "$500K - $10M em hardware",
-        "O seu portátil"
+        "Seu notebook"
       ],
       [
-        "Contas de eletricidade enormes",
+        "Contas de luz astronômicas",
         "Quase nada"
       ],
       [
@@ -85,12 +85,12 @@
       ],
       [
         "Competir contra gigantes",
-        "Compita consigo mesmo"
+        "Compita com você mesmo"
       ]
     ]
   },
   "hallOfFame": {
-    "label": "Galeria da Fama",
+    "label": "Hall da Fama",
     "title": "Descobertas mais raras",
     "leadingZeros": "{count} zeros iniciais",
     "recordSuffix": "— RECORDE DE TODOS OS TEMPOS 🏆",

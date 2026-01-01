@@ -4,8 +4,8 @@
     "description": "Răspunsuri despre vânătoarea tranzacțiilor Bitcoin cu modele hash rare."
   },
   "badge": "FAQ",
-  "heading": "Întrebări Frecvente",
-  "intro": "Tot ce trebuie să știți despre vânătoarea tranzacțiilor Bitcoin cu modele hash rare.",
+  "heading": "Întrebări frecvente",
+  "intro": "Tot ce trebuie să știi despre vânătoarea tranzacțiilor Bitcoin cu modele hash rare.",
   "huntIsOn": "Vânătoarea a început.",
   "categories": {
     "protocol": "Protocol",
@@ -14,11 +14,11 @@
   "protocol": {
     "howToGetZeld": {
       "q": "Cum obțin ZELD?",
-      "a": "Cel mai simplu mod este să folosești ZeldWallet direct pe <site>zeldhash.com</site> — este un portofel bazat pe browser care îți permite să vânezi tranzacții rare fără nicio configurare. Creează sau conectează un portofel și începe să minezi. Pentru dezvoltatorii care vor să construiască propria soluție de batere, oferim SDK-uri open-source în Rust, TypeScript și Python disponibile pe <github>GitHub</github>."
+      "a": "Cel mai simplu mod este să folosești ZeldWallet direct pe <site>zeldhash.com</site> — e un portofel în browser care îți permite să vânezi tranzacții rare fără nicio configurare. Creează sau conectează un portofel și începe să minezi. Pentru dezvoltatorii care vor să-și construiască propria soluție de mintare, oferim SDK-uri open-source în Rust, TypeScript și Python, disponibile pe <github>GitHub</github>."
     },
     "whatIsZeldHash": {
       "q": "Ce este ZeldHash?",
-      "a": "ZeldHash este un protocol care recompensează utilizatorii Bitcoin care descoperă sau creează tranzacții cu modele hash rare — în special, hash-uri care încep cu mai multe zerouri. Gândiți-vă la el ca la o vânătoare de comori pe blockchain-ul Bitcoin."
+      "a": "ZeldHash este un protocol care recompensează utilizatorii Bitcoin care descoperă sau creează tranzacții cu modele hash rare — în special, hash-uri care încep cu mai multe zerouri. Gândește-te la el ca la o vânătoare de comori pe blockchain-ul Bitcoin."
     },
     "whyName": {
       "q": "De ce numele \"ZeldHash\"?",
@@ -28,11 +28,11 @@
     "whatIsHash": {
       "q": "Ce este un hash?",
       "a1": "Un hash este ca o amprentă digitală. Este un identificator unic generat din orice date — fie că este o imagine, un document sau o tranzacție Bitcoin. Fiecare hash este un șir de 64 de caractere hexazecimale.",
-      "a2": "Puteți vedea exemple de hash-uri pe <mempool>mempool.space</mempool>."
+      "a2": "Poți vedea exemple de hash-uri pe <mempool>mempool.space</mempool>."
     },
     "bitcoinRelation": {
       "q": "Cum se leagă de Bitcoin?",
-      "a": "Fiecare bloc Bitcoin are un hash, și fiecare tranzacție din bloc are propriul hash numit ID tranzacție (txid). Dacă v-ați uitat la hash-uri de bloc, poate ați observat că încep cu multe zerouri. Acesta este rezultatul mineritului: minerii calculează repetat hash-uri până găsesc unul cu suficiente zerouri la început."
+      "a": "Fiecare bloc Bitcoin are un hash, iar fiecare tranzacție din bloc are propriul hash, numit ID de tranzacție (txid). Dacă te-ai uitat la hash-uri de bloc, poate ai observat că încep cu multe zerouri. Asta e rezultatul minării: minerii calculează repetat hash-uri până găsesc unul cu suficiente zerouri la început."
     },
     "rareTxHash": {
       "q": "Ce face un hash de tranzacție \"rar\"?",
@@ -40,11 +40,11 @@
     },
     "huntHow": {
       "q": "Cum vânez tranzacții rare?",
-      "a": "Ca minerii. Adăugați date aleatorii la tranzacția dvs. și calculați hash-uri până găsiți unul care începe cu zerouri. Poate dura multe încercări, dar când reușiți, ați descoperit ceva rar."
+      "a": "Ca minerii. Adaugă date aleatorii la tranzacția ta și calculează hash-uri până găsești unul care începe cu zerouri. Poate dura multe încercări, dar când reușești, ai descoperit ceva rar."
     },
     "whatIsZeld": {
       "q": "Ce este ZELD?",
-      "a": "ZELD este token-ul pe care îl câștigați când găsiți sau creați o tranzacție Bitcoin cu un hash care începe cu cel puțin 6 zerouri. Cu cât descoperirea dvs. este mai rară (mai multe zerouri), cu atât mai mult ZELD câștigați."
+      "a": "ZELD este tokenul pe care îl câștigi când găsești sau creezi o tranzacție Bitcoin cu un hash care începe cu cel puțin 6 zerouri. Cu cât descoperirea ta e mai rară (mai multe zerouri), cu atât câștigi mai mult ZELD."
     },
     "inCirculation": {
       "q": "Sunt deja token-uri ZELD în circulație?",
@@ -64,7 +64,7 @@
     },
     "startHunting": {
       "q": "Cum încep vânătoarea?",
-      "a": "Vizitați <site>zeldhash.com</site> și începeți căutarea. Fiecare tranzacție este o șansă de a descoperi ceva rar."
+      "a": "Vizitează <site>zeldhash.com</site> și începe aventura. Fiecare tranzacție e o șansă să descoperi ceva rar."
     }
   },
   "wallet": {
@@ -72,107 +72,107 @@
       "title": "General",
       "security": {
         "q": "Sunt criptomonedele mele cu adevărat sigure în acest portofel? Unde sunt stocate cheile mele private?",
-        "a": "Da, fondurile dvs. sunt la fel de sigure ca securitatea browser-ului. ZeldWallet stochează cheile private local în IndexedDB al browser-ului, criptate cu AES-256-GCM. Dacă setați o parolă, cheile sunt protejate folosind derivarea cheii PBKDF2. Cheile private nu părăsesc niciodată dispozitivul și nu sunt trimise niciunui server. Cu toate acestea, creați întotdeauna o copie de rezervă a frazei mnemonice — dacă pierdeți accesul la browser sau dispozitiv fără backup, fondurile sunt pierdute pentru totdeauna."
+        "a": "Da, fondurile tale sunt la fel de sigure ca securitatea browserului tău. ZeldWallet îți stochează cheile private local, în IndexedDB-ul browserului, criptate cu AES-256-GCM. Dacă setezi o parolă, cheile sunt protejate folosind derivarea cheii PBKDF2, ceea ce le face extrem de greu de spart. Cheile private nu părăsesc niciodată dispozitivul și nu sunt trimise către niciun server. Totuși, fă întotdeauna o copie de rezervă a frazei mnemonice — dacă pierzi accesul la browser sau la dispozitiv fără o copie de rezervă, fondurile se pierd pentru totdeauna."
       },
       "addressDifference": {
-        "q": "Care este diferența dintre adresa de \"Plată\" și adresa \"Ordinals\"?",
-        "a": "Adresa de Plată este folosită pentru tranzacții Bitcoin obișnuite — trimitere și primire BTC. Adresa Ordinals (adresă Taproot) este unde primiți token-uri ZELD când vânați cu succes o tranzacție rară. Token-urile ZELD sunt atașate primei ieșiri a tranzacției, care este întotdeauna trimisă la adresa Ordinals."
+        "q": "Care este diferența dintre adresa de „Plată” și adresa „Ordinals”?",
+        "a": "Adresa de plată este folosită pentru tranzacții Bitcoin obișnuite — trimiți și primești BTC. Adresa Ordinals (o adresă Taproot) este unde primești tokeni ZELD când vânezi cu succes o tranzacție rară. Tokenii ZELD sunt atașați primei ieșiri a tranzacției, care este întotdeauna trimisă la adresa Ordinals."
       },
       "twoAddresses": {
         "q": "De ce am două adrese Bitcoin diferite?",
-        "a": "Aceasta urmează cele mai bune practici Bitcoin pentru separarea diferitelor tipuri de active. Adresa de Plată gestionează BTC-ul pentru plata comisioanelor, în timp ce adresa Ordinals primește și păstrează token-urile ZELD. Această separare previne cheltuirea accidentală a UTXO-urilor care conțin ZELD la efectuarea plăților BTC obișnuite."
+        "a": "Asta urmează cele mai bune practici Bitcoin pentru separarea diferitelor tipuri de active. Adresa de plată gestionează BTC-ul pentru plata comisioanelor, în timp ce adresa Ordinals primește și păstrează tokenii ZELD. Separarea asta previne cheltuirea accidentală a UTXO-urilor care conțin ZELD atunci când faci plăți BTC obișnuite."
       },
       "mobile": {
         "q": "Pot folosi ZeldWallet pe telefon?",
-        "a": "Da, ZeldWallet funcționează în orice browser mobil modern. Cu toate acestea, performanța mineritului pe dispozitive mobile este semnificativ mai mică decât pe computere desktop din cauza puterii limitate a CPU și lipsei accelerării GPU. Pentru vânătoare serioasă, se recomandă un computer desktop sau laptop."
+        "a": "Da, ZeldWallet funcționează în orice browser mobil modern. Totuși, performanța minării pe dispozitive mobile e semnificativ mai mică decât pe desktop din cauza puterii limitate a CPU-ului și a lipsei accelerării GPU. Pentru vânătoare serioasă, e recomandat un computer desktop sau un laptop."
       }
     },
     "hunting": {
       "title": "Mintare / Vânătoare",
       "gpuVsCpu": {
-        "q": "Care este diferența între mineritul cu sau fără GPU? Va deteriora computerul meu?",
-        "a": "Mineritul GPU folosește tehnologia WebGPU pentru a valorifica placa grafică pentru calcule hash mult mai rapide — de obicei 10-100x mai rapid decât mineritul doar cu CPU. Mineritul CPU folosește Web Workers și este mai lent, dar funcționează pe toate dispozitivele. Niciunul nu va deteriora computerul. Hardware-ul modern este conceput pentru sarcini de lucru susținute. Browser-ul gestionează resursele responsabil și puteți opri mineritul oricând."
+        "q": "Care este diferența între minarea cu sau fără GPU? Îmi poate afecta computerul?",
+        "a": "Minarea cu GPU folosește tehnologia WebGPU pentru a valorifica placa grafică și pentru calcule hash mult mai rapide — de obicei de 10–100× mai rapid decât minarea doar cu CPU. Minarea cu CPU folosește Web Workers și e mai lentă, dar funcționează pe toate dispozitivele. Niciuna nu îți va deteriora computerul: hardware-ul modern e conceput pentru sarcini susținute. Browserul gestionează resursele responsabil și poți opri minarea oricând."
       },
       "miningTime": {
         "q": "Cât durează să minezi un ZELD?",
-        "a": "Depinde de hardware și noroc. Găsirea unui hash de tranzacție cu 6 zerouri la început are o șansă de aproximativ 1 la 16 milioane pe încercare. Cu un GPU modern care realizează milioane de hash-uri pe secundă, poate dura minute până la ore. Doar cu CPU, poate dura ore până la zile. Există și aleatoriu — puteți avea noroc repede sau poate dura mai mult decât media."
+        "a": "Depinde de hardware și de noroc. Găsirea unui hash de tranzacție cu 6 zerouri la început are o șansă de aproximativ 1 la 16 milioane pe încercare. Cu un GPU modern care face milioane de hash-uri pe secundă, poate dura de la minute la ore. Doar cu CPU, poate dura de la ore la zile. Intervine și un element de șansă — poți avea noroc repede sau poate dura mai mult decât media."
       },
       "keepRunning": {
-        "q": "Trebuie să țin computerul pornit în timpul mineritului?",
-        "a": "Da. Mineritul are loc în browser, așa că tab-ul trebuie să rămână deschis și activ. Dacă închideți browser-ul sau navigați în altă parte, mineritul se oprește. Progresul (hash-urile procesate) nu este salvat — veți începe de la zero când reluați. Cu toate acestea, dacă vă opriți în mijlocul mineritului, niciun fond nu este în pericol; tranzacția este transmisă doar după ce se găsește și se semnează un hash valid."
+        "q": "Trebuie să țin computerul pornit în timpul minării?",
+        "a": "Da. Minarea are loc în browser, așa că fila trebuie să rămână deschisă și activă. Dacă închizi browserul sau navighezi în altă parte, minarea se oprește. Progresul (hash-urile procesate) nu se salvează — vei începe de la zero când revii. Totuși, dacă te oprești la mijloc, niciun fond nu e în pericol; tranzacția este transmisă doar după ce se găsește și se semnează un hash valid."
       }
     },
     "transactions": {
-      "title": "Tranzacții și Comisioane",
+      "title": "Tranzacții și comisioane",
       "feeSelection": {
         "q": "Cum aleg comisioanele de tranzacție? Care este diferența între \"Lent\", \"Mediu\" și \"Rapid\"?",
         "a1": "ZeldWallet obține recomandări de comisioane în timp real de la mempool.space:",
-        "a2": "Lent: Comision mai mic, poate dura 1+ ore pentru confirmare. Mediu: Comision echilibrat, de obicei confirmat în 30-60 minute. Rapid: Comision mai mare, de obicei confirmat în următoarele 1-2 blocuri (~10-20 minute).",
-        "a3": "Puteți seta și o rată de comision personalizată în sats/vB. Comisioane mai mari înseamnă confirmare mai rapidă, dar costă mai mult BTC."
+        "a2": "Lent: Comision mai mic, poate dura 1+ ore pentru confirmare. Mediu: Comision echilibrat, de obicei confirmat în 30–60 de minute. Rapid: Comision mai mare, de obicei confirmat în următoarele 1–2 blocuri (~10–20 de minute).",
+        "a3": "Poți seta și o rată de comision personalizată în sats/vB. Comisioane mai mari înseamnă confirmare mai rapidă, dar costă mai mult BTC."
       },
       "minimumBtc": {
-        "q": "De ce trebuie să am o sumă minimă de BTC pentru a începe mineritul?",
-        "a1": "Fiecare tranzacție Bitcoin necesită un comision, iar fiecare ieșire are nevoie de o valoare minimă (\"limita de praf\"). ZeldWallet necesită aproximativ 2.000+ satoshi pentru a acoperi:",
+        "q": "De ce trebuie să am o sumă minimă de BTC pentru a începe minarea?",
+        "a1": "Fiecare tranzacție Bitcoin necesită un comision, iar fiecare ieșire are nevoie de o valoare minimă (limita „dust”). ZeldWallet necesită aproximativ 2.000+ satoshi pentru a acoperi:",
         "a2": "330 sats pentru suma de praf pentru ieșirea ZELD către adresa Ordinals, și ~1.500+ sats pentru comisionul de tranzacție în funcție de condițiile actuale ale rețelei.",
-        "a3": "Fără suficient BTC, nu puteți crea o tranzacție validă."
+        "a3": "Fără suficient BTC, nu poți crea o tranzacție validă."
       },
       "sendZeld": {
         "q": "Cum trimit ZELD altcuiva?",
-        "a": "În ZeldWallet, mergeți la secțiunea Vânătoare și bifați \"Trimite ZELD\". Introduceți adresa Bitcoin a destinatarului și suma de ZELD pe care doriți să o trimiteți. Transferul va fi inclus în următoarea tranzacție de vânătoare — ZELD-ul va fi trimis când se găsește hash-ul rar și tranzacția este transmisă."
+        "a": "În ZeldWallet, mergi la secțiunea Vânătoare și bifează „Trimite ZELD”. Introdu adresa Bitcoin a destinatarului și suma de ZELD pe care vrei să o trimiți. Transferul va fi inclus în următoarea tranzacție de vânătoare — ZELD-ul va fi trimis când se găsește hash-ul rar și tranzacția este transmisă."
       },
       "balanceIncreased": {
         "q": "Tocmai am trimis ZELD, dar soldul meu a crescut!?",
-        "a": "Este normal — și vești grozave! Când trimiteți ZELD prin ZeldWallet, nu faceți doar un transfer, vânați și un hash de tranzacție rar. Dacă tranzacția pe care o transmiteți are 6 sau mai multe zerouri la început, câștigați o recompensă ZELD (până la 4.096 ZELD pentru cele mai rare descoperiri). Deci dacă ați trimis 100 ZELD dar ați primit 256 ZELD recompensă, soldul net a crescut de fapt cu 156 ZELD. Fiecare tranzacție este o oportunitate!"
+        "a": "Este normal — și vești grozave! Când trimiți ZELD prin ZeldWallet, nu faci doar un transfer: vânezi și un hash de tranzacție rar. Dacă tranzacția pe care o transmiți are 6 sau mai multe zerouri la început, câștigi o recompensă ZELD (până la 4.096 ZELD pentru cele mai rare descoperiri). Deci dacă ai trimis 100 ZELD, dar ai primit 256 ZELD recompensă, soldul net a crescut cu 156 ZELD. Fiecare tranzacție e o oportunitate!"
       },
       "closeBrowser": {
-        "q": "Ce se întâmplă dacă închid browser-ul în timpul unei tranzacții?",
-        "a1": "Dacă închideți în timpul mineritului: Nimic nu se pierde. Mineritul se oprește și puteți relua mai târziu.",
-        "a2": "Dacă închideți în timpul semnării/transmiterii: Dacă tranzacția a fost deja semnată și transmisă în rețea, va fi confirmată normal. Dacă nu a fost încă transmisă, nimic nu a fost trimis și trebuie să minați din nou."
+        "q": "Ce se întâmplă dacă închid browserul în timpul unei tranzacții?",
+        "a1": "Dacă închizi în timpul minării: Nimic nu se pierde. Minarea se oprește și poți relua mai târziu.",
+        "a2": "Dacă închizi în timpul semnării/transmiterii: dacă tranzacția a fost deja semnată și transmisă în rețea, va fi confirmată normal. Dacă nu a fost încă transmisă, nu s-a trimis nimic și trebuie să minezi din nou."
       }
     },
     "security": {
-      "title": "Securitate și Backup",
+      "title": "Securitate și copii de rezervă",
       "backupImportance": {
         "q": "Ce este un backup și de ce este atât de important să îl creez?",
-        "a": "Backup-ul este fraza dvs. mnemonică de 12 sau 24 de cuvinte (fraza seed). Această frază poate regenera toate cheile private și poate recupera întregul portofel pe orice dispozitiv sau aplicație de portofel compatibilă. Fără acest backup, dacă pierdeți accesul la browser (date șterse, dispozitiv nou, browser care se blochează), fondurile sunt pierdute permanent. Scrieți-o pe hârtie și păstrați-o în siguranță — nu o salvați niciodată digital și nu o împărtășiți cu nimeni."
+        "a": "Copia de rezervă este fraza ta mnemonică de 12 sau 24 de cuvinte (seed phrase). Această frază poate regenera toate cheile private și poate recupera întregul portofel pe orice dispozitiv sau în orice aplicație compatibilă. Fără această copie de rezervă, dacă pierzi accesul la browser (date șterse, dispozitiv nou, browser care se blochează), fondurile se pierd definitiv. Scrie-o pe hârtie și păstrează-o în siguranță — nu o salva niciodată digital și nu o împărtăși cu nimeni."
       },
       "forgotPassword": {
         "q": "Dacă uit parola, pierd totul?",
-        "a": "Nu, dacă aveți fraza mnemonică de backup. Puteți șterge stocarea ZeldWallet și restaura portofelul folosind mnemonică. Parola protejează doar stocarea locală criptată — nu este legată de blockchain. Cu toate acestea, dacă uitați parola ȘI nu aveți backup-ul mnemonicei, atunci da, fondurile sunt pierdute."
+        "a": "Nu, dacă ai copia de rezervă a frazei mnemonice. Poți șterge stocarea ZeldWallet și restaura portofelul folosind fraza. Parola protejează doar stocarea locală criptată — nu este legată de blockchain. Totuși, dacă uiți parola ȘI nu ai copia de rezervă, atunci da, fondurile se pierd."
       },
       "mnemonicPhrase": {
         "q": "Ce este o \"frază mnemonică\" și pot restaura portofelul din altă aplicație?",
-        "a": "Fraza mnemonică (numită și frază seed sau frază de recuperare) este o listă de 12 sau 24 de cuvinte care reprezintă cheia privată principală conform standardului BIP39. Da, puteți restaura o mnemonică ZeldWallet în alte portofele compatibile precum Xverse, Leather, Sparrow sau orice portofel compatibil BIP39/BIP84/BIP86. Bitcoin și ZELD vor apărea la aceleași adrese."
+        "a": "Fraza mnemonică (numită și seed phrase sau frază de recuperare) este o listă de 12 sau 24 de cuvinte care reprezintă cheia privată principală conform standardului BIP39. Da, poți restaura o mnemonică ZeldWallet în alte portofele compatibile precum Xverse, Leather, Sparrow sau orice portofel compatibil BIP39/BIP84/BIP86. Bitcoin și ZELD vor apărea la aceleași adrese."
       },
       "lostDevice": {
         "q": "Poate cineva să acceseze portofelul meu dacă îmi pierd computerul?",
-        "a": "Depinde de configurarea securității. Dacă ați setat o parolă puternică, un atacator ar trebui să spargă criptarea (foarte dificil cu o parolă bună). Fără parolă, cineva cu acces la datele browser-ului ar putea accesa portofelul. Pentru securitate maximă: folosiți întotdeauna o parolă puternică, iar dacă dispozitivul este pierdut/furat, restaurați portofelul în altă parte folosind mnemonică și transferați fondurile imediat."
+        "a": "Depinde de configurarea ta de securitate. Dacă ai setat o parolă puternică, un atacator ar trebui să spargă criptarea (foarte dificil cu o parolă bună). Fără parolă, cineva cu acces la datele browserului ar putea accesa portofelul. Pentru securitate maximă: folosește o parolă puternică, iar dacă dispozitivul e pierdut/furat, restaurează portofelul în altă parte folosind fraza mnemonică și mută fondurile imediat."
       }
     },
     "external": {
-      "title": "Portofele Externe",
+      "title": "Portofele externe",
       "connectExternal": {
         "q": "Pot conecta portofelul meu Xverse sau Leather în loc să creez un cont nou?",
-        "a": "Da! ZeldWallet suportă conectarea portofelelor externe inclusiv Xverse, Leather și Magic Eden. Click pe \"Conectează Portofel\" și alegeți portofelul instalat. Extensia portofelului vă va cere să aprobați conexiunea. Aceasta vă permite să vânați ZELD folosind adresele portofelului existent fără a expune cheile private către ZeldWallet."
+        "a": "Da! ZeldWallet suportă conectarea portofelelor externe, inclusiv Xverse, Leather și Magic Eden. Apasă pe „Conectează portofelul” și alege portofelul instalat. Extensia portofelului îți va cere să aprobi conexiunea. Asta îți permite să vânezi ZELD folosind adresele portofelului existent, fără să expui cheile private către ZeldWallet."
       },
       "externalVsDirect": {
         "q": "Care este diferența între utilizarea ZeldWallet direct sau prin portofel extern precum Xverse?",
-        "a1": "Stocarea cheilor: ZeldWallet Direct stochează chei criptate în browser, Portofelul Extern stochează chei în extensie/hardware.",
-        "a2": "Configurare: ZeldWallet Direct necesită creare sau restaurare în browser, Portofelul Extern doar conectează portofelul existent.",
-        "a3": "Semnare: ZeldWallet Direct semnează automat după deblocare, Portofelul Extern afișează popup de aprobare pentru fiecare acțiune.",
-        "a4": "Portabilitate: ZeldWallet Direct este legat de browser/dispozitiv, Portofelul Extern funcționează pe site-uri.",
-        "a5": "Portofel hardware: Nesuportat în ZeldWallet Direct, Suportat prin extensie în Portofelul Extern.",
-        "a6": "Folosiți portofel extern dacă doriți suport pentru portofel hardware, aveți deja fonduri acolo sau preferați să păstrați cheile într-o extensie dedicată. Folosiți ZeldWallet direct pentru o experiență mai simplă și completă."
+        "a1": "Stocarea cheilor: ZeldWallet Direct îți stochează cheile criptate în browser; un portofel extern le stochează în extensie/hardware.",
+        "a2": "Configurare: ZeldWallet Direct necesită creare sau restaurare în browser; un portofel extern doar se conectează.",
+        "a3": "Semnare: ZeldWallet Direct semnează automat după deblocare; un portofel extern afișează o fereastră pop-up de aprobare pentru fiecare acțiune.",
+        "a4": "Portabilitate: ZeldWallet Direct e legat de browser/dispozitiv; un portofel extern funcționează pe mai multe site-uri.",
+        "a5": "Portofel hardware: Nu e suportat în ZeldWallet Direct; e suportat prin extensie într-un portofel extern.",
+        "a6": "Folosește un portofel extern dacă vrei suport pentru portofel hardware, ai deja fonduri acolo sau preferi să păstrezi cheile într-o extensie dedicată. Folosește ZeldWallet direct pentru o experiență mai simplă, „all-in-one”."
       }
     }
   },
   "ama": {
     "aiPowered": "Asistent AI",
-    "placeholder": "Întrebați despre ZeldHash...",
+    "placeholder": "Întreabă orice despre ZeldHash...",
     "submit": "Trimite",
-    "helperText": "Întrebări despre ZeldHash, token-uri ZELD, tranzacții rare sau concepte blockchain.",
-    "genericError": "A apărut o eroare. Vă rugăm să încercați din nou.",
-    "connectionError": "Eroare de conexiune. Verificați conexiunea la internet.",
+    "helperText": "Întreabă despre ZeldHash, tokenii ZELD, tranzacții rare sau concepte blockchain.",
+    "genericError": "A apărut o eroare. Te rugăm să încerci din nou.",
+    "connectionError": "Eroare de conexiune. Verifică internetul și încearcă din nou.",
     "aiResponse": "Răspuns AI"
   }
 }

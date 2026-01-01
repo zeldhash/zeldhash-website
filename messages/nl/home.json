@@ -43,13 +43,13 @@
       {
         "num": "02",
         "title": "Nullen zijn zeldzaam",
-        "desc": "6 nullen vinden? 1 op 16 miljoen kans. 12 nullen? 1 op 281 biljoen. Dit zijn schatten.",
+        "desc": "6 nullen vinden: 1 op 16 miljoen. 12 nullen: 1 op 281 biljoen. Dit zijn schatten.",
         "icon": "💎"
       },
       {
         "num": "03",
         "title": "Jagen of ontdekken",
-        "desc": "Mine nieuwe zeldzame transacties met onze tools, of controleer of je oude transacties al zeldzaam zijn.",
+        "desc": "Creëer nieuwe zeldzame transacties met onze tools, of controleer of je oude transacties al zeldzaam zijn.",
         "icon": "🎯"
       },
       {
@@ -62,10 +62,10 @@
   },
   "comparison": {
     "label": "Waarom het ertoe doet",
-    "title": "Mining voor iedereen",
+    "title": "Minen voor iedereen",
     "intro": "Traditionele Bitcoin-mining vereist miljoenen aan hardware en genoeg elektriciteit om een kleine stad van stroom te voorzien. ZELD verandert het spel.",
     "oldHeader": "Bitcoin-blokmining",
-    "newHeader": "ZELD-transactiemining",
+    "newHeader": "ZELD-transactieminen",
     "rows": [
       [
         "$500K - $10M hardware",
@@ -85,13 +85,13 @@
       ],
       [
         "Concurreren met giganten",
-        "Concurreer met jezelf"
+        "Concurreer alleen met jezelf"
       ]
     ]
   },
   "hallOfFame": {
     "label": "Eregalerij",
-    "title": "Zeldzaamste Ontdekkingen",
+    "title": "Zeldzaamste ontdekkingen",
     "leadingZeros": "{count} leidende nullen",
     "recordSuffix": "— RECORD ALLER TIJDEN 🏆",
     "tokenLabel": "ZELD"

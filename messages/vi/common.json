@@ -1,7 +1,7 @@
 {
   "siteTitle": "ZeldHash",
   "siteDescription": "Săn lùng các giao dịch Bitcoin hiếm nhất. Tìm ID giao dịch bắt đầu bằng 000000... và nhận token ZELD. 100% phi tập trung, không premine, không VC.",
-  "tagline": "Cuộc săn bắt đầu",
+  "tagline": "Cuộc săn đã bắt đầu",
   "logoAlt": "Logo ZeldHash",
   "nav": {
     "hunt": "Săn",
@@ -10,7 +10,7 @@
     "zeldai": "ZeldAI",
     "github": "GitHub",
     "whitepaper": "Sách trắng",
-    "toggleMenu": "Chuyển đổi menu điều hướng",
+    "toggleMenu": "Mở/đóng menu điều hướng",
     "openNav": "Mở điều hướng"
   },
   "footer": {
@@ -28,19 +28,19 @@
     "es": "ES"
   },
   "comingSoon": {
-    "title": "Sắp Ra Mắt",
-    "description": "Tính năng này đang được phát triển. Hãy theo dõi cập nhật!",
-    "status": "Đang Phát Triển"
+    "title": "Sắp ra mắt",
+    "description": "Tính năng này đang được phát triển. Hãy theo dõi để cập nhật!",
+    "status": "Đang phát triển"
   },
   "wallet": {
     "description": "Ví Bitcoin an toàn trong trình duyệt của bạn. Tạo, quản lý và ký giao dịch trực tiếp từ ZeldHash.",
     "subtitle": "Săn, gửi và nhận ZELD trực tiếp từ trình duyệt của bạn.",
-    "securityNote": "Mã hóa AES-256-GCM • Tiêu chuẩn BIP32/39/84/86 • Lưu trữ cục bộ trong trình duyệt của bạn",
+    "securityNote": "Mã hóa AES-256-GCM • Tiêu chuẩn BIP32/39/84/86 • Lưu cục bộ trong trình duyệt",
     "titlePrefix": "Hunt",
     "titleSuffix": " Wallet",
     "askZeldai": {
       "title": "Cần trợ giúp?",
-      "subtitle": "Hỏi ZeldAI bất cứ điều gì về ví hoặc ZeldHash",
+      "subtitle": "Hỏi ZeldAI bất kỳ điều gì về ví hoặc ZeldHash",
       "askButton": "Hỏi ZeldAI"
     }
   },
@@ -49,14 +49,14 @@
     "metaTitle": "Khám phá ZELD - ZeldHash",
     "metaDescription": "Khám phá các phần thưởng ZeldHash mới nhất và tìm kiếm địa chỉ, khối hoặc giao dịch.",
     "searchLabel": "Tìm kiếm trong trình khám phá ZeldHash",
-    "searchPlaceholder": "Nhập địa chỉ, chiều cao khối hoặc mã hash giao dịch",
+    "searchPlaceholder": "Nhập địa chỉ, chiều cao khối hoặc hash giao dịch",
     "searchButton": "Tìm kiếm",
-    "searchHelp": "Nhập địa chỉ Bitcoin, chiều cao khối hoặc mã hash giao dịch.",
-    "searchError": "Đầu vào không hợp lệ. Vui lòng nhập địa chỉ hợp lệ, chiều cao khối hoặc mã hash giao dịch.",
+    "searchHelp": "Nhập địa chỉ Bitcoin, chiều cao khối hoặc hash giao dịch.",
+    "searchError": "Dữ liệu không hợp lệ. Vui lòng nhập địa chỉ, chiều cao khối hoặc hash giao dịch hợp lệ.",
     "latestRewards": "Phần thưởng mới nhất",
-    "noRewards": "Chưa có phần thưởng. Hãy quay lại sau.",
-    "loadError": "Không thể tải dữ liệu. Vui lòng thử lại sau.",
-    "tooManyUtxos": "Địa chỉ này có quá nhiều UTXO để hiển thị (tối đa: 500).",
+    "noRewards": "Chưa có phần thưởng nào. Hãy quay lại sau.",
+    "loadError": "Không thể tải dữ liệu ngay lúc này. Vui lòng thử lại sau.",
+    "tooManyUtxos": "Địa chỉ này có quá nhiều UTXO để hiển thị (tối đa 500).",
     "block": "Khối",
     "vout": "vout",
     "page": "Trang",
@@ -76,10 +76,10 @@
     "blockStats": "Thống kê khối",
     "rewardCount": "Phần thưởng",
     "totalReward": "Tổng phần thưởng",
-    "maxZeroCount": "Số 0 tối đa",
+    "maxZeroCount": "Số 0 nhiều nhất",
     "newUtxoCount": "UTXOs mới",
     "utxoSpentCount": "UTXOs đã chi",
-    "nicestTxid": "Giao dịch tốt nhất",
+    "nicestTxid": "Giao dịch “đẹp” nhất",
     "leadingZerosLabel": "{count} số 0 đầu",
     "blockRewards": "Phần thưởng khối",
     "noBlockRewards": "Không tìm thấy phần thưởng trong khối này.",

@@ -1,14 +1,14 @@
 {
   "meta": {
-    "title": "ZeldHash - Caccia alle Transazioni Bitcoin Rare",
+    "title": "ZeldHash - Caccia alle transazioni Bitcoin rare",
     "description": "Caccia alle transazioni Bitcoin più rare. Trova ID di transazione che iniziano con 000000... e guadagna token ZELD."
   },
   "hero": {
-    "titleLine1": "Caccia alle Transazioni",
-    "titleLine2": "Bitcoin Più Rare",
+    "titleLine1": "Caccia alle transazioni",
+    "titleLine2": "Bitcoin più rare",
     "subtitleBeforeZeros": "Alcune transazioni Bitcoin sono estremamente rare — il loro ID inizia con",
     "subtitleAfterZeros": "Trovale e guadagna token {token}.",
-    "tagline": "100% Decentralizzato · Nessun premine · Nessun VC · Solo matematica.",
+    "tagline": "100% decentralizzato · Nessun premine · Nessun VC · Solo matematica.",
     "cta": {
       "hunt": {
         "title": "Inizia la caccia",
@@ -32,7 +32,7 @@
   },
   "howItWorks": {
     "label": "Come funziona",
-    "title": "La Caccia in 60 Secondi",
+    "title": "La caccia in 60 secondi",
     "steps": [
       {
         "num": "01",
@@ -43,7 +43,7 @@
       {
         "num": "02",
         "title": "Gli zeri sono rari",
-        "desc": "Trovare 6 zeri? 1 possibilità su 16 milioni. 12 zeri? 1 su 281 mila miliardi. Questi sono tesori.",
+        "desc": "Trovare 6 zeri: 1 possibilità su 16 milioni. 12 zeri: 1 su 281 mila miliardi. Questi sono tesori.",
         "icon": "💎"
       },
       {
@@ -62,13 +62,13 @@
   },
   "comparison": {
     "label": "Perché è importante",
-    "title": "Mining per Tutti",
+    "title": "Mining per tutti",
     "intro": "Il mining tradizionale di Bitcoin richiede milioni in hardware e abbastanza elettricità per alimentare una piccola città. ZELD cambia le regole del gioco.",
-    "oldHeader": "Mining di Blocchi Bitcoin",
-    "newHeader": "Mining di Transazioni ZELD",
+    "oldHeader": "Mining dei blocchi Bitcoin",
+    "newHeader": "Mining delle transazioni ZELD",
     "rows": [
       [
-        "Hardware da $500K - $10M",
+        "$500K - $10M di hardware",
         "Il tuo laptop"
       ],
       [
@@ -91,7 +91,7 @@
   },
   "hallOfFame": {
     "label": "Sala della fama",
-    "title": "Le Scoperte Più Rare",
+    "title": "Le scoperte più rare",
     "leadingZeros": "{count} zeri iniziali",
     "recordSuffix": "— RECORD ASSOLUTO 🏆",
     "tokenLabel": "ZELD"

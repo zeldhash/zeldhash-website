@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "ZeldHash - Săn lùng giao dịch Bitcoin hiếm",
+    "title": "ZeldHash - Săn lùng các giao dịch Bitcoin hiếm",
     "description": "Săn lùng các giao dịch Bitcoin hiếm nhất. Tìm ID giao dịch bắt đầu bằng 000000... và nhận token ZELD."
   },
   "hero": {
@@ -8,7 +8,7 @@
     "titleLine2": "Bitcoin hiếm nhất",
     "subtitleBeforeZeros": "Một số giao dịch Bitcoin cực kỳ hiếm — ID của chúng bắt đầu bằng",
     "subtitleAfterZeros": "Tìm thấy chúng và nhận {token} token.",
-    "tagline": "100% Phi tập trung · Không premine · Không VC · Chỉ toán học.",
+    "tagline": "100% phi tập trung · Không premine · Không VC · Chỉ là toán học.",
     "cta": {
       "hunt": {
         "title": "Bắt đầu săn",
@@ -37,35 +37,35 @@
       {
         "num": "01",
         "title": "Mỗi giao dịch có một ID",
-        "desc": "Giống như số sê-ri. Hầu hết trông ngẫu nhiên: a7f3b2c1e9d8... Nhưng một số bắt đầu bằng số không.",
+        "desc": "Giống như số seri. Hầu hết trông ngẫu nhiên: a7f3b2c1e9d8... Nhưng một số bắt đầu bằng số 0.",
         "icon": "🔢"
       },
       {
         "num": "02",
         "title": "Số không rất hiếm",
-        "desc": "Tìm 6 số không? Xác suất 1 trên 16 triệu. 12 số không? 1 trên 281 nghìn tỷ. Đây là những kho báu.",
+        "desc": "Tìm 6 số 0? Xác suất 1 trên 16 triệu. 12 số 0? 1 trên 281 nghìn tỷ. Đây là những kho báu.",
         "icon": "💎"
       },
       {
         "num": "03",
         "title": "Săn hoặc khám phá",
-        "desc": "Tạo các giao dịch hiếm mới bằng công cụ của chúng tôi, hoặc kiểm tra xem các giao dịch cũ của bạn đã hiếm chưa.",
+        "desc": "Tạo các giao dịch hiếm mới bằng công cụ của chúng tôi, hoặc kiểm tra xem các giao dịch cũ của bạn có hiếm không.",
         "icon": "🎯"
       },
       {
         "num": "04",
         "title": "Nhận ZELD",
-        "desc": "Các giao dịch hiếm mang lại token ZELD. Chuyển chúng như Bitcoin. Không trung gian.",
+        "desc": "Các giao dịch hiếm mang lại token ZELD. Chuyển như Bitcoin. Không cần trung gian.",
         "icon": "🏆"
       }
     ]
   },
   "comparison": {
     "label": "Tại sao quan trọng",
-    "title": "Đào cho mọi người",
+    "title": "Đào cho tất cả mọi người",
     "intro": "Đào Bitcoin truyền thống cần hàng triệu đô la phần cứng và đủ điện để cung cấp cho một thành phố nhỏ. ZELD thay đổi cuộc chơi.",
-    "oldHeader": "Đào Khối Bitcoin",
-    "newHeader": "Đào Giao Dịch ZELD",
+    "oldHeader": "Đào khối Bitcoin",
+    "newHeader": "Đào giao dịch ZELD",
     "rows": [
       [
         "Phần cứng $500K - $10M",
@@ -92,13 +92,13 @@
   "hallOfFame": {
     "label": "Bảng vàng",
     "title": "Phát hiện hiếm nhất",
-    "leadingZeros": "{count} số không đầu",
+    "leadingZeros": "{count} số 0 đầu",
     "recordSuffix": "— KỶ LỤC MỌI THỜI ĐẠI 🏆",
     "tokenLabel": "ZELD"
   },
   "cta": {
     "title": "Sẵn sàng săn?",
-    "subtitle": "Tham gia cùng hàng nghìn thợ săn khám phá các giao dịch Bitcoin hiếm nhất.",
+    "subtitle": "Tham gia cùng hàng ngàn thợ săn khám phá các giao dịch Bitcoin hiếm nhất.",
     "startHunting": "Bắt đầu săn",
     "checkBalance": "Khám phá",
     "askZeldAI": "Hỏi ZeldAI"

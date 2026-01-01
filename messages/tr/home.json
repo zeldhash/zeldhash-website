@@ -8,24 +8,24 @@
     "titleLine2": "İşlemlerini Avlayın",
     "subtitleBeforeZeros": "Bazı Bitcoin işlemleri son derece nadirdir — kimlikleri şununla başlar:",
     "subtitleAfterZeros": "Onları bulun ve {token} token kazanın.",
-    "tagline": "100% Merkeziyetsiz · Ön madencilik yok · VC yok · Sadece matematik.",
+    "tagline": "%100 Merkeziyetsiz · Ön madencilik yok · Risk sermayesi yok · Sadece matematik.",
     "cta": {
       "hunt": {
         "title": "Avı başlat",
         "button": "Cüzdanı aç"
       },
       "explorer": {
-        "title": "Bakiyeni kontrol et",
+        "title": "Bakiyenizi kontrol edin",
         "button": "Keşfet"
       },
       "learn": {
-        "title": "Daha fazla öğren",
-        "button": "ZeldAI'ya sor"
+        "title": "Daha fazla öğrenin",
+        "button": "ZeldAI'ye sor"
       }
     }
   },
   "stats": {
-    "rareHashesFound": "Bulunan Nadir Hash Sayısı",
+    "rareHashesFound": "Bulunan Nadir Hash'ler",
     "zeldInCirculation": "Dolaşımdaki ZELD",
     "recordZeros": "Rekor Sıfırlar",
     "utxosTracked": "Takip Edilen UTXO'lar"
@@ -43,7 +43,7 @@
       {
         "num": "02",
         "title": "Sıfırlar nadirdir",
-        "desc": "6 sıfır bulmak? 16 milyonda 1 şans. 12 sıfır? 281 trilyonda 1. Bunlar hazinelerdir.",
+        "desc": "6 sıfır bulmak mı? 16 milyonda bir. 12 sıfır mı? 281 trilyonda bir. Bunlar birer hazine.",
         "icon": "💎"
       },
       {
@@ -55,7 +55,7 @@
       {
         "num": "04",
         "title": "ZELD kazan",
-        "desc": "Nadir işlemler ZELD token kazandırır. Bitcoin gibi transfer edin. Aracı yok.",
+        "desc": "Nadir işlemler ZELD token kazandırır. ZELD token'larını Bitcoin gibi transfer edin. Aracı yok.",
         "icon": "🏆"
       }
     ]
@@ -63,7 +63,7 @@
   "comparison": {
     "label": "Neden önemli",
     "title": "Herkes İçin Madencilik",
-    "intro": "Geleneksel Bitcoin madenciliği milyonlarca dolarlık donanım ve küçük bir şehri besleyecek kadar elektrik gerektirir. ZELD oyunu değiştiriyor.",
+    "intro": "Geleneksel Bitcoin madenciliği milyonlarca dolarlık donanım ve küçük bir şehri besleyecek kadar elektrik gerektirir. ZELD oyunun kurallarını değiştiriyor.",
     "oldHeader": "Bitcoin Blok Madenciliği",
     "newHeader": "ZELD İşlem Madenciliği",
     "rows": [
@@ -80,7 +80,7 @@
         "Herkes kazanabilir"
       ],
       [
-        "Madencilik havuzları kontrolünde",
+        "Madencilik havuzlarının kontrolünde",
         "%100 merkeziyetsiz"
       ],
       [
@@ -97,10 +97,10 @@
     "tokenLabel": "ZELD"
   },
   "cta": {
-    "title": "Ava hazır mısın?",
+    "title": "Ava hazır mısınız?",
     "subtitle": "Bitcoin'in en nadir işlemlerini keşfeden binlerce avcıya katılın.",
     "startHunting": "Avı başlat",
     "checkBalance": "Keşfet",
-    "askZeldAI": "ZeldAI'ya sor"
+    "askZeldAI": "ZeldAI'ye sor"
   }
 }

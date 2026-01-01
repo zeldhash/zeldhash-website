@@ -8,7 +8,7 @@
     "titleLine2": "bitcoinové transakce",
     "subtitleBeforeZeros": "Některé bitcoinové transakce jsou extrémně vzácné — jejich ID začíná na",
     "subtitleAfterZeros": "Najděte je a získejte tokeny {token}.",
-    "tagline": "100% Decentralizovaný · Bez premine · Bez VC · Jen matematika.",
+    "tagline": "100% decentralizováno · Bez předtěžby · Bez VC · Jen matematika.",
     "cta": {
       "hunt": {
         "title": "Zahájit lov",
@@ -43,19 +43,19 @@
       {
         "num": "02",
         "title": "Nuly jsou vzácné",
-        "desc": "Najít 6 nul? Šance 1 ku 16 milionům. 12 nul? 1 ku 281 bilionům. To jsou poklady.",
+        "desc": "Najít 6 nul? Šance 1 ku 16 milionům. 12 nul? 1 ku 281 bilionům. To jsou opravdové poklady.",
         "icon": "💎"
       },
       {
         "num": "03",
         "title": "Lovte nebo objevujte",
-        "desc": "Těžte nové vzácné transakce pomocí našich nástrojů, nebo zjistěte, zda vaše staré transakce jsou už vzácné.",
+        "desc": "Těžte nové vzácné transakce pomocí našich nástrojů, nebo zjistěte, zda jsou vaše staré transakce už vzácné.",
         "icon": "🎯"
       },
       {
         "num": "04",
         "title": "Získejte ZELD",
-        "desc": "Vzácné transakce přinášejí tokeny ZELD. Převádějte je jako Bitcoin. Bez prostředníků.",
+        "desc": "Vzácné transakce přinášejí tokeny ZELD. Převádějte je stejně jako Bitcoin. Bez prostředníků.",
         "icon": "🏆"
       }
     ]
@@ -63,12 +63,12 @@
   "comparison": {
     "label": "Proč na tom záleží",
     "title": "Těžba pro každého",
-    "intro": "Tradiční těžba Bitcoinu vyžaduje miliony za hardware a dost elektřiny na zásobení malého města. ZELD mění pravidla hry.",
+    "intro": "Tradiční těžba Bitcoinu vyžaduje miliony za hardware a tolik elektřiny, že by zásobila malé město. ZELD mění pravidla hry.",
     "oldHeader": "Těžba bitcoinových bloků",
     "newHeader": "Těžba transakcí ZELD",
     "rows": [
       [
-        "Hardware za $500K - $10M",
+        "Hardware za 500 tis. až 10 mil. USD",
         "Váš notebook"
       ],
       [
@@ -76,7 +76,7 @@
         "Téměř nic"
       ],
       [
-        "1 vítěz na blok",
+        "Jen 1 vítěz na blok",
         "Vyhrát může každý"
       ],
       [
@@ -84,7 +84,7 @@
         "100% decentralizováno"
       ],
       [
-        "Musíte soutěžit s giganty",
+        "Soutěž s průmyslovými giganty",
         "Soutěžíte sami se sebou"
       ]
     ]
@@ -98,7 +98,7 @@
   },
   "cta": {
     "title": "Připraveni na lov?",
-    "subtitle": "Připojte se k tisícům lovců objevujících nejvzácnější Bitcoin transakce.",
+    "subtitle": "Připojte se k tisícům lovců, kteří objevují nejvzácnější bitcoinové transakce.",
     "startHunting": "Zahájit lov",
     "checkBalance": "Prozkoumat",
     "askZeldAI": "Zeptat se ZeldAI"
