@@ -1,7 +1,7 @@
 import Link from 'next/link';
+import {Suspense, type ReactNode} from 'react';
 import {CTASection} from '@/components/home';
 import {Section, SectionTitle} from '@/components/ui';
-import type {ReactNode} from 'react';
 import {getTranslations} from 'next-intl/server';
 import {locales, type Locale} from '@/lib/i18n/routing';
 import {notFound} from 'next/navigation';
@@ -295,7 +295,9 @@ export default async function FAQPage({params}: Props) {
 
   return (
     <div className="w-full">
-      <ZeldAIHeader />
+      <Suspense fallback={null}>
+        <ZeldAIHeader />
+      </Suspense>
 
       <Section className="pt-12 pb-12">
         <SectionTitle title={t('heading')} className="mb-10" />

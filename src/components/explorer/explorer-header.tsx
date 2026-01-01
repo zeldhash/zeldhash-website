@@ -16,7 +16,10 @@ export function ExplorerHeader() {
   const router = useRouter();
   const locale = useLocale();
   const searchParams = useSearchParams();
-  const [query, setQuery] = useState("");
+  const initialQuery = searchParams.get("q");
+
+  // Initialize query from URL parameter to avoid setState in effect
+  const [query, setQuery] = useState(initialQuery ?? "");
   const [error, setError] = useState<string | null>(null);
   const hasProcessedInitialQuery = useRef(false);
 
@@ -50,16 +53,14 @@ export function ExplorerHeader() {
 
   // Handle initial query from URL parameter
   useEffect(() => {
-    const initialQuery = searchParams.get("q");
     if (initialQuery && !hasProcessedInitialQuery.current) {
       hasProcessedInitialQuery.current = true;
-      setQuery(initialQuery);
-      // Use setTimeout to ensure the state is set before triggering search
-      setTimeout(() => {
+      // Defer to avoid synchronous setState in effect (handleSearch calls setError)
+      queueMicrotask(() => {
         handleSearch(initialQuery);
-      }, 0);
+      });
     }
-  }, [searchParams, handleSearch]);
+  }, [initialQuery, handleSearch]);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
