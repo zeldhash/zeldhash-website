@@ -1,6 +1,7 @@
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages, getTranslations, setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
+import Script from 'next/script';
 import type {ReactNode} from 'react';
 import {Footer, Header, Background} from '@/components/layout';
 import {locales, type Locale} from '@/lib/i18n/routing';
@@ -47,6 +48,13 @@ export default async function LocaleLayout({children, params}: Props) {
 
   return (
     <html lang={locale} dir={langInfo.dir} className={fontVariables}>
+      <head>
+        <Script
+          src="https://cloud.umami.is/script.js"
+          data-website-id="baee3757-7105-49ac-9dec-c8a78499bdc5"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className="min-h-screen overflow-x-hidden font-sans">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Background />
