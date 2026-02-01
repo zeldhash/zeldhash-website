@@ -21,7 +21,7 @@ export async function Footer() {
     { href: "/legacy-wallet", labelKey: "nav.legacyWallet", icon: "legacy" },
     { href: `/whitepaper/zeldhash-whitepaper-${locale}.pdf`, labelKey: "nav.whitepaper", external: true, icon: "pdf" },
     { href: "https://x.com/ZeldHash", label: "X", external: true, icon: "x" },
-    { href: "https://github.com/ouziel-slama/zeldhash/", labelKey: "nav.github", external: true, icon: "github" },
+    { href: "https://github.com/zeldhash/zeldhash/", labelKey: "nav.github", external: true, icon: "github" },
   ];
 
   const renderIcon = (icon?: FooterLink["icon"]) => {

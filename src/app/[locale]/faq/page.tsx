@@ -62,7 +62,7 @@ export default async function FAQPage({params}: Props) {
             ),
             github: (chunks) => (
               <Link
-                href="https://github.com/ouziel-slama/zeldhash-miner"
+                href="https://github.com/zeldhash/zeldhash-miner"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gold-400 hover:text-gold-300"

@@ -97,7 +97,7 @@ export function Header() {
             </span>
           </a>
           <a
-            href="https://github.com/ouziel-slama/zeldhash/"
+            href="https://github.com/zeldhash/zeldhash/"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative text-dark-200 hover:text-gold-400 transition-colors"
@@ -211,7 +211,7 @@ export function Header() {
               X
             </a>
             <a
-              href="https://github.com/ouziel-slama/zeldhash/"
+              href="https://github.com/zeldhash/zeldhash/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-3 text-dark-200 hover:text-gold-400 transition-colors flex items-center gap-2"

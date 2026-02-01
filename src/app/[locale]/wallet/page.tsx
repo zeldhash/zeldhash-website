@@ -118,7 +118,7 @@ export default async function WalletPage({params}: Props) {
           
           {/* Build Your Miner Block */}
           <a 
-            href="https://github.com/ouziel-slama/zeldhash-miner"
+            href="https://github.com/zeldhash/zeldhash-miner"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative overflow-hidden rounded-2xl border border-gold-400/20 bg-gradient-to-br from-dark-900 to-dark-800 p-8 transition-all duration-300 hover:border-gold-400/40 hover:shadow-[0_0_40px_rgba(212,175,55,0.1)] hover:-translate-y-1"
